@@ -1,6 +1,10 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<img src="readme-files/mockup-1.png">
 
-Welcome USER_NAME,
+Working on a new project focusing on Django, Python and SQL.
+
+<!-- 
+
+Welcome valentina-b,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
@@ -42,4 +46,4 @@ We continually tweak and adjust this template to help give you the best experien
 
 --------
 
-Happy coding!
+Happy coding! -->
