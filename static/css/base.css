@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap');
+
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-roboto);
+}
+
 h1 {
-    color: red;
-    font-size: 80px;
+    font-family: var(--font-poppins);
+}
+
+h2 {
+    font-family: var(--font-poppins);
 }
