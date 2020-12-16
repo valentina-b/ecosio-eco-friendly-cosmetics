@@ -39,14 +39,16 @@
 
         <header>
             <div id="div-nav">
-                <div class="container-fluid fixed-top">
+                <div class="container-fluid fixed-top" id="top-nav">
                     <div class="container">
                         {% include 'includes/top-nav.html' %}
                     </div>
                 </div>
-                <nav>
-                    {% include 'includes/main-nav.html' %}
-                </nav>
+                <div class="container-fluid fixed-top" id="main-nav">
+                    <div class="container">
+                        {% include 'includes/main-nav.html' %}
+                    </div>
+                </div>
             </div>
         </header>
 

@@ -27,6 +27,12 @@ h1, h2 {
     color: var(--color-black);
     font-family: var(--font-poppins);
     text-transform: uppercase;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar, .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 9px 0;
 }
 
 .nav-link .span-green {
@@ -69,6 +75,18 @@ input[type="text"] {
 
 .border-black {
     border: var(--border-black);
+}
+
+#main-nav {
+    top: 50px;
+}
+
+#main-nav .nav-link {
+    padding-right: 55px;
+}
+
+#user-options {
+    padding-left: 55px;
 }
 
 .container {
