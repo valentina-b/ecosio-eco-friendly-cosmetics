@@ -6,17 +6,18 @@
     --color-black: #333333;
     --color-green: #45AD9A;
     --color-gray: #C4C4C4;
+    --color-white: #FFFFFF;
     --border-black: 1px solid var(--color-black);
     --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 html {
     scroll-behavior: smooth;
-    color: var(--color-black);
 }
 
 body {
     font-family: var(--font-roboto);
+    color: var(--color-black);
 }
 
 h1, h2 {
@@ -49,6 +50,10 @@ h1, h2 {
     font-size: 25px;
 }
 
+#logo:hover {
+    text-decoration: none;
+}
+
 #div-nav {
     box-shadow: var(--box-shadow);
     height: 100px;
@@ -73,10 +78,6 @@ input[type="text"] {
     color: var(--color-gray)!important;
 }
 
-.border-black {
-    border: var(--border-black);
-}
-
 #main-nav {
     top: 50px;
 }
@@ -92,3 +93,74 @@ input[type="text"] {
 .container {
     width: 1200px;
 }
+
+.cta {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: var(--border-black);
+}
+
+.cta-white, .cta-black:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.cta-black, .cta-white:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.border-black {
+    border: var(--border-black);
+}
+
+/* homepage */
+
+#hp-header-h1, #hp-header-tagline {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 100px;
+    text-align: right;
+}
+
+#hp-header-tagline {
+    font-weight: 400;
+    font-size: 23.5px;
+    font-family: var(--font-poppins);
+}
+
+#homepage-header {
+    background: url('../images/img-hp-header.png') no-repeat center;
+    height: 575px;
+    background-size: cover;
+}
+
+.header-text {
+    width: fit-content;
+    /* margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-white); */
+}
+
+.div-header .container-fluid {
+    padding: 0;
+}
+
+#hp-header-cta {
+    width: fit-content;
+}
+
+.line {
+    margin-top: 23px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid var(--color-white);
+    width: 370px;
+}
+
+.header-content {
+    width: fit-content;
+    margin-top: 25%;
+}
+
