@@ -118,7 +118,7 @@ input[type="text"] {
 }
 
 /* homepage */
-
+/* header */
 #hp-header-h1, #hp-header-tagline {
     color: var(--color-white);
     font-weight: 600;
@@ -163,4 +163,41 @@ input[type="text"] {
     width: fit-content;
     margin-top: 25%;
 }
+/* header */
 
+/* registration prompt */
+#registration-prompt {
+    width: 380px;
+    height: 145px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+}
+
+.close-prompt {
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    padding: 3px 10px 0;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+#prompt-content {
+    width: 285px;
+    position: relative;
+    left: 35px;
+    bottom: 13px;
+}
+
+#prompt-content p {
+    font-family: var(--font-poppins);
+    margin-bottom: 25px;
+}
+
+#prompt-content .cta {
+    border-color: var(--color-white);
+}
