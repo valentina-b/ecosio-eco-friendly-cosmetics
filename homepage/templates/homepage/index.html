@@ -54,7 +54,7 @@
                                  <span class="product-card-price">73.00</span>€
                             </p>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Shop here</a>
+                                <a href="#" class="cta cta-white">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                                  <span class="product-card-price">33.00</span>€
                             </p>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Shop here</a>
+                                <a href="#" class="cta cta-white">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                                  <span class="product-card-price">23.40</span>€
                             </p>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Shop here</a>
+                                <a href="#" class="cta cta-white">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -97,9 +97,28 @@
 {% endblock %}
 
 {% block section_content_2 %}
-    <div class="container-fluid div-section">
-        <div class="row hp-section-2">
-
+    <div class="container-fluid div-section hp-section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="div-section-text-left">
+                        <h2 class="section-title">Sustainability is a choice</h2>
+                        <p class="section-p">
+                            Some paragraph that goes with the heading above. Talk about this.
+                            Some paragraph that goes with the heading above. Talk about this 
+                            marketplace.
+                        </p>
+                        <div class="section-cta">
+                            <a href="#" class="cta cta-white">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 no-padding">
+                    <div class="div-section-img-right">
+                        <img src="{% static 'images/homepage/img-hp-sec1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
