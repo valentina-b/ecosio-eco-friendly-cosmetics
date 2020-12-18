@@ -25,7 +25,7 @@ h1, h2 {
     font-family: var(--font-poppins);
 }
 
-h2 {
+h2, .h2-style {
     text-transform: uppercase;
     font-size: 25px;
 }
@@ -225,10 +225,11 @@ input[type="text"] {
     margin-bottom: 45px;
 }
 
-.div-product-card {
+.div-product-card, .div-category-card {
     height: 300px;
     width: 250px;
     border: var(--border-black);
+    margin: auto;
 }
 
 .div-product-card-img {
@@ -237,7 +238,13 @@ input[type="text"] {
     margin: 10px auto;
 }
 
-.div-product-card-img img {
+.div-category-card-img {
+    height: fit-content;
+    width: 165px;
+    margin: 20px auto 0 auto;
+}
+
+.div-product-card-img img, .div-category-card img {
     width: 100%;
 }
 
@@ -259,6 +266,13 @@ input[type="text"] {
 .hp-section-3 {
     height: 310px;
     background-color: var(--color-gray-light);
+    margin-bottom: 130px;
+}
+
+.hp-section-4 {
+    height: 440px;
+    background: url('../images/img-background-2.png') no-repeat center;
+    background-size: cover;
 }
 
 .div-section-text-left {
@@ -279,10 +293,26 @@ input[type="text"] {
     left: 26.3%;
 }
  .div-section-img-left {
-     bottom: 50px;
+     bottom: 40px;
      right: 26.3%;
  }
 
 .div-section-img-right img, .div-section-img-left img {
     width: 100%;
+}
+
+.hp-section-4-heading {
+    margin-bottom: 35px;
+}
+
+.category-card-row {
+    margin: 35px 0;
+}
+
+.div-category-card-cta {
+    margin-top: 30px;
+}
+
+.hp-section-4-cta {
+    margin: 5px auto;
 }

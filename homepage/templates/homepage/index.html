@@ -42,8 +42,8 @@
         <div class="row hp-section-1">
             <div class="container">
                 <div class="row product-card-row">
-                    <div class="col-4">
-                        <div class="div-product-card">
+                    <div class="col-4 no-padding">
+                        <div class="div-product-card float-left">
                             <div class="div-product-card-img">
                                 <img src="{% static 'images/homepage/products/img-hp-prd-1.png' %}" alt="">
                             </div>
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 no-padding">
                         <div class="div-product-card">
                             <div class="div-product-card-img">
                                 <img src="{% static 'images/homepage/products/img-hp-prd-2.png' %}" alt="">
@@ -74,8 +74,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="div-product-card">
+                    <div class="col-4 no-padding">
+                        <div class="div-product-card float-right">
                             <div class="div-product-card-img">
                                 <img src="{% static 'images/homepage/products/img-hp-prd-3.png' %}" alt="">
                             </div>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-6 no-padding">
                     <div class="div-section-img-right">
-                        <img src="{% static 'images/homepage/img-hp-sec1.png' %}" alt="">
+                        <img src="{% static 'images/homepage/img-hp-sec2.png' %}" alt="">
                     </div>
                 </div>
             </div>
@@ -148,4 +148,56 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block section_content_4 %}
+<section>
+    <div class="container hp-section-4-heading">
+        <h1 class="h2-style">Curated shopping for you:</h1>
+    </div>
+    <div class="container-fluid div-section">
+        <div class="row hp-section-4">
+            <div class="container">
+                <div class="row category-card-row">
+                    <div class="col-4 no-padding">
+                        <div class="div-category-card float-left">
+                            <div class="div-category-card-img">
+                                <img src="{% static 'images/homepage/categories/img-hp-cat-1.png' %}" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center div-category-card-cta">
+                                <a href="#" class="cta cta-white">Skincare</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 no-padding">
+                        <div class="div-category-card">
+                            <div class="div-category-card-img">
+                                <img src="{% static 'images/homepage/categories/img-hp-cat-2.png' %}" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center div-category-card-cta">
+                                <a href="#" class="cta cta-white">Toiletries</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 no-padding">
+                        <div class="div-category-card float-right">
+                            <div class="div-category-card-img">
+                                <img src="{% static 'images/homepage/categories/img-hp-cat-3.png' %}" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center div-category-card-cta">
+                                <a href="#" class="cta cta-white">Shaving</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="hp-section-4-cta">
+                        <a href="#" class="cta cta-white">Shop all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
