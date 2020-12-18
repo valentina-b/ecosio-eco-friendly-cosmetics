@@ -24,19 +24,82 @@
     </div>
 {% endblock %}
 
-{% block content %}
-    <div id="registration-prompt">
-        <div class="close-prompt">
-                <img src="{% static 'images/icons/icon-close.svg' %}" alt="Close button">
+{% block section_content_1 %}
+    <div class="container-fluid div-section">
+        <!-- registration promp window -->
+        <div id="registration-prompt">
+            <div class="close-prompt">
+                    <img src="{% static 'images/icons/icon-close.svg' %}" alt="Close button">
+                </div>
+            <div id="prompt-content">
+                <p>create an account and get 10% OFF your first order</p>
+                <div class="ml-auto" id="hp-registration-prompt-cta">
+                    <a href="#" class="cta cta-black ml-auto">Register here</a>
+                </div>
             </div>
-        <div id="prompt-content">
-            <p>create an account and get 10% OFF your first order</p>
-            <div class="ml-auto" id="hp-registration-prompt-cta">
-                <a href="#" class="cta cta-black ml-auto">Register here</a>
+        </div>
+        <!-- registration promp window -->
+        <div class="row hp-section-1">
+            <div class="container">
+                <div class="row product-card-row">
+                    <div class="col-4">
+                        <div class="div-product-card">
+                            <div class="div-product-card-img">
+                                <img src="{% static 'images/homepage/products/img-hp-prd-1.png' %}" alt="">
+                            </div>
+                            <p class="product-card-title">Double-Edge Razor</p>
+                            <p class="product-card-brand-price">
+                                <span class="product-card-brand">Aesop</span>
+                                 | 
+                                 <span class="product-card-price">73.00</span>€
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="cta cta-white">Shop here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="div-product-card">
+                            <div class="div-product-card-img">
+                                <img src="{% static 'images/homepage/products/img-hp-prd-2.png' %}" alt="">
+                            </div>
+                            <p class="product-card-title">Healing Post Shave</p>
+                            <p class="product-card-brand-price">
+                                <span class="product-card-brand">Supply</span>
+                                 | 
+                                 <span class="product-card-price">33.00</span>€
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="cta cta-white">Shop here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="div-product-card">
+                            <div class="div-product-card-img">
+                                <img src="{% static 'images/homepage/products/img-hp-prd-3.png' %}" alt="">
+                            </div>
+                            <p class="product-card-title">Multi-Purpose Moisturizer</p>
+                            <p class="product-card-brand-price">
+                                <span class="product-card-brand">Supply</span>
+                                 | 
+                                 <span class="product-card-price">23.40</span>€
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="cta cta-white">Shop here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <h1>HELLO WORLD!</h1>
+{% endblock %}
+
+{% block section_content_2 %}
+    <div class="container-fluid div-section">
+        <div class="row hp-section-2">
+
+        </div>
     </div>
 {% endblock %}

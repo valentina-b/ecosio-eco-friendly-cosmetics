@@ -57,6 +57,9 @@ h1, h2 {
 #div-nav {
     box-shadow: var(--box-shadow);
     height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: var(--color-white);
 }
 
 .form-control {
@@ -133,9 +136,10 @@ input[type="text"] {
 }
 
 #homepage-header {
-    background: url('../images/img-hp-header.png') no-repeat center;
-    height: 575px;
+    background: url('../images/homepage/img-hp-header.png') no-repeat center;
+    height: 675px;
     background-size: cover;
+    margin-bottom: 45px;
 }
 
 .header-text {
@@ -161,7 +165,7 @@ input[type="text"] {
 
 .header-content {
     width: fit-content;
-    margin-top: 25%;
+    margin-top: 45%;
 }
 /* header */
 
@@ -174,6 +178,7 @@ input[type="text"] {
     position: fixed;
     right: 2vw;
     bottom: 2vh;
+    box-shadow: var(--box-shadow);
 }
 
 .close-prompt {
@@ -200,4 +205,37 @@ input[type="text"] {
 
 #prompt-content .cta {
     border-color: var(--color-white);
+}
+/* registration prompt */
+
+/* homepage section 1 */
+.div-section {
+    margin-bottom: 45px;
+}
+
+.hp-section-2 {
+    background: url('../images/img-background-1.png') no-repeat center;
+    height: 395px;
+    background-size: cover;
+}
+
+.div-product-card {
+    height: 300px;
+    width: 250px;
+    border: var(--border-black);
+}
+
+.div-product-card-img {
+    height: 130px;
+    width: 130px;
+    margin: 10px auto;
+}
+
+.div-product-card-img img {
+    width: 100%;
+}
+.product-card-brand-price, .product-card-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
 }
