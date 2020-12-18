@@ -60,6 +60,7 @@ h1, h2 {
     width: 100%;
     position: fixed;
     background-color: var(--color-white);
+    z-index: 999;
 }
 
 .form-control {
@@ -179,6 +180,7 @@ input[type="text"] {
     right: 2vw;
     bottom: 2vh;
     box-shadow: var(--box-shadow);
+    z-index: 999;
 }
 
 .close-prompt {
