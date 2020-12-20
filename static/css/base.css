@@ -159,8 +159,6 @@ input[type="text"] {
 
 .header-text {
     width: fit-content;
-    /* margin-bottom: 30px;
-    border-bottom: 1px solid var(--color-white); */
 }
 
 .div-header .container-fluid {
@@ -328,6 +326,7 @@ input[type="text"] {
     margin: 5px auto;
 }
 /* homepage section2, section3 */
+/* homepage */
 
 /* footer */
 footer {
@@ -381,3 +380,4 @@ footer p {
 .div-footer-some:hover {
     border-bottom: 1px solid var(--color-white);
 }
+/* footer */
