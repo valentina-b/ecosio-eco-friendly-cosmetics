@@ -195,7 +195,7 @@ input[type="text"] {
     z-index: 999;
 }
 
-.close-prompt {
+#close-prompt {
     width: fit-content;
     display: block;
     margin-left: auto;
@@ -203,6 +203,7 @@ input[type="text"] {
     position: relative;
     top: 10px;
     right: 5px;
+    cursor: pointer;
 }
 
 #prompt-content {
