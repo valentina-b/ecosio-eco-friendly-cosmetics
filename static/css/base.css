@@ -381,4 +381,22 @@ footer p {
 .div-footer-some:hover {
     border-bottom: 1px solid var(--color-white);
 }
+
+@media (max-width: 991px) {
+    .mb-7-mob {
+        margin-bottom: 7px;
+    }
+    .footer-row {
+        padding-top: 3%;
+    }
+}
+
+@media (max-width: 767px) {
+    .mb-15-mob {
+        margin-bottom: 15px;
+    }
+    .social-media {
+        margin: 30px 0;
+    }
+}
 /* footer */
