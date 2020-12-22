@@ -225,7 +225,7 @@ input[type="text"] {
 
 /* homepage section 1 */
 .div-section {
-    margin-bottom: 45px;
+    margin-bottom: 5rem;
 }
 
 .div-product-card, .div-category-card {
@@ -263,25 +263,35 @@ input[type="text"] {
     height: 395px;
     background: url('../images/img-background-1.png') no-repeat center;
     background-size: cover;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 }
 
-.hp-section-3, .hp-section-5 {
-    height: 395px;
-    background-color: var(--color-gray-light);
-    margin-bottom: 130px;
+.hp-section-3 {
+    background: url('../images/homepage/img-hp-sec3.png') no-repeat center;
+    background-size: cover;
+    margin: 9.3rem 0 3.1rem 0;
 }
 
 .hp-section-4 {
     min-height: 440px;
     background: url('../images/img-background-2.png') no-repeat center;
     background-size: cover;
-    margin-bottom: 130px;
+    /* margin-bottom: 130px; */
+}
+
+.hp-section-5 {
+    height: 395px;
+    background-color: var(--color-gray-light);
+    margin-bottom: 9rem;
 }
 
 .div-section-text-left {
     float: right;
     margin-top: 50px;
+}
+
+.div-section-text-right {
+    margin-left: 11%;
 }
 
 .section-title, .section-p, .section-cta {
@@ -413,6 +423,15 @@ footer p {
     }
     .div-section-text-left {
         margin-top: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .div-section-text-right {
+        background-color: rgba(245, 245, 245, 0.75);
+        padding: 2rem;
+        width: 80%;
+        margin: auto;
     }
 }
 
