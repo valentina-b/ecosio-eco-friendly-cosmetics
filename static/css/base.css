@@ -52,7 +52,11 @@ h2, .h2-style {
     color: var(--color-black);
 }
 
-#logo {
+.navbar-toggler img {
+    width: 40px;
+}
+
+#logo, .logo {
     font-size: 25px;
 }
 
@@ -263,20 +267,18 @@ input[type="text"] {
     height: 395px;
     background: url('../images/img-background-1.png') no-repeat center;
     background-size: cover;
-    /* margin-bottom: 150px; */
 }
 
 .hp-section-3 {
     background: url('../images/homepage/img-hp-sec3.png') no-repeat center;
     background-size: cover;
-    margin: 9.3rem 0 3.1rem 0;
+    margin: 9.3rem 0 4rem 0;
 }
 
 .hp-section-4 {
     min-height: 440px;
     background: url('../images/img-background-2.png') no-repeat center;
     background-size: cover;
-    /* margin-bottom: 130px; */
 }
 
 .hp-section-5 {
@@ -303,11 +305,6 @@ input[type="text"] {
     margin-left: 13.1%;
 }
 
-.div-section-img-left img {
-    /* margin-top: 10%; */
-    /* margin-right: 13.1%; */
-}
-
 .div-container-box {
     max-width: 1440px;
     margin: auto;
@@ -318,29 +315,6 @@ input[type="text"] {
     overflow-y: visible;
     padding-left: 0;
     padding-right: 0;
-}
-
-/* .div-section-img-right, .div-section-img-left, .div-section-img-right-center {
-    position: relative;
-} */
-
-.div-section-img-right {
-    /* top: 50px;
-    left: 26.3%; */
-}
-
-.div-section-img-left {
-    /* bottom: 40px;
-    right: 26.3%; */
-}
-
-.div-section-img-right-center {
-    /* bottom: 40px;
-    left: 26.3%; */
-}
-
-.div-section-img-right img, .div-section-img-left img, .div-section-img-right-center img {
-    /* width: 100%; */
 }
 
 .hp-section-4-heading {
@@ -417,6 +391,23 @@ footer p {
 @media (max-width: 991px) {
     .mb-7-mob {
         margin-bottom: 7px;
+    }
+    #div-nav {
+        height: 80px;
+    }
+    #main-nav {
+        top: 0;
+    }
+    .navbar-toggler {
+        margin-top: 5px;
+    }
+    .navbar {
+        justify-content: flex-start;
+    }
+    .logo {
+        padding-top: 3px;
+        padding-left: 20px;
+        padding-bottom: 0;
     }
     .footer-row {
         padding-top: 3%;
