@@ -485,5 +485,9 @@ footer p {
     .container {
         width: 100%;
     }
+    #homepage-header {
+        background: url(../images/homepage/img-hp-mob-header-test.png) no-repeat center;
+        height: 550px;
+    }
 }
 /* footer */
