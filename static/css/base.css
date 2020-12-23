@@ -155,7 +155,7 @@ input[type="text"] {
 }
 
 #homepage-header {
-    background: url('../images/homepage/img-hp-header.png') no-repeat center;
+    background: url('../images/homepage/img-hp-dsk-header.png') no-repeat center;
     height: 675px;
     background-size: cover;
     margin-bottom: 45px;
@@ -409,6 +409,24 @@ footer p {
         padding-left: 20px;
         padding-bottom: 0;
     }
+    #homepage-header {
+        background: url('../images/homepage/img-hp-tab-header.png') no-repeat center;
+    }
+    .header-content {
+        margin-top: 35%;
+    }
+    .header-text {
+        margin-left: auto;
+    }
+    #hp-header-h1 {
+        font-size: 5rem;
+    }
+    #hp-header-tagline {
+        font-size: 1.188rem;
+    }
+    .line {
+        width: 100%;
+    }
     .footer-row {
         padding-top: 3%;
     }
@@ -435,6 +453,12 @@ footer p {
     }
     .div-product-card, .div-category-card {
         margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
     }
 }
 /* footer */
