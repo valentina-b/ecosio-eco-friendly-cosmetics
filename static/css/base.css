@@ -56,6 +56,10 @@ h2, .h2-style {
     width: 40px;
 }
 
+.navbar-toggler:focus, .navbar-toggler:active:focus, .navbar-toggler:focus {
+    outline: none;
+}
+
 #logo, .logo {
     font-size: 25px;
 }
@@ -487,6 +491,18 @@ footer p {
     .container {
         width: 100%;
     }
+    .navbar-toggler {
+        padding-left: 0;
+    }
+    .navbar-toggler img {
+        width: 30px;
+    }
+    .logo {
+        font-size: 20px;
+        padding-top: 14px;
+        padding-left: 8px;
+        padding-bottom: inherit;
+    }
     #homepage-header {
         background: url(../images/homepage/img-hp-mob-header-test.png) no-repeat center;
         height: 550px;
@@ -518,6 +534,19 @@ footer p {
     }
     .footer-row {
         padding-top: 5%;
+    }
+}
+
+@media (max-width: 425px) {
+    #registration-prompt {
+        width: 300px;
+    }
+    #prompt-content {
+        width: 220px;
+        bottom: 8px;
+    }
+    #prompt-content p {
+        font-size: 0.8rem;
     }
 }
 /* responsiveness */
