@@ -56,7 +56,7 @@ h2, .h2-style {
     width: 40px;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active:focus, .navbar-toggler:focus {
+.navbar-toggler:focus, .navbar-toggler:active:focus {
     outline: none;
 }
 

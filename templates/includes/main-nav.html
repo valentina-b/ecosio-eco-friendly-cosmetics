@@ -19,6 +19,33 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Loyalty programme</a>
             </li>
+            <div class="line d-lg-none">
+            </div>
+            <div class="top-nav-links d-lg-none">
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <li>
+                            <a class="nav-link" href="#">Product Management</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Blog Management</a>
+                        </li>
+                        {% endif %}
+                        <li>
+                            <a class="nav-link" href="#">My Profile</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                {% else %}
+                        <li>
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                {% endif %}
+            </div>
         </ul>
     </div>
 </nav>
