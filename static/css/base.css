@@ -423,6 +423,16 @@ footer p {
     .navbar {
         justify-content: flex-start;
     }
+    .navbar-nav {
+        background-color: var(--color-white);
+        padding-left: 13px;
+        padding-right: 10px;
+        width: max-content;
+    }
+    .navbar-nav .line {
+        border-color: var(--color-black);
+        margin: 10px 0;
+    }
     .logo {
         padding-top: 3px;
         padding-left: 20px;
