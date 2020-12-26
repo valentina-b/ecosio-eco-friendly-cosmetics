@@ -448,6 +448,10 @@ footer p {
         border-color: var(--color-black);
         margin: 10px 0;
     }
+
+    .search-box-mob {
+        margin: 15px 0;
+    }
     .logo {
         padding-top: 3px;
         padding-left: 20px;
