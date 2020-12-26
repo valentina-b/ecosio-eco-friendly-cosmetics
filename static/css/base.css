@@ -91,6 +91,11 @@ input[type="text"] {
     color: var(--color-black);
 }
 
+.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 ::placeholder {
     font-family: var(--font-poppins);
     color: var(--color-gray)!important;
@@ -448,7 +453,6 @@ footer p {
         border-color: var(--color-black);
         margin: 10px 0;
     }
-
     .search-box-mob {
         margin: 15px 0;
     }
