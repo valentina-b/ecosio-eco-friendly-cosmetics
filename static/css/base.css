@@ -427,6 +427,12 @@ footer p {
     }
 }
 
+@media (min-width: 992px) {
+    .search-box-mob {
+        display: none;
+    }
+}
+
 @media (max-width: 991px) {
     .mb-7-mob {
         margin-bottom: 7px;
@@ -453,7 +459,7 @@ footer p {
         border-color: var(--color-black);
         margin: 10px 0;
     }
-    .search-box-mob {
+    .search-input-mob {
         margin: 15px 0;
     }
     .logo {
