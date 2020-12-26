@@ -104,6 +104,10 @@ input[type="text"] {
     padding-right: 55px;
 }
 
+#top-nav {
+    z-index: 1050;
+}
+
 .dropdown-menu {
     border-radius: revert;
     text-align: right;
