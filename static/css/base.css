@@ -116,6 +116,7 @@ input[type="text"] {
 
 .dropdown-item {
     padding: 9px;
+    padding-left: 55px;
 }
 
 #user-options {

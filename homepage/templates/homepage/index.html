@@ -27,107 +27,114 @@
 {% endblock %}
 
 {% block section_content_1 %}
-    <div class="container-fluid div-section div-section-1">
-        <!-- registration promp window -->
-        <div id="registration-prompt">
-            <div id="close-prompt">
-                    <img src="{% static 'images/icons/icon-close.svg' %}" alt="Close button">
+    <section>
+        <div class="container-fluid div-section div-section-1">
+            {% if request.user.is_authenticated %}
+            {% else %}
+                <!-- registration promp window -->
+                <div id="registration-prompt">
+                    <div id="close-prompt">
+                            <img src="{% static 'images/icons/icon-close.svg' %}" alt="Close button">
+                        </div>
+                    <div id="prompt-content">
+                        <p>create an account and get 10% OFF your first order</p>
+                        <div class="ml-auto" id="hp-registration-prompt-cta">
+                            <a href="#" class="cta cta-black ml-auto">Register here</a>
+                        </div>
+                    </div>
                 </div>
-            <div id="prompt-content">
-                <p>create an account and get 10% OFF your first order</p>
-                <div class="ml-auto" id="hp-registration-prompt-cta">
-                    <a href="#" class="cta cta-black ml-auto">Register here</a>
+                <!-- registration promp window -->
+            {% endif %}
+            <div class="container hp-section-4-heading">
+                <h1 class="h2-style">Our most popular products:</h1>
+            </div>
+            <div class="row hp-section-1">
+                <div class="container">
+                    <div class="row product-card-row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="div-product-card float-lg-left">
+                                <div class="div-product-card-img">
+                                    <img src="{% static 'images/homepage/products/img-hp-prd-1.png' %}" alt="">
+                                </div>
+                                <p class="product-card-title">Double-Edge Razor</p>
+                                <p class="product-card-brand-price">
+                                    <span class="product-card-brand">Aesop</span>
+                                    | 
+                                    <span class="product-card-price">73.00</span>€
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="cta cta-white">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="div-product-card">
+                                <div class="div-product-card-img">
+                                    <img src="{% static 'images/homepage/products/img-hp-prd-2.png' %}" alt="">
+                                </div>
+                                <p class="product-card-title">Healing Post Shave</p>
+                                <p class="product-card-brand-price">
+                                    <span class="product-card-brand">Supply</span>
+                                    | 
+                                    <span class="product-card-price">33.00</span>€
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="cta cta-white">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block col-12">
+                            <div class="div-product-card float-lg-right">
+                                <div class="div-product-card-img">
+                                    <img src="{% static 'images/homepage/products/img-hp-prd-3.png' %}" alt="">
+                                </div>
+                                <p class="product-card-title">Multi-Purpose Moisturizer</p>
+                                <p class="product-card-brand-price">
+                                    <span class="product-card-brand">Supply</span>
+                                    | 
+                                    <span class="product-card-price">23.40</span>€
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="cta cta-white">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- registration promp window -->
-        <div class="container hp-section-4-heading">
-            <h1 class="h2-style">Our most popular products:</h1>
-        </div>
-        <div class="row hp-section-1">
-            <div class="container">
-                <div class="row product-card-row">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="div-product-card float-lg-left">
-                            <div class="div-product-card-img">
-                                <img src="{% static 'images/homepage/products/img-hp-prd-1.png' %}" alt="">
-                            </div>
-                            <p class="product-card-title">Double-Edge Razor</p>
-                            <p class="product-card-brand-price">
-                                <span class="product-card-brand">Aesop</span>
-                                 | 
-                                 <span class="product-card-price">73.00</span>€
-                            </p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="div-product-card">
-                            <div class="div-product-card-img">
-                                <img src="{% static 'images/homepage/products/img-hp-prd-2.png' %}" alt="">
-                            </div>
-                            <p class="product-card-title">Healing Post Shave</p>
-                            <p class="product-card-brand-price">
-                                <span class="product-card-brand">Supply</span>
-                                 | 
-                                 <span class="product-card-price">33.00</span>€
-                            </p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block col-12">
-                        <div class="div-product-card float-lg-right">
-                            <div class="div-product-card-img">
-                                <img src="{% static 'images/homepage/products/img-hp-prd-3.png' %}" alt="">
-                            </div>
-                            <p class="product-card-title">Multi-Purpose Moisturizer</p>
-                            <p class="product-card-brand-price">
-                                <span class="product-card-brand">Supply</span>
-                                 | 
-                                 <span class="product-card-price">23.40</span>€
-                            </p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 {% endblock %}
 
 {% block section_content_2 %}
-    <div class="container-fluid container-fluid-box div-section hp-section-2">
-        <div class="div-container-box">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-12">
-                        <div class="div-section-text-left">
-                            <h2 class="section-title">Sustainability is a choice</h2>
-                            <p class="section-p">
-                                Some paragraph that goes with the heading above. Talk about this.
-                                Some paragraph that goes with the heading above. Talk about this 
-                                marketplace.
-                            </p>
-                            <div class="section-cta">
-                                <a href="#" class="cta cta-white">Shop now</a>
+    <section>
+        <div class="container-fluid container-fluid-box div-section hp-section-2">
+            <div class="div-container-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-12">
+                            <div class="div-section-text-left">
+                                <h1 class="h2-style section-title">Sustainability is a choice</h1>
+                                <p class="section-p">
+                                    Some paragraph that goes with the heading above. Talk about this.
+                                    Some paragraph that goes with the heading above. Talk about this 
+                                    marketplace.
+                                </p>
+                                <div class="section-cta">
+                                    <a href="#" class="cta cta-white">Shop now</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-12 no-padding">
-                        <div class="div-section-img-right">
-                            <img src="{% static 'images/homepage/img-hp-sec2.png' %}" alt="">
+                        <div class="col-sm-6 col-12 no-padding">
+                            <div class="div-section-img-right">
+                                <img src="{% static 'images/homepage/img-hp-sec2.png' %}" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 {% endblock %}
 
 {% block section_content_3 %}
@@ -143,7 +150,7 @@
                         </div>
                         <div class="col-xl-6 col-12">
                             <div class="div-section-text-right">
-                                <h2 class="section-title">Sustainability is a choice</h2>
+                                <h1 class="h2-style section-title">Sustainability is a choice</h1>
                                 <p class="section-p">
                                     Some paragraph that goes with the heading above. Talk about this.
                                     Some paragraph that goes with the heading above. Talk about this 
@@ -220,7 +227,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-12">
                             <div class="div-section-text-left">
-                                <h2 class="section-title">Sustainability is a choice</h2>
+                                <h1 class="h2-style section-title">Sustainability is a choice</h1>
                                 <p class="section-p">
                                     Some paragraph that goes with the heading above. Talk about this.
                                     Some paragraph that goes with the heading above. Talk about this 
