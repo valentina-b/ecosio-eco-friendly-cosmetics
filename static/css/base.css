@@ -104,6 +104,16 @@ input[type="text"] {
     padding-right: 55px;
 }
 
+.dropdown-menu {
+    border-radius: revert;
+    text-align: right;
+    width: max-content;
+}
+
+.dropdown-item {
+    padding: 9px;
+}
+
 #user-options {
     padding-left: 55px;
 }

@@ -21,16 +21,17 @@
             </li>
             <div class="line d-lg-none">
             </div>
+            <!-- top nav account links -->
             <div class="top-nav-links d-lg-none">
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <li>
-                            <a class="nav-link" href="#">Product Management</a>
+                            <a class="nav-link" href="#">Manage Products</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Blog Management</a>
+                            <a class="nav-link" href="#">Manage Blog</a>
                         </li>
-                        {% endif %}
+                    {% endif %}
                         <li>
                             <a class="nav-link" href="#">My Profile</a>
                         </li>
