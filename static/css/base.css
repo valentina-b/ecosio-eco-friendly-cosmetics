@@ -575,6 +575,9 @@ footer p {
     .div-section-text-left {
         margin-top: 0;
     }
+    .about-section-1-usp {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 767px) {
@@ -662,6 +665,12 @@ footer p {
     }
     #prompt-content p {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 345px) {
+    .xs-d-none {
+        display: none;
     }
 }
 /* responsiveness */
