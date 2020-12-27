@@ -297,7 +297,7 @@ input[type="text"] {
     line-height: 170%;
 }
 
-.hp-section-2 {
+.hp-section-2, .about-section-2 {
     height: 395px;
     background: url('../images/img-background-1.png') no-repeat center;
     background-size: cover;
@@ -570,7 +570,7 @@ footer p {
     .category-card-row {
         margin: 55px 0;
     }
-    .hp-section-2, .hp-section-5 {
+    .hp-section-2, .hp-section-5, .about-section-2 {
         height: 420px;
     }
 }
@@ -595,7 +595,7 @@ footer p {
         background: url(../images/homepage/img-hp-mob-header.png) no-repeat center;
         height: 550px;
     }
-    .hp-section-2, .hp-section-5 {
+    .hp-section-2, .hp-section-5, .about-section-2 {
         height: 100%;
     }
     .div-section-img-right img {
