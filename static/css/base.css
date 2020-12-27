@@ -417,6 +417,13 @@ footer p {
 }
 /* footer */
 
+/* about page */
+#about-header {
+    background: url('../images/about/img-about-dsk-header.png') no-repeat center;
+    height: 485px;
+}
+/* about page */
+
 /* responsiveness */
 @media (max-width: 1199px) {
     .div-section-text-right {
@@ -497,6 +504,9 @@ footer p {
     .hp-section-4-cta {
         margin: -20px auto;
     }
+    #about-header {
+        background: url('../images/about/img-about-tab-header.png') no-repeat center;
+    }
     .footer-row {
         padding-top: 3%;
     }
@@ -543,7 +553,7 @@ footer p {
         padding-bottom: inherit;
     }
     #homepage-header {
-        background: url(../images/homepage/img-hp-mob-header-test.png) no-repeat center;
+        background: url(../images/homepage/img-hp-mob-header.png) no-repeat center;
         height: 550px;
     }
     .hp-section-2, .hp-section-5 {
@@ -570,6 +580,10 @@ footer p {
     }
     #hp-header-tagline {
         font-size: 0.95rem;
+    }
+    #about-header {
+        background: url('../images/about/img-about-mob-header.png') no-repeat center;
+        height: 360px;
     }
     .footer-row {
         padding-top: 5%;
