@@ -174,8 +174,17 @@ input[type="text"] {
     padding: 0;
 }
 
+.plr-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .mb-7 {
     margin-bottom: 7px;
+}
+
+.display-none {
+    display: none;
 }
 
 /* homepage */
@@ -493,6 +502,11 @@ footer p {
 #loyalty-programme-header {
     background: url('../images/loyalty-programme/img-loyalty-dsk-header.png') no-repeat center;
 }
+
+.loyalty-programme-section-1-explanation img {
+    width: 100%;
+    margin: 35px auto;
+}
 /* loyalty programme page */
 
 /* responsiveness */
@@ -666,6 +680,12 @@ footer p {
     }
     #loyalty-programme-header {
         background: url('../images/loyalty-programme/img-loyalty-mob-header.png') no-repeat center;
+    }
+    .s-d-none {
+        display: none;
+    }
+    .s-d-block {
+        display: block;
     }
     .footer-row {
         padding-top: 5%;
