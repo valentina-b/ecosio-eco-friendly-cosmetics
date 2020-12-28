@@ -433,9 +433,12 @@ footer p {
 /* footer */
 
 /* about page */
+#about-header, #loyalty-programme-header {
+    height: 485px;
+}
+
 #about-header {
     background: url('../images/about/img-about-dsk-header.png') no-repeat center;
-    height: 485px;
 }
 
 .paragraph-margin {
@@ -485,6 +488,12 @@ footer p {
     width: 100%;
 }
 /* about page */
+
+/* loyalty programme page */
+#loyalty-programme-header {
+    background: url('../images/loyalty-programme/img-loyalty-dsk-header.png') no-repeat center;
+}
+/* loyalty programme page */
 
 /* responsiveness */
 @media (max-width: 1199px) {
@@ -569,6 +578,9 @@ footer p {
     #about-header {
         background: url('../images/about/img-about-tab-header.png') no-repeat center;
     }
+    #loyalty-programme-header {
+        background: url('../images/loyalty-programme/img-loyalty-tab-header.png') no-repeat center;
+    }
     .footer-row {
         padding-top: 3%;
     }
@@ -646,9 +658,14 @@ footer p {
     #hp-header-tagline {
         font-size: 0.95rem;
     }
+    #about-header, #loyalty-programme-header {
+        height: 360px;
+    }
     #about-header {
         background: url('../images/about/img-about-mob-header.png') no-repeat center;
-        height: 360px;
+    }
+    #loyalty-programme-header {
+        background: url('../images/loyalty-programme/img-loyalty-mob-header.png') no-repeat center;
     }
     .footer-row {
         padding-top: 5%;
