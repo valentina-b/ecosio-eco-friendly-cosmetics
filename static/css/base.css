@@ -506,6 +506,9 @@ footer p {
     background: url('../images/loyalty-programme/img-loyalty-dsk-header.png') no-repeat center;
 }
 
+.div-section-lp {
+    margin-bottom: 3rem;
+}
 .loyalty-programme-section-1-explanation img {
     width: 100%;
     margin: 35px auto;
@@ -538,6 +541,12 @@ footer p {
 
 .div-benefit-text ul {
     margin-top: 45px;
+}
+
+ul p {
+    margin-bottom: 0;
+    position: relative;
+    right: 19px;
 }
 /* loyalty programme page */
 
@@ -656,6 +665,9 @@ footer p {
     }
     .hp-section-2, .hp-section-5, .about-section-2 {
         height: 420px;
+    }
+    .div-benefit-card {
+        margin: auto;
     }
 }
 
