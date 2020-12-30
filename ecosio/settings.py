@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'homepage',
     'about',
-    'loyalty_programme'
+    'loyalty_programme',
+    'products',
 ]
 
 SITE_ID = 1

@@ -1,0 +1,34 @@
+[
+   {
+      "pk":1,
+      "model":"products.category",
+      "fields":{
+         "name":"skincare",
+         "friendly_name":"Skincare"
+      }
+   },
+   {
+      "pk":2,
+      "model":"products.category",
+      "fields":{
+         "name":"shaving",
+         "friendly_name":"Shaving"
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.category",
+      "fields":{
+         "name":"toiletries",
+         "friendly_name":"Toiletries"
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.category",
+      "fields":{
+         "name":"sets_bags",
+         "friendly_name":"Sets & Bags"
+      }
+   }
+]
