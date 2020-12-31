@@ -1,0 +1,387 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000001",
+            "category": 1,
+            "brand": 1,
+            "name": "B & Tea Balancing Toner",
+            "description": "A gentle, alcohol-free blend enhanced with Provitamin B5 and fortifying anti-oxidants. Refines pores, balances and prepares skin for hydration. Suited to most skin types, including combination and sensitive.",
+            "ingredients": "Water (Aqua), Aloe Barbadensis Leaf Juice, Polysorbate 80, Hamamelis Virginiana (Witch Hazel) Water, 
+                            Sodium Gluconate, Sodium Lactate, Benzyl Alcohol, Phenoxyethanol, Sorbitol, Panthenol, Cananga Odorata 
+                            Flower Oil, Disodium EDTA, Sodium Citrate, Benzoic Acid, Camellia Sinensis Leaf Extract, Benzalkonium Chloride, 
+                            Dehydroacetic Acid, Ethylhexylglycerin, Citric Acid, Linalool, Benzyl Benzoate, Benzyl Salicylate, Farnesol, 
+                            Geraniol, Eugenol, Isoeugenol",
+            "price": 28.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": true,
+            "is_natural": false,
+            "image": "aesop_balancing_toner.png"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000002",
+            "category": 2,
+            "brand": 1,
+            "name": "Double-Edge Razor",
+            "description": "Featuring a hand-polished and triple-plated collar, this high density handle and chrome-plated blade head are perfectly balanced to facilitate an immaculate shave. Sold with ten stainless steel Merkur Solingen razor blades. Handmade by skilled English craftsmen.",
+            "ingredients": "stainless steel, wood",
+            "price": 73.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "aesop_double_edge_razor.png"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000003",
+            "category": 3,
+            "brand": 1,
+            "name": "Parsley Seed Anti-Oxidant Serum",
+            "description": "A lightweight formulation with a complex blend of anti-oxidant rich ingredients in a soothing Aloe Vera base. Hydrates, softens and fortifies the skin. Suited to most skin types, particularly combination and oily.",
+            "ingredients": "Aloe Barbadensis Leaf Juice, Water (Aqua), Polysorbate 80, Sorbitol, PEG-150 Distearate, 
+                            Polysorbate 20, Benzyl Alcohol, Phenoxyethanol, Lavandula Angustifolia (Lavender) Oil, Panthenol, 
+                            Disodium EDTA, Citric Acid, Sodium Citrate, Camellia Sinensis Leaf Extract, Dehydroacetic Acid, 
+                            Ormenis Multicaulis Oil, Vitis Vinifera (Grape) Seed Extract, Carum Petroselinum (Parsley) Seed Oil, 
+                            Linalool, Limonene, Geraniol",
+            "price": 61.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": true,
+            "is_natural": false,
+            "image": "aesop_parsley_seed_antioxidant_serum.png"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000004",
+            "category": 1,
+            "brand": 1,
+            "name": "Moroccan Neroli Post-Shave Lotion",
+            "description": "A unisex hydrator boosted with botanical oils that lightly hydrate and balance skin while pacifying post-shave irritation and aggravation. Suited to normal, combination and sensitive skin",
+            "ingredients": "Water (Aqua), Rosa Canina Fruit Oil, Glycerin, Cetearyl Olivate, Cetearyl Alcohol, Stearic Acid, 
+                            Hamamelis Virginiana (Witch Hazel) Water, Sorbitan Olivate, Butyrospermum Parkii (Shea Butter), Polysorbate 20, 
+                            Phenoxyethanol, Olea Europaea (Olive) Fruit Oil, Fusanus Spicatus Wood Oil, Bisabolol, Panthenol, Sodium Benzoate, 
+                            Disodium EDTA, Sodium Citrate, Pogostemon Cablin Oil, Citrus Aurantium Dulcis (Orange) Flower Oil, Eugenia Caryophyllus 
+                            (Clove) Flower Oil, Zingiber Officinale (Ginger) Root Extract, Benzoic Acid, Farnesol, Eugenol, Linalool, d-Limonene, 
+                            Geraniol",
+            "price": 42.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "aesop_post_shave_lotion.png"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000005",
+            "category": 3,
+            "brand": 1,
+            "name": "Purifying Facial Exfoliant Paste",
+            "description": "A cream-based cleansing formulation enhanced with fine Quartz and Lactic Acid to slough away dead skin cells and soften the skin. Suited to most skin types, particularly dry. Frequent travellers, shavers, winter and cool climates",
+            "ingredients": "Water (Aqua), Quartz, Glyceryl Stearate SE, Rosa Canina Fruit Oil, Oenothera Biennis (Evening Primrose) Oil, Glycerin, 
+                            C12-16 Alcohols, Lactic Acid, Sodium Cocoyl Isethionate, Phenoxyethanol, Xanthan Gum, Ormenis Multicaulis Oil, Sodium Hydroxide, Coconut Acid, 
+                            Sclerotium Gum, Lecithin, Pullulan, Lavandula Angustifolia (Lavender) Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil, Disodium EDTA, Sodium 
+                            Isethionate, Silica, Limonene, Linaloo",
+            "price": 41.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "aesop_purifying_facial_exfoliant_paste.png"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000006",
+            "category": 2,
+            "brand": 1,
+            "name": "Shaving Brush",
+            "description": "A soft yet robust synthetic Silver Tip Fibre brush of the finest quality, which mimics the natural feel and exceptional performance of badger hair. Handmade in England. Suited to discerning shavers.",
+            "ingredients": "eco-friendly plastic, natural fibers",
+            "price": 49.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": true,
+            "is_natural": true,
+            "image": "aesop_shaving_brush.png"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000007",
+            "category": 1,
+            "brand": 1,
+            "name": "Moroccan Neroli Shaving Serum",
+            "description": "A blend of hydrating botanicals formulated for maximum slip to facilitate a razor-close shave; also calms and softens the skin. Suited to all skin types.",
+            "ingredients": "Water (Aqua), Sodium Laureth Sulfate, Glycerin, Cocamine Oxide, Polysorbate 20, Sorbitol, Cocamidopropyl Betaine, 
+                            Phenoxyethanol, Hydroxyacetophenone, PEG-18 Glyceryl Oleate/Cocoate, Fusanus Spicatus Wood Oil, Sodium Lauroamphoacetate, 
+                            Panthenol, Saccharide Isomerate, Citrus Aurantium Dulcis (Orange) Flower Oil, Citric Acid, Pogostemon Cablin Oil, 
+                            Aloe Barbadensis Leaf Juice, Linalool, Sodium Chloride, Farnesol, Limonene, Eugenia Caryophyllus (Clove) Flower Oil, 
+                            Eugenol, Glycyrrhiza Glabra (Licorice) Root Extract, Tropolone, Geraniol, Sodium Citrate, Potassium Sorbate, Sodium Benzoate",
+            "price": 30.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": true,
+            "is_natural": true,
+            "image": "aesop_shaving_serum.png"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000008",
+            "category": 4,
+            "brand": 1,
+            "name": "Moroccan Neroli Shaving Duet",
+            "description": "For all who shave, enjoy in concert to maintain smooth, calm, hydrated and remarkably soft skin. A pair of sophisticated formulations to achieve the perfect shave",
+            "ingredients": "Moroccan Neroli Shaving Serum, Moroccan Neroli Post-Shave Lotion",
+            "price": 63.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "aesop_shaving_set.png"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000009",
+            "category": 3,
+            "brand": 2,
+            "name": "hydrating body cream - la lotion infinie",
+            "description": "ARgENTUM utilises the inherent strength of silver to deliver la lotion infinie, a natural, protective, super hydrating body cream. After many years of research in the field of dermo-cosmetics, we have formulated a patented fusion of two vital ingredients, Silver Hydrosol & DNA HP, the essence of our award winning la potion infinie.",
+            "ingredients": "Colloidal Silver (Silver Hydrosol), Aqua, Glycerin (from the Karanja Tree), Dicaprylyl Carbonate (Vegetal Origin), 
+                            Butyrospermum Parkii Butter (Shea Butter), Caprylic/Capric Triglyceride (from Coconut Oil), Cetearyl Alcohol, 
+                            Hydrogenated Vegetable Glycerides (RSPO Palm Oil), Argania Spinosa Kernel Oil (Argan Oil), Caffeine, 
+                            Cetearyl Glucoside (Sugar and Coconut Extract), Prunus Amygdalus Dulcis Oil (Sweet Almond Oil), Sodium Stearoyl Glutamate 
+                            (from Vegetal Oil), Sodium Benzoate (Soil Association/Ecocert Preservative), Tocopherol (Vitamin E), Aloe Barbadensis Leaf 
+                            Extract (Aloe Vera Extract), Xanthan Gum (Vegetal Origin), Helianthus Annuus Seed Oil (Sunflower Oil), Potassium Sorbate 
+                            (Soil Association/Ecocert Preservative), Parfum, Citric Acid (Vegetal Origin), Sodium DNA (DNA HP), Sodium Gluconate, 
+                            Limonene (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
+            "price": 84.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "argentum_hydrating_body_cream.png"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000010",
+            "category": 3,
+            "brand": 2,
+            "name": "illuminating hydration bar - le savon lune",
+            "description": "The key to a luminous complexion is hydration, so we have infused le savon lune with our patented fusion of Silver Hydrosol 
+                            & DNA HP to create a soap-free cleanser that helps restore the natural balance of your skin. Our unique formulation is enhanced 
+                            by Bentonite, a colloidal clay composed of aged volcanic ash, traditionally used for its treatment of everyday skincare.",
+            "ingredients": "Disodium Lauryl Sulfosuccinate, Cetearyl Alcohol (Coconut Oil Wax), Triticum Vulgare (Wheat) Starch, Colloidal Silver 
+                            (Silver Hydrosol), Hydrogenated Castor Oil, Glycerin (from the Karanja Tree), Coco Glucoside, Stearic Acid, Butyrospermum 
+                            Parkii Butter (Shea Butter), Cocamidopropyl Betaine, Bentonite, Sodium DNA (DNA HP), Citric Acid, Parfum (Fragrance), Limonene 
+                            (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
+            "price": 104.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "argentum_illuminating_hydration_bar.png"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000011",
+            "category": 3,
+            "brand": 2,
+            "name": "nourishing oil milk cleanser - la lune de velours",
+            "description": "A nourishing oil milk cleanser that effectively removes make-up, whilst deeply hydrating the skin, combining cutting edge science with natural and organic skin-soothing oils such as Vitamin E, Sweet Almond Oil and Argan Oil. We have formulated a patented fusion of two vital ingredients, Silver Hydrosol & DNA HP, the essence of our award-winning la potion infinie.",
+            "ingredients": "Prunus Amygdalus Dulcis Oil (Sweet Almond Oil), Argania Spinosa Kernel Oil (Argan Oil), Glycerin (from the Karanja Tree), 
+                            Colloidal Silver (Silver Hydrosol), Aqua, Tocopherol Acetate (Vitamin E), Citric Acid (Vegetal Origin), Sodium Benzoate 
+                            (Soil Association/Ecocert Preservative), Potassium Sorbate (Soil Association/Ecocert Preservative), Sodium DNA (DNA HP), 
+                            Limonene (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
+            "price": 98.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "argentum_nourishing_oil_milk_cleanser.png"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000012",
+            "category": 3,
+            "brand": 3,
+            "name": "Bamboo Cotton Buds",
+            "description": "The main alternatives to plastic cotton buds are paper and bamboo cotton buds. Both alternatives are better than plastic. Bamboo sticks, however, are eco-friendlier than paper cotton buds, which are made from wood and paper glue. The raw bamboo stick needs less resources to be made and is sturdier.",
+            "ingredients": "bamboo, cotton",
+            "price": 4.99,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "bambaw_bamboo_cotton_buds.png"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000013",
+            "category": 2,
+            "brand": 3,
+            "name": "Bamboo Safety Razor",
+            "description": "Traditional safety razors are an effective swap for plastic-free shaving. These zero-waste razors were widely used before the mass production of single-use razors. Major shaving companies, who only had profit in mind, made the traditional razor forgotten. Still, the zero-waste razors are now the best alternative to cartridge razors, for men and women alike.",
+            "ingredients": "bamboo, stainless steel",
+            "price": 21.99,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "bambaw_bamboo_safety_razor.png"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000014",
+            "category": 2,
+            "brand": 3,
+            "name": "Black Metal Safety Razor",
+            "description": "Traditional safety razors are an effective swap for plastic-free shaving. Metal safety razors were widely used before the mass production of single-use razors. Major shaving companies, who only had profit in mind, made the traditional razor forgotten. Still, a double edge razor now the best alternative to cartridge razors, for men and women alike.",
+            "ingredients": "stainless steel",
+            "price": 24.99,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "bambaw_metal_safety_razor_black.png"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000015",
+            "category": 2,
+            "brand": 3,
+            "name": "Rose Gold Metal Safety Razor",
+            "description": "Traditional safety razors are an effective swap for plastic-free shaving. Metal safety razors were widely used before the mass production of single-use razors. Major shaving companies, who only had profit in mind, made the traditional razor forgotten. Still, a double edge razor now the best alternative to cartridge razors, for men and women alike.",
+            "ingredients": "stainless steel",
+            "price": 24.99,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "bambaw_metal_safety_razor_rose_gold.png"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000016",
+            "category": 2,
+            "brand": 3,
+            "name": "Silver Metal Safety Razor",
+            "description": "Traditional safety razors are an effective swap for plastic-free shaving. Metal safety razors were widely used before the mass production of single-use razors. Major shaving companies, who only had profit in mind, made the traditional razor forgotten. Still, a double edge razor now the best alternative to cartridge razors, for men and women alike.",
+            "ingredients": "stainless steel",
+            "price": 24.99,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "bambaw_metal_safety_razor_silver.png"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000017",
+            "category": 3,
+            "brand": 3,
+            "name": "Silk Floss",
+            "description": "Flossing: We all know we should do it more often. Dentists recommend doing it every day. Unfortunately, floss is mostly made of nylon and comes in a disposable plastic packaging. So, basically, it is plastic wrapped in plastic. Being small and lightweight, floss thread is part of the plastic products that most easily enter the environment.",
+            "ingredients": "silk, candelilla wax, peppermint aroma, stainless steel floss dispensers",
+            "price": 9.80,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "bambaw_silk_floss.png"
+        }
+    },
+
+
+
+
+]
+
+
+// template
+
+    // {
+    //     "pk": 0,
+    //     "model": "products.product",
+    //     "fields": {
+    //         "sku": "ep0000000000",
+    //         "category": 0,
+    //         "brand": 0,
+    //         "name": "",
+    //         "description": "",
+    //         "ingredients": "",
+    //         "price": 0.00,
+    //         "is_eco": true,
+    //         "is_crueltyfree": true,
+    //         "is_vegan": true,
+    //         "is_organic": true,
+    //         "is_natural": true,
+    //         "image": ""
+    //     }
+    // },
