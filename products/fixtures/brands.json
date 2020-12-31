@@ -1,0 +1,83 @@
+[
+    {
+        "pk": 1,
+        "model": "products.brand",
+        "fields": {
+            "name": "aesop",
+            "friendly_name": "Aesop",
+            "short_name": "Aesop"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.brand",
+        "fields": {
+            "name": "argentum",
+            "friendly_name": "Argentum",
+            "short_name": "Argentum"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.brand",
+        "fields": {
+            "name": "bambaw",
+            "friendly_name": "Bambaw",
+            "short_name": "Bambaw"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.brand",
+        "fields": {
+            "name": "john_masters_organics",
+            "friendly_name": "John Masters Organics",
+            "short_name": "JMO"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.brand",
+        "fields": {
+            "name": "madara",
+            "friendly_name": "Madara",
+            "short_name": "Madara"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.brand",
+        "fields": {
+            "name": "muhle",
+            "friendly_name": "Muhle",
+            "short_name": "Muhle"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.brand",
+        "fields": {
+            "name": "organically_epic",
+            "friendly_name": "Organically Epic",
+            "short_name": "Org. Epic"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.brand",
+        "fields": {
+            "name": "supply",
+            "friendly_name": "Supply",
+            "short_name": "Supply"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.brand",
+        "fields": {
+            "name": "trilogy",
+            "friendly_name": "Trilogy",
+            "short_name": "Trilogy"
+        }
+    }
+]
