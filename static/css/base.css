@@ -310,6 +310,14 @@ input[type="text"] {
     font-size: 12px;
     text-transform: uppercase;
     text-align: center;
+    /* cut long product names followed by three dots */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 220px;
+    height: 18px;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* homepage section1 */
 
