@@ -7,6 +7,7 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = 'Categories'
+        ordering = ['pk']
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -19,6 +20,9 @@ class Category(models.Model):
 
 
 class Brand(models.Model):
+
+    class Meta:
+        ordering = ['pk']
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -51,7 +55,7 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     class Meta:
-        ordering = ["pk"]
+        ordering = ['pk']
 
     def __str__(self):
         return self.name
