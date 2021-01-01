@@ -20,8 +20,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include ('allauth.urls')),
-    path('', include ('homepage.urls')),
-    path('about/', include ('about.urls')),
-    path('loyalty-programme/', include ('loyalty_programme.urls')),
+    path('accounts/', include('allauth.urls')),
+    path('', include('homepage.urls')),
+    path('about/', include('about.urls')),
+    path('loyalty-programme/', include('loyalty_programme.urls')),
+    path('shop/', include('products.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
