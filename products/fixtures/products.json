@@ -8,16 +8,12 @@
             "brand": 1,
             "name": "B & Tea Balancing Toner",
             "description": "A gentle, alcohol-free blend enhanced with Provitamin B5 and fortifying anti-oxidants. Refines pores, balances and prepares skin for hydration. Suited to most skin types, including combination and sensitive.",
-            "ingredients": "Water (Aqua), Aloe Barbadensis Leaf Juice, Polysorbate 80, Hamamelis Virginiana (Witch Hazel) Water, 
-                            Sodium Gluconate, Sodium Lactate, Benzyl Alcohol, Phenoxyethanol, Sorbitol, Panthenol, Cananga Odorata 
-                            Flower Oil, Disodium EDTA, Sodium Citrate, Benzoic Acid, Camellia Sinensis Leaf Extract, Benzalkonium Chloride, 
-                            Dehydroacetic Acid, Ethylhexylglycerin, Citric Acid, Linalool, Benzyl Benzoate, Benzyl Salicylate, Farnesol, 
-                            Geraniol, Eugenol, Isoeugenol",
+            "ingredients": "Water (Aqua), Aloe Barbadensis Leaf Juice, Polysorbate 80, Hamamelis Virginiana (Witch Hazel) Water, Sodium Gluconate, Sodium Lactate, Benzyl Alcohol, Phenoxyethanol, Sorbitol, Panthenol, Cananga Odorata Flower Oil, Disodium EDTA, Sodium Citrate, Benzoic Acid, Camellia Sinensis Leaf Extract, Benzalkonium Chloride, Dehydroacetic Acid, Ethylhexylglycerin, Citric Acid, Linalool, Benzyl Benzoate, Benzyl Salicylate, Farnesol, Geraniol, Eugenol, Isoeugenol",
             "price": 28.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
             "is_vegan": "True",
-            "is_organic": "True",
+            "is_organic": "False",
             "is_natural": "False",
             "image": "aesop_balancing_toner.png"
         }
@@ -50,16 +46,12 @@
             "brand": 1,
             "name": "Parsley Seed Anti-Oxidant Serum",
             "description": "A lightweight formulation with a complex blend of anti-oxidant rich ingredients in a soothing Aloe Vera base. Hydrates, softens and fortifies the skin. Suited to most skin types, particularly combination and oily.",
-            "ingredients": "Aloe Barbadensis Leaf Juice, Water (Aqua), Polysorbate 80, Sorbitol, PEG-150 Distearate, 
-                            Polysorbate 20, Benzyl Alcohol, Phenoxyethanol, Lavandula Angustifolia (Lavender) Oil, Panthenol, 
-                            Disodium EDTA, Citric Acid, Sodium Citrate, Camellia Sinensis Leaf Extract, Dehydroacetic Acid, 
-                            Ormenis Multicaulis Oil, Vitis Vinifera (Grape) Seed Extract, Carum Petroselinum (Parsley) Seed Oil, 
-                            Linalool, Limonene, Geraniol",
+            "ingredients": "Aloe Barbadensis Leaf Juice, Water (Aqua), Polysorbate 80, Sorbitol, PEG-150 Distearate, Polysorbate 20, Benzyl Alcohol, Phenoxyethanol, Lavandula Angustifolia (Lavender) Oil, Panthenol, Disodium EDTA, Citric Acid, Sodium Citrate, Camellia Sinensis Leaf Extract, Dehydroacetic Acid, Ormenis Multicaulis Oil, Vitis Vinifera (Grape) Seed Extract, Carum Petroselinum (Parsley) Seed Oil, Linalool, Limonene, Geraniol",
             "price": 61.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
             "is_vegan": "True",
-            "is_organic": "True",
+            "is_organic": "False",
             "is_natural": "False",
             "image": "aesop_parsley_seed_antioxidant_serum.png"
         }
@@ -73,12 +65,7 @@
             "brand": 1,
             "name": "Moroccan Neroli Post-Shave Lotion",
             "description": "A unisex hydrator boosted with botanical oils that lightly hydrate and balance skin while pacifying post-shave irritation and aggravation. Suited to normal, combination and sensitive skin",
-            "ingredients": "Water (Aqua), Rosa Canina Fruit Oil, Glycerin, Cetearyl Olivate, Cetearyl Alcohol, Stearic Acid, 
-                            Hamamelis Virginiana (Witch Hazel) Water, Sorbitan Olivate, Butyrospermum Parkii (Shea Butter), Polysorbate 20, 
-                            Phenoxyethanol, Olea Europaea (Olive) Fruit Oil, Fusanus Spicatus Wood Oil, Bisabolol, Panthenol, Sodium Benzoate, 
-                            Disodium EDTA, Sodium Citrate, Pogostemon Cablin Oil, Citrus Aurantium Dulcis (Orange) Flower Oil, Eugenia Caryophyllus 
-                            (Clove) Flower Oil, Zingiber Officinale (Ginger) Root Extract, Benzoic Acid, Farnesol, Eugenol, Linalool, d-Limonene, 
-                            Geraniol",
+            "ingredients": "Water (Aqua), Rosa Canina Fruit Oil, Glycerin, Cetearyl Olivate, Cetearyl Alcohol, Stearic Acid, Hamamelis Virginiana (Witch Hazel) Water, Sorbitan Olivate, Butyrospermum Parkii (Shea Butter), Polysorbate 20, Phenoxyethanol, Olea Europaea (Olive) Fruit Oil, Fusanus Spicatus Wood Oil, Bisabolol, Panthenol, Sodium Benzoate, Disodium EDTA, Sodium Citrate, Pogostemon Cablin Oil, Citrus Aurantium Dulcis (Orange) Flower Oil, Eugenia Caryophyllus (Clove) Flower Oil, Zingiber Officinale (Ginger) Root Extract, Benzoic Acid, Farnesol, Eugenol, Linalool, d-Limonene, Geraniol",
             "price": 42.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -97,10 +84,7 @@
             "brand": 1,
             "name": "Purifying Facial Exfoliant Paste",
             "description": "A cream-based cleansing formulation enhanced with fine Quartz and Lactic Acid to slough away dead skin cells and soften the skin. Suited to most skin types, particularly dry. Frequent travellers, shavers, winter and cool climates",
-            "ingredients": "Water (Aqua), Quartz, Glyceryl Stearate SE, Rosa Canina Fruit Oil, Oenothera Biennis (Evening Primrose) Oil, Glycerin, 
-                            C12-16 Alcohols, Lactic Acid, Sodium Cocoyl Isethionate, Phenoxyethanol, Xanthan Gum, Ormenis Multicaulis Oil, Sodium Hydroxide, Coconut Acid, 
-                            Sclerotium Gum, Lecithin, Pullulan, Lavandula Angustifolia (Lavender) Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil, Disodium EDTA, Sodium 
-                            Isethionate, Silica, Limonene, Linaloo",
+            "ingredients": "Water (Aqua), Quartz, Glyceryl Stearate SE, Rosa Canina Fruit Oil, Oenothera Biennis (Evening Primrose) Oil, Glycerin, C12-16 Alcohols, Lactic Acid, Sodium Cocoyl Isethionate, Phenoxyethanol, Xanthan Gum, Ormenis Multicaulis Oil, Sodium Hydroxide, Coconut Acid, Sclerotium Gum, Lecithin, Pullulan, Lavandula Angustifolia (Lavender) Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil, Disodium EDTA, Sodium Isethionate, Silica, Limonene, Linaloo",
             "price": 41.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -138,11 +122,7 @@
             "brand": 1,
             "name": "Moroccan Neroli Shaving Serum",
             "description": "A blend of hydrating botanicals formulated for maximum slip to facilitate a razor-close shave; also calms and softens the skin. Suited to all skin types.",
-            "ingredients": "Water (Aqua), Sodium Laureth Sulfate, Glycerin, Cocamine Oxide, Polysorbate 20, Sorbitol, Cocamidopropyl Betaine, 
-                            Phenoxyethanol, Hydroxyacetophenone, PEG-18 Glyceryl Oleate/Cocoate, Fusanus Spicatus Wood Oil, Sodium Lauroamphoacetate, 
-                            Panthenol, Saccharide Isomerate, Citrus Aurantium Dulcis (Orange) Flower Oil, Citric Acid, Pogostemon Cablin Oil, 
-                            Aloe Barbadensis Leaf Juice, Linalool, Sodium Chloride, Farnesol, Limonene, Eugenia Caryophyllus (Clove) Flower Oil, 
-                            Eugenol, Glycyrrhiza Glabra (Licorice) Root Extract, Tropolone, Geraniol, Sodium Citrate, Potassium Sorbate, Sodium Benzoate",
+            "ingredients": "Water (Aqua), Sodium Laureth Sulfate, Glycerin, Cocamine Oxide, Polysorbate 20, Sorbitol, Cocamidopropyl Betaine, Phenoxyethanol, Hydroxyacetophenone, PEG-18 Glyceryl Oleate/Cocoate, Fusanus Spicatus Wood Oil, Sodium Lauroamphoacetate, Panthenol, Saccharide Isomerate, Citrus Aurantium Dulcis (Orange) Flower Oil, Citric Acid, Pogostemon Cablin Oil, Aloe Barbadensis Leaf Juice, Linalool, Sodium Chloride, Farnesol, Limonene, Eugenia Caryophyllus (Clove) Flower Oil, Eugenol, Glycyrrhiza Glabra (Licorice) Root Extract, Tropolone, Geraniol, Sodium Citrate, Potassium Sorbate, Sodium Benzoate",
             "price": 30.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -180,14 +160,7 @@
             "brand": 2,
             "name": "hydrating body cream - la lotion infinie",
             "description": "ARgENTUM utilises the inherent strength of silver to deliver la lotion infinie, a natural, protective, super hydrating body cream. After many years of research in the field of dermo-cosmetics, we have formulated a patented fusion of two vital ingredients, Silver Hydrosol & DNA HP, the essence of our award winning la potion infinie.",
-            "ingredients": "Colloidal Silver (Silver Hydrosol), Aqua, Glycerin (from the Karanja Tree), Dicaprylyl Carbonate (Vegetal Origin), 
-                            Butyrospermum Parkii Butter (Shea Butter), Caprylic/Capric Triglyceride (from Coconut Oil), Cetearyl Alcohol, 
-                            Hydrogenated Vegetable Glycerides (RSPO Palm Oil), Argania Spinosa Kernel Oil (Argan Oil), Caffeine, 
-                            Cetearyl Glucoside (Sugar and Coconut Extract), Prunus Amygdalus Dulcis Oil (Sweet Almond Oil), Sodium Stearoyl Glutamate 
-                            (from Vegetal Oil), Sodium Benzoate (Soil Association/Ecocert Preservative), Tocopherol (Vitamin E), Aloe Barbadensis Leaf 
-                            Extract (Aloe Vera Extract), Xanthan Gum (Vegetal Origin), Helianthus Annuus Seed Oil (Sunflower Oil), Potassium Sorbate 
-                            (Soil Association/Ecocert Preservative), Parfum, Citric Acid (Vegetal Origin), Sodium DNA (DNA HP), Sodium Gluconate, 
-                            Limonene (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
+            "ingredients": "Colloidal Silver (Silver Hydrosol), Aqua, Glycerin (from the Karanja Tree), Dicaprylyl Carbonate (Vegetal Origin), Butyrospermum Parkii Butter (Shea Butter), Caprylic/Capric Triglyceride (from Coconut Oil), Cetearyl Alcohol, Hydrogenated Vegetable Glycerides (RSPO Palm Oil), Argania Spinosa Kernel Oil (Argan Oil), Caffeine, Cetearyl Glucoside (Sugar and Coconut Extract), Prunus Amygdalus Dulcis Oil (Sweet Almond Oil), Sodium Stearoyl Glutamate (from Vegetal Oil), Sodium Benzoate (Soil Association/Ecocert Preservative), Tocopherol (Vitamin E), Aloe Barbadensis Leaf Extract (Aloe Vera Extract), Xanthan Gum (Vegetal Origin), Helianthus Annuus Seed Oil (Sunflower Oil), Potassium Sorbate (Soil Association/Ecocert Preservative), Parfum, Citric Acid (Vegetal Origin), Sodium DNA (DNA HP), Sodium Gluconate, Limonene (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
             "price": 84.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -205,13 +178,8 @@
             "category": 3,
             "brand": 2,
             "name": "illuminating hydration bar - le savon lune",
-            "description": "The key to a luminous complexion is hydration, so we have infused le savon lune with our patented fusion of Silver Hydrosol 
-                            & DNA HP to create a soap-free cleanser that helps restore the natural balance of your skin. Our unique formulation is enhanced 
-                            by Bentonite, a colloidal clay composed of aged volcanic ash, traditionally used for its treatment of everyday skincare.",
-            "ingredients": "Disodium Lauryl Sulfosuccinate, Cetearyl Alcohol (Coconut Oil Wax), Triticum Vulgare (Wheat) Starch, Colloidal Silver 
-                            (Silver Hydrosol), Hydrogenated Castor Oil, Glycerin (from the Karanja Tree), Coco Glucoside, Stearic Acid, Butyrospermum 
-                            Parkii Butter (Shea Butter), Cocamidopropyl Betaine, Bentonite, Sodium DNA (DNA HP), Citric Acid, Parfum (Fragrance), Limonene 
-                            (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
+            "description": "The key to a luminous complexion is hydration, so we have infused le savon lune with our patented fusion of Silver Hydrosol & DNA HP to create a soap-free cleanser that helps restore the natural balance of your skin. Our unique formulation is enhanced by Bentonite, a colloidal clay composed of aged volcanic ash, traditionally used for its treatment of everyday skincare.",
+            "ingredients": "Disodium Lauryl Sulfosuccinate, Cetearyl Alcohol (Coconut Oil Wax), Triticum Vulgare (Wheat) Starch, Colloidal Silver (Silver Hydrosol), Hydrogenated Castor Oil, Glycerin (from the Karanja Tree), Coco Glucoside, Stearic Acid, Butyrospermum Parkii Butter (Shea Butter), Cocamidopropyl Betaine, Bentonite, Sodium DNA (DNA HP), Citric Acid, Parfum (Fragrance), Limonene (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
             "price": 104.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -230,10 +198,7 @@
             "brand": 2,
             "name": "nourishing oil milk cleanser - la lune de velours",
             "description": "A nourishing oil milk cleanser that effectively removes make-up, whilst deeply hydrating the skin, combining cutting edge science with natural and organic skin-soothing oils such as Vitamin E, Sweet Almond Oil and Argan Oil. We have formulated a patented fusion of two vital ingredients, Silver Hydrosol & DNA HP, the essence of our award-winning la potion infinie.",
-            "ingredients": "Prunus Amygdalus Dulcis Oil (Sweet Almond Oil), Argania Spinosa Kernel Oil (Argan Oil), Glycerin (from the Karanja Tree), 
-                            Colloidal Silver (Silver Hydrosol), Aqua, Tocopherol Acetate (Vitamin E), Citric Acid (Vegetal Origin), Sodium Benzoate 
-                            (Soil Association/Ecocert Preservative), Potassium Sorbate (Soil Association/Ecocert Preservative), Sodium DNA (DNA HP), 
-                            Limonene (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
+            "ingredients": "Prunus Amygdalus Dulcis Oil (Sweet Almond Oil), Argania Spinosa Kernel Oil (Argan Oil), Glycerin (from the Karanja Tree), Colloidal Silver (Silver Hydrosol), Aqua, Tocopherol Acetate (Vitamin E), Citric Acid (Vegetal Origin), Sodium Benzoate (Soil Association/Ecocert Preservative), Potassium Sorbate (Soil Association/Ecocert Preservative), Sodium DNA (DNA HP), Limonene (Essential Oil), Linalool (Essential Oil), Eugenol (Essential Oil)",
             "price": 98.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -366,13 +331,7 @@
             "brand": 4,
             "name": "Conditioner for Fine Hair with Rosemary & Peppermint",
             "description": "Give fine hair weightless volume and shine with John Masters Organics invigorating Conditioner for Fine Hair with Rosemary & Peppermint. Organic Rosemary Oil extract detoxifies and optimizes conditions for the natural hair cycle, adding body and volume. Organic Peppermint Oil helps to rid hair of build-up while creating a cooling effect to help with circulation.",
-            "ingredients": "Aloe Barbadensis Leaf Juice (Aloe Vera), Cetearyl Alcohol, Water, Glycerin, Cocos Nucifera (Coconut) Oil, Rosmarinus Officinalis (Rosemary) 
-                            Leaf Oil, Mentha Piperita (Peppermint) Oil, Mentha Viridis (Spearmint) Leaf Oi, Oryza Sativa (Rice) Extract, Simmondsia Chinensis 
-                            (Jojoba) Seed Oil, Borago Officinalis Seed Oil, Linum Usitatissimum (Linseed) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Sodium 
-                            Phytate, Calendula Officinalis Flower Extract (Calendula), Foeniculum Vulgare (Fennel) Seed Extract, Equisetum Arvense Leaf Extract 
-                            (Horsetail), Camellia Sinensis Leaf Extract (White Tea), Chamomilla Recutita (Matricaria) Flower Extract, Hippophae Rhamnoides 
-                            (Sea Buckthorn) Fruit Oil, Panthenol (Vitamin B-5), Tocopherol, Behentrimonium Methosulfate, Guar Hydroxypropyltrimonium Chloride, 
-                            Stearalkonium Chloride, Menthol, Dehydroacetic Acid, Benzyl Alcohol, Sodium Benzoate, Potassium Sorbate, Citric Acid, Limonene",
+            "ingredients": "Aloe Barbadensis Leaf Juice (Aloe Vera), Cetearyl Alcohol, Water, Glycerin, Cocos Nucifera (Coconut) Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil, Mentha Piperita (Peppermint) Oil, Mentha Viridis (Spearmint) Leaf Oi, Oryza Sativa (Rice) Extract, Simmondsia Chinensis (Jojoba) Seed Oil, Borago Officinalis Seed Oil, Linum Usitatissimum (Linseed) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Sodium Phytate, Calendula Officinalis Flower Extract (Calendula), Foeniculum Vulgare (Fennel) Seed Extract, Equisetum Arvense Leaf Extract (Horsetail), Camellia Sinensis Leaf Extract (White Tea), Chamomilla Recutita (Matricaria) Flower Extract, Hippophae Rhamnoides (Sea Buckthorn) Fruit Oil, Panthenol (Vitamin B-5), Tocopherol, Behentrimonium Methosulfate, Guar Hydroxypropyltrimonium Chloride, Stearalkonium Chloride, Menthol, Dehydroacetic Acid, Benzyl Alcohol, Sodium Benzoate, Potassium Sorbate, Citric Acid, Limonene",
             "price": 24.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -391,12 +350,7 @@
             "brand": 4,
             "name": "Hair Milk with Rose & Apricot",
             "description": "John Masters Organics Hair Milk with Rose & Apricot is a lightweight, leave-in treatment and styler that offers major moisture and shine. This silicone-free formula provides the perfect level of hydration to protect and soften strands, leaving them shiny and more manageable. This hydrating, lightweight styling product is ideal for revitalizing dull, dry hair.",
-            "ingredients": "Aloe Barbadensis Leaf Juice (Aloe), Rosa Centifolia Flower Water (Rose), Coconut Alkanes, Glycerin, Cetearyl Alcohol, 
-                            Coco-Caprylate/Caprate, Behentrimonium Methosulfate, Behentrimonium Chloride, Cetyl Alcohol, Stearyl Alcohol, Helianthus Annuus 
-                            (Sunflower) Seed Oil, Panthenol (Vitamin B5), Sodium PCA, Pelargonium Graveolens Oil (Geranium), Gluconolactone, Citrus 
-                            Aurantium Dulcis (Orange) Peel Oil, Sodium Benzoate, Prunus Armeniaca (Apricot) Kernel Oil, Theobroma Grandiflorum Seed Butter 
-                            (Cupuaçu), Borago Officinalis Seed Oil (Borage), Calcium Gluconate, Xylitylglucoside, Anthemis Nobilis Flower Oil (Chamomile), 
-                            Anhydroxylitol, Xylitol, Limonene, Citronellol, Geraniol, Linalool, Citral",
+            "ingredients": "Aloe Barbadensis Leaf Juice (Aloe), Rosa Centifolia Flower Water (Rose), Coconut Alkanes, Glycerin, Cetearyl Alcohol, Coco-Caprylate/Caprate, Behentrimonium Methosulfate, Behentrimonium Chloride, Cetyl Alcohol, Stearyl Alcohol, Helianthus Annuus (Sunflower) Seed Oil, Panthenol (Vitamin B5), Sodium PCA, Pelargonium Graveolens Oil (Geranium), Gluconolactone, Citrus Aurantium Dulcis (Orange) Peel Oil, Sodium Benzoate, Prunus Armeniaca (Apricot) Kernel Oil, Theobroma Grandiflorum Seed Butter (Cupuaçu), Borago Officinalis Seed Oil (Borage), Calcium Gluconate, Xylitylglucoside, Anthemis Nobilis Flower Oil (Chamomile), Anhydroxylitol, Xylitol, Limonene, Citronellol, Geraniol, Linalool, Citral",
             "price": 24.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -415,12 +369,7 @@
             "brand": 4,
             "name": "Hair Paste",
             "description": "Great for men and women with short or long hair (and everything in between), it offers incredible volume and texture with just the right amount of hold for every style you can whip up. A soft matte finish completes the look. Offers incredible flexibility while styling, gives hair unbelievable texture, and locks down an effortless hold to your look.",
-            "ingredients": "Aloe Barbadensis (Aloe Vera) Leaf Juice, Oryza Sativa (Rice) Extract, Cera Alba (Beeswax), Mel (Honey), Bentonite, 
-                            Tapioca Starch, Stearic Acid, Myristic Acid, Glyceryl Stearate SE, Cetearyl Olivate, Sorbitan Olivate, Butyrospermum Parkii 
-                            (Shea) Butter, Helianthus Annuus (Sunflower) Seed Oil, Linum Usitatissimum (Linseed) Seed Oil, Aqua (Water), Theobroma 
-                            Cacao (Cocoa) Seed Butter, Persea Gratissima (Avocado) Oil, Citrus Bergamia (Bergamot) Fruit Oil, Panthenol (Vitamin B5), 
-                            Boswellia Carteri (Frankincense) Oil, Equisetum Arvense (Horsetail) Extract, Achillea Millefolium (Yarrow) Extract, 
-                            Lauric Acid, Palmitic Acid, Citric Acid, Potassium Sorbate, Sodium Benzoate, Limonene, Linalool",
+            "ingredients": "Aloe Barbadensis (Aloe Vera) Leaf Juice, Oryza Sativa (Rice) Extract, Cera Alba (Beeswax), Mel (Honey), Bentonite, Tapioca Starch, Stearic Acid, Myristic Acid, Glyceryl Stearate SE, Cetearyl Olivate, Sorbitan Olivate, Butyrospermum Parkii (Shea) Butter, Helianthus Annuus (Sunflower) Seed Oil, Linum Usitatissimum (Linseed) Seed Oil, Aqua (Water), Theobroma Cacao (Cocoa) Seed Butter, Persea Gratissima (Avocado) Oil, Citrus Bergamia (Bergamot) Fruit Oil, Panthenol (Vitamin B5), Boswellia Carteri (Frankincense) Oil, Equisetum Arvense (Horsetail) Extract, Achillea Millefolium (Yarrow) Extract, Lauric Acid, Palmitic Acid, Citric Acid, Potassium Sorbate, Sodium Benzoate, Limonene, Linalool",
             "price": 19.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -439,8 +388,7 @@
             "brand": 4,
             "name": "Pineapple Lip Calm",
             "description": "Soothe and soften dry, chapped lips with John Masters Organics' nourishing Lip Calm formula in an exclusive Pineapple flavor. This fan-favorite lip balm is created with the finest organic ingredients like jojoba, olive and borage oils. This balm provides impeccable softening, deep hydration and unbeatable protection against cold weather and wind.",
-            "ingredients": "Helianthus Annuus (Sunflower) Seed Oil, Beeswax, Olea Europaea (Olive) Fruit Oil, Simmondsia Chinensis (Jojoba) Seed Oil, 
-                            Flavor (Pineapple), Linum Usitatissimum (Linseed) Seed Oil, Borago Officinalis Seed Oil, Rosa Moschata Seed Oil (Rosehip)",
+            "ingredients": "Helianthus Annuus (Sunflower) Seed Oil, Beeswax, Olea Europaea (Olive) Fruit Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Flavor (Pineapple), Linum Usitatissimum (Linseed) Seed Oil, Borago Officinalis Seed Oil, Rosa Moschata Seed Oil (Rosehip)",
             "price": 8.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -459,16 +407,7 @@
             "brand": 4,
             "name": "Scalp Follicle Treatment & Volumizer",
             "description": "Powered by a proprietary combination of nature's well-known cure-alls, John Masters Organics' Scalp Follicle Treatment & Volumizer creates the optimal conditions for fuller, healthier-looking hair. Organic Irish moss strengthens the roots and moisturizes dry scalp. A combination of organic extracts nourishes and balances sebum levels, while thyme renews the scalp.",
-            "ingredients": "Water, Aloe Barbadensis Leaf Juice (Aloe Vera), Cocoyl Proline, Glycerin, Hamamelis Virginiana (Witch Hazel) Extract, 
-                            Lavandula Angustifolia (Lavender) Flower Oil, Hydrolyzed Barley Protein, Centella Asiatica Extract (Gotu Kola), Chondrus 
-                            Crispus Extract (Irish Moss), Plantago Major Leaf Extract (Plantain Leaf), Arctium Lappa Root Extract (Burdock Root), 
-                            Urtica Dioica (Nettle) Leaf Extract, Yucca Schidigera Leaf/Root/Stem Extract, Arnica Montana Flower Extract, Eucalyptus 
-                            Globulus Leaf Oil, Camellia Sinensis Leaf Extract (White Tea), Lavandula Angustifolia (Lavender) Flower/Leaf/Stem Extract, 
-                            Carica Papaya (Papaya) Fruit Extract, Calendula Officinalis Flower Extract, Cucumis Sativus (Cucumber) Fruit Extract, 
-                            Rosmarinus Officinalis (Rosemary) Leaf Oil, Anthemis Nobilis Flower Extract (Chamomile), Thymus Vulgaris (Thyme) Leaf Oil, 
-                            Phytic Acid, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Triticum Vulgare (Wheat) 
-                            Germ Oil, Linum Usitatissimum (Linseed) Seed Oil, Ascorbyl Palmitate, Salicylic Acid, Sorbic Acid, Benzyl Alcohol, Potassium 
-                            Sorbate, Linalool, Limonene, Geraniol",
+            "ingredients": "Water, Aloe Barbadensis Leaf Juice (Aloe Vera), Cocoyl Proline, Glycerin, Hamamelis Virginiana (Witch Hazel) Extract, Lavandula Angustifolia (Lavender) Flower Oil, Hydrolyzed Barley Protein, Centella Asiatica Extract (Gotu Kola), Chondrus Crispus Extract (Irish Moss), Plantago Major Leaf Extract (Plantain Leaf), Arctium Lappa Root Extract (Burdock Root), Urtica Dioica (Nettle) Leaf Extract, Yucca Schidigera Leaf/Root/Stem Extract, Arnica Montana Flower Extract, Eucalyptus Globulus Leaf Oil, Camellia Sinensis Leaf Extract (White Tea), Lavandula Angustifolia (Lavender) Flower/Leaf/Stem Extract, Carica Papaya (Papaya) Fruit Extract, Calendula Officinalis Flower Extract, Cucumis Sativus (Cucumber) Fruit Extract, Rosmarinus Officinalis (Rosemary) Leaf Oil, Anthemis Nobilis Flower Extract (Chamomile), Thymus Vulgaris (Thyme) Leaf Oil, Phytic Acid, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Triticum Vulgare (Wheat) Germ Oil, Linum Usitatissimum (Linseed) Seed Oil, Ascorbyl Palmitate, Salicylic Acid, Sorbic Acid, Benzyl Alcohol, Potassium Sorbate, Linalool, Limonene, Geraniol",
             "price": 24.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -487,9 +426,7 @@
             "brand": 4,
             "name": "Scalp Purifying Serum with Spearmint & Meadowsweet",
             "description": "John Masters Organics' Scalp Purifying Serum with Spearmint & Meadowsweet harnesses the natural properties of cooling spearmint and peppermint, natural-astringent meadowsweet extract and strengthening vitamin B complex. This revitalizing formula helps to detoxify, purify and nourish the scalp and restore hair health.",
-            "ingredients": "Water, Aloe Barbadensis Leaf Juice, Glycerin, Triethyl Citrate, Hydrolyzed Barley Protein, Spiraea Ulmaria Flower Extract 
-                            (Meadowsweet), Mentha Piperita (Peppermint) Oil, Mentha Viridis (Spearmint) Leaf Oil, Gaultheria Procumbens (Wintergreen) 
-                            Leaf Oil, Tamarindus Indica Seed Polysaccharide, Xanthan Gum, Cellulose Gum, Sodium Benzoate, Potassium Sorbate, Limonene",
+            "ingredients": "Water, Aloe Barbadensis Leaf Juice, Glycerin, Triethyl Citrate, Hydrolyzed Barley Protein, Spiraea Ulmaria Flower Extract (Meadowsweet), Mentha Piperita (Peppermint) Oil, Mentha Viridis (Spearmint) Leaf Oil, Gaultheria Procumbens (Wintergreen) Leaf Oil, Tamarindus Indica Seed Polysaccharide, Xanthan Gum, Cellulose Gum, Sodium Benzoate, Potassium Sorbate, Limonene",
             "price": 24.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -508,16 +445,7 @@
             "brand": 4,
             "name": "Scalp Stimulating Shampoo with Spearmint & Meadowsweet",
             "description": "Powered by organic spearmint leaf oil and meadowsweet flower extract targets oily scalp conditions by detoxifying the scalp and regulating sebum production. Organic spearmint and peppermint oils stimulate and refresh the scalp while organic meadowsweet flower extract and eucalyptus oil act as natural astringents to balance sebum levels and improve scalp health.",
-            "ingredients": "Aloe Barbadensis Leaf Juice (Aloe Vera), Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Glycerin, Water, 
-                            Sodium Levulinate, Mentha Viridis (Spearmint) Leaf Oil, Spiraea Ulmaria Flower Extract (Meadowsweet), Mentha Piperita 
-                            (Peppermint) Oil, Illicium Verum (Anise) Fruit/Seed Oil, Eugenia Caryophyllus (Clove) Leaf Oil, Mentha Arvensis Leaf Oil, 
-                            Gaultheria Procumbens (Wintergreen) Leaf Oil, Apium Graveolens (Celery) Seed Extract, Lactobacillus/Punica Granatum Fruit 
-                            Ferment Extract (Pomegranate), Capsicum Frutescens Fruit Extract, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Smithsonite 
-                            Extract, Eucalyptus Globulus Leaf Oil (Eucalyptus), Helianthus Annuus (Sunflower) Seed Oil, Oenothera Biennis (Evening 
-                            Primrose) Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Linum Usitatissimum (Linseed) Seed Oil, Tocopheryl Acetate 
-                            (Vitamin E), Panthenol (Vitamin B-5), Mentha Viridis (Spearmint) Leaf Oil, Mentha Piperita (Peppermint) Oil, Gaultheria 
-                            Procumbens (Wintergreen) Leaf Oil, Hydrolyzed Soy Protein, Decyl Glucoside, Sodium Phytate, Sodium PCA, Caprylic/Capric 
-                            Triglyceride, Caramel, Potassium Sorbate, Sodium Benzoate, Citric Acid, Limonene",
+            "ingredients": "Aloe Barbadensis Leaf Juice (Aloe Vera), Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Glycerin, Water, Sodium Levulinate, Mentha Viridis (Spearmint) Leaf Oil, Spiraea Ulmaria Flower Extract (Meadowsweet), Mentha Piperita (Peppermint) Oil, Illicium Verum (Anise) Fruit/Seed Oil, Eugenia Caryophyllus (Clove) Leaf Oil, Mentha Arvensis Leaf Oil, Gaultheria Procumbens (Wintergreen) Leaf Oil, Apium Graveolens (Celery) Seed Extract, Lactobacillus/Punica Granatum Fruit Ferment Extract (Pomegranate), Capsicum Frutescens Fruit Extract, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Smithsonite Extract, Eucalyptus Globulus Leaf Oil (Eucalyptus), Helianthus Annuus (Sunflower) Seed Oil, Oenothera Biennis (Evening Primrose) Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Linum Usitatissimum (Linseed) Seed Oil, Tocopheryl Acetate (Vitamin E), Panthenol (Vitamin B-5), Mentha Viridis (Spearmint) Leaf Oil, Mentha Piperita (Peppermint) Oil, Gaultheria Procumbens (Wintergreen) Leaf Oil, Hydrolyzed Soy Protein, Decyl Glucoside, Sodium Phytate, Sodium PCA, Caprylic/Capric Triglyceride, Caramel, Potassium Sorbate, Sodium Benzoate, Citric Acid, Limonene",
             "price": 24.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -536,15 +464,7 @@
             "brand": 4,
             "name": "Lavender Rosemary Shampoo for normal hair",
             "description": "Lavender and rosemary extracts are combined with 13 other certified organic ingredients plus soy protein to leave hair healthy, shiny and manageable. Does not contain sodium lauryl sulfate. Safe for color-treated hair.",
-            "ingredients": "Aloe barbadensis (aloe vera leaf juice) gel, aqua (water), decyl glucoside, sodium lauroamphoacetate, sodium cocoyl 
-                            sulfoacetate, babassuamidopropyl betaine, panthenol (vitamin B5), lavandula angustifolia (lavender) oil, rosmarinus 
-                            officinalis (rosemary) leaf oil, hydrolyzed soy protein, wheat amino acids, sorbitol, symphytum officinale (comfrey) 
-                            leaf extract, chamomilla recutica (chamomile) flower extract, lavandula angustifolia (lavender) flower/leaf/stem extract, 
-                            urtica dioica (nettle) root extract, equisetum hiemale (horsetail) leaf/stem extract, achillea millefolium (yarrow) 
-                            extract, camellia sinensis (white tea) extract, salix alba (willow) bark extract, lonicera caprifolium (honeysuckle) 
-                            flower extract, potassium sorbate, sodium benzoate, guar hydroxypropyl trimonium chloride, linum usitatissimum (flaxseed) 
-                            seed oil, borago officinalis (borage) seed oil, helianthus annuus (sunflower) seed oil, simmondsia chinensis (jojoba) 
-                            seed oil, tocopherol, sulfur, glycerin",
+            "ingredients": "Aloe barbadensis (aloe vera leaf juice) gel, aqua (water), decyl glucoside, sodium lauroamphoacetate, sodium cocoyl sulfoacetate, babassuamidopropyl betaine, panthenol (vitamin B5), lavandula angustifolia (lavender) oil, rosmarinus officinalis (rosemary) leaf oil, hydrolyzed soy protein, wheat amino acids, sorbitol, symphytum officinale (comfrey) leaf extract, chamomilla recutica (chamomile) flower extract, lavandula angustifolia (lavender) flower/leaf/stem extract, urtica dioica (nettle) root extract, equisetum hiemale (horsetail) leaf/stem extract, achillea millefolium (yarrow) extract, camellia sinensis (white tea) extract, salix alba (willow) bark extract, lonicera caprifolium (honeysuckle) flower extract, potassium sorbate, sodium benzoate, guar hydroxypropyl trimonium chloride, linum usitatissimum (flaxseed) seed oil, borago officinalis (borage) seed oil, helianthus annuus (sunflower) seed oil, simmondsia chinensis (jojoba) seed oil, tocopherol, sulfur, glycerin",
             "price": 23.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -563,8 +483,7 @@
             "brand": 4,
             "name": "Travel Kit",
             "description": "A complete set of four essential best sellers for your hair and body care needs in a beautiful, eco-friendly travel bag. Travel kit is phthalate-free – made from organic cotton denim and EVA/PEVA.",
-            "ingredients": "lavander rosemary shampoo for normal hair, blood orange and vanilla body milk, blood orange and vanilla body wash, citrus 
-                            and neroli detangler, eco-friendly travel bag",
+            "ingredients": "lavander rosemary shampoo for normal hair, blood orange and vanilla body milk, blood orange and vanilla body wash, citrus and neroli detangler, eco-friendly travel bag",
             "price": 19.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -583,9 +502,7 @@
             "brand": 5,
             "name": "Blanc Hand and Body Soap",
             "description": "Infused with warm, noble notes of jasmine and meadowsweet, as well as hints of ripened fruit, this 100% natural, fragrant soap celebrates the beauty of the painfully short Northern summers. Suitable for body and hands. Enriched with natural essential oils and hydrating plant sugars, leaves your skin clean, silky smooth and soft.",
-            "ingredients": "Sodium Palmate, Sodium cocoate, Aqua, Glycerin, Aroma, Titanium Dioxide (CI 77891), Sodium Citrate, Mica (CI 77019), 
-                            Betaine, Filipendula Ulmaria (Meadowsweet) Flower Extract, Jasminum Officinale (Jasmine) Flower Extract, Hydrolyzed Algin, 
-                            Limonene, Linalool, Citronellol, Geraniol",
+            "ingredients": "Sodium Palmate, Sodium cocoate, Aqua, Glycerin, Aroma, Titanium Dioxide (CI 77891), Sodium Citrate, Mica (CI 77019), Betaine, Filipendula Ulmaria (Meadowsweet) Flower Extract, Jasminum Officinale (Jasmine) Flower Extract, Hydrolyzed Algin, Limonene, Linalool, Citronellol, Geraniol",
             "price": 6.95,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -604,8 +521,7 @@
             "brand": 5,
             "name": "",
             "description": "Purifying and nourishing detox soap with activated charcoal and orris-pine fragrance. The purifying power of charcoal draws out toxins and impurities to deeply, yet gently, cleanse your skin. Mysterious notes of orris and pine feel like a revitalising swim in an unspoilt forest lake. Based on natural coconut oil. Sulfate, palm and microplastic free. 100% biodegradable.",
-            "ingredients": "Sodium cocoate, Aqua, Glycerin, Coconut Acid, Charcoal Powder, Aroma, Simmondsia Chinensis (Jojoba) Seed Oil, 
-                            Sodium Citrate, Sodium Chloride, Betaine, Linalool",
+            "ingredients": "Sodium cocoate, Aqua, Glycerin, Coconut Acid, Charcoal Powder, Aroma, Simmondsia Chinensis (Jojoba) Seed Oil, Sodium Citrate, Sodium Chloride, Betaine, Linalool",
             "price": 8.95,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -624,8 +540,7 @@
             "brand": 5,
             "name": "Volcano Scrub Soap",
             "description": "Scrub soap with volcanic minerals and natural cedar-lime fragrance. Black lava sand gently removes all impurities and dead cells, leaving your skin refreshed, nourished and silky smooth, while the bright, uplifting notes of cedar and lime soon dispel all your grumpiness and fatigue. Based on natural coconut oil. Sulfate, palm and microplastic free. 100% biodegradable.",
-            "ingredients": "Sodium cocoate, Aqua, Glycerin, Coconut Acid, Aroma, Titanium Dioxide (CI 77891), Volcanic Sand, Simmondsia Chinensis 
-                            (Jojoba) Seed Oil, Sodium Citrate, Sodium Chloride, Mica (CI 77019), Betaine, Eugenol, Limonene, Linalool",
+            "ingredients": "Sodium cocoate, Aqua, Glycerin, Coconut Acid, Aroma, Titanium Dioxide (CI 77891), Volcanic Sand, Simmondsia Chinensis (Jojoba) Seed Oil, Sodium Citrate, Sodium Chloride, Mica (CI 77019), Betaine, Eugenol, Limonene, Linalool",
             "price": 8.95,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -653,7 +568,8 @@
             "is_natural": "True",
             "image": "muhle_rytmo_shaving_set_mach3.png"
         }
-        {
+    },
+    {
         "pk": 31,
         "model": "products.product",
         "fields": {
@@ -871,14 +787,7 @@
             "brand": 8,
             "name": "Feel Good Face Wash",
             "description": "This isn't a regular, run-of-the-mill face wash. It's packed with powerful, plant-based ingredients that wash away impurities and refresh your skin. Bottom line? Don't just wash your face - make it feel good.",
-            "ingredients": "organic aloe barbadensis leaf juice, sodium lauroyl methyl isethionate (a sulfate-free, coconut-derived cleanser), cocamidopropyl 
-                            hydroxysultaine, acrylates/palmeth-25 acrylate copolymer, glycerin, decyl glucoside (coconut-derived), sodium hyaluronate, 
-                            panthenol, sodium PCA, sorbitol, sodium lactate, proline, sodium lauryl sulfoacetate (sulfate-free, from coconut), disodium 
-                            laureth sulfosuccinate (sulfate-free, from coconut), citrullus lanatus (watermelon) fruit extract, lens esculenta (lentil) 
-                            fruit extract, rosmarinus officinalis (rosemary) leaf extract, quillaja saponaria (soap) bark extract, saccharum officinarum 
-                            (sugarcane) extract, pyrus malus (apple) fruit extract, camellia sinensis (green tea) leaf extract, citrus aurantium dulcis 
-                            (orange) fruit extract, citrus limon (lemon) fruit extract, tocopherol, caprylyl glycol, hexylene glycol, phenoxyethanol 
-                            (a preservative), ethylhexylglycerin (a preservative), sodium hydroxide, fragrance",
+            "ingredients": "organic aloe barbadensis leaf juice, sodium lauroyl methyl isethionate (a sulfate-free, coconut-derived cleanser), cocamidopropyl hydroxysultaine, acrylates/palmeth-25 acrylate copolymer, glycerin, decyl glucoside (coconut-derived), sodium hyaluronate, panthenol, sodium PCA, sorbitol, sodium lactate, proline, sodium lauryl sulfoacetate (sulfate-free, from coconut), disodium laureth sulfosuccinate (sulfate-free, from coconut), citrullus lanatus (watermelon) fruit extract, lens esculenta (lentil) fruit extract, rosmarinus officinalis (rosemary) leaf extract, quillaja saponaria (soap) bark extract, saccharum officinarum (sugarcane) extract, pyrus malus (apple) fruit extract, camellia sinensis (green tea) leaf extract, citrus aurantium dulcis (orange) fruit extract, citrus limon (lemon) fruit extract, tocopherol, caprylyl glycol, hexylene glycol, phenoxyethanol (a preservative), ethylhexylglycerin (a preservative), sodium hydroxide, fragrance",
             "price": 16.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -897,8 +806,7 @@
             "brand": 8,
             "name": "Healing Post Shave",
             "description": "Heal and restore your skin after shaving with a refreshing blend of toning witch hazel and soothing aloe. Our alcohol-free formula is loaded with glycerin, aloe vera, and shea to calm sensitive skin post-shave or anytime.",
-            "ingredients": "Organic Aloe Barbadensis Leaf Juice, Polysorbate 20, Glycerin, Hamamelis Virginiana (Witch Hazel) Water, Fragrance, Allantoin, 
-                            Butyrospermum Parkii (Shea) Butter, Tocopherol, Phenoxyethanol, Ethylhexylglycerin, Sodium Hydroxide",
+            "ingredients": "Organic Aloe Barbadensis Leaf Juice, Polysorbate 20, Glycerin, Hamamelis Virginiana (Witch Hazel) Water, Fragrance, Allantoin, Butyrospermum Parkii (Shea) Butter, Tocopherol, Phenoxyethanol, Ethylhexylglycerin, Sodium Hydroxide",
             "price": 16.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -974,14 +882,7 @@
             "brand": 8,
             "name": "Multi Purpose Moisturizer",
             "description": "This is a super-concentrated tube of superior skin food. It's loaded with the most powerful, plant-based ingredients on the planet, packed into one simple product. Think of it as your Swiss Army knife for better skin.",
-            "ingredients": "organic aloe barbadensis leaf juice, caprylic/capric tryglyceride, glycerin, squalane, cetearyl olivate, stearic acid, 
-                            pentylene glycol, cetyl alcohol, dimethicone, sorbitan olivate, cetearyl alcohol, sodium hyaluronate, panthenol, allantoin, 
-                            sodium PCA, glyceryl glucoside, ceteareth-20, taurine, sodium lactate, lens esculenta (lentil) fruit extract, citrullus lanatus 
-                            (watermelon) fruit extract, paullinia cupana (guarana) extract, acanthopanax senticosus (eleuthero) root extract, camellia 
-                            sinensis (green tea) leaf extract, symphytum officinale (comfrey) root extract, pyrus malus (apple) fruit extract, butyrospermum parkii 
-                            (shea) butter, brassica campestris seed oil, linum usitatissimum seed oil, tocopherol, tetrahexyldecyl ascorbate, 
-                            chlorella vulgaris/lupinus albus protein ferment, xantham gum, carbomer, caprylyl glycol, hexylene glycol, phenoxyethanol, 
-                            ethylhexylglycerin, sodium hydroxide",
+            "ingredients": "organic aloe barbadensis leaf juice, caprylic/capric tryglyceride, glycerin, squalane, cetearyl olivate, stearic acid, pentylene glycol, cetyl alcohol, dimethicone, sorbitan olivate, cetearyl alcohol, sodium hyaluronate, panthenol, allantoin, sodium PCA, glyceryl glucoside, ceteareth-20, taurine, sodium lactate, lens esculenta (lentil) fruit extract, citrullus lanatus (watermelon) fruit extract, paullinia cupana (guarana) extract, acanthopanax senticosus (eleuthero) root extract, camellia sinensis (green tea) leaf extract, symphytum officinale (comfrey) root extract, pyrus malus (apple) fruit extract, butyrospermum parkii (shea) butter, brassica campestris seed oil, linum usitatissimum seed oil, tocopherol, tetrahexyldecyl ascorbate, chlorella vulgaris/lupinus albus protein ferment, xantham gum, carbomer, caprylyl glycol, hexylene glycol, phenoxyethanol, ethylhexylglycerin, sodium hydroxide",
             "price": 20.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -1114,10 +1015,7 @@
             "brand": 8,
             "name": "Ultra Lather Shaving Cream",
             "description": "Our super concentrated shave cream builds a thick lather for the ultimate, irritation-free shave. Glycerin, shea butter, and jojoba oil provide superior glide and restore moisture to worn skin. It comes packaged in a glass 4 oz jar. This shaving cream requires a shaving brush to build a proper lather.",
-            "ingredients": "Water, Stearic Acid, Sodium Methyl Cocoyl Taurate, Myristic Acid, Coconut Acid, Glycerin, Potassium Hydroxide, Butyrospermum 
-                            Parkii (Shea) Butter, Kaolin, Simmondsia Chinensis (Jojoba) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Theobroma Cacao 
-                            (Cocoa) Seed Butter, Mangifera Indica (Mango) Seed Butter, Tocopherol, Phenoxyethanol , Ethylhexylglycerin, Sodium Hydroxide, 
-                            Fragrance",
+            "ingredients": "Water, Stearic Acid, Sodium Methyl Cocoyl Taurate, Myristic Acid, Coconut Acid, Glycerin, Potassium Hydroxide, Butyrospermum Parkii (Shea) Butter, Kaolin, Simmondsia Chinensis (Jojoba) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Theobroma Cacao (Cocoa) Seed Butter, Mangifera Indica (Mango) Seed Butter, Tocopherol, Phenoxyethanol , Ethylhexylglycerin, Sodium Hydroxide, Fragrance",
             "price": 18.00,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -1136,9 +1034,7 @@
             "brand": 9,
             "name": "Transformation Cleansing Oil ",
             "description": "This certified natural, silky, pure plant cleansing oil effortlessly melts away make-up and impurities, transforming from an oil to cleansing milk when emulsified with water. Enriched with nourishing rosehip, sweet almond and papaya this gentle cleanser, cleanses skin without stripping its moisture, leaving skin feeling soft, hydrated and perfectly clean.",
-            "ingredients": "Prunus Amygdalus Dulcis (Sweet Almond) Oil, Coco-Caprylate, Vitis Vinifera (Grape) Seed Oil, Rosa Canina (Rosehip) Seed Oil, 
-                            Carica Papaya (Papaya) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Rosmarinus Officinalis (Rosemary) Leaf Extract, 
-                            Tocopheryl Acetate (Vitamin E), Parfum, Citronellol, Geraniol, Limonene, Linalool",
+            "ingredients": "Prunus Amygdalus Dulcis (Sweet Almond) Oil, Coco-Caprylate, Vitis Vinifera (Grape) Seed Oil, Rosa Canina (Rosehip) Seed Oil, Carica Papaya (Papaya) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Rosmarinus Officinalis (Rosemary) Leaf Extract, Tocopheryl Acetate (Vitamin E), Parfum, Citronellol, Geraniol, Limonene, Linalool",
             "price": 21.50,
             "is_eco": "True",
             "is_crueltyfree": "True",
@@ -1157,13 +1053,7 @@
             "brand": 9,
             "name": "Ultra Hydrating Face Cream",
             "description": "Rich but easily absorbed, you'll banish dry skin with this intensely nourishing cream. The ultimate in hydration, it's designed to deliver immediate relief and lasting comfort for a soft, smooth complexion.",
-            "ingredients": "Aqua (water), Prunus amygdalus dulcis oil, Ricinus communis seed oil, Cetearyl alcohol, Glyceryl stearate, Glycerin (vegetable), 
-                            Honey (mel), Caprylic/capric triglyceride, Oenothera biennis seed oil,Cocos nucifera oil, Cetearyl wheat straw glycosides (and) 
-                            cetearyl alcohol, Rosa Canina (Rosehip) Seed Oil, Solanum Lycopersicum (Tomato) Seed Oil (and) Caprylic/Capric Triglyceride (and) 
-                            Vaccinium Macrocarpon (Cranberry) Seed Oil (and) Helianthus Annuus Seed Oil (and) Tocopherol, Lycopene, Euterpe Oleracea (Acai) 
-                            Fruit Oil (and) Tocopherol, Avena Sativa (Oat) Kernel Extract , Persea gratissima, Tocopheryl acetate, Aloe barbadenis leaf extract, 
-                            Lavandula angustifolia oil, Parfum, Sodium stearoyl glutamate, Citric acid, Dehydroacetic acid (and) benzyl alcohol, Geraniol, 
-                            Citronellol, Limonene, Linalool",
+            "ingredients": "Aqua (water), Prunus amygdalus dulcis oil, Ricinus communis seed oil, Cetearyl alcohol, Glyceryl stearate, Glycerin (vegetable), Honey (mel), Caprylic/capric triglyceride, Oenothera biennis seed oil,Cocos nucifera oil, Cetearyl wheat straw glycosides (and) cetearyl alcohol, Rosa Canina (Rosehip) Seed Oil, Solanum Lycopersicum (Tomato) Seed Oil (and) Caprylic/Capric Triglyceride (and) Vaccinium Macrocarpon (Cranberry) Seed Oil (and) Helianthus Annuus Seed Oil (and) Tocopherol, Lycopene, Euterpe Oleracea (Acai) Fruit Oil (and) Tocopherol, Avena Sativa (Oat) Kernel Extract , Persea gratissima, Tocopheryl acetate, Aloe barbadenis leaf extract, Lavandula angustifolia oil, Parfum, Sodium stearoyl glutamate, Citric acid, Dehydroacetic acid (and) benzyl alcohol, Geraniol, Citronellol, Limonene, Linalool",
             "price": 25.50,
             "is_eco": "True",
             "is_crueltyfree": "True",
