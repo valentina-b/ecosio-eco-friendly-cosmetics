@@ -4,5 +4,39 @@
 {% block title %}shop eco-friendly products{% endblock %}
 
 {% block content %}
-    {% include 'products/includes/top_section.html' %}
+    {% include 'products/includes/breadcrumbs.html' %}
+
+
+<div class="row hp-section-1">
+    <div class="container">
+        <div class="row product-card-row">
+
+
+    {% for product in products %}
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="div-product-card float-lg-left">
+                <div class="div-product-card-img">
+                    <img src="../media/{{ product.image }}" alt="">
+                </div>
+                <p class="product-card-title">{{ product.name }}</p>
+                <p class="product-card-brand-price">
+                    <span class="product-card-brand">{{ product.brand }}</span>
+                    |
+                    <span class="product-card-price">{{ product.price }}</span>€
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="cta cta-white">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
 {% endblock %}
