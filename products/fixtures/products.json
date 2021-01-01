@@ -729,33 +729,448 @@
             "image": "organically_epic_toothbrush.png"
         }
     },
-
-
-
-
-
-
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000035",
+            "category": 4,
+            "brand": 8,
+            "name": "The Single Edge Starter Set - Classic Matte",
+            "description": "The Single Edge Starter Set includes everything you need to get the best shave of your life. The hardware and the skincare. Uncomplicated, unrivaled. Includes three signature shave settings to customize your shave.",
+            "ingredients": "The Single Edge 2.0 razor, 8 blades, Ultra Lather Shaving Cream, Healing Post Shave, Silvertip Shave Brush",
+            "price": 135.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_alloy_classic_matte_the_single_edge_starter_set.png"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000036",
+            "category": 4,
+            "brand": 8,
+            "name": "The Single Edge Starter Set - Jet Black",
+            "description": "The Single Edge Starter Set includes everything you need to get the best shave of your life. The hardware and the skincare. Uncomplicated, unrivaled. Includes three signature shave settings to customize your shave.",
+            "ingredients": "The Single Edge 2.0 razor, 8 blades, Ultra Lather Shaving Cream, Healing Post Shave, Silvertip Shave Brush",
+            "price": 135.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_alloy_jet_black_the_single_edge_starter_set.png"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000037",
+            "category": 2,
+            "brand": 8,
+            "name": "The Single Edge 2.0 - Jet Black",
+            "description": "Say goodbye to irritation, nicks, and bumps. The Single Edge safety razor is engineered to provide you a lifetime of perfect shaves. Includes a ninety-day supply of blades, and three signature shave settings to customize your shave.",
+            "ingredients": "alloy",
+            "price": 75.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_alloy_jet_black_the_single_edge.png"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000038",
+            "category": 4,
+            "brand": 8,
+            "name": "The Single Edge Starter Set - Matte Black",
+            "description": "The Single Edge Starter Set includes everything you need to get the best shave of your life. The hardware and the skincare. Uncomplicated, unrivaled. Includes three signature shave settings to customize your shave.",
+            "ingredients": "The Single Edge 2.0 razor, 8 blades, Ultra Lather Shaving Cream, Healing Post Shave, Silvertip Shave Brush",
+            "price": 135.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_alloy_matte_black_the_single_edge_starter_set.png"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000039",
+            "category": 2,
+            "brand": 8,
+            "name": "The Single Edge 2.0 - Matte Black",
+            "description": "Say goodbye to irritation, nicks, and bumps. The Single Edge safety razor is engineered to provide you a lifetime of perfect shaves. Includes a ninety-day supply of blades, and three signature shave settings to customize your shave.",
+            "ingredients": "alloy",
+            "price": 75.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_alloy_matte_black_the_single_edge.png"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000040",
+            "category": 4,
+            "brand": 8,
+            "name": "The Single Edge Starter Set - Mirror Polish",
+            "description": "The Single Edge Starter Set includes everything you need to get the best shave of your life. The hardware and the skincare. Uncomplicated, unrivaled. Includes three signature shave settings to customize your shave.",
+            "ingredients": "The Single Edge 2.0 razor, 8 blades, Ultra Lather Shaving Cream, Healing Post Shave, Silvertip Shave Brush",
+            "price": 135.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_alloy_mirror_polish_the_single_edge_starter_set.png"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000041",
+            "category": 2,
+            "brand": 8,
+            "name": "The Single Edge 2.0 - Mirror Polish",
+            "description": "Say goodbye to irritation, nicks, and bumps. The Single Edge safety razor is engineered to provide you a lifetime of perfect shaves. Includes a ninety-day supply of blades, and three signature shave settings to customize your shave.",
+            "ingredients": "alloy",
+            "price": 75.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_alloy_mirror_polish_the_single_edge.png"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000042",
+            "category": 1,
+            "brand": 8,
+            "name": "Feel Good Face Wash",
+            "description": "This isn't a regular, run-of-the-mill face wash. It's packed with powerful, plant-based ingredients that wash away impurities and refresh your skin. Bottom line? Don't just wash your face - make it feel good.",
+            "ingredients": "organic aloe barbadensis leaf juice, sodium lauroyl methyl isethionate (a sulfate-free, coconut-derived cleanser), cocamidopropyl 
+                            hydroxysultaine, acrylates/palmeth-25 acrylate copolymer,  glycerin, decyl glucoside (coconut-derived), sodium hyaluronate, 
+                            panthenol, sodium PCA, sorbitol, sodium lactate, proline, sodium lauryl sulfoacetate (sulfate-free, from coconut), disodium 
+                            laureth sulfosuccinate (sulfate-free, from coconut), citrullus lanatus (watermelon) fruit extract, lens esculenta (lentil) 
+                            fruit extract, rosmarinus officinalis (rosemary) leaf extract, quillaja saponaria (soap) bark extract, saccharum officinarum 
+                            (sugarcane) extract, pyrus malus (apple) fruit extract, camellia sinensis (green tea) leaf extract, citrus aurantium dulcis 
+                            (orange) fruit extract, citrus limon (lemon) fruit extract, tocopherol, caprylyl glycol, hexylene glycol, phenoxyethanol 
+                            (a preservative), ethylhexylglycerin (a preservative), sodium hydroxide, fragrance",
+            "price": 16.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_feel_good_face_wash.png"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000043",
+            "category": 1,
+            "brand": 8,
+            "name": "Healing Post Shave",
+            "description": "Heal and restore your skin after shaving with a refreshing blend of toning witch hazel and soothing aloe. Our alcohol-free formula is loaded with glycerin, aloe vera, and shea to calm sensitive skin post-shave or anytime.",
+            "ingredients": "Organic Aloe Barbadensis Leaf Juice, Polysorbate 20, Glycerin, Hamamelis Virginiana (Witch Hazel) Water, Fragrance, Allantoin, 
+                            Butyrospermum Parkii (Shea) Butter, Tocopherol, Phenoxyethanol, Ethylhexylglycerin, Sodium Hydroxide",
+            "price": 16.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": false,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_healing_post_shave.png"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000044",
+            "category": 4,
+            "brand": 8,
+            "name": "The Single Edge Travel Case - Bourbon",
+            "description": "The Single Edge Travel Case is custom designed for the Single Edge razor and handcrafted from full-grain leather. Whether you're a frequent traveler or occasionally on the road, we've created a beautiful and functional case that’ll stand the test of time.",
+            "ingredients": "full-grain leather",
+            "price": 39.00,
+            "is_eco": true,
+            "is_crueltyfree": false,
+            "is_vegan": false,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "supply_leather_bourbon_the_single_edge_travel_case.png"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000045",
+            "category": 4,
+            "brand": 8,
+            "name": "The Single Edge Travel Case - Dark Brown",
+            "description": "The Single Edge Travel Case is custom designed for the Single Edge razor and handcrafted from full-grain leather. Whether you're a frequent traveler or occasionally on the road, we've created a beautiful and functional case that’ll stand the test of time.",
+            "ingredients": "full-grain leather",
+            "price": 39.00,
+            "is_eco": true,
+            "is_crueltyfree": false,
+            "is_vegan": false,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "supply_leather_dark_brown_the_single_edge_travel_case.png"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000046",
+            "category": 4,
+            "brand": 8,
+            "name": "The Single Edge Travel Case - Midnight Black",
+            "description": "The Single Edge Travel Case is custom designed for the Single Edge razor and handcrafted from full-grain leather. Whether you're a frequent traveler or occasionally on the road, we've created a beautiful and functional case that’ll stand the test of time.",
+            "ingredients": "full-grain leather",
+            "price": 39.00,
+            "is_eco": true,
+            "is_crueltyfree": false,
+            "is_vegan": false,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "supply_leather_midnight_black_the_single_edge_travel_case.png"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000047",
+            "category": 1,
+            "brand": 8,
+            "name": "Multi Purpose Moisturizer",
+            "description": "This is a super-concentrated tube of superior skin food. It's loaded with the most powerful, plant-based ingredients on the planet, packed into one simple product. Think of it as your Swiss Army knife for better skin.",
+            "ingredients": "organic aloe barbadensis leaf juice, caprylic/capric tryglyceride, glycerin, squalane, cetearyl olivate, stearic acid, 
+                            pentylene glycol, cetyl alcohol, dimethicone, sorbitan olivate, cetearyl alcohol, sodium hyaluronate, panthenol, allantoin, 
+                            sodium PCA, glyceryl glucoside, ceteareth-20, taurine, sodium lactate, lens esculenta (lentil) fruit extract, citrullus lanatus 
+                            (watermelon) fruit extract, paullinia cupana (guarana) extract, acanthopanax senticosus (eleuthero) root extract, camellia 
+                            sinensis (green tea) leaf extract, symphytum officinale (comfrey) root extract, pyrus malus (apple) fruit extract, butyrospermum parkii 
+                            (shea) butter, brassica campestris seed oil, linum usitatissimum seed oil, tocopherol, tetrahexyldecyl ascorbate, 
+                            chlorella vulgaris/lupinus albus protein ferment, xantham gum, carbomer, caprylyl glycol, hexylene glycol, phenoxyethanol, 
+                            ethylhexylglycerin, sodium hydroxide",
+            "price": 20.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_multi_purpose_moisturizer.png"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000048",
+            "category": 4,
+            "brand": 8,
+            "name": "Shave Accessories Set",
+            "description": "Our Shave Accessories Set comes with everything you need to upgrade your morning ritual: Ultra Lather Shaving Cream, Healing Post Shave, and our Silvertip Shave Brush.",
+            "ingredients": "Ultra Lather Shaving Cream, Healing Post Shave, Silvertip Shave Brush",
+            "price": 60.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_shave_accessories_set.png"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000049",
+            "category": 4,
+            "brand": 8,
+            "name": "Shave Accessories Set",
+            "description": "Our Shave Essentials include the Ultra Lather Shaving Cream and Healing Post Shave. Upgrade your morning ritual to the best shave of your life, from lather to post shave. Look good, feel good.",
+            "ingredients": "Ultra Lather Shaving Cream, Healing Post Shave",
+            "price": 29.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_shave_essentials_set.png"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000050",
+            "category": 2,
+            "brand": 8,
+            "name": "Silvertip Shaving Brush",
+            "description": "Our hand-crafted shaving brush comes with our custom Silvertip fibers and a polished handle. It's designed to whip up a cushiony, protective lather when paired with our Ultra Lather Shaving Cream.",
+            "ingredients": "natural fiber, biodegradable plastic",
+            "price": 39.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_silvertip_shaving_brush.png"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000051",
+            "category": 2,
+            "brand": 8,
+            "name": "The Single Edge 2.0 - Stainless Steel",
+            "description": "Say goodbye to irritation, nicks, and bumps. The Single Edge safety razor is engineered to provide you a lifetime of perfect shaves. Includes a ninety-day supply of blades, and three signature shave settings to customize your shave.",
+            "ingredients": "stainless steel",
+            "price": 145.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "supply_stainless_steel_single_edge_blade.png"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000052",
+            "category": 2,
+            "brand": 8,
+            "name": "8 Single Edge Blades",
+            "description": "You don't need another blade in your razor - you need a better one. Step up your shave game with our Single Edge injector razor blades. Made in the USA.",
+            "ingredients": "stainless steel",
+            "price": 6.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "supply_steel_stainless_steel_the_single_edge.png"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000053",
+            "category": 4,
+            "brand": 8,
+            "name": "The Single Edge Starter Set - Stainless Steel",
+            "description": "The Single Edge Starter Set includes everything you need to get the best shave of your life. The hardware and the skincare. Uncomplicated, unrivaled. Includes three signature shave settings to customize your shave.",
+            "ingredients": "The Single Edge 2.0 razor, 8 blades, Ultra Lather Shaving Cream, Healing Post Shave, Silvertip Shave Brush",
+            "price": 195.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "supply_steel_stainless_the_single_edge_starter_set.png"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000054",
+            "category": 1,
+            "brand": 8,
+            "name": "Ultra Lather Shaving Cream",
+            "description": "Our super concentrated shave cream builds a thick lather for the ultimate, irritation-free shave. Glycerin, shea butter, and jojoba oil provide superior glide and restore moisture to worn skin. It comes packaged in a glass 4 oz jar. This shaving cream requires a shaving brush to build a proper lather.",
+            "ingredients": "Water, Stearic Acid, Sodium Methyl Cocoyl Taurate, Myristic Acid, Coconut Acid, Glycerin, Potassium Hydroxide, Butyrospermum 
+                            Parkii (Shea) Butter, Kaolin, Simmondsia Chinensis (Jojoba) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Theobroma Cacao 
+                            (Cocoa) Seed Butter, Mangifera Indica (Mango) Seed Butter, Tocopherol, Phenoxyethanol , Ethylhexylglycerin, Sodium Hydroxide, 
+                            Fragrance",
+            "price": 18.00,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "supply_ultra_lather_shaving_cream.png"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000055",
+            "category": 1,
+            "brand": 9,
+            "name": "Transformation Cleansing Oil ",
+            "description": "This certified natural, silky, pure plant cleansing oil effortlessly melts away make-up and impurities, transforming from an oil to cleansing milk when emulsified with water. Enriched with nourishing rosehip, sweet almond and papaya this gentle cleanser, cleanses skin without stripping its moisture, leaving skin feeling soft, hydrated and perfectly clean.",
+            "ingredients": "Prunus Amygdalus Dulcis (Sweet Almond) Oil, Coco-Caprylate, Vitis Vinifera (Grape) Seed Oil, Rosa Canina (Rosehip) Seed Oil, 
+                            Carica Papaya (Papaya) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Rosmarinus Officinalis (Rosemary) Leaf Extract, 
+                            Tocopheryl Acetate (Vitamin E), Parfum, Citronellol, Geraniol, Limonene, Linalool",
+            "price": 21.50,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": true,
+            "is_organic": false,
+            "is_natural": false,
+            "image": "trilogy_transformation_cleansing_oil.png"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "products.product",
+        "fields": {
+            "sku": "ep0000000056",
+            "category": 1,
+            "brand": 9,
+            "name": "Ultra Hydrating Face Cream",
+            "description": "Rich but easily absorbed, you'll banish dry skin with this intensely nourishing cream. The ultimate in hydration, it's designed to deliver immediate relief and lasting comfort for a soft, smooth complexion.",
+            "ingredients": "Aqua (water), Prunus amygdalus dulcis oil, Ricinus communis seed oil, Cetearyl alcohol, Glyceryl stearate, Glycerin (vegetable), 
+                            Honey (mel), Caprylic/capric triglyceride, Oenothera biennis seed oil,Cocos nucifera oil, Cetearyl wheat straw glycosides (and) 
+                            cetearyl alcohol, Rosa Canina (Rosehip) Seed Oil, Solanum Lycopersicum (Tomato) Seed Oil (and) Caprylic/Capric Triglyceride (and) 
+                            Vaccinium Macrocarpon (Cranberry) Seed Oil (and) Helianthus Annuus Seed Oil (and) Tocopherol, Lycopene, Euterpe Oleracea (Acai) 
+                            Fruit Oil (and) Tocopherol, Avena Sativa (Oat) Kernel Extract , Persea gratissima, Tocopheryl acetate, Aloe barbadenis leaf extract, 
+                            Lavandula angustifolia oil, Parfum,Sodium stearoyl glutamate, Citric acid,Dehydroacetic acid (and) benzyl alcohol,Geraniol, 
+                            Citronellol, Limonene, Linalool.",
+            "price": 25.50,
+            "is_eco": true,
+            "is_crueltyfree": true,
+            "is_vegan": false,
+            "is_organic": false,
+            "is_natural": true,
+            "image": "trilogy_ultra_hydrating_face_cream.png"
+        }
+    }
 ]
-
-
-// template
-
-    // {
-    //     "pk": 0,
-    //     "model": "products.product",
-    //     "fields": {
-    //         "sku": "ep0000000000",
-    //         "category": 0,
-    //         "brand": 0,
-    //         "name": "",
-    //         "description": "",
-    //         "ingredients": "",
-    //         "price": 0.00,
-    //         "is_eco": true,
-    //         "is_crueltyfree": true,
-    //         "is_vegan": true,
-    //         "is_organic": true,
-    //         "is_natural": true,
-    //         "image": ""
-    //     }
-    // },
