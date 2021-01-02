@@ -558,6 +558,22 @@ ul p {
 }
 /* loyalty programme page */
 
+/* shop and product pages */
+.product-page-link {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.product-page-link:hover {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.product-page-link > .product-card-title:hover {
+    text-decoration: underline;
+}
+/* shop and product pages */
+
 /* responsiveness */
 @media (max-width: 1199px) {
     .div-section-text-right {
