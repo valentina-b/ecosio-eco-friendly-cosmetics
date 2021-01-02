@@ -4,22 +4,36 @@
 {% block title %}shop eco-friendly products{% endblock %}
 
 {% block content %}
-    {% include 'products/includes/breadcrumbs.html' %}
+    <div class="correct-header">
+    </div>
 
-
-<div class="row hp-section-1">
+<div class="container-fluid">
     <div class="container">
-        <div class="row product-card-row">
+        <div class="row shop-top-row">
+            <div class="col-6">
+                {% include 'products/includes/breadcrumbs.html' %}
+            </div>
+            <div class="col-6">
+                {% include 'products/includes/sort_products.html' %}
+            </div>
+        </div>
+    </div>
+</div>
 
 
-    {% for product in products %}
+
+
+<!-- <div class="row hp-section-1">
+    <div class="container">
+        <div class="row product-card-row"> -->
+
+
+    <!-- {% for product in products %}
         <div class="col-lg-4 col-md-6 col-12">
             <a href="{% url 'product_page' product.id %}" class="product-page-link">
                 <div class="div-product-card float-lg-left">
                     <div class="div-product-card-img">
-                        <!-- <a href="{% url 'product_page' product.id %}"> -->
-                            <img src="../media/{{ product.image }}" alt="">
-                        <!-- </a> -->
+                        <img src="../media/{{ product.image }}" alt="">
                     </div>
                     <p class="product-card-title">{{ product.name }}</p>
                     <p class="product-card-brand-price">
@@ -33,7 +47,7 @@
                 </div>
             </a>
         </div>
-    {% endfor %}
+    {% endfor %} -->
 
 
         </div>
