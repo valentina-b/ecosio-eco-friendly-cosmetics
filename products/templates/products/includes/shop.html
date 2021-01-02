@@ -1,1 +1,23 @@
-<!-- display products -->
+<!-- display products / product cards -->
+
+<div class="row hp-section-1">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="visual-filters">
+                {% include 'products/includes/visual_filter.html' %}
+            </div>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-12">
+            <div class="row product-card-row">
+                {% for product in products %}
+                    <div class="col-lg-6 col-md-6 col-12">
+                        {% include 'products/includes/product_card.html' %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
