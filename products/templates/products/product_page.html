@@ -5,7 +5,6 @@
 
 {% block content %}
 
-
     <div class="correct-header">
     </div>
 
@@ -19,11 +18,75 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12 product-page-card">
+                <div class="product-page-img-div">
+                    <img src="/media/{{ product.image }}" class="product-page-img" alt="">
+                </div>
+                <p class="product-page-card-title">{{ product.name }}</p>
+                <p class="product-page-card-brand-price">
+                    <span class="product-page-card-brand">{{ product.brand.friendly_name }}</span>
+                    |
+                    <span class="product-page-card-price">{{ product.price }}</span>€
+                </p>
+            </div>
 
 
 
+            <div class="col-md-6 col-12 product-details">
+                <div class="product-details-div">
+                    <h1 class="h2-style">{{ product.name }}</h1>
+                    <p class="product-details-brand">{{ product.brand.friendly_name }}</p>
+                    <p>{{ product.description }}</p>
+                </div>
+                <div class="product-details-tags-div">
+                    <div class="product-tag-div">
+                        <div class="div-tag-icon">
+                            <img src="/static/images/icons/product-tags/icon-tag-eco-friendly.svg" alt="">
+                        </div>
+                        <p class="tag-meaning">Eco-friendly</p>
+                    </div>
+                    {% if product.is_crueltyfree %}
+                        <div class="product-tag-div">
+                            <div class="div-tag-icon">
+                                <img src="/static/images/icons/product-tags/icon-tag-cruelty-free.svg" alt="">
+                            </div>
+                            <p class="tag-meaning">Cruelty-free</p>
+                        </div>
+                    {% endif %}
+                    {% if product.is_vegan %}
+                        <div class="product-tag-div">
+                            <div class="div-tag-icon">
+                                <img src="/static/images/icons/product-tags/icon-tag-vegan.svg" alt="">
+                            </div>
+                            <p class="tag-meaning">100% vegan</p>
+                        </div>
+                    {% endif %}
+                    {% if product.is_organic %}
+                        <div class="product-tag-div">
+                            <div class="div-tag-icon">
+                                <img src="/static/images/icons/product-tags/icon-tag-organic.svg" alt="">
+                            </div>
+                            <p class="tag-meaning">100% organic</p>
+                        </div>
+                    {% endif %}
+                    {% if product.is_natural %}
+                        <div class="product-tag-div">
+                            <div class="div-tag-icon">
+                                <img src="/static/images/icons/product-tags/icon-tag-natural.svg" alt="">
+                            </div>
+                            <p class="tag-meaning">100% natural</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="row hp-section-1">
+
+
+<!-- <div class="row hp-section-1">
     <div class="container">
         <div class="row product-card-row">
             <div class="col-lg-4 col-md-6 col-12">
@@ -41,10 +104,6 @@
                         <a href="#" class="cta cta-white">Add to cart</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
+            </div> -->
 
-
-{% endblock %}
+            {% endblock %}
