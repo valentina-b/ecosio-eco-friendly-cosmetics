@@ -1,0 +1,12 @@
+<div class="breadcrumbs">
+    <p class="breadcrumbs-text">
+        <a href="{% url 'homepage' %}" class="breadcrumb-link">Home</a>
+        |
+        <a href="{% url 'products' %}" class="breadcrumb-link">Shop</a>
+        |
+        <!-- !! put link to the prefiltered feed -->
+        <a href="{% url 'products' %}" class="breadcrumb-link">{{ product.category.friendly_name }}</a>
+        |
+        <span class="active-breadcrumb">{{ product.name }}</span>
+    </p>
+</div>
