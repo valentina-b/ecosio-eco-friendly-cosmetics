@@ -666,6 +666,28 @@ ul p {
     margin-right: 20px;
 }
 
+.dropdown-sort-products {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sort-selector {
+    height: 45px;
+    width: 250px;
+    border: var(--border-black);
+    color: var(--color-black);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 5%;
+    outline: none;
+    /* remove firefox arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/icons/icon-dropdown-arrow.svg) no-repeat right;
+    background-position-x: 95%;
+}
 /* shop and product pages */
 
 /* responsiveness */
