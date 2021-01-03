@@ -21,7 +21,7 @@ body {
     color: var(--color-black);
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: var(--font-poppins);
 }
 
@@ -34,6 +34,17 @@ h2, .h2-style {
     text-transform: uppercase;
     font-size: 40px;
     margin: 65px auto 20px auto;
+}
+
+.h3-style {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.h4-style {
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .paragraph-subtitle {
@@ -784,6 +795,30 @@ ul p {
     }
     .about-section-1-usp {
         justify-content: center;
+    }
+    .mob-visual-filters-row {
+        height: 100px;
+        max-width: calc(100% - 11.5%);
+        margin: auto;
+    }
+    .visual-filters {
+        position: initial;
+        overflow-x: auto;
+        white-space: nowrap;
+        height: 60px;
+        display: flex;
+    }
+    .mob-tag-filter {
+        padding: 10px;
+        font-size: 9px;
+        color: var(--color-black);
+    }
+    .mob-tag-filter:hover {
+        color: var(--color-black);
+        text-decoration: none;
+    }
+    .mob-categories-ctas {
+        margin-bottom: 0;
     }
 }
 
