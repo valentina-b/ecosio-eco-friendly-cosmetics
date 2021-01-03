@@ -479,7 +479,7 @@
         "model": "products.product",
         "fields": {
             "sku": "ep0000000026",
-            "category": 3,
+            "category": 4,
             "brand": 4,
             "name": "Travel Kit",
             "description": "A complete set of four essential best sellers for your hair and body care needs in a beautiful, eco-friendly travel bag. Travel kit is phthalate-free – made from organic cotton denim and EVA/PEVA.",
