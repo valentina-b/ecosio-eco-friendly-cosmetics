@@ -1,11 +1,16 @@
 <!-- product card code -->
 
-<a href="{% url 'product_page' product.id %}" class="product-page-link">
-    <div class="div-product-card float-lg-right div-product-card-shop">
-        <div class="div-product-card-img">
-            <img src="../media/{{ product.image }}" alt="">
-        </div>
-        <p class="product-card-title">{{ product.name }}</p>
+<div class="div-product-card float-lg-right div-product-card-shop">
+    <div class="product-card-category-name">
+        <p>{{ product.category.friendly_name }}</p>
+    </div>
+    <div class="product-card-content">
+        <a href="{% url 'product_page' product.id %}" class="product-page-link">
+            <div class="div-product-card-img">
+                <img src="../media/{{ product.image }}" alt="">
+            </div>
+            <p class="product-card-title">{{ product.name }}</p>
+        </a>
         <p class="product-card-brand-price">
             <span class="product-card-brand">{{ product.brand.friendly_name }}</span>
             |
@@ -15,4 +20,4 @@
             <a href="#" class="cta cta-white">Add to cart</a>
         </div>
     </div>
-</a>
+</div>
