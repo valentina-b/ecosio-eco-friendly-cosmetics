@@ -116,4 +116,63 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row row-ingredients-shipping">
+            <div class="col-12">
+
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Ingredients
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            {{ product.ingredients }}
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Shipping details
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                Shipping costs are 4.00€ for purchases below 119.00€. For orders above 119.00€ shipping is <span class="green-text text-uppercase">free</span>. 
+                                <span class="text-uppercase">eco-fighter</span> and <span class="text-uppercase">eco-expert</span> customers get <span class="green-text text-uppercase">free</span> shipping
+                                with their every purchase (join <a href="{% url 'loyalty_programme' %}" class="text-link">our loyalty programme</a>).
+                            </p>
+                            <p>
+                                Delivery throughout the Europe and Worldwide is via tracked and signed for courier. 
+                                Please be advised that international shipping can take up to 7 to 10 working days for delivery, however, it usually only takes around 4 to 5 days to deliver.
+                            </p>
+                            <p>
+                                Orders placed after 12 PM Monday to Thursday will be packed and shipped the next day. 
+                                Orders placed on a Friday after 12.00pm and over a weekend will be packaged up for shipping on the Monday after. 
+                                In the event of a bank holiday or over the Christmas and New Year period, orders are packed up and shipped the next working day after any bank holiday.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 {% endblock %}
