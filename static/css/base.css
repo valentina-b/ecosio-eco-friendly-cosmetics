@@ -708,10 +708,15 @@ ul p {
     margin: 0 15px;
 }
 
+.product-page-img-div {
+    overflow: hidden;
+}
+
 .product-page-img {
     width: 80%;
     display: block;
     margin: 0 auto 30px auto;
+    transform: scale(1.35);
 }
 
 .product-page-card-brand-price, .product-page-card-title {
