@@ -833,6 +833,43 @@ input[type=number] {
     float: left;
 }
 
+#accordion {
+    margin: 35px auto 50px auto;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: var(--color-white);
+    border-bottom: var(--border-black);
+    cursor: pointer;
+}
+
+.card-header:hover {
+    color: var(--color-green);
+}
+
+.product-details-additional {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 18px;
+    width: fit-content;
+    display: block;
+    float: left;
+}
+
+.accordion-icon {
+    display: block;
+    margin-left: auto;
+    padding-top: 25px;
+}
+
+.accordion-card-paragraph {
+    font-size: 14px;
+    line-height: 170%;
+}
 /* shop and product pages */
 
 /* responsiveness */
