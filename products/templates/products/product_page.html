@@ -33,80 +33,83 @@
             </div>
             <!-- product details -->
             <div class="col-md-6 col-12 product-details">
-                <div class="product-details-div">
-                    <h1 class="h2-style product-details-name">{{ product.name }}</h1>
-                    <p class="product-details-brand">{{ product.brand.friendly_name }}</p>
-                    <p class="product-details-description">{{ product.description }}</p>
-                </div>
-                <div class="product-details-tags-div">
-                    <div class="product-tag-div">
-                        <div class="div-tag-icon">
-                            <img src="/static/images/icons/product-tags/icon-tag-eco-friendly.svg" alt="">
-                        </div>
-                        <p class="tag-meaning">Eco-friendly</p>
+                <div class="div-top-details">
+                    <div class="product-details-div">
+                        <h1 class="h2-style product-details-name">{{ product.name }}</h1>
+                        <p class="product-details-brand">{{ product.brand.friendly_name }}</p>
+                        <p class="product-details-description">{{ product.description }}</p>
                     </div>
-                    {% if product.is_crueltyfree %}
+                    <div class="product-details-tags-div">
                         <div class="product-tag-div">
                             <div class="div-tag-icon">
-                                <img src="/static/images/icons/product-tags/icon-tag-cruelty-free.svg" alt="">
+                                <img src="/static/images/icons/product-tags/icon-tag-eco-friendly.svg" alt="">
                             </div>
-                            <p class="tag-meaning">Cruelty-free</p>
+                            <p class="tag-meaning">Eco-friendly</p>
                         </div>
-                    {% endif %}
-                    {% if product.is_vegan %}
-                        <div class="product-tag-div">
-                            <div class="div-tag-icon">
-                                <img src="/static/images/icons/product-tags/icon-tag-vegan.svg" alt="">
+                        {% if product.is_crueltyfree %}
+                            <div class="product-tag-div">
+                                <div class="div-tag-icon">
+                                    <img src="/static/images/icons/product-tags/icon-tag-cruelty-free.svg" alt="">
+                                </div>
+                                <p class="tag-meaning">Cruelty-free</p>
                             </div>
-                            <p class="tag-meaning">100% vegan</p>
-                        </div>
-                    {% endif %}
-                    {% if product.is_organic %}
-                        <div class="product-tag-div">
-                            <div class="div-tag-icon">
-                                <img src="/static/images/icons/product-tags/icon-tag-organic.svg" alt="">
+                        {% endif %}
+                        {% if product.is_vegan %}
+                            <div class="product-tag-div">
+                                <div class="div-tag-icon">
+                                    <img src="/static/images/icons/product-tags/icon-tag-vegan.svg" alt="">
+                                </div>
+                                <p class="tag-meaning">100% vegan</p>
                             </div>
-                            <p class="tag-meaning">100% organic</p>
-                        </div>
-                    {% endif %}
-                    {% if product.is_natural %}
-                        <div class="product-tag-div">
-                            <div class="div-tag-icon">
-                                <img src="/static/images/icons/product-tags/icon-tag-natural.svg" alt="">
+                        {% endif %}
+                        {% if product.is_organic %}
+                            <div class="product-tag-div">
+                                <div class="div-tag-icon">
+                                    <img src="/static/images/icons/product-tags/icon-tag-organic.svg" alt="">
+                                </div>
+                                <p class="tag-meaning">100% organic</p>
                             </div>
-                            <p class="tag-meaning">100% natural</p>
-                        </div>
-                    {% endif %}
-                </div>
-
-                <div class="product-page-buying-details">
-                    <p class="product-details-price">{{ product.price }}€</p>
-                    <!-- add/subtract input -->
-                    <div class="form-group">
-                        <div class="input-group input-group-product-quantity">
-                            <div class="input-group-prepend">
-                                <button class="decrement-quantity btn rounded-0" data-item_id="{{ product.id }}" id="decrement-quantity-{{ product.id }}">
-                                    <img src="/static/images/icons/icon-product-subtract.svg" alt="">
-                                </button>
+                        {% endif %}
+                        {% if product.is_natural %}
+                            <div class="product-tag-div">
+                                <div class="div-tag-icon">
+                                    <img src="/static/images/icons/product-tags/icon-tag-natural.svg" alt="">
+                                </div>
+                                <p class="tag-meaning">100% natural</p>
                             </div>
-                            <input class="form-control input-product-quantity" type="number"
-                                name="quantity" value="1" min="1" max="99"
-                                data-item_id="{{ product.id }}"
-                                id="id-quantity-{{ product.id }}">
-                            <div class="input-group-append">
-                                <button class="increment-quantity btn rounded-0" data-item_id="{{ product.id }}" id="increment-quantity-{{ product.id }}">
-                                    <img src="/static/images/icons/icon-product-add.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
+                        {% endif %}
                     </div>
-                    <!-- add/subtract input -->
-                    <a href="#" class="cta cta-black product-page-cta">Add to cart</a>
-                    {% if request.user.is_authenticated %}
-                        <p class="loyalty-programme-product-info">this item brings 3 loyalty points!</p>
-                    {% else %}
-                        <p class="loyalty-programme-product-info">this item brings 3 loyalty points – <a href="#" class="text-link">register here.</a></p>
-                    {% endif %}
+                </div>
+                <div class="div-bottom-details">
+                    <div class="product-page-buying-details">
+                        <p class="product-details-price">{{ product.price }}€</p>
+                        <!-- add/subtract input -->
+                        <div class="form-group">
+                            <div class="input-group input-group-product-quantity">
+                                <div class="input-group-prepend">
+                                    <button class="decrement-quantity btn rounded-0" data-item_id="{{ product.id }}" id="decrement-quantity-{{ product.id }}">
+                                        <img src="/static/images/icons/icon-product-subtract.svg" alt="">
+                                    </button>
+                                </div>
+                                <input class="form-control input-product-quantity" type="number"
+                                    name="quantity" value="1" min="1" max="99"
+                                    data-item_id="{{ product.id }}"
+                                    id="id-quantity-{{ product.id }}">
+                                <div class="input-group-append">
+                                    <button class="increment-quantity btn rounded-0" data-item_id="{{ product.id }}" id="increment-quantity-{{ product.id }}">
+                                        <img src="/static/images/icons/icon-product-add.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- add/subtract input -->
+                        <a href="#" class="cta cta-black product-page-cta">Add to cart</a>
+                        {% if request.user.is_authenticated %}
+                            <p class="loyalty-programme-product-info">this item brings 3 loyalty points!</p>
+                        {% else %}
+                            <p class="loyalty-programme-product-info">this item brings 3 loyalty points – <a href="#" class="text-link">register here.</a></p>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
             <!-- product details -->

@@ -702,18 +702,19 @@ ul p {
 }
 
 .product-page-card {
-    max-width: 540px;
-    height: 600px;
+    max-width: 450px;
+    height: 550px;
     border: var(--border-black);
     margin: 0 15px;
 }
 
 .product-page-img-div {
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .product-page-img {
-    width: 80%;
+    width: 70%;
     display: block;
     margin: 0 auto 30px auto;
     transform: scale(1.35);
@@ -729,6 +730,15 @@ ul p {
 
 .product-details {
     padding-left: 45px;
+    display: grid;
+}
+
+.div-top-details {
+    display: grid;
+}
+
+.div-bottom-details {
+    margin: auto 0;
 }
 
 .product-details-brand {
@@ -823,9 +833,6 @@ input[type=number] {
     float: left;
 }
 
-.product-page-buying-details {
-
-}
 /* shop and product pages */
 
 /* responsiveness */
