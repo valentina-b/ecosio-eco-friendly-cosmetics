@@ -748,7 +748,7 @@ ul p {
 }
 
 .product-details-description {
-    margin-bottom: 30px;
+    margin: 25px 0 30px 0;
 }
 
 .product-details-tags-div {
@@ -845,6 +845,7 @@ input[type=number] {
 }
 
 .card-header {
+    padding-left: 0;
     background-color: var(--color-white);
     border-bottom: var(--border-black);
     cursor: pointer;
@@ -855,7 +856,7 @@ input[type=number] {
 }
 
 .product-details-additional {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     padding-top: 18px;
     width: fit-content;
@@ -872,6 +873,10 @@ input[type=number] {
 .accordion-card-paragraph {
     font-size: 14px;
     line-height: 170%;
+}
+
+.card-body {
+    padding-left: 0;
 }
 
 .recommendation-title {
