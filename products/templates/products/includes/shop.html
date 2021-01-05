@@ -21,7 +21,9 @@
                 <div class="row product-card-row">
                     {% for product in products %}
                     <div class="col-sm-6 col-12">
-                        {% include 'products/includes/product_card.html' %}
+                        <div class="float-lg-right">
+                            {% include 'products/includes/product_card.html' %}
+                        </div>
                     </div>
                     {% endfor %}
                 </div>

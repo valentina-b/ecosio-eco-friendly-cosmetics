@@ -870,6 +870,28 @@ input[type=number] {
     font-size: 14px;
     line-height: 170%;
 }
+
+.recommendation-title {
+    margin: 40px 0;
+}
+
+.recommendation-cta {
+    margin-bottom: 40px;
+}
+
+.product-recommendations-row {
+    display: block;
+    margin: 0;
+}
+
+.gallery {
+    display:flex;
+    justify-content: space-between;
+}
+
+.product-recommendations-div {
+    width: fit-content;
+}
 /* shop and product pages */
 
 /* responsiveness */
@@ -1005,6 +1027,14 @@ input[type=number] {
     .dropdown-sort-products {
         margin-top: 17px;
     }
+    .gallery {
+        overflow-x: auto;
+        padding-bottom: 20px;
+    }
+    .product-recommendations-div {
+        padding-right: 40px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -1028,6 +1058,9 @@ input[type=number] {
     }
     .div-benefit-card {
         margin: auto;
+    }
+    .recommendation-cta {
+        margin-top: 40px;
     }
 }
 
