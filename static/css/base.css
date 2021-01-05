@@ -1153,6 +1153,9 @@ input[type=number] {
     .footer-row {
         padding-top: 5%;
     }
+    .div-shop {
+        margin-top: 50px;
+    }
     .shop-top-row > .col-12 {
         padding: 0;
     }
