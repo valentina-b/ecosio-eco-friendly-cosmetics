@@ -83,26 +83,26 @@
                 <div class="div-bottom-details">
                     <div class="product-page-buying-details">
                         <p class="product-details-price">{{ product.price }}€</p>
-                        <!-- add/subtract input -->
-                        <div class="form-group">
-                            <div class="input-group input-group-product-quantity">
-                                <div class="input-group-prepend">
-                                    <button class="decrement-quantity btn rounded-0" data-item_id="{{ product.id }}" id="decrement-quantity-{{ product.id }}">
-                                        <img src="/static/images/icons/icon-product-subtract.svg" alt="">
-                                    </button>
-                                </div>
-                                <input class="form-control input-product-quantity" type="number"
-                                    name="quantity" value="1" min="1" max="99"
-                                    data-item_id="{{ product.id }}"
-                                    id="id-quantity-{{ product.id }}">
-                                <div class="input-group-append">
-                                    <button class="increment-quantity btn rounded-0" data-item_id="{{ product.id }}" id="increment-quantity-{{ product.id }}">
-                                        <img src="/static/images/icons/icon-product-add.svg" alt="">
-                                    </button>
+                            <!-- add/subtract input -->
+                            <div class="form-group">
+                                <div class="input-group input-group-product-quantity">
+                                    <div class="input-group-prepend">
+                                        <button class="decrement-quantity btn rounded-0" data-item-id="{{ product.id }}" id="decrement-quantity-{{ product.id }}">
+                                            <img src="/static/images/icons/icon-product-subtract.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <input class="form-control quantity-input input-product-quantity" type="number"
+                                        name="quantity" value="1" min="1" max="99"
+                                        data-item-id="{{ product.id }}"
+                                        id="id-quantity-{{ product.id }}">
+                                    <div class="input-group-append">
+                                        <button class="increment-quantity btn rounded-0" data-item-id="{{ product.id }}" id="increment-quantity-{{ product.id }}">
+                                            <img src="/static/images/icons/icon-product-add.svg" alt="">
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- add/subtract input -->
+                            <!-- add/subtract input -->
                         <a href="#" class="cta cta-black product-page-cta">Add to cart</a>
                         {% if request.user.is_authenticated %}
                             <p class="loyalty-programme-product-info">this item brings 3 loyalty points!</p>
@@ -170,12 +170,13 @@
         </div>
     </div>
 
-
-
     <div class="container">
         {% include 'products/includes/product_page_recommendations.html' %}
     </div>
 
-
+    {% block postloadjs %}
+    {{ block.super }}
+        {% include 'products/includes/quantity_input_script.html' %}
+    {% endblock %}
 
 {% endblock %}

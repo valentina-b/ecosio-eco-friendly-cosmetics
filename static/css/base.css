@@ -769,14 +769,12 @@ ul p {
 
 .input-group-prepend button, .input-group-append button {
     background-color: var(--color-black);
-    border: var(--border-black);
+    /* border: var(--border-black); */
     width: 40px;
 }
 
 .input-group-prepend button:hover, .input-group-append button:hover {
     background-color: var(--color-green);
-    border-top: var(--border-green);
-    border-bottom: var(--border-green);
 }
 
 .input-group-prepend button:focus, .input-group-append button:focus {
@@ -784,9 +782,14 @@ ul p {
     box-shadow: none;
 }
 
+.input-group-prepend btn.disabled, .input-group-prepend .btn:disabled,
+.input-group-append btn.disabled, .input-group-append .btn:disabled {
+     opacity: 1;
+     background-color: var(--color-gray);
+}
+
 .input-group-product-quantity {
-    border-top: var(--border-black);
-    border-bottom: var(--border-black);
+    border: var(--border-black);
     width: 120px;
 }
 
@@ -794,12 +797,12 @@ ul p {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 .input-product-quantity {
