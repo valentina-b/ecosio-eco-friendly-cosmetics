@@ -2,11 +2,10 @@
 
 <div class="dropdown-sort-products">
     <select class="sort-selector" id="sort-selector">
-        <option value="reset" disabled selected>Sort products by</option>
-        <option value="all_products">All products</option>
-        <option value="price_asc">Price (low to high)</option>
-        <option value="price_desc">Price (high to low)</option>
-        <option value="name_asc">Name (A-Z)</option>
-        <option value="name_desc">Name (Z-A)</option>
+        <option value="reset" disabled {% if current_sorting == 'None_None' %}selected{% endif %}>Sort products by</option>
+        <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+        <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+        <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+        <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
     </select>
 </div>

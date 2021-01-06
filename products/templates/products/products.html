@@ -23,4 +23,10 @@
     <div class="container">
         {% include 'products/includes/shop.html' %}
     </div>
+
+    {% block postloadjs %}
+        {{ block.super }}
+            {% include 'products/includes/sorting_products_script.html' %}
+    {% endblock %}
+
 {% endblock %}
