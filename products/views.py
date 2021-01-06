@@ -19,6 +19,18 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+        if 'organic_products' in request.GET:
+            products = products.filter(is_organic=True)
+
+        if 'vegan_products' in request.GET:
+            products = products.filter(is_vegan=True)
+
+        if 'crueltyfree_products' in request.GET:
+            products = products.filter(is_crueltyfree=True)
+
+        if 'natural_products' in request.GET:
+            products = products.filter(is_natural=True)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
