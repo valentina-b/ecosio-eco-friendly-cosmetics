@@ -1,0 +1,23 @@
+<!-- product card code -->
+
+<div class="div-product-card div-product-card-shop">
+    <div class="product-card-category-name">
+        <p>{{ random_product_2.category.friendly_name }}</p>
+    </div>
+    <div class="product-card-content">
+        <a href="{% url 'product_page' random_product_2.id %}" class="product-page-link">
+            <div class="div-product-card-img">
+                <img src="/media/{{ random_product_2.image }}" alt="">
+            </div>
+            <p class="product-card-title">{{ random_product_2.name }}</p>
+        </a>
+        <p class="product-card-brand-price">
+            <span class="product-card-brand">{{ random_product_2.brand.friendly_name }}</span>
+            |
+            <span class="product-card-price">{{ random_product_2.price }}</span>€
+        </p>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="cta cta-white">Add to cart</a>
+        </div>
+    </div>
+</div>
