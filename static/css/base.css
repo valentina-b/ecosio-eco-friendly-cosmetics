@@ -149,6 +149,28 @@ input[type="text"] {
     padding-left: 55px;
 }
 
+#cart {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.div-cart-img {
+    width: 30px;
+}
+
+.cart-img {
+    width: 100%;
+}
+
+#cart-product-count {
+    position: absolute;
+    bottom: 16px;
+    right: 23px;
+    font-size: 10px;
+    text-align: center;
+    color: var(--color-white);
+}
+
 .container {
     width: 1200px;
 }
