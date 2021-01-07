@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'about',
     'loyalty_programme',
     'products',
+    'cart',
 ]
 
 SITE_ID = 1
