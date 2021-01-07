@@ -3,41 +3,35 @@
 <div class="row div-shop">
     <div class="container container-shop">
 
-        <div class="row">
-            <div class="col-lg-4 d-lg-block d-none">
-                <div class="visual-filters">
-                    {% include 'products/includes/visual_filter.html' %}
-                </div>
-            </div>
-
-        <div class="row d-block d-lg-none d-xl-none mob-visual-filters-row">
-            <h4 class="h4-style mb-7">Filter products by:</h4>
-            <div class="visual-filters">
-                {% include 'products/includes/mob_visual_filter.html' %}
-            </div>
-        </div>
-
-            <div class="col-lg-8 col-md-12">
-                <div class="row product-card-row">
-                    <!-- if searching didn't result in finding products, show this message -->
-                    {% if products|length == 0 %}
-                        <div class="search-query-message-div">
-                            <p class="search-query-message">
-                                Oh no, we haven't found anything in our inventory matching <span class="green-text">"{{ search_term}}"</span>.
-                                Please try again with another keyword or use our filters to find what you need.
-                            </p>
-                        </div>
-                    {% endif %}
-                    <!-- display products -->
-                    {% for product in products %}
-                    <div class="col-sm-6 col-12">
-                        <div class="float-lg-right">
-                            {% include 'products/includes/product_card.html' %}
-                        </div>
+        {% if products|length == 0 %}
+            {% include 'products/includes/no_search_results.html' %}
+        {% else %}
+            <div class="row">
+                <div class="col-lg-4 d-lg-block d-none">
+                    <div class="visual-filters">
+                        {% include 'products/includes/visual_filter.html' %}
                     </div>
-                    {% endfor %}
+                </div>
+
+            <div class="row d-block d-lg-none d-xl-none mob-visual-filters-row">
+                <h4 class="h4-style mb-7">Filter products by:</h4>
+                <div class="visual-filters">
+                    {% include 'products/includes/mob_visual_filter.html' %}
                 </div>
             </div>
-        </div>
+
+                <div class="col-lg-8 col-md-12">
+                    <div class="row product-card-row">
+                        {% for product in products %}
+                        <div class="col-sm-6 col-12">
+                            <div class="float-lg-right">
+                                {% include 'products/includes/product_card.html' %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
     </div>
 </div>
