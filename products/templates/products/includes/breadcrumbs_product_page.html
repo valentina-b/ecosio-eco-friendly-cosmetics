@@ -4,8 +4,7 @@
         |
         <a href="{% url 'products' %}" class="breadcrumb-link">Shop</a>
         |
-        <!-- !! put link to the prefiltered feed -->
-        <a href="{% url 'products' %}" class="breadcrumb-link">{{ product.category.friendly_name }}</a>
+        <a href="{% url 'products' %}?category={{ product.category }}" class="breadcrumb-link">{{ product.category.friendly_name }}</a>
         |
         <span class="active-breadcrumb">{{ product.name }}</span>
     </p>
