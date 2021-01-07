@@ -19,5 +19,10 @@
         </div>
     </div>
 
+    {% if cart_items %}
+        {% include 'cart/includes/full_cart.html' %}
+    {% else %}
+        {% include 'cart/includes/empty_cart.html' %}
+    {% endif %}
 
 {% endblock %}

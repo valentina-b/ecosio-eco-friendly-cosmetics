@@ -934,6 +934,14 @@ input[type=number] {
 }
 /* shop and product pages */
 
+/* cart */
+.cta-empty-cart {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+/* cart */
+
 /* responsiveness */
 @media (max-width: 1199px) {
     .div-section-text-right {
