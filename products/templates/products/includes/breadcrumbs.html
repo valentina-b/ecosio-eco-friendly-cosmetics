@@ -4,6 +4,12 @@
         |
         <a href="{% url 'products' %}" class="breadcrumb-link">Shop</a>
         |
-        <span class="active-breadcrumb">All</span>
+        {% if current_categories %}
+            {% for category in current_categories %}
+                <span class="active-breadcrumb">{{ category.friendly_name }} ({{ products|length}})</span>
+            {% endfor %}
+        {% else %}
+            <span class="active-breadcrumb">All products ({{ products|length}})</span>
+        {% endif %}
     </p>
 </div>
