@@ -1,7 +1,7 @@
 <!-- display products / product cards -->
 
 <div class="row div-shop">
-    <div class="container">
+    <div class="container container-shop">
 
         <div class="row">
             <div class="col-lg-4 d-lg-block d-none">
@@ -19,6 +19,16 @@
 
             <div class="col-lg-8 col-md-12">
                 <div class="row product-card-row">
+                    <!-- if searching didn't result in finding products, show this message -->
+                    {% if products|length == 0 %}
+                        <div class="search-query-message-div">
+                            <p class="search-query-message">
+                                Oh no, we haven't found anything in our inventory matching <span class="green-text">"{{ search_term}}"</span>.
+                                Please try again with another keyword or use our filters to find what you need.
+                            </p>
+                        </div>
+                    {% endif %}
+                    <!-- display products -->
                     {% for product in products %}
                     <div class="col-sm-6 col-12">
                         <div class="float-lg-right">

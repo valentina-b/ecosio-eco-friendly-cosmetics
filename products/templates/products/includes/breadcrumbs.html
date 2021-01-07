@@ -4,10 +4,14 @@
         |
         <a href="{% url 'products' %}" class="breadcrumb-link">Shop</a>
         |
+        <!-- category breadcrumb -->
         {% if current_categories %}
             {% for category in current_categories %}
                 <span class="active-breadcrumb">{{ category.friendly_name }} ({{ products|length}})</span>
             {% endfor %}
+        <!-- search query breadcrumb -->
+        {% elif search_term %}
+            <span class="active-breadcrumb">Results for the search term: {{ search_term }} ({{ products|length}})</span>
         {% else %}
             <span class="active-breadcrumb">All products ({{ products|length}})</span>
         {% endif %}
