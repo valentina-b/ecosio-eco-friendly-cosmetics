@@ -85,7 +85,7 @@ h2, .h2-style {
     font-size: 25px;
 }
 
-#logo:hover {
+#logo:hover, .navbar .logo {
     text-decoration: none;
 }
 
