@@ -39,15 +39,25 @@
                 </div>
             </li>
             <li class="list-inline-item">
+                <!-- cart with product count -->
                 <a href="{% url 'view_cart' %}">
-                    <div id="cart">
-                        <div class="div-cart-img">
-                            <img src="/static/images/icons/icon-cart-full.svg" class="cart-img" alt="">
+                    {% if product_count > 0 %}
+                        <div class="cart">
+                            <div class="div-cart-img">
+                                <img src="/static/images/icons/icon-cart-full.svg" class="cart-img" alt="">
+                            </div>
                         </div>
-                        
-                    </div>
-                    <p class="cart-product-count">99</p>
+                        <p class="cart-product-count">{{ product_count }}</p>
+                    {% else %}
+                        <div class="cart">
+                            <div class="div-cart-img">
+                                <img src="/static/images/icons/icon-cart-empty.svg" class="cart-img" alt="">
+                            </div>
+                        </div>
+                        <p class="cart-product-count">0</p>
+                    {% endif %}
                 </a>
+                <!-- cart with product count -->
             </li>
         </ul>
     </div>

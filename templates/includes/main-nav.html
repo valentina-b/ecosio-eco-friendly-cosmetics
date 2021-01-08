@@ -5,7 +5,25 @@
     <a href="{% url 'homepage' %}" class="nav-link logo d-lg-none d-md-flex">
         ECOS<span class="span-green">i</span>O
     </a>
-
+    <!-- cart with product count -->
+    <a href="{% url 'view_cart' %}" class="d-lg-none d-xl-none cart-link-mob">
+        {% if product_count > 0 %}
+            <div class="cart">
+                <div class="div-cart-img">
+                    <img src="/static/images/icons/icon-cart-full.svg" class="cart-img" alt="">
+                </div>
+                <p class="cart-product-count">{{ product_count }}</p>
+            </div>
+        {% else %}
+            <div class="cart">
+                <div class="div-cart-img">
+                    <img src="/static/images/icons/icon-cart-empty.svg" class="cart-img" alt="">
+                </div>
+                <p class="cart-product-count">0</p>
+            </div>
+        {% endif %}
+    </a>
+    <!-- cart with product count -->
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
@@ -64,12 +82,4 @@
             </li>
         </ul>
     </div>
-        <a href="{% url 'view_cart' %}" class="d-lg-none d-xl-none cart-link-mob">
-        <div class="cart">
-            <div class="div-cart-img">
-                <img src="/static/images/icons/icon-cart-full.svg" class="cart-img" alt="">
-            </div>
-        </div>
-        <p class="cart-product-count">99</p>
-    </a>
 </nav>
