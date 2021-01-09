@@ -1,0 +1,64 @@
+<!-- display cart products  -->
+
+<div class="row">
+    <div class="container container-line-items">
+
+        {% for item in cart_items %}
+        <div class="div-line-item">
+            <div class="div-line-item-img">
+                <div class="div-image">
+                    <img src="/media/{{ item.product.image }}" alt="">
+                </div>
+            </div>
+            <div class="div-line-item-summary">
+                <div class="div-info-summary">
+                    <div class="div-textual-summary">
+                        <h2 class="cart-product-title">{{ item.product.name }}</h2>
+                        <p class="cart-product-brand-price">{{ item.product.brand.friendly_name}} | {{ item.product.price }}€</p>
+                        <p class="cart-product-sku">SKU: {{ item.product.sku }}</p>
+                    </div>
+                    <div class="div-modify-quantity">
+                        <form class="form update-form" action="{% url 'adjust_cart' item.item_id %}" method="POST">
+                        {% csrf_token %}
+                            <!-- add/subtract input -->
+                            <div class="form-group div-form-product-quantity">
+                                <div class="input-group input-group-product-quantity">
+                                    <div class="input-group-prepend">
+                                        <button class="decrement-quantity btn rounded-0" data-item-id="{{ item.item_id }}" id="decrement-quantity-{{ item.item_id }}">
+                                            <img src="/static/images/icons/icon-product-subtract.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <input class="form-control quantity-input input-product-quantity" type="number"
+                                        name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                        data-item-id="{{ item.item_id }}"
+                                        id="id-quantity-{{ item.item_id }}">
+                                    <div class="input-group-append">
+                                        <button class="increment-quantity btn rounded-0" data-item-id="{{ item.item_id }}" id="increment-quantity-{{ item.item_id }}">
+                                            <img src="/static/images/icons/icon-product-add.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- add/subtract input -->
+                            <input type="submit" class="text-link text-link-input update-link" value="update">
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="div-cost-summary">
+                    <div class="div-delete-line-item">
+                        <div class="div-delete">
+                            <div class="div-delete-img"></div>
+                        </div>
+                    </div>
+                    <div class="div-quantity-subtotal">
+                        <p>quantity: {{ item.quantity }}</p>
+                        <p>subtotal: X</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
