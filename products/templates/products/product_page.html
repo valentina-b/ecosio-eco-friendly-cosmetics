@@ -83,6 +83,8 @@
                 <div class="div-bottom-details">
                     <div class="product-page-buying-details">
                         <p class="product-details-price">{{ product.price }}€</p>
+                        <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
+                        {% csrf_token %}
                             <!-- add/subtract input -->
                             <div class="form-group">
                                 <div class="input-group input-group-product-quantity">
@@ -103,12 +105,14 @@
                                 </div>
                             </div>
                             <!-- add/subtract input -->
-                        <a href="#" class="cta cta-black product-page-cta">Add to cart</a>
+                        <input type="submit" class="cta cta-black product-page-cta" value="Add to cart">
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         {% if request.user.is_authenticated %}
                             <p class="loyalty-programme-product-info">this item brings 3 loyalty points!</p>
                         {% else %}
                             <p class="loyalty-programme-product-info">this item brings 3 loyalty points – <a href="#" class="text-link">register here.</a></p>
                         {% endif %}
+                        </form>
                     </div>
                 </div>
             </div>
