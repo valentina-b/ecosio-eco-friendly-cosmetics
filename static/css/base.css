@@ -974,10 +974,15 @@ input[type=number] {
     width: 75%;
 }
 
-.cart-product-title {
+.cart-product-title, .cart-product-title:hover {
     font-size: 18px;
     text-transform: uppercase;
     max-width: 280px;
+    color: var(--color-black);
+}
+
+.cart-product-title-link:hover {
+    color: var(--color-black);
 }
 
 .cart-product-brand-price {

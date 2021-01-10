@@ -13,14 +13,18 @@
                 </div>
             </div>
             <div class="div-line-item-img">
-                <div class="div-image">
-                    <img src="/media/{{ item.product.image }}" alt="">
-                </div>
+                <a href="{% url 'product_page' item.product.id %}">
+                    <div class="div-image">
+                        <img src="/media/{{ item.product.image }}" alt="">
+                    </div>
+                </a>
             </div>
             <div class="div-line-item-summary">
                 <div class="div-info-summary">
                     <div class="div-textual-summary">
-                        <h2 class="cart-product-title">{{ item.product.name }}</h2>
+                        <a href="{% url 'product_page' item.product.id %}" class="cart-product-title-link">
+                            <h2 class="cart-product-title">{{ item.product.name }}</h2>
+                        </a>
                         <p class="cart-product-brand-price">{{ item.product.brand.friendly_name}} | {{ item.product.price }}€</p>
                         <p class="cart-product-sku">SKU: {{ item.product.sku }}</p>
                     </div>
