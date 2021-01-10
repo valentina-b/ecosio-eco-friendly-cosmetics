@@ -1,16 +1,16 @@
-<!-- display products / product cards -->
+<!-- empty cart page -->
 
-<div class="row div-empty-cart">
-    <div class="container container-cart">
-
+<div class="container">
+    <div class="row div-empty-cart">
         <p class="empty-cart-message">
             You haven't added any products to your cart yet. Check out what we have in our shop!
         </p>
-        <div class="row">
-            <div class="col-12">
-        <a href="{% url 'products' %}" class="cta cta-black cta-empty-cart">Shop here</a>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <a href="{% url 'products' %}" class="cta cta-black">Shop here</a>
             </div>
         </div>
-
     </div>
 </div>

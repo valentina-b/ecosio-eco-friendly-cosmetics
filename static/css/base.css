@@ -21,6 +21,10 @@ body {
     color: var(--color-black);
 }
 
+main {
+    min-height: calc(100vh - 165px);
+}
+
 h1, h2, h3, h4 {
     font-family: var(--font-poppins);
 }
@@ -413,7 +417,7 @@ input[type="text"] {
 footer {
     background-color: var(--color-black);
     color: var(--color-white);
-    min-height: 150px;
+    min-height: 165px;
     font-family: var(--font-poppins);
 }
 
@@ -618,9 +622,9 @@ ul p {
     height: 125px;
 }
 
-.container-shop, .container-cart {
+/* .container-shop, .container-cart {
     min-height: 71vh;
-}
+} */
 
 .breadcrumbs {
     margin-top: 50px;
@@ -939,12 +943,6 @@ input[type=number] {
     position: absolute;
     bottom: 16px;
     right: 0px;
-}
-
-.cta-empty-cart {
-    display: block;
-    width: fit-content;
-    margin: auto;
 }
 
 .div-line-item {
