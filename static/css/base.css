@@ -1018,6 +1018,11 @@ input[type=number] {
     float: right;
 }
 
+.div-delete-img:hover {
+    background:  url('../images/icons/icon-delete-green.svg') no-repeat center;
+    cursor: pointer;
+}
+
 .div-info-summary {
     float: left;
 }
