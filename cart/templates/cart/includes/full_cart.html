@@ -1,11 +1,17 @@
 <!-- display cart products  -->
 {% load cart_tools %}
 
+<div class="container">
 <div class="row">
     <div class="container container-line-items">
 
         {% for item in cart_items %}
         <div class="div-line-item">
+            <div class="div-delete-line-item d-block d-sm-none">
+                <div class="div-delete">
+                    <div class="div-delete-img remove-item" id="remove_{{ item.item_id }}"></div>
+                </div>
+            </div>
             <div class="div-line-item-img">
                 <div class="div-image">
                     <img src="/media/{{ item.product.image }}" alt="">
@@ -48,7 +54,7 @@
                 </div>
 
                 <div class="div-cost-summary">
-                    <div class="div-delete-line-item">
+                    <div class="div-delete-line-item d-none d-sm-block">
                         <div class="div-delete">
                             <div class="div-delete-img remove-item" id="remove_{{ item.item_id }}"></div>
                         </div>
@@ -62,4 +68,28 @@
         </div>
         {% endfor %}
     </div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="container container-costs-summary">
+        <div class="div-cart-costs-summary">
+            <div class="div-shipping-costs">
+                {% if free_delivery_delta > 0 %}
+                    <p>shipping costs: {{ delivery|floatformat:2 }}</p>
+                    <p id="shipping-costs-message" class="green-text">*free shipping available by spending {{ free_delivery_delta|floatformat:2 }}€ more</p>
+                {% else %}
+                    <p>shipping costs: <span class="green-text text-uppercase">FREE</span></p>
+                {% endif %}
+            </div>
+            <div class="div-total-costs">
+                <p class="green-text text-uppercase">Total: {{ grand_total|floatformat:2 }}€</p>
+            </div>
+            <div class="div-checkout-cta">
+                <a href="#" class="cta cta-black cta-empty-cart d-block float-right">Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
