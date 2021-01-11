@@ -17,7 +17,12 @@
             <span class="product-card-price">{{ random_product_1.price }}</span>€
         </p>
         <div class="d-flex justify-content-center">
-            <a href="#" class="cta cta-white">Add to cart</a>
+            <form class="form" action="{% url 'add_to_cart' random_product_1.id %}" method="POST">
+                {% csrf_token %}
+                    <input name="quantity" type="hidden" value="1">
+                    <input type="submit" class="cta cta-white" value="Add to cart">
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+            </form>
         </div>
     </div>
 </div>
