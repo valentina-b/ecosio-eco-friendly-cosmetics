@@ -177,10 +177,9 @@
     <div class="container">
         {% include 'products/includes/product_page_recommendations.html' %}
     </div>
+{% endblock %}
 
-    {% block postloadjs %}
-    {{ block.super }}
-        {% include 'products/includes/quantity_input_script.html' %}
-    {% endblock %}
-
+{% block postloadjs %}
+{{ block.super }}
+    {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
