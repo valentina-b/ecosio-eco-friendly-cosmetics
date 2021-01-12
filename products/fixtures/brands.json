@@ -32,7 +32,7 @@
         "fields": {
             "name": "john_masters_organics",
             "friendly_name": "John Masters Organics",
-            "short_name": "John Masters Organics"
+            "short_name": "JMO"
         }
     },
     {
@@ -59,7 +59,7 @@
         "fields": {
             "name": "organically_epic",
             "friendly_name": "Organically Epic",
-            "short_name": "Organically Epic"
+            "short_name": "OE"
         }
     },
     {
