@@ -1082,6 +1082,14 @@ input[type=number] {
 }
 /* cart */
 
+/* checkout */
+.div-hr {
+    width: 40%;
+    border-bottom: 1px solid var(--color-gray);
+    margin: 35px auto;
+}
+/* checkout */
+
 /* toasts */
 .message-container {
     position: fixed;
