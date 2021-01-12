@@ -112,8 +112,9 @@ h2, .h2-style {
 }
 
 input[type="text"] {
-    font-family: var(--font-poppins);
+    font-family: var(--font-roboto);
     color: var(--color-black);
+    font-size: 12px;
 }
 
 .form-control:focus {
@@ -160,7 +161,7 @@ input[type="text"] {
 .cta {
     font-size: 12px;
     text-transform: uppercase;
-    padding: 15px 30px;
+    padding: 12px 30px;
     border: var(--border-black);
 }
 
@@ -692,7 +693,7 @@ ul p {
 .categories-ctas {
     height: 47px;
     padding-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .categories-ctas > .cta {
