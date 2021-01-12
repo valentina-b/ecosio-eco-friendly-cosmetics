@@ -91,7 +91,7 @@
                 <p class="green-text text-uppercase">Total: {{ grand_total|floatformat:2 }}€</p>
             </div>
             <div class="div-checkout-cta">
-                <a href="#" class="cta cta-black cta-empty-cart d-block float-right">Checkout</a>
+                <a href="{% url 'checkout' %}" class="cta cta-black cta-empty-cart d-block float-right">Checkout</a>
             </div>
         </div>
     </div>
