@@ -111,7 +111,7 @@ h2, .h2-style {
     padding-top: 2px;
 }
 
-input[type="text"] {
+input[type="text"], .stripe-style-input {
     font-family: var(--font-roboto);
     color: var(--color-black);
     font-size: 12px;
@@ -123,7 +123,7 @@ input[type="text"] {
 }
 
 ::placeholder {
-    font-family: var(--font-poppins);
+    font-family: var(--font-roboto);
     color: var(--color-gray)!important;
 }
 
@@ -792,7 +792,6 @@ ul p {
 
 .input-group-prepend button, .input-group-append button {
     background-color: var(--color-black);
-    /* border: var(--border-black); */
     width: 40px;
 }
 
@@ -1088,6 +1087,52 @@ input[type=number] {
     border-bottom: 1px solid var(--color-gray);
     margin: 35px auto;
 }
+
+.stripe-style-input {
+    border: var(--border-black);
+    border-radius: 0;
+}
+
+.stripe-style-input:active, .stripe-style-input:focus {
+    border-color: var(--color-green);
+}
+
+label {
+    font-family: var(--font-poppins);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#payment-form .form-group {
+    margin-bottom: 5px;
+}
+
+.form-check {
+    padding: 12px 0;
+}
+
+.form-check label {
+    font-size: 12px;
+}
+
+.submit-button .cta-black {
+    margin-left: 5%;
+    width: 50%;
+}
+
+.submit-button .cta-black:hover {
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+}
+
+.submit-button .cta-white {
+    width: 35%;
+}
+
+fieldset .form-control {
+    width: 91%;
+}
 /* checkout */
 
 /* toasts */
@@ -1306,6 +1351,18 @@ input[type=number] {
     }
     .cart-link-mob {
         position: static;
+    }
+    .submit-button {
+        display: flex;
+        justify-content: space-between;
+    }
+    .submit-button .cta {
+        margin: 0;
+        width: unset;
+        padding: 12px 25px;
+    }
+    fieldset .form-control {
+        width: 100%;
     }
 }
 
