@@ -1,7 +1,7 @@
 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
     {% csrf_token %}
     <fieldset class="rounded px-3">
-        <legend class="fieldset-label small text-black px-2 w-auto d-none">Personal details</legend>
+        <legend class="fieldset-label small px-2 w-auto d-none">Personal details</legend>
         <label for="full_name">full name*</label>
         {{ order_form.full_name | as_crispy_field }}
         <label for="email">e-mail address*</label>
@@ -10,7 +10,7 @@
         {{ order_form.phone_number | as_crispy_field }}
     </fieldset>
     <fieldset class="rounded px-3">
-        <legend class="fieldset-label small text-black px-2 w-auto d-none">Delivery details</legend>
+        <legend class="fieldset-label small px-2 w-auto d-none">Delivery details</legend>
         <label for="street_address">street address*</label>
         {{ order_form.street_address | as_crispy_field }}
         <label for="town_or_city">town or city*</label>
@@ -21,7 +21,7 @@
         {{ order_form.country | as_crispy_field }}
     </fieldset>
     <fieldset class="px-3">
-        <legend class="fieldset-label small text-black px-2 w-auto d-none">Payment details</legend>
+        <legend class="fieldset-label small px-2 w-auto d-none">Payment details</legend>
         <!-- A Stripe card element will go here -->
         <div class="" id="card-element"></div>
 
