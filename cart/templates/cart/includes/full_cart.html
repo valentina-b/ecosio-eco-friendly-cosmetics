@@ -2,98 +2,98 @@
 {% load cart_tools %}
 
 <div class="container">
-<div class="row">
-    <div class="container container-line-items">
+    <div class="row">
+        <div class="container container-line-items">
 
-        {% for item in cart_items %}
-        <div class="div-line-item">
-            <div class="div-delete-line-item d-block d-sm-none">
-                <div class="div-delete">
-                    <div class="div-delete-img remove-item" id="remove_{{ item.item_id }}"></div>
+            {% for item in cart_items %}
+            <div class="div-line-item">
+                <div class="div-delete-line-item d-block d-sm-none">
+                    <div class="div-delete">
+                        <div class="div-delete-img remove-item" id="remove_{{ item.item_id }}"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="div-line-item-img">
-                <a href="{% url 'product_page' item.product.id %}">
-                    <div class="div-image">
-                        <img src="/media/{{ item.product.image }}" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="div-line-item-summary">
-                <div class="div-info-summary">
-                    <div class="div-textual-summary">
-                        <a href="{% url 'product_page' item.product.id %}" class="cart-product-title-link">
-                            <h2 class="cart-product-title">{{ item.product.name }}</h2>
-                        </a>
-                        <p class="cart-product-brand-price">{{ item.product.brand.friendly_name}} | {{ item.product.price }}€</p>
-                        <p class="cart-product-sku">SKU: {{ item.product.sku }}</p>
-                    </div>
-                    <div class="div-modify-quantity">
-                        <form class="form update-form" action="{% url 'adjust_cart' item.item_id %}" method="POST">
-                        {% csrf_token %}
-                            <!-- add/subtract input -->
-                            <div class="form-group div-form-product-quantity">
-                                <div class="input-group input-group-product-quantity">
-                                    <div class="input-group-prepend">
-                                        <button class="decrement-quantity btn rounded-0" data-item-id="{{ item.item_id }}" id="decrement-quantity-{{ item.item_id }}">
-                                            <img src="/static/images/icons/icon-product-subtract.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <input class="form-control quantity-input input-product-quantity" type="number"
-                                        name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                                        data-item-id="{{ item.item_id }}"
-                                        id="id-quantity-{{ item.item_id }}">
-                                    <div class="input-group-append">
-                                        <button class="increment-quantity btn rounded-0" data-item-id="{{ item.item_id }}" id="increment-quantity-{{ item.item_id }}">
-                                            <img src="/static/images/icons/icon-product-add.svg" alt="">
-                                        </button>
+                <div class="div-line-item-img">
+                    <a href="{% url 'product_page' item.product.id %}">
+                        <div class="div-image">
+                            <img src="/media/{{ item.product.image }}" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="div-line-item-summary">
+                    <div class="div-info-summary">
+                        <div class="div-textual-summary">
+                            <a href="{% url 'product_page' item.product.id %}" class="cart-product-title-link">
+                                <h2 class="cart-product-title">{{ item.product.name }}</h2>
+                            </a>
+                            <p class="cart-product-brand-price">{{ item.product.brand.friendly_name}} | {{ item.product.price }}€</p>
+                            <p class="cart-product-sku">SKU: {{ item.product.sku }}</p>
+                        </div>
+                        <div class="div-modify-quantity">
+                            <form class="form update-form" action="{% url 'adjust_cart' item.item_id %}" method="POST">
+                            {% csrf_token %}
+                                <!-- add/subtract input -->
+                                <div class="form-group div-form-product-quantity">
+                                    <div class="input-group input-group-product-quantity">
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-quantity btn rounded-0" data-item-id="{{ item.item_id }}" id="decrement-quantity-{{ item.item_id }}">
+                                                <img src="/static/images/icons/icon-product-subtract.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <input class="form-control quantity-input input-product-quantity" type="number"
+                                            name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                            data-item-id="{{ item.item_id }}"
+                                            id="id-quantity-{{ item.item_id }}">
+                                        <div class="input-group-append">
+                                            <button class="increment-quantity btn rounded-0" data-item-id="{{ item.item_id }}" id="increment-quantity-{{ item.item_id }}">
+                                                <img src="/static/images/icons/icon-product-add.svg" alt="">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- add/subtract input -->
-                            <input type="submit" class="text-link text-link-input update-link" value="update">
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        </form>
-                    </div>
-                </div>
-
-                <div class="div-cost-summary">
-                    <div class="div-delete-line-item d-none d-sm-block">
-                        <div class="div-delete">
-                            <div class="div-delete-img remove-item" id="remove_{{ item.item_id }}"></div>
+                                <!-- add/subtract input -->
+                                <input type="submit" class="text-link text-link-input update-link" value="update">
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </form>
                         </div>
                     </div>
-                    <div class="div-quantity-subtotal">
-                        <p>quantity: {{ item.quantity }}</p>
-                        <p>subtotal: {{ item.product.price | calc_subtotal:item.quantity }}€</p>
+
+                    <div class="div-cost-summary">
+                        <div class="div-delete-line-item d-none d-sm-block">
+                            <div class="div-delete">
+                                <div class="div-delete-img remove-item" id="remove_{{ item.item_id }}"></div>
+                            </div>
+                        </div>
+                        <div class="div-quantity-subtotal">
+                            <p>quantity: {{ item.quantity }}</p>
+                            <p>subtotal: {{ item.product.price | calc_subtotal:item.quantity }}€</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
-</div>
 </div>
 
 <div class="container">
-<div class="row">
-    <div class="container container-costs-summary">
-        <div class="div-cart-costs-summary">
-            <div class="div-shipping-costs">
-                {% if free_delivery_delta > 0 %}
-                    <p>shipping costs: {{ delivery|floatformat:2 }}</p>
-                    <p id="shipping-costs-message" class="green-text">*free shipping available by spending {{ free_delivery_delta|floatformat:2 }}€ more</p>
-                {% else %}
-                    <p>shipping costs: <span class="green-text text-uppercase">FREE</span></p>
-                {% endif %}
-            </div>
-            <div class="div-total-costs">
-                <p class="green-text text-uppercase">Total: {{ grand_total|floatformat:2 }}€</p>
-            </div>
-            <div class="div-checkout-cta">
-                <a href="{% url 'checkout' %}" class="cta cta-black cta-empty-cart d-block float-right">Checkout</a>
+    <div class="row">
+        <div class="container container-costs-summary">
+            <div class="div-cart-costs-summary">
+                <div class="div-shipping-costs">
+                    {% if free_delivery_delta > 0 %}
+                        <p>shipping costs: {{ delivery|floatformat:2 }}</p>
+                        <p id="shipping-costs-message" class="green-text">*free shipping available by spending {{ free_delivery_delta|floatformat:2 }}€ more</p>
+                    {% else %}
+                        <p>shipping costs: <span class="green-text text-uppercase">FREE</span></p>
+                    {% endif %}
+                </div>
+                <div class="div-total-costs">
+                    <p class="green-text text-uppercase">Total: {{ grand_total|floatformat:2 }}€</p>
+                </div>
+                <div class="div-checkout-cta">
+                    <a href="{% url 'checkout' %}" class="cta cta-black cta-full-cart d-block float-md-right">Checkout</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>

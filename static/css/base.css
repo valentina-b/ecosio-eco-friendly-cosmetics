@@ -1080,6 +1080,10 @@ input[type=number] {
     margin: 25px 0;
     height: 75px;
 }
+
+.cta-full-cart {
+    width: fit-content;
+}
 /* cart */
 
 /* checkout */
@@ -1524,6 +1528,9 @@ fieldset .form-control, #card-element {
     }
     .submit-button .cta-black {
         margin-left: 5%;
+    }
+    .div-cart-costs-summary p, .div-order-costs-summary p {
+        text-align: left;
     }
 }
 
