@@ -8,6 +8,7 @@
     --color-gray: #C4C4C4;
     --color-gray-light: #F5F5F5;
     --color-white: #FFFFFF;
+    --color-error: #DA4EAA;
     --border-black: 1px solid var(--color-black);
     --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
@@ -1089,13 +1090,28 @@ input[type=number] {
     margin: 35px auto;
 }
 
-.stripe-style-input {
+.stripe-style-input, #card-element {
     border: var(--border-black);
     border-radius: 0;
 }
 
 .stripe-style-input:active, .stripe-style-input:focus {
     border-color: var(--color-green);
+}
+
+#card-element {
+    padding: .375rem .75rem;
+    height: 30px;
+}
+
+#card-element:active, #card-element:focus {
+    border-color: var(--color-green);
+}
+
+#card-errors {
+    font-size: 12px;
+    padding-top: 8px;
+    color: var(--color-error);
 }
 
 label {
@@ -1105,7 +1121,7 @@ label {
 }
 
 #payment-form .form-group {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .form-check {
@@ -1131,7 +1147,7 @@ label {
     width: 35%;
 }
 
-fieldset .form-control {
+fieldset .form-control, #card-element {
     width: 91%;
 }
 
@@ -1431,7 +1447,7 @@ fieldset .form-control {
         width: unset;
         padding: 12px 25px;
     }
-    fieldset .form-control {
+    fieldset .form-control, #card-element {
         width: 100%;
     }
 }

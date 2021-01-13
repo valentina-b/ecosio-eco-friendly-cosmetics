@@ -11,17 +11,17 @@ var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
 var style = {
     base: {
-        color: '#000',
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-        fontSmoothing: 'antialiased',
-        fontSize: '16px',
+        color: '#333333',
+        fontFamily: '"Roboto", sans-serif',
+        fontSize: '12px',
         '::placeholder': {
-            color: '#aab7c4'
+            color: '#C4C4C4',
+            textTransform: 'lowercase'
         }
     },
     invalid: {
-        color: '#dc3545',
-        iconColor: '#dc3545'
+        color: '#DA4EAA',
+        iconColor: '#DA4EAA'
     }
 };
 var card = elements.create('card', {style: style});
