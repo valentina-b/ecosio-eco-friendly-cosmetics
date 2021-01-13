@@ -1,0 +1,21 @@
+<div class="paid-order-details">
+    <div class="div-order-details mb-4">
+        <h2 class="h2-order-confirmation mb-3">Order details</h2>
+        <p class="mb-1">order ID: {{ order.order_number }}</p>
+        <p class="mb-1">date: {{ order.date }}</p>
+    </div>
+    <div class="div-order-details mb-4">
+        <h2 class="h2-order-confirmation mb-3">Delivery details</h2>
+        <p class="mb-1">recipient: {{ order.full_name }}</p>
+        <p class="mb-1">address: {{ order.street_address }}</p>
+        <p class="mb-1 pl-57">{{ order.town_or_city }} {{ order.postcode }}</p>
+        <p class="mb-1 pl-57">{{ order.country }}</p>
+    </div>
+    <div class="div-order-details mb-4">
+        <h2 class="h2-order-confirmation mb-3">Contact details</h2>
+        <p class="mb-1">phone number: {{ order.phone_number }}</p>
+    </div>
+    <div class="mt-5 mb-5">
+        <a href="{% url 'products' %}" class="btn cta cta-black rounded-0">See more products</a>
+    </div>
+</div>

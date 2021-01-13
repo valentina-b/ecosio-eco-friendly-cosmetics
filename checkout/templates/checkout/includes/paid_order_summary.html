@@ -1,0 +1,36 @@
+<div class="row order-summary-row m-0">
+    <div class="order-summary-cards">
+        {% for item in order.lineitems.all %}
+        <div class="order-summary-card">
+            <div class="order-summary-card-quantity">
+                <p>{{ item.quantity }}</p>
+            </div>
+            <div class="div-order-summary-card">
+                <div class="div-order-summary-product">
+                    <img src="/media/{{ item.product.image }}" alt="">
+                    <p class="order-summary-card-title">{{ item.product.name }}</p>
+                    <p class="order-summary-card-brand-price">{{ item.product.brand.short_name }} | {{ item.product.price }}€</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="row m-0 mb-5">
+    <div class="div-order-costs-summary">
+        <div class="div-order-total-costs">
+            <p>order total: {{ order.order_total|floatformat:2 }}€</p>
+        </div>
+        <div class="div-shipping-costs">
+            {% if order.delivery_cost == 4 %}
+                <p>shipping costs: {{ order.delivery_cost }}</p>
+            {% else %}
+                <p>shipping costs: <span class="green-text text-uppercase">FREE</span></p>
+            {% endif %}
+        </div>
+        <div class="div-total-costs">
+            <p class="green-text text-uppercase">total: {{ order.grand_total|floatformat:2 }}€</p>
+        </div>
+    </div>
+</div>

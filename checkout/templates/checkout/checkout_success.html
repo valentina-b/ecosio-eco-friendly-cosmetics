@@ -6,4 +6,36 @@
 {% block content %}
     <div class="correct-header">
     </div>
+
+        <div class="container-fluid">
+        <div class="container">
+            <div class="row shop-top-row">
+                <div class="col-sm-6 col-12">
+                    {% include 'checkout/includes/success_checkout_breadcrumbs.html' %}
+                </div>
+                <div class="col-sm-6 col-12">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="h2-style text-center">Thank you</h1>
+                <div class="div-hr"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                {% include 'checkout/includes/paid_order_details.html' %}
+            </div>
+            <div class="col-12 col-md-6">
+                {% include 'checkout/includes/paid_order_summary.html' %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
