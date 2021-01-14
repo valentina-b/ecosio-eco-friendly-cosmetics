@@ -3,7 +3,7 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000001",
+            "sku": "ep0001",
             "category": 1,
             "brand": 1,
             "name": "B & Tea Balancing Toner",
@@ -22,7 +22,7 @@
         "pk": 2,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000002",
+            "sku": "ep0002",
             "category": 2,
             "brand": 1,
             "name": "Double-Edge Razor",
@@ -41,7 +41,7 @@
         "pk": 3,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000003",
+            "sku": "ep0003",
             "category": 3,
             "brand": 1,
             "name": "Parsley Seed Anti-Oxidant Serum",
@@ -60,7 +60,7 @@
         "pk": 4,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000004",
+            "sku": "ep0004",
             "category": 1,
             "brand": 1,
             "name": "Moroccan Neroli Post-Shave Lotion",
@@ -79,7 +79,7 @@
         "pk": 5,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000005",
+            "sku": "ep0005",
             "category": 3,
             "brand": 1,
             "name": "Purifying Facial Exfoliant Paste",
@@ -98,7 +98,7 @@
         "pk": 6,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000006",
+            "sku": "ep0006",
             "category": 2,
             "brand": 1,
             "name": "Shaving Brush",
@@ -117,7 +117,7 @@
         "pk": 7,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000007",
+            "sku": "ep0007",
             "category": 1,
             "brand": 1,
             "name": "Moroccan Neroli Shaving Serum",
@@ -136,7 +136,7 @@
         "pk": 8,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000008",
+            "sku": "ep0008",
             "category": 4,
             "brand": 1,
             "name": "Moroccan Neroli Shaving Duet",
@@ -155,7 +155,7 @@
         "pk": 9,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000009",
+            "sku": "ep0009",
             "category": 3,
             "brand": 2,
             "name": "hydrating body cream - la lotion infinie",
@@ -174,7 +174,7 @@
         "pk": 10,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000010",
+            "sku": "ep0010",
             "category": 3,
             "brand": 2,
             "name": "illuminating hydration bar - le savon lune",
@@ -193,7 +193,7 @@
         "pk": 11,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000011",
+            "sku": "ep0011",
             "category": 3,
             "brand": 2,
             "name": "nourishing oil milk cleanser - la lune de velours",
@@ -212,7 +212,7 @@
         "pk": 12,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000012",
+            "sku": "ep0012",
             "category": 3,
             "brand": 3,
             "name": "Bamboo Cotton Buds",
@@ -231,7 +231,7 @@
         "pk": 13,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000013",
+            "sku": "ep0013",
             "category": 2,
             "brand": 3,
             "name": "Bamboo Safety Razor",
@@ -250,7 +250,7 @@
         "pk": 14,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000014",
+            "sku": "ep0014",
             "category": 2,
             "brand": 3,
             "name": "Black Metal Safety Razor",
@@ -269,7 +269,7 @@
         "pk": 15,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000015",
+            "sku": "ep0015",
             "category": 2,
             "brand": 3,
             "name": "Rose Gold Metal Safety Razor",
@@ -288,7 +288,7 @@
         "pk": 16,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000016",
+            "sku": "ep0016",
             "category": 2,
             "brand": 3,
             "name": "Silver Metal Safety Razor",
@@ -307,7 +307,7 @@
         "pk": 17,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000017",
+            "sku": "ep0017",
             "category": 3,
             "brand": 3,
             "name": "Silk Floss",
@@ -326,7 +326,7 @@
         "pk": 18,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000018",
+            "sku": "ep0018",
             "category": 3,
             "brand": 4,
             "name": "Conditioner for Fine Hair with Rosemary & Peppermint",
@@ -345,7 +345,7 @@
         "pk": 19,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000019",
+            "sku": "ep0019",
             "category": 3,
             "brand": 4,
             "name": "Hair Milk with Rose & Apricot",
@@ -364,7 +364,7 @@
         "pk": 20,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000020",
+            "sku": "ep0020",
             "category": 3,
             "brand": 4,
             "name": "Hair Paste",
@@ -383,7 +383,7 @@
         "pk": 21,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000021",
+            "sku": "ep0021",
             "category": 3,
             "brand": 4,
             "name": "Pineapple Lip Calm",
@@ -402,7 +402,7 @@
         "pk": 22,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000022",
+            "sku": "ep0022",
             "category": 3,
             "brand": 4,
             "name": "Scalp Follicle Treatment & Volumizer",
@@ -421,7 +421,7 @@
         "pk": 23,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000023",
+            "sku": "ep0023",
             "category": 3,
             "brand": 4,
             "name": "Scalp Purifying Serum with Spearmint & Meadowsweet",
@@ -440,7 +440,7 @@
         "pk": 24,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000024",
+            "sku": "ep0024",
             "category": 3,
             "brand": 4,
             "name": "Scalp Stimulating Shampoo with Spearmint & Meadowsweet",
@@ -459,7 +459,7 @@
         "pk": 25,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000025",
+            "sku": "ep0025",
             "category": 3,
             "brand": 4,
             "name": "Lavender Rosemary Shampoo for normal hair",
@@ -478,7 +478,7 @@
         "pk": 26,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000026",
+            "sku": "ep0026",
             "category": 4,
             "brand": 4,
             "name": "Travel Kit",
@@ -497,7 +497,7 @@
         "pk": 27,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000027",
+            "sku": "ep0027",
             "category": 3,
             "brand": 5,
             "name": "Blanc Hand and Body Soap",
@@ -516,7 +516,7 @@
         "pk": 28,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000028",
+            "sku": "ep0028",
             "category": 3,
             "brand": 5,
             "name": "Charcoal Detox Soap",
@@ -535,7 +535,7 @@
         "pk": 29,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000029",
+            "sku": "ep0029",
             "category": 3,
             "brand": 5,
             "name": "Volcano Scrub Soap",
@@ -554,7 +554,7 @@
         "pk": 30,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000030",
+            "sku": "ep0030",
             "category": 4,
             "brand": 6,
             "name": "RYTMO Shaving set",
@@ -573,7 +573,7 @@
         "pk": 31,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000031",
+            "sku": "ep0031",
             "category": 4,
             "brand": 6,
             "name": "ROCCA Shaving Set",
@@ -592,7 +592,7 @@
         "pk": 32,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000032",
+            "sku": "ep0032",
             "category": 3,
             "brand": 7,
             "name": "Charcoal Infused Bamboo Toothbrush",
@@ -611,7 +611,7 @@
         "pk": 33,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000033",
+            "sku": "ep0033",
             "category": 3,
             "brand": 7,
             "name": "Dental Floss",
@@ -630,7 +630,7 @@
         "pk": 34,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000034",
+            "sku": "ep0034",
             "category": 3,
             "brand": 7,
             "name": "Eco Toothbrush",
@@ -649,7 +649,7 @@
         "pk": 35,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000035",
+            "sku": "ep0035",
             "category": 4,
             "brand": 8,
             "name": "The Single Edge Starter Set - Classic Matte",
@@ -668,7 +668,7 @@
         "pk": 36,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000036",
+            "sku": "ep0036",
             "category": 4,
             "brand": 8,
             "name": "The Single Edge Starter Set - Jet Black",
@@ -687,7 +687,7 @@
         "pk": 37,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000037",
+            "sku": "ep0037",
             "category": 2,
             "brand": 8,
             "name": "The Single Edge 2.0 - Jet Black",
@@ -706,7 +706,7 @@
         "pk": 38,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000038",
+            "sku": "ep0038",
             "category": 4,
             "brand": 8,
             "name": "The Single Edge Starter Set - Matte Black",
@@ -725,7 +725,7 @@
         "pk": 39,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000039",
+            "sku": "ep0039",
             "category": 2,
             "brand": 8,
             "name": "The Single Edge 2.0 - Matte Black",
@@ -744,7 +744,7 @@
         "pk": 40,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000040",
+            "sku": "ep0040",
             "category": 4,
             "brand": 8,
             "name": "The Single Edge Starter Set - Mirror Polish",
@@ -763,7 +763,7 @@
         "pk": 41,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000041",
+            "sku": "ep0041",
             "category": 2,
             "brand": 8,
             "name": "The Single Edge 2.0 - Mirror Polish",
@@ -782,7 +782,7 @@
         "pk": 42,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000042",
+            "sku": "ep0042",
             "category": 1,
             "brand": 8,
             "name": "Feel Good Face Wash",
@@ -801,7 +801,7 @@
         "pk": 43,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000043",
+            "sku": "ep0043",
             "category": 1,
             "brand": 8,
             "name": "Healing Post Shave",
@@ -820,7 +820,7 @@
         "pk": 44,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000044",
+            "sku": "ep0044",
             "category": 4,
             "brand": 8,
             "name": "The Single Edge Travel Case - Bourbon",
@@ -839,7 +839,7 @@
         "pk": 45,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000045",
+            "sku": "ep0045",
             "category": 4,
             "brand": 8,
             "name": "The Single Edge Travel Case - Dark Brown",
@@ -858,7 +858,7 @@
         "pk": 46,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000046",
+            "sku": "ep0046",
             "category": 4,
             "brand": 8,
             "name": "The Single Edge Travel Case - Midnight Black",
@@ -877,7 +877,7 @@
         "pk": 47,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000047",
+            "sku": "ep0047",
             "category": 1,
             "brand": 8,
             "name": "Multi Purpose Moisturizer",
@@ -896,7 +896,7 @@
         "pk": 48,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000048",
+            "sku": "ep0048",
             "category": 4,
             "brand": 8,
             "name": "Shave Accessories Set",
@@ -915,7 +915,7 @@
         "pk": 49,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000049",
+            "sku": "ep0049",
             "category": 4,
             "brand": 8,
             "name": "Shave Accessories Set",
@@ -934,7 +934,7 @@
         "pk": 50,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000050",
+            "sku": "ep0050",
             "category": 2,
             "brand": 8,
             "name": "Silvertip Shaving Brush",
@@ -953,7 +953,7 @@
         "pk": 51,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000051",
+            "sku": "ep0051",
             "category": 2,
             "brand": 8,
             "name": "The Single Edge 2.0 - Stainless Steel",
@@ -972,7 +972,7 @@
         "pk": 52,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000052",
+            "sku": "ep0052",
             "category": 2,
             "brand": 8,
             "name": "8 Single Edge Blades",
@@ -991,7 +991,7 @@
         "pk": 53,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000053",
+            "sku": "ep0053",
             "category": 4,
             "brand": 8,
             "name": "The Single Edge Starter Set - Stainless Steel",
@@ -1010,7 +1010,7 @@
         "pk": 54,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000054",
+            "sku": "ep0054",
             "category": 1,
             "brand": 8,
             "name": "Ultra Lather Shaving Cream",
@@ -1029,7 +1029,7 @@
         "pk": 55,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000055",
+            "sku": "ep0055",
             "category": 1,
             "brand": 9,
             "name": "Transformation Cleansing Oil ",
@@ -1048,7 +1048,7 @@
         "pk": 56,
         "model": "products.product",
         "fields": {
-            "sku": "ep0000000056",
+            "sku": "ep0056",
             "category": 1,
             "brand": 9,
             "name": "Ultra Hydrating Face Cream",
