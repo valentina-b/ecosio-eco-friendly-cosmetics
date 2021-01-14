@@ -9,7 +9,7 @@
         <p class="mb-1">recipient: {{ order.full_name }}</p>
         <p class="mb-1">address: {{ order.street_address }}</p>
         <p class="mb-1 pl-57">{{ order.town_or_city }} {{ order.postcode }}</p>
-        <p class="mb-1 pl-57">{{ order.country }}</p>
+        <p class="mb-1 pl-57">{{ order.country.name }}</p>
     </div>
     <div class="div-order-details mb-4">
         <h2 class="h2-order-confirmation mb-3">Contact details</h2>
