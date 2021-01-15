@@ -1268,6 +1268,51 @@ fieldset .form-control, #card-element {
 .div-profile-benefits-cta {
     padding: 40px 0 0 40px;
 }
+
+.div-donations {
+    padding-left: 40px;
+    margin-top: 25px;
+    display: flex;
+}
+
+.donation-button {
+    color: var(--color-black);
+}
+
+.donation-button:hover {
+    color: var(--color-green);
+}
+
+.div-donation-button {
+    margin-right: 20px;
+}
+
+.div-donation-frame {
+    width: 80px;
+    height: 90px;
+    border: var(--border-black);
+}
+
+.donation-button-img {
+    height: 30px;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.donation-points-value {
+    font-size: 7.5px;
+}
+
+.donation-description {
+    font-size: 8.5px;
+}
+
+.donation-points-value, .donation-description {
+    margin-top: 7px;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
 /* profile */
 
 /* toasts */
