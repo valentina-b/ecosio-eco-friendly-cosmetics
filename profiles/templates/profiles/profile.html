@@ -26,8 +26,22 @@
         </div>
     </div>
 
-    <a href="{% url 'edit_profile' %}">edit profile</a>
-    <a href="{% url 'order_history' %}">order history</a>
-    <a href="{% url 'loyalty_status' %}">loyalty status</a>
+    <div class="container loyalty-container">
+        <div class="row">
+            <div class="col-12">
+                <p>Welcome to your profile, <span class="green-text">[Username]</span>!</p>
+                <p>Select an action you would like to do. Happy shopping!</p>
+                <p>Your ECOSiO team</p>
+                <div class="div-profile-action-ctas pt-md-5 pb-md-5 mb-3 pt-3 pb-3">
+                    <a href="{% url 'order_history' %}" class="cta cta-white">See order history</a>
+                    <a href="{% url 'loyalty_status' %}" class="cta cta-white">Check loyalty status</a>
+                    <a href="{% url 'edit_profile' %}" class="cta cta-white">Edit profile details</a>
+                </div>
+                <div class="div-profile-action-ctas mb-3">
+                    <a href="{% url 'products' %}" class="cta cta-black d-inline-block m-auto">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

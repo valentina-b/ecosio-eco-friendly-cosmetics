@@ -1246,14 +1246,8 @@ fieldset .form-control, #card-element {
 
 /* profile */
 .loyalty-container {
-    max-width: 615px;
-}
-
-.loyalty-status-p {
-    font-family: var(--font-poppins);
-    /* font-size: 18px; */
-    /* width: fit-content;
-    margin: auto; */
+    max-width: 650px;
+    margin-bottom: 65px;
 }
 
 .loyalty-status-img {
@@ -1312,6 +1306,15 @@ fieldset .form-control, #card-element {
     margin-bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+.div-profile-action-ctas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-profile-action-ctas .cta {
+    display: inline-block;
 }
 /* profile */
 
@@ -1624,6 +1627,17 @@ fieldset .form-control, #card-element {
     .div-cart-costs-summary p, .div-order-costs-summary p {
         text-align: left;
     }
+    .loyalty-container {
+        max-width: 540px;
+    }
+    .div-profile-action-ctas {
+        display: grid;
+    }
+    .div-profile-action-ctas .cta {
+        display: block;
+        width: fit-content;
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1737,6 +1751,20 @@ fieldset .form-control, #card-element {
     .cart-product-title {
         max-width: unset;
     }
+    .div-benefit-card-profile {
+        margin: 25px auto;
+    }
+    .loyalty-container {
+        margin-bottom: 40px;
+    }
+    .div-benefit-text, .loyalty-status-p {
+        max-width: 320px;
+        margin: auto;
+    }
+    .div-donations {
+        padding-left: 0;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 425px) {
@@ -1769,6 +1797,9 @@ fieldset .form-control, #card-element {
     }
     .message-container {
         right: 5px;
+    }
+    .div-donation-button {
+        margin-right: 5px;
     }
 }
 /* responsiveness */
