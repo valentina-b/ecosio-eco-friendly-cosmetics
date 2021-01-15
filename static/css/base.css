@@ -1244,6 +1244,32 @@ fieldset .form-control, #card-element {
 }
 /* order confirmation */
 
+/* profile */
+.loyalty-container {
+    max-width: 615px;
+}
+
+.loyalty-status-p {
+    font-family: var(--font-poppins);
+    /* font-size: 18px; */
+    /* width: fit-content;
+    margin: auto; */
+}
+
+.loyalty-status-img {
+    width: 15px;
+}
+
+.div-benefit-text > .profile-benefits-ul {
+    list-style-image: url('../images/icons/icon-checkmark.svg');
+    margin: 0;
+}
+
+.div-profile-benefits-cta {
+    padding: 40px 0 0 40px;
+}
+/* profile */
+
 /* toasts */
 .message-container {
     position: fixed;

@@ -7,4 +7,124 @@
     <div class="correct-header">
     </div>
 
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row shop-top-row">
+                <div class="col-12">
+                    {% include 'profiles/includes/breadcrumbs_loyalty.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container loyalty-container">
+        <div class="row">
+            <div class="col">
+                <h1 class="h2-style text-center">Your loyalty points status</h1>
+                <div class="div-hr"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container loyalty-container">
+        <div class="row">
+            <div class="col-12">
+                <p class="loyalty-status-p">
+                    <img src="/static/images/about/usp-illustrations/icon-usp-medal.svg" class="loyalty-status-img" alt="">
+                    Hi [Username-Valentina], you have <span class="green-text">[54] points!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container loyalty-container mt-5">
+        <div class="row">
+            <div class="col-5">
+                <p class="text-uppercase">Level:</p>
+            </div>
+            <div class="col-7 no-padding">
+                <p class="text-uppercase">Benefits:</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container loyalty-container">
+        <div class="row benefits-row mt-1">
+            <div class="col-4 no-padding">
+                <div class="div-benefit-card">
+                    <div class="div-benefit">
+                        <img src="../static/images/loyalty-programme/benefits-illustrations/icon-benefits-level1.svg" alt="">
+                    </div>
+                    <p><span>0 - 60 points</span></p>
+                    <p>eco-newbie</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="div-benefit-text">
+                    <ul class="profile-benefits-ul">
+                        <li class="profile-benefits-li">10% off your first order</li>
+                        <li class="profile-benefits-li">saved delivery details for a smooth checkout</li>
+                        <li class="profile-benefits-li">access to your order history</li>
+                        <li class="profile-benefits-li">weekly newsletter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container loyalty-container">
+        <div class="row benefits-row">
+            <div class="col-4 no-padding">
+                <div class="div-benefit-card">
+                    <div class="div-benefit">
+                        <img src="../static/images/loyalty-programme/benefits-illustrations/icon-benefits-level2.svg" alt="">
+                    </div>
+                    <p><span>61 - 100 points</span></p>
+                    <p>eco-fighter</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="div-benefit-text">
+                    <ul class="profile-benefits-ul">
+                        <li class="profile-benefits-li"><span class="text-uppercase">free</span> delivery</li>
+                        <li class="profile-benefits-li">donate your points to a good cause</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container loyalty-container">
+        <div class="row benefits-row">
+            <div class="col-4 no-padding">
+                <div class="div-benefit-card">
+                    <div class="div-benefit">
+                        <img src="../static/images/loyalty-programme/benefits-illustrations/icon-benefits-level3.svg" alt="">
+                    </div>
+                    <p><span>101+ points</span></p>
+                    <p>eco-expert</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="div-benefit-text">
+                    <ul class="profile-benefits-ul">
+                        <li class="profile-benefits-li">
+                            <span class="text-uppercase">free</span> bi-yearly set of sample collection
+                            <br>
+                            (next shipping: 16th January 2021)
+                        </li>
+                        <li class="profile-benefits-li">
+                            invitations to events
+                            <br>
+                            (next event: Beijing, 19th March 2021)
+                        </li>
+                    </ul>
+                    <div class="div-profile-benefits-cta">
+                        <a href="#" class="cta cta-white">Register for the event</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
