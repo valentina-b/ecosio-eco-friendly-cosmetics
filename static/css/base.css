@@ -112,7 +112,8 @@ h2, .h2-style {
     padding-top: 2px;
 }
 
-input[type="text"], .stripe-style-input, .profile-form-input {
+input[type="text"], .stripe-style-input,
+.profile-form-input, .div-signup-form input {
     font-family: var(--font-roboto);
     color: var(--color-black);
     font-size: 12px;
@@ -1094,13 +1095,15 @@ input[type=number] {
     margin: 25px auto 35px auto;
 }
 
-.stripe-style-input, #card-element, .profile-form-input {
+.stripe-style-input, #card-element,
+.profile-form-input, .div-signup-form input {
     border: var(--border-black);
     border-radius: 0;
 }
 
 .stripe-style-input:active, .stripe-style-input:focus,
-.profile-form-input:active, .profile-form-input:focus {
+.profile-form-input:active, .profile-form-input:focus,
+.div-signup-form input:active, .div-signup-form input:focus {
     border-color: var(--color-green);
 }
 
@@ -1318,7 +1321,7 @@ fieldset .form-control, #card-element {
     display: inline-block;
 }
 
-.div-profile-form {
+.div-profile-form, .div-signup-form {
     max-width: 460px;
     margin: auto;
 }
