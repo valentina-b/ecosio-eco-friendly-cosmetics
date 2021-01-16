@@ -45,7 +45,7 @@
                         <p class="mb-1">date: {{ order.date }}</p>
                         <p class="mb-3">order ID: <a href="#" class="text-link">{{ order.order_number|truncatechars:15 }}</a></p>
                         <p class="mb-1 text-uppercase green-text">Total: {{ order.grand_total }}€</p>
-                        <p class="mb-1 text-uppercase green-text">Loyalty points: [10]</p>
+                        <p class="mb-1 text-uppercase green-text">Loyalty points: [{{ order.loyalty_points }}]</p>
                     </div>
                     <div class="col-12 col-md-7 profile-line-item-details">
                         <p class="mb-1">items:</p>
