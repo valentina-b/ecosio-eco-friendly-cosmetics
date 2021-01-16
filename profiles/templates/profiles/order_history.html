@@ -26,24 +26,37 @@
         </div>
     </div>
 
-    <div class="container mb-4">
+    <div class="container profile-container mb-1">
+        <div class="row">
+            <div class="col-12">
+                <p class="profile-intro-p">
+                    Below are all your recent purchases through this account, <span class="green-text">{{ user.username }}</span>.
+                    Click on the order ID for more details.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
         {% for order in orders %}
-            <div class="container profile-container mt-4 mb-1 div-profile-order">
+            <div class="container profile-container mt-4 mb-2 div-profile-order">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-5 profile-order-details">
                         <p class="mb-1">date: {{ order.date }}</p>
-                        <p class="mb-3">order ID: {{ order.order_number|truncatechars:6 }}</p>
+                        <p class="mb-3">order ID: <a href="#" class="text-link">{{ order.order_number|truncatechars:15 }}</a></p>
                         <p class="mb-1 text-uppercase green-text">Total: {{ order.grand_total }}€</p>
                         <p class="mb-1 text-uppercase green-text">Loyalty points: [10]</p>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7 profile-line-item-details">
                         <p class="mb-1">items:</p>
                         <div class="pl-3">
                             <ul class="list-unstyled">
-                                <li>
-                                    <span class="text-uppercase">{{ item.quantity }}</span> x 
-                                    <span class="text-uppercase">{{ item.product.name }}</span>
-                                </li>
+                                {% for item in order.lineitems.all %}
+                                    <li>
+                                        <span class="text-uppercase">{{ item.quantity }}</span> x 
+                                        <span class="text-uppercase">{{ item.product.name }}</span>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>

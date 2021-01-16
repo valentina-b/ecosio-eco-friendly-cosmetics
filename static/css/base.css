@@ -216,6 +216,15 @@ input[type="text"], .stripe-style-input,
 .black-text {
     color: var(--color-black);
 }
+
+.text-link {
+    color: var(--color-black);
+    text-decoration: underline;
+}
+
+.text-link:hover {
+    color: var(--color-green);
+}
 /* homepage */
 /* header */
 #hp-header-h1, #hp-header-tagline {
@@ -845,15 +854,6 @@ input[type=number] {
     padding-top: 35px;
     padding-left: 10px;
     margin: 0;
-}
-
-.text-link {
-    color: var(--color-black);
-    text-decoration: underline;
-}
-
-.text-link:hover {
-    color: var(--color-green);
 }
 
 .product-page-cta {
@@ -1656,6 +1656,9 @@ fieldset .form-control, #card-element {
         width: fit-content;
         margin: 10px 0;
     }
+    .profile-line-item-details {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1775,7 +1778,7 @@ fieldset .form-control, #card-element {
     .profile-container, .general-container {
         margin-bottom: 40px;
     }
-    .div-benefit-text, .loyalty-status-p {
+    .div-benefit-text, .profile-intro-p {
         max-width: 320px;
         margin: auto;
     }
