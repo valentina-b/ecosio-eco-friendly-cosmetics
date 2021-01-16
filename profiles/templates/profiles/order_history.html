@@ -26,4 +26,30 @@
         </div>
     </div>
 
+    <div class="container mb-4">
+        {% for order in orders %}
+            <div class="container profile-container mt-4 mb-1 div-profile-order">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p class="mb-1">date: {{ order.date }}</p>
+                        <p class="mb-3">order ID: {{ order.order_number|truncatechars:6 }}</p>
+                        <p class="mb-1 text-uppercase green-text">Total: {{ order.grand_total }}€</p>
+                        <p class="mb-1 text-uppercase green-text">Loyalty points: [10]</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="mb-1">items:</p>
+                        <div class="pl-3">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="text-uppercase">{{ item.quantity }}</span> x 
+                                    <span class="text-uppercase">{{ item.product.name }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
 {% endblock %}
