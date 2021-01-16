@@ -112,7 +112,7 @@ h2, .h2-style {
     padding-top: 2px;
 }
 
-input[type="text"], .stripe-style-input {
+input[type="text"], .stripe-style-input, .profile-form-input {
     font-family: var(--font-roboto);
     color: var(--color-black);
     font-size: 12px;
@@ -1094,12 +1094,13 @@ input[type=number] {
     margin: 25px auto 35px auto;
 }
 
-.stripe-style-input, #card-element {
+.stripe-style-input, #card-element, .profile-form-input {
     border: var(--border-black);
     border-radius: 0;
 }
 
-.stripe-style-input:active, .stripe-style-input:focus {
+.stripe-style-input:active, .stripe-style-input:focus,
+.profile-form-input:active, .profile-form-input:focus {
     border-color: var(--color-green);
 }
 
@@ -1245,7 +1246,7 @@ fieldset .form-control, #card-element {
 /* order confirmation */
 
 /* profile */
-.loyalty-container {
+.profile-container {
     max-width: 650px;
     margin-bottom: 65px;
 }
@@ -1315,6 +1316,11 @@ fieldset .form-control, #card-element {
 
 .div-profile-action-ctas .cta {
     display: inline-block;
+}
+
+.div-profile-form {
+    max-width: 460px;
+    margin: auto;
 }
 /* profile */
 
@@ -1627,7 +1633,7 @@ fieldset .form-control, #card-element {
     .div-cart-costs-summary p, .div-order-costs-summary p {
         text-align: left;
     }
-    .loyalty-container {
+    .profile-container {
         max-width: 540px;
     }
     .div-profile-action-ctas {
@@ -1754,7 +1760,7 @@ fieldset .form-control, #card-element {
     .div-benefit-card-profile {
         margin: 25px auto;
     }
-    .loyalty-container {
+    .profile-container {
         margin-bottom: 40px;
     }
     .div-benefit-text, .loyalty-status-p {

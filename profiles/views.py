@@ -17,6 +17,8 @@ def profile(request):
 
 def order_history(request):
     """ Display the user's order history. """
+    profile = get_object_or_404(UserProfile, user=request.user)
+    orders = profile.orders.all()
 
     template = 'profiles/order_history.html'
     context = {
@@ -37,7 +39,6 @@ def edit_profile(request):
             messages.success(request, 'Profile updated successfully')
 
     form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
 
     template = 'profiles/edit_profile_details.html'
     context = {
