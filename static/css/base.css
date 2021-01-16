@@ -1246,7 +1246,7 @@ fieldset .form-control, #card-element {
 /* order confirmation */
 
 /* profile */
-.profile-container {
+.profile-container, .general-container {
     max-width: 650px;
     margin-bottom: 65px;
 }
@@ -1642,7 +1642,7 @@ fieldset .form-control, #card-element {
     .div-cart-costs-summary p, .div-order-costs-summary p {
         text-align: left;
     }
-    .profile-container {
+    .profile-container, .general-container {
         max-width: 540px;
     }
     .div-profile-action-ctas {
@@ -1769,7 +1769,7 @@ fieldset .form-control, #card-element {
     .div-benefit-card-profile {
         margin: 25px auto;
     }
-    .profile-container {
+    .profile-container, .general-container {
         margin-bottom: 40px;
     }
     .div-benefit-text, .loyalty-status-p {
