@@ -929,6 +929,10 @@ input[type=number] {
 .product-recommendations-div {
     width: fit-content;
 }
+
+#add-product-form label {
+    text-transform: lowercase;
+}
 /* shop and product pages */
 
 /* cart */

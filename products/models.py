@@ -45,7 +45,7 @@ class Product(models.Model):
     brand = models.ForeignKey('Brand', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=55)
     description = models.TextField(max_length=375)
-    ingredients = models.TextField()
+    ingredients = models.TextField(max_length=4000)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     is_eco = models.BooleanField(default=True, null=True, blank=True)
     is_crueltyfree = models.BooleanField(default=True, null=True, blank=True)
