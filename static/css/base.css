@@ -113,10 +113,15 @@ h2, .h2-style {
 }
 
 input[type="text"], .stripe-style-input,
-.profile-form-input, .div-signup-form input {
+.profile-form-input, .div-signup-form input,
+.add-product-form-field {
     font-family: var(--font-roboto);
     color: var(--color-black);
     font-size: 12px;
+}
+
+input[type="file"] {
+    border: none;
 }
 
 .form-control:focus {
@@ -1096,14 +1101,16 @@ input[type=number] {
 }
 
 .stripe-style-input, #card-element,
-.profile-form-input, .div-signup-form input {
+.profile-form-input, .div-signup-form input,
+.add-product-form-field {
     border: var(--border-black);
     border-radius: 0;
 }
 
 .stripe-style-input:active, .stripe-style-input:focus,
 .profile-form-input:active, .profile-form-input:focus,
-.div-signup-form input:active, .div-signup-form input:focus {
+.div-signup-form input:active, .div-signup-form input:focus,
+.add-product-form-field:active, .add-product-form-field:focus {
     border-color: var(--color-green);
 }
 
@@ -1321,7 +1328,7 @@ fieldset .form-control, #card-element {
     display: inline-block;
 }
 
-.div-profile-form, .div-signup-form {
+.div-profile-form, .div-signup-form, #add-product-form {
     max-width: 460px;
     margin: auto;
 }
