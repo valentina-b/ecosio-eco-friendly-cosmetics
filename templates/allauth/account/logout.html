@@ -3,27 +3,33 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% block head_title %}{% trans "Log Out" %}{% endblock %}
 
 {% block inner_content %}
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="h2-style text-center">{% trans "Sign Out" %}</h1>
+                <h1 class="h2-style text-center">{% trans "Log Out" %}</h1>
                 <div class="div-hr"></div>
             </div>
         </div>
     </div>
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
-
-
+    <div class="container general-container">
+        <div class="row">
+            <div class="col">
+                <div class="div-logout-form">
+                    <p class="mb-4 mt-3">{% trans 'Are you sure you want to log out?' %}</p>
+                    <form method="post" action="{% url 'account_logout' %}">
+                        {% csrf_token %}
+                        {% if redirect_field_value %}
+                            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                        {% endif %}
+                        <a class="btn cta cta-black rounded-0 mr-2" href="{% url 'products' %}">Shop more</a>
+                        <button type="submit" class="cta cta-white rounded-0">{% trans 'Log Out' %}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
