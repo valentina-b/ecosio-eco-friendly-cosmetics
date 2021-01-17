@@ -1,6 +1,16 @@
 <!-- product card code -->
 
 <div class="div-product-card div-product-card-shop">
+    {% if request.user.is_superuser %}
+        <div class="product-card-superuser-options">
+            <a href="{% url 'edit_product' product.id %}">
+                <div class="div-product-card-edit"></div>
+            </a>
+            <a href="{% url 'delete_product' product.id %}">
+                <div class="div-product-card-delete"></div>
+            </a>
+        </div>
+    {% endif %}
     <div class="product-card-category-name">
         <p>{{ product.category.friendly_name }}</p>
     </div>

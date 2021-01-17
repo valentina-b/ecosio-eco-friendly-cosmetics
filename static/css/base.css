@@ -933,6 +933,38 @@ input[type=number] {
 #add-product-form label {
     text-transform: lowercase;
 }
+
+.product-card-superuser-options {
+    display: flex;
+    position: absolute;
+    top: 2px;
+    margin-left: 2px;
+}
+
+.div-product-card-edit {
+    background:  url('../images/icons/icon-edit-black.svg') no-repeat center;
+    width: 25px;
+    height: 25px;
+    margin-right: 2px;
+    border: 1px solid var(--color-gray);
+}
+
+.div-product-card-edit:hover {
+    background:  url('../images/icons/icon-edit-green.svg') no-repeat center;
+    border: 1px solid var(--color-green);
+}
+
+.div-product-card-delete {
+    background:  url('../images/icons/icon-delete-black.svg') no-repeat center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--color-gray);
+}
+
+.div-product-card-delete:hover {
+    background:  url('../images/icons/icon-delete-green.svg') no-repeat center;
+    border: 1px solid var(--color-green);
+}
 /* shop and product pages */
 
 /* cart */
