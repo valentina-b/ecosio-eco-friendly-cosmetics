@@ -22,7 +22,11 @@
         <div class="row">
             <div class="col-lg-6 col-12 product-page-card">
                 <div class="product-page-img-div">
-                    <img src="/media/{{ product.image }}" class="product-page-img" alt="">
+                    {% if product.image %}
+                        <img src="/media/{{ product.image }}" class="product-page-img" alt="{{ product.name }}">
+                    {% else %}
+                        <img src="{{ MEDIA_URL }}no_image.png" alt="No Image Available">
+                    {% endif %}
                 </div>
                 <p class="product-page-card-title">{{ product.name }}</p>
                 <p class="product-page-card-brand-price">

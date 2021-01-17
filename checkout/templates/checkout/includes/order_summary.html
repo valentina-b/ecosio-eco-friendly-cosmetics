@@ -7,7 +7,11 @@
             </div>
             <div class="div-order-summary-card">
                 <div class="div-order-summary-product">
-                    <img src="/media/{{ item.product.image }}" alt="">
+                    {% if item.product.image %}
+                        <img src="/media/{{ item.product.image }}" alt="{{ item.product.name }}">
+                    {% else %}
+                        <img src="{{ MEDIA_URL }}no_image.png" alt="No Image Available">
+                    {% endif %}
                     <p class="order-summary-card-title">{{ item.product.name }}</p>
                     <p class="order-summary-card-brand-price">{{ item.product.brand.short_name }} | {{ item.product.price }}€</p>
                 </div>
