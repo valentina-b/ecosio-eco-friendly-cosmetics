@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ blog.title }} by {{ blog.author }}{% endblock %}
+
+{% block header_content %}
+    <div class="blog-post-header">
+        <img src="{{ MEDIA_URL }}{{ blog.header_image }}" alt="{{ blog.title }}">
+    </div>
+{% endblock %}
+
+{% block content %}
+    <p>{{ blog.title }}</p>
+    <p>{{ blog.author }}</p>
+    <p>{{ blog.published_date }}</p>
+    <p>{{ blog.intro_paragraph }}</p>
+{% endblock %}
