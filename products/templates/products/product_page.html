@@ -21,6 +21,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-12 product-page-card">
+                {% if request.user.is_superuser %}
+                 <div class="product-page-superuser-options">
+                    <a href="{% url 'edit_product' product.id %}">
+                        <div class="div-product-card-edit"></div>
+                    </a>
+                    <a href="{% url 'delete_product' product.id %}">
+                        <div class="div-product-card-delete"></div>
+                    </a>
+                </div>
+                {% endif %}
                 <div class="product-page-img-div">
                     {% if product.image %}
                         <img src="/media/{{ product.image }}" class="product-page-img" alt="{{ product.name }}">
