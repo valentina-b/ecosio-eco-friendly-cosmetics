@@ -122,9 +122,9 @@
                         <input type="submit" class="cta cta-black product-page-cta" value="Add to cart">
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         {% if request.user.is_authenticated %}
-                            <p class="loyalty-programme-product-info">this item brings 3 loyalty points!</p>
+                            <p class="loyalty-programme-product-info">this item brings <span class="green-text">{{product_loyalty_points}}</span> loyalty points!</p>
                         {% else %}
-                            <p class="loyalty-programme-product-info">this item brings 3 loyalty points – <a href="#" class="text-link">register here.</a></p>
+                            <p class="loyalty-programme-product-info">this item brings <span class="green-text">{{product_loyalty_points}}</span> loyalty points – <a href="{% url 'account_signup' %}" class="text-link">register here.</a></p>
                         {% endif %}
                         </form>
                     </div>

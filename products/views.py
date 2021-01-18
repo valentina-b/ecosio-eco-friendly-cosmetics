@@ -90,12 +90,15 @@ def product_page(request, product_id):
     random_product_2 = three_random_products[1]
     random_product_3 = three_random_products[2]
 
+    product_loyalty_points = int(product.price / 10)
+
     context = {
         'product': product,
         'product_category': product_category,
         'random_product_1': random_product_1,
         'random_product_2': random_product_2,
         'random_product_3': random_product_3,
+        'product_loyalty_points': product_loyalty_points,
     }
 
     return render(request, 'products/product_page.html', context)
