@@ -76,6 +76,8 @@
         {% block postloadjs %}
             <script type="text/javascript">
                 $('.toast').toast('show');
+                // hide toast after 3 seconds
+                $('.toast').delay(2500).fadeOut('fast');
             </script>
         {% endblock %}
 
