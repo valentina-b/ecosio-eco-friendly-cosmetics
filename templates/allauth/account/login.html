@@ -26,9 +26,9 @@
                         {% endif %}
                         <button class="primaryAction cta cta-black mt-2" type="submit">{% trans "Log In" %}</button>
                         <p class="mt-4">
-                            <a class="button secondaryAction text-link" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+                            <a class="button secondaryAction text-link login-p" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
                         </p>
-                        <p class="mt-1">{% blocktrans %}Don't have an account? <a href="{{ login_url }}" class="text-link">Register here</a>.{% endblocktrans %}</p>
+                        <p class="mt-1 login-p">{% blocktrans %}Don't have an account? <a href="{{ signup_url }}" class="text-link">Register here</a>.{% endblocktrans %}</p>
                     </form>
                 </div>
             </div>

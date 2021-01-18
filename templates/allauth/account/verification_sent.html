@@ -5,9 +5,6 @@
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block inner_content %}
-    <div class="correct-header">
-    </div>
-
     <div class="container">
         <div class="row">
             <div class="col">
@@ -20,9 +17,12 @@
     <div class="container general-container">
         <div class="row">
             <div class="col">
-                <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+                <p>{% blocktrans %}We have sent an e-mail to you for verification. 
+                    Follow the link provided to finalize the signup process. Please contact us at 
+                    <a href="mailto:ecosio.cosmetics@gmail.com" class="green-text mail-to-link">ecosio.cosmetics@gmail.com</a> 
+                    if you do not receive it within a few minutes.{% endblocktrans %}
+                </p>
             </div>
         </div>
     </div>
-
 {% endblock %}

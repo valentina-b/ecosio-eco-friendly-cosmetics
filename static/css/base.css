@@ -114,10 +114,19 @@ h2, .h2-style {
 
 input[type="text"], .stripe-style-input,
 .profile-form-input, .div-signup-form input,
-.add-product-form-field, .div-login-form input {
+.add-product-form-field, .div-login-form input,
+.div-password-reset-form input {
     font-family: var(--font-roboto);
     color: var(--color-black);
     font-size: 12px;
+}
+
+.div-password-reset-form input[type="submit"] {
+    color: var(--color-white);
+}
+
+.div-password-reset-form input[type="submit"]:hover {
+    color: var(--color-black);
 }
 
 input[type="file"] {
@@ -132,6 +141,10 @@ input[type="file"] {
 ::placeholder {
     font-family: var(--font-roboto);
     color: var(--color-gray)!important;
+}
+
+.mail-to-link:hover {
+    color: var(--color-green);
 }
 
 #div_id_remember {
@@ -947,7 +960,8 @@ input[type=number] {
     font-size: 12px;
 }
 
-.custom-checkbox .custom-control-label::before {
+.custom-checkbox .custom-control-label::before,
+.form-check .form-check-input::before {
     border-radius: 0;
     border-color: var(--color-green);
 }
@@ -1169,7 +1183,8 @@ input[type=number] {
 
 .stripe-style-input, #card-element,
 .profile-form-input, .div-signup-form input,
-.add-product-form-field, .div-login-form input {
+.add-product-form-field, .div-login-form input,
+.div-password-reset-form input {
     border: var(--border-black);
     border-radius: 0;
 }
@@ -1178,7 +1193,8 @@ input[type=number] {
 .profile-form-input:active, .profile-form-input:focus,
 .div-signup-form input:active, .div-signup-form input:focus,
 .add-product-form-field:active, .add-product-form-field:focus,
-.div-login-form input:active, .div-login-form input:focus {
+.div-login-form input:active, .div-login-form input:focus,
+.div-password-reset-form input:active, .div-password-reset-form input:focus {
     border-color: var(--color-green);
 }
 
@@ -1211,8 +1227,10 @@ label {
     padding: 12px 0;
 }
 
-.form-check label {
+.form-check label, .form-check-p,
+.login-p, .signup-p {
     font-size: 12px;
+    font-family: var(--font-poppins);
 }
 
 .submit-button .cta-black {
@@ -1397,9 +1415,14 @@ fieldset .form-control, #card-element {
 }
 
 .div-profile-form, .div-signup-form,
-#add-product-form, .div-login-form, .div-logout-form {
+#add-product-form, .div-login-form, .div-logout-form,
+.div-password-reset-form {
     max-width: 460px;
     margin: auto;
+}
+
+.div-password-reset-form {
+    margin: unset;
 }
 
 .div-profile-order {
