@@ -10,11 +10,35 @@
 
 {% block content %}
 
-    {% for blog in blogs %}
-        <p>{{ blog.title }}</p>
-        <p>
-            <a href="{% url 'blog_post' blog.slug %}" class="text-link">{{ blog.title }}</a>
-        </p>
-    {% endfor %}
+    <section>
+        <div class="container-fluid div-section">
+            <div class="container">
+                <div class="row">
+                    <h1 class="h1-style text-center">Our blog</h1>
+                </div>
+                <div class="row mt-3">
+                    <div class="container">
+                        <p class="paragraph-margin">
+                            Looking for an interesting read? You've come to the right place! ECOSiO team is always on the hunt for 
+                            meaningful topics about eco-friendly lifestyle. Most of our articles are inspired by questions about 
+                            cosmetics, ingredients and sustanability we get from our customers. To prepare the best reading experience, 
+                            we often join efforts with our favourite brands so that our readers can get to know our suppliers better.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="container">
+            <div class="row blogs-row">
+                {% for blog in blogs %}
+                    <div class="col-12 col-md-6 mb-5">
+                        {% include 'blog/includes/blog_card.html' %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 {% endblock %}

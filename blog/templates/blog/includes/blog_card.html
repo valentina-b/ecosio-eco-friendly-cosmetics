@@ -1,0 +1,14 @@
+<div class="div-blog-card">
+    <div class="blog-card-img">
+        <a href="{% url 'blog_post' blog.slug %}">
+            <img src="{{ MEDIA_URL }}{{ blog.header_image }}" alt="{{ blog.title }}">
+        </a>
+    </div>
+    <p class="blog-post-publishing-details mt-1">
+        published on {{ blog.published_date | date:"F d Y" }}
+    </p>
+    <h2 class="blog-card-title">
+        <a href="{% url 'blog_post' blog.slug %}" class="title-link">{{ blog.title }}</a>
+    </h2>
+    <p>{{ blog.intro_paragraph|truncatechars:180 }}</p>
+</div>

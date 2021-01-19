@@ -577,11 +577,51 @@ footer p {
 
 .blog-post-header img {
     width: 100%;
+    object-fit: cover;
 }
 
 .blog-post-publishing-details {
     font-size: 12px;
     font-style: italic;
+}
+
+.blogs-row {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-blog-card {
+    width: 250px;
+    height: 525px;
+    margin: auto;
+}
+
+.blog-card-img {
+    width: 100%;
+}
+
+.blog-card-img img{
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.blog-card-title {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 5px;
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.title-link {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.title-link:hover {
+    color: var(--color-green);
 }
 /* blog page */
 
