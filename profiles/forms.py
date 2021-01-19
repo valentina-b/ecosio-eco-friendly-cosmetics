@@ -6,6 +6,13 @@ class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         exclude = ('user',)
+        labels = {
+            'default_phone_number': 'phone number',
+            'default_country': 'country',
+            'default_postcode': 'postcode',
+            'default_town_or_city': 'town or city',
+            'default_street_address': 'street address',
+        }
 
     def __init__(self, *args, **kwargs):
         """
@@ -29,4 +36,3 @@ class UserProfileForm(forms.ModelForm):
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'rounded-0 profile-form-input'
-            self.fields[field].label = False
