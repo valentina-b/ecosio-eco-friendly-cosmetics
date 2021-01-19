@@ -12,7 +12,6 @@ class Blog(models.Model):
     title = models.CharField(max_length=55)
     author = models.CharField(max_length=55, null=True, blank=True)
     slug = models.SlugField(max_length=200, unique=True)
-    blog_category = models.ForeignKey(Category, null=False, blank=False, on_delete=models.CASCADE, related_name='blog_category')
     header_image = models.ImageField()
     intro_paragraph = models.TextField(max_length=300)
     subheading_1 = models.CharField(max_length=55)

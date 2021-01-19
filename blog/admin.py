@@ -6,8 +6,8 @@ from .models import Blog
 
 class BlogAdmin(admin.ModelAdmin):
     list_display = (
-        'pk',
         'title',
+        'pk',
         'published_date',
         'slug'
     )
