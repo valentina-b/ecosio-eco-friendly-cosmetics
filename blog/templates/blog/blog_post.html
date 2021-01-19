@@ -10,8 +10,63 @@
 {% endblock %}
 
 {% block content %}
-    <p>{{ blog.title }}</p>
-    <p>{{ blog.author }}</p>
-    <p>{{ blog.published_date }}</p>
-    <p>{{ blog.intro_paragraph }}</p>
+    <section>
+        <div class="container-fluid div-section">
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                        <p class="paragraph-margin blog-post-publishing-details">
+                            published on {{ blog.published_date}} by {{ blog.author }}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <h1 class="h1-style text-center mt-3">{{ blog.title }}</h1>
+                </div>
+                <div class="row mt-3">
+                    <div class="container">
+                        <p class="paragraph-margin">
+                            {{ blog.intro_paragraph }}
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="container">
+                        <h2 class="h2-style">{{ blog.subheading_1 }}</h2>
+                        <p class="paragraph-margin">{{ blog.blog_content_1 }}</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="container">
+                        <h2 class="h2-style">{{ blog.subheading_2 }}</h2>
+                        <p class="paragraph-margin">{{ blog.blog_content_2 }}</p>
+                    </div>
+                </div>
+                {% if blog.subheading_3 and blog.blog_content_3 %}
+                    <div class="row mt-5">
+                        <div class="container">
+                            <h2 class="h2-style">{{ blog.subheading_3 }}</h2>
+                            <p class="paragraph-margin">{{ blog.blog_content_3 }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row mb-3">
+                <div class="container">
+                    <p class="paragraph-margin font-italic text-center">
+                        Interested in eco-friendly cosmetic products? We have a lot of them in our shop. Click below to have a look!
+                    </p>
+                    <div class="paragraph-cta mt-4">
+                        <a href="{% url 'products' %}" class="cta cta-white">Shop here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 {% endblock %}

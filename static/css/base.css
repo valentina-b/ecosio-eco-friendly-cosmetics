@@ -578,6 +578,11 @@ footer p {
 .blog-post-header img {
     width: 100%;
 }
+
+.blog-post-publishing-details {
+    font-size: 12px;
+    font-style: italic;
+}
 /* blog page */
 
 /* loyalty programme page */
@@ -1710,6 +1715,13 @@ fieldset .form-control, #card-element {
     .paid-order-details {
         width: 100%;
     }
+    .blog-post-header {
+        display: flex;
+        justify-content: center;
+    }
+    .blog-post-header img {
+        width: unset;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1827,7 +1839,7 @@ fieldset .form-control, #card-element {
     #hp-header-tagline {
         font-size: 0.95rem;
     }
-    #about-header, #loyalty-programme-header, #blog-header, .blog-post-header {
+    #about-header, #loyalty-programme-header, #blog-header {
         height: 360px;
     }
     #about-header {
