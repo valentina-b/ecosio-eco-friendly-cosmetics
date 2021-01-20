@@ -58,8 +58,12 @@ def edit_profile(request):
 def loyalty_status(request):
     """ Display the user's edit profile details form. """
     profile = get_object_or_404(UserProfile, user=request.user)
+    orders = profile.orders.all()
 
     template = 'profiles/loyalty_status.html'
-    context = {}
+    context = {
+        'orders': orders,
+        'profile': profile,
+    }
 
     return render(request, template, context)

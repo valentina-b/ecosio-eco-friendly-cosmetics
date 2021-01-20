@@ -5,7 +5,11 @@ from .models import UserProfile
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        exclude = ('user',)
+        exclude = (
+            'user', 'earned_loyalty_points',
+            'donated_loyalty_points', 'total_loyalty_points',
+            'going_to_event',
+            )
         labels = {
             'default_phone_number': 'phone number',
             'default_country': 'country',
