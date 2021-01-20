@@ -1,5 +1,15 @@
 <div class="div-blog-card">
     <div class="blog-card-img">
+        {% if request.user.is_superuser %}
+            <div class="blog-superuser-options">
+                <a href="{% url 'edit_blog' blog.slug %}">
+                    <div class="div-product-card-edit"></div>
+                </a>
+                <a href="#">
+                    <div class="div-product-card-delete"></div>
+                </a>
+            </div>
+        {% endif %}
         <a href="{% url 'blog_post' blog.slug %}">
             <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="blog-header-image" alt="{{ blog.title }}">
         </a>

@@ -18,6 +18,16 @@
                         <p class="paragraph-margin blog-post-publishing-details">
                             published on {{ blog.published_date | date:"F d Y" }} by <span class="green-text">{{ blog.author }}</span>
                         </p>
+                        {% if request.user.is_superuser %}
+                            <div class="blog-post-superuser-options mb-2">
+                                <a href="{% url 'edit_blog' blog.slug %}">
+                                    <div class="div-product-card-edit"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="div-product-card-delete"></div>
+                                </a>
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="row">
