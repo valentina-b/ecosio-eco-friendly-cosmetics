@@ -45,10 +45,10 @@
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <li>
-                            <a class="nav-link" href="{% url 'add_product' %}">Manage Products</a>
+                            <a class="nav-link" href="{% url 'add_product' %}">Add new product</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Manage Blog</a>
+                            <a class="nav-link" href="{% url 'add_blog' %}">Add new blog</a>
                         </li>
                     {% endif %}
                         <li>
