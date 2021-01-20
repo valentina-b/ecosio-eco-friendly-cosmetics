@@ -52,3 +52,28 @@ def add_blog(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_blog(request, slug):
+    """ Edit a product in the store """
+    blog = get_object_or_404(Blog, slug=slug)
+    if request.method == 'POST':
+        form = BlogForm(request.POST, request.FILES, instance=blog)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated blog post!')
+            return redirect(reverse('blog_post', args=[blog.slug]))
+        else:
+            messages.error(request, 'Failed to update blog post. Please ensure the form is valid.')
+    else:
+        form = BlogForm(instance=blog)
+        messages.info(request, f'You are editing {blog.title}')
+
+    template = 'blog/edit_blog.html'
+    context = {
+        'form': form,
+        'blog': blog,
+    }
+
+    return render(request, template, context)
