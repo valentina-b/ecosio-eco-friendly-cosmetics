@@ -115,7 +115,7 @@ h2, .h2-style {
 input[type="text"], .stripe-style-input,
 .profile-form-input, .div-signup-form input,
 .add-product-form-field, .div-login-form input,
-.div-password-reset-form input {
+.div-password-reset-form input, .add-blog-form-field {
     font-family: var(--font-roboto);
     color: var(--color-black);
     font-size: 12px;
@@ -1010,7 +1010,8 @@ input[type=number] {
     width: fit-content;
 }
 
-#add-product-form label {
+#add-product-form label,
+#add-blog-form label {
     text-transform: lowercase;
 }
 
@@ -1243,7 +1244,7 @@ input[type=number] {
 .stripe-style-input, #card-element,
 .profile-form-input, .div-signup-form input,
 .add-product-form-field, .div-login-form input,
-.div-password-reset-form input {
+.div-password-reset-form input, .add-blog-form-field {
     border: var(--border-black);
     border-radius: 0;
 }
@@ -1253,7 +1254,8 @@ input[type=number] {
 .div-signup-form input:active, .div-signup-form input:focus,
 .add-product-form-field:active, .add-product-form-field:focus,
 .div-login-form input:active, .div-login-form input:focus,
-.div-password-reset-form input:active, .div-password-reset-form input:focus {
+.div-password-reset-form input:active, .div-password-reset-form input:focus,
+.add-blog-form-field:active, .add-blog-form-field:focus {
     border-color: var(--color-green);
 }
 
@@ -1475,7 +1477,7 @@ fieldset .form-control, #card-element {
 
 .div-profile-form, .div-signup-form,
 #add-product-form, .div-login-form, .div-logout-form,
-.div-password-reset-form {
+.div-password-reset-form, #add-blog-form {
     max-width: 460px;
     margin: auto;
 }
