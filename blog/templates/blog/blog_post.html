@@ -5,7 +5,7 @@
 
 {% block header_content %}
     <div class="blog-post-header">
-        <img src="{{ MEDIA_URL }}{{ blog.header_image }}" alt="{{ blog.title }}">
+        <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="blog-header-image" alt="{{ blog.title }}">
     </div>
 {% endblock %}
 
@@ -68,5 +68,14 @@
             </div>
         </div>
     </section>
+{% endblock %}
 
+{% block postloadjs %}
+    {{ block.super }}
+        <script>
+        // handle broken blog header images
+        $('.blog-header-image').on("error", function() {
+            $(this).attr('src', '/media/no_image.png');
+        });
+        </script>
 {% endblock %}

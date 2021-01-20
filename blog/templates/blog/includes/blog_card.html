@@ -1,7 +1,7 @@
 <div class="div-blog-card">
     <div class="blog-card-img">
         <a href="{% url 'blog_post' blog.slug %}">
-            <img src="{{ MEDIA_URL }}{{ blog.header_image }}" alt="{{ blog.title }}">
+            <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="blog-header-image" alt="{{ blog.title }}">
         </a>
     </div>
     <p class="blog-post-publishing-details mt-1">
