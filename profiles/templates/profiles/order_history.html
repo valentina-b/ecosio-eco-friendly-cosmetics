@@ -32,7 +32,6 @@
                 {% if orders %}
                     <p class="profile-intro-p">
                         Below are all your recent purchases through this account, <span class="green-text">{{ user.username }}</span>.
-                        Click on the order ID for more details.
                     </p>
                 {% else %}
                     <p class="profile-intro-p">
@@ -55,7 +54,7 @@
                 <div class="row">
                     <div class="col-12 col-md-5 profile-order-details">
                         <p class="mb-1">date: {{ order.date }}</p>
-                        <p class="mb-3">order ID: <a href="#" class="text-link">{{ order.order_number|truncatechars:15 }}</a></p>
+                        <p class="mb-3">order ID: {{ order.order_number|truncatechars:15 }}</p>
                         <p class="mb-1 text-uppercase green-text">Total: {{ order.grand_total }}€</p>
                         <p class="mb-1 text-uppercase green-text">Loyalty points: {{ order.loyalty_points }}</p>
                     </div>
