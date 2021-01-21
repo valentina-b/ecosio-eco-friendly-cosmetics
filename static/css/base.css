@@ -1979,6 +1979,10 @@ fieldset .form-control, #card-element {
         padding-left: 0;
         justify-content: center;
     }
+    .div-profile-order-history-ctas {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 425px) {
@@ -2002,6 +2006,14 @@ fieldset .form-control, #card-element {
     .submit-button .cta-black {
         margin-left: 0;
         margin-top: 15px;
+    }
+    .div-profile-order-history-ctas {
+        display: grid;
+        justify-content: unset;
+    }
+    .div-profile-order-history-ctas .cta {
+        width: fit-content;
+        margin-bottom: 15px;
     }
 }
 

@@ -29,10 +29,22 @@
     <div class="container profile-container mb-1">
         <div class="row">
             <div class="col-12">
-                <p class="profile-intro-p">
-                    Below are all your recent purchases through this account, <span class="green-text">{{ user.username }}</span>.
-                    Click on the order ID for more details.
-                </p>
+                {% if orders %}
+                    <p class="profile-intro-p">
+                        Below are all your recent purchases through this account, <span class="green-text">{{ user.username }}</span>.
+                        Click on the order ID for more details.
+                    </p>
+                {% else %}
+                    <p class="profile-intro-p">
+                        Looks like you haven't ordered anything yet, <span class="green-text">{{ user.username }}</span>!
+                        Check out our shop for amazing eco-friendly products. Every order brings you loyalty points that
+                        you can unlock different levels and benefits with!
+                    </p>
+                    <div class="div-profile-order-history-ctas pt-md-4 pb-md-4 mb-3 pt-4 pb-4">
+                        <a href="{% url 'products' %}" class="cta cta-black mr-2">Shop here</a>
+                        <a href="{% url 'loyalty_status' %}" class="cta cta-white">Check loyalty status</a>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>

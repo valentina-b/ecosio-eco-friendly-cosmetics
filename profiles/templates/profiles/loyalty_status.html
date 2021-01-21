@@ -31,7 +31,7 @@
             <div class="col-12">
                 <p class="profile-intro-p">
                     <img src="/static/images/about/usp-illustrations/icon-usp-medal.svg" class="loyalty-status-img" alt="">
-                    Hi <span class="green-text">{{ user.username }}</span>, you have <span class="green-text">[x] points!</span>
+                    Hi <span class="green-text">{{ user.username }}</span>, you have <span class="green-text">{{ profile.total_loyalty_points }} points!</span>
                 </p>
                 <p>earned: [{{ profile.earned_loyalty_points }}]</p>
                 <p>donated: [{{ profile.donated_loyalty_points }}]</p>
