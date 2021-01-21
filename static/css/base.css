@@ -1440,13 +1440,17 @@ fieldset .form-control, #card-element {
     opacity: 0.5;
 }
 
+.cta-disabled {
+    width: fit-content;
+}
+
 .div-donations {
     padding-left: 40px;
     margin-top: 25px;
     display: flex;
 }
 
-.donation-button {
+.donation-button, .donation-button-disabled {
     color: var(--color-black);
 }
 
