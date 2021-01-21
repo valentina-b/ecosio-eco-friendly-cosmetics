@@ -24,13 +24,6 @@ class UserProfile(models.Model):
     total_loyalty_points = models.DecimalField(max_digits=10, decimal_places=0, null=False, default=0)
     going_to_event = models.BooleanField(default=False)
 
-    def update_earned_loyalty_points(self, *args, **kwargs):
-        """
-        Get the points based on previous orders
-        """
-        self.earned_loyalty_points = self.orders.aggregate(Sum('loyalty_points'))['loyalty_points__sum'] or 0
-        super().save(*args, **kwargs)
-
     def __str__(self):
         return self.user.username
 

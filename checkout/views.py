@@ -137,7 +137,9 @@ def checkout_success(request, order_number):
         order.user_profile = profile
         order.save()
 
+        # Add earned loyalty points to the user's profile
         profile.earned_loyalty_points += order.loyalty_points
+        profile.total_loyalty_points = profile.earned_loyalty_points - profile.donated_loyalty_points
         profile.save()
 
         # Save the user's info
