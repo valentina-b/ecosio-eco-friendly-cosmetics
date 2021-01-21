@@ -60,10 +60,15 @@ def loyalty_status(request):
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all()
 
+    unlock_loyalty_level_2 = 61 - profile.earned_loyalty_points
+    unlock_loyalty_level_3 = 101 - profile.earned_loyalty_points
+
     template = 'profiles/loyalty_status.html'
     context = {
         'orders': orders,
         'profile': profile,
+        'unlock_loyalty_level_2': unlock_loyalty_level_2,
+        'unlock_loyalty_level_3': unlock_loyalty_level_3,
     }
 
     return render(request, template, context)

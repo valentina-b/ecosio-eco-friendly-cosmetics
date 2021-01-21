@@ -29,9 +29,13 @@
     <div class="container profile-container">
         <div class="row">
             <div class="col-12">
-                <p class="mb-0">Welcome to your profile, <span class="green-text">{{ user.username }}</span>!</p>
-                <p>Select an action you would like to do. Happy shopping!</p>
-                <p>Your ECOSiO team</p>
+                <p class="mb-0">
+                    Welcome to your profile, <span class="green-text">{{ user.username }}</span>!
+                    <br>
+                    Select an action you would like to do. Happy shopping!
+                    <br>
+                    Your ECOSiO team
+                </p>
                 <div class="div-profile-action-ctas pt-md-5 pb-md-5 mb-3 pt-3 pb-3">
                     <a href="{% url 'order_history' %}" class="cta cta-white">See order history</a>
                     <a href="{% url 'loyalty_status' %}" class="cta cta-white">Check loyalty status</a>

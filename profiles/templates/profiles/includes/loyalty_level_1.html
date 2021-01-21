@@ -1,0 +1,48 @@
+    <div class="container profile-container mt-4 mb-1 d-none d-sm-block">
+        <div class="row">
+            <div class="col-5">
+                <p class="text-uppercase">Level:</p>
+            </div>
+            <div class="col-7 no-padding">
+                <p class="text-uppercase">Benefits:</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container profile-container">
+        <div class="row benefits-row mt-1">
+            <div class="col-12 col-sm-4 no-padding">
+                <div class="div-benefit-card div-benefit-card-profile">
+                    <div class="div-benefit">
+                        <img src="/static/images/loyalty-programme/benefits-illustrations/icon-benefits-level1.svg" alt="">
+                    </div>
+                    <p><span>0 - 60 points</span></p>
+                    <p>eco-newbie</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8">
+                <div class="div-benefit-text">
+                    <ul class="profile-benefits-ul">
+                        <li class="profile-benefits-li">10% off your first order</li>
+                        <li class="profile-benefits-li">saved delivery details for a smooth checkout</li>
+                        <li class="profile-benefits-li">access to your order history</li>
+                        <li class="profile-benefits-li">weekly newsletter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center">
+                    <img src="/static/images/icons/icon-lock.svg" alt="Unlock Icon">
+                    unlock with <span class="green-text">{{ unlock_loyalty_level_2 }}</span> more points
+                </p>
+                <div class="div-profile-action-ctas d-flex mb-3 mt-4">
+                    <a href="{% url 'products' %}" class="cta cta-black d-inline-block m-auto">Shop more</a>
+                </div>
+            </div>
+        </div>
+    </div>
