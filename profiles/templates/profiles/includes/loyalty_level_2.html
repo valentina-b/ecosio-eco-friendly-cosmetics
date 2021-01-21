@@ -48,3 +48,19 @@
             </div>
         </div>
     </div>
+
+    {% if profile.total_loyalty_points < 101 %}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">
+                        <img src="/static/images/icons/icon-lock.svg" alt="Unlock Icon">
+                        unlock with <span class="green-text">{{ unlock_loyalty_level_3 }}</span> more points
+                    </p>
+                    <div class="div-profile-action-ctas d-flex mb-3 mt-4">
+                        <a href="{% url 'products' %}" class="cta cta-black d-inline-block m-auto">Shop more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}

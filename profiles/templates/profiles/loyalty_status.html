@@ -45,7 +45,8 @@
         {% include 'profiles/includes/loyalty_level_1.html' %}
     {% endif %}
 
-    {% if profile.total_loyalty_points > 60 and profile.total_loyalty_points > 101 %}
+    {% if profile.total_loyalty_points > 60 %}
+        {% include 'profiles/includes/loyalty_level_1.html' %}
         {% include 'profiles/includes/loyalty_level_2.html' %}
     {% endif %}
 
