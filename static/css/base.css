@@ -1436,6 +1436,10 @@ fieldset .form-control, #card-element {
     padding: 40px 0 0 40px;
 }
 
+.div-sneak-peek {
+    opacity: 0.5;
+}
+
 .div-donations {
     padding-left: 40px;
     margin-top: 25px;
