@@ -137,6 +137,9 @@ def checkout_success(request, order_number):
         order.user_profile = profile
         order.save()
 
+        profile.earned_loyalty_points += order.loyalty_points
+        profile.save()
+
         # Save the user's info
         if save_info:
             profile_data = {
