@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
@@ -72,3 +72,16 @@ def loyalty_status(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def register_for_event(request):
+    """ User registers for the loyalty level 3 event """
+    profile = get_object_or_404(UserProfile, user=request.user)
+
+    profile.going_to_event = True
+    profile.save()
+
+    messages.success(request, 'Event attendance registered!')
+
+    return redirect(reverse('loyalty_status'))

@@ -1499,6 +1499,10 @@ fieldset .form-control, #card-element {
     text-align: center;
 }
 
+.event-attendance-info {
+    font-size: 14px;
+}
+
 .div-profile-action-ctas {
     display: flex;
     justify-content: space-between;
