@@ -16,7 +16,10 @@
                 <div class="row">
                     <div class="container">
                         <p class="paragraph-margin blog-post-publishing-details">
-                            published on {{ blog.published_date | date:"F d Y" }} by <span class="green-text">{{ blog.author }}</span>
+                            published on {{ blog.published_date | date:"F d Y" }} 
+                            {% if blog.author %}
+                                by <span class="green-text">{{ blog.author }}</span>
+                            {% endif %}
                         </p>
                         {% if request.user.is_superuser %}
                             <div class="blog-post-superuser-options mb-2">
