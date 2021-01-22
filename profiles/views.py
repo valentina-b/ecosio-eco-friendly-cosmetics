@@ -12,7 +12,9 @@ def profile(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     template = 'profiles/profile.html'
-    context = {}
+    context = {
+        'on_profile_page': True
+    }
 
     return render(request, template, context)
 
@@ -26,6 +28,7 @@ def order_history(request):
     template = 'profiles/order_history.html'
     context = {
         'orders': orders,
+        'on_profile_page': True,
     }
 
     return render(request, template, context)
@@ -49,6 +52,7 @@ def edit_profile(request):
     template = 'profiles/edit_profile_details.html'
     context = {
         'form': form,
+        'on_profile_page': True,
     }
 
     return render(request, template, context)
@@ -69,6 +73,7 @@ def loyalty_status(request):
         'profile': profile,
         'unlock_loyalty_level_2': unlock_loyalty_level_2,
         'unlock_loyalty_level_3': unlock_loyalty_level_3,
+        'on_profile_page': True,
     }
 
     return render(request, template, context)
