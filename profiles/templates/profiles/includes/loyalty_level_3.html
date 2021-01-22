@@ -25,7 +25,10 @@
                     </ul>
                     <div class="div-profile-benefits-cta mb-3">
                         {% if profile.going_to_event %}
-                            <p class="green-text event-attendance-info">You have already registered as a guest! We can't wait to meet you!</p>
+                            <p class="green-text event-attendance-info">
+                                You have already registered as a guest at our next event!
+                                We can't wait to meet you!
+                            </p>
                         {% else %}
                             <a href="{% url 'register_for_event' %}" class="cta cta-white">Yes, I'm coming</a>
                         {% endif %}

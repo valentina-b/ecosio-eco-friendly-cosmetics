@@ -21,6 +21,9 @@ class UserProfile(models.Model):
     default_street_address = models.CharField(max_length=80, null=True, blank=True)
     earned_loyalty_points = models.DecimalField(max_digits=10, decimal_places=0, null=False, default=0)
     donated_loyalty_points = models.DecimalField(max_digits=10, decimal_places=0, null=False, default=0)
+    donated_loyalty_points_plant_tree = models.DecimalField(max_digits=10, decimal_places=0, null=False, default=0)
+    donated_loyalty_points_recycle_plastic = models.DecimalField(max_digits=10, decimal_places=0, null=False, default=0)
+    donated_loyalty_points_clean_forest = models.DecimalField(max_digits=10, decimal_places=0, null=False, default=0)
     total_loyalty_points = models.DecimalField(max_digits=10, decimal_places=0, null=False, default=0)
     going_to_event = models.BooleanField(default=False)
 

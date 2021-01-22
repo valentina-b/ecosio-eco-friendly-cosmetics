@@ -93,6 +93,7 @@ def donate_plant_tree(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     profile.donated_loyalty_points += 2
+    profile.donated_loyalty_points_plant_tree += 2
     profile.total_loyalty_points -= 2
     profile.save()
 
@@ -107,6 +108,7 @@ def donate_recycle_plastic(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     profile.donated_loyalty_points += 3
+    profile.donated_loyalty_points_recycle_plastic += 3
     profile.total_loyalty_points -= 3
     profile.save()
 
@@ -121,6 +123,7 @@ def donate_clean_forest(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     profile.donated_loyalty_points += 5
+    profile.donated_loyalty_points_clean_forest += 5
     profile.total_loyalty_points -= 5
     profile.save()
 

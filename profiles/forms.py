@@ -8,7 +8,8 @@ class UserProfileForm(forms.ModelForm):
         exclude = (
             'user', 'earned_loyalty_points',
             'donated_loyalty_points', 'total_loyalty_points',
-            'going_to_event',
+            'going_to_event', 'donated_loyalty_points_plant_tree',
+            'donated_loyalty_points_recycle_plastic', 'donated_loyalty_points_clean_forest',
             )
         labels = {
             'default_phone_number': 'phone number',
