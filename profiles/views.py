@@ -85,3 +85,45 @@ def register_for_event(request):
     messages.success(request, 'Event attendance registered!')
 
     return redirect(reverse('loyalty_status'))
+
+
+@login_required
+def donate_plant_tree(request):
+    """ User donates points to plant a tree at loyalty level 2 """
+    profile = get_object_or_404(UserProfile, user=request.user)
+
+    profile.donated_loyalty_points += 2
+    profile.total_loyalty_points -= 2
+    profile.save()
+
+    messages.success(request, 'Thank you for planting a tree with us!')
+
+    return redirect(reverse('loyalty_status'))
+
+
+@login_required
+def donate_recycle_plastic(request):
+    """ User donates points to recycle plastic at loyalty level 2 """
+    profile = get_object_or_404(UserProfile, user=request.user)
+
+    profile.donated_loyalty_points += 3
+    profile.total_loyalty_points -= 3
+    profile.save()
+
+    messages.success(request, 'Thank you for recycling plastic with us!')
+
+    return redirect(reverse('loyalty_status'))
+
+
+@login_required
+def donate_clean_forest(request):
+    """ User donates points to clean a forest at loyalty level 2 """
+    profile = get_object_or_404(UserProfile, user=request.user)
+
+    profile.donated_loyalty_points += 5
+    profile.total_loyalty_points -= 5
+    profile.save()
+
+    messages.success(request, 'Thank you for cleaning a forest with us!')
+
+    return redirect(reverse('loyalty_status'))
