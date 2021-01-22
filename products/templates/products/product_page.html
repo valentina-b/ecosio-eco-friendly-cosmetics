@@ -33,7 +33,7 @@
                 {% endif %}
                 <div class="product-page-img-div">
                     {% if product.image %}
-                        <img src="/media/{{ product.image }}" class="product-page-img" alt="{{ product.name }}">
+                        <img src="{{ MEDIA_URL }}{{ product.image }}" class="product-page-img" alt="{{ product.name }}">
                     {% else %}
                         <img src="{{ MEDIA_URL }}no_image.png" alt="No Image Available">
                     {% endif %}

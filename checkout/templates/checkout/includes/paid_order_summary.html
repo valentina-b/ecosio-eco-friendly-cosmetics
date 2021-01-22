@@ -8,7 +8,7 @@
             <div class="div-order-summary-card">
                 <div class="div-order-summary-product">
                     {% if item.product.image %}
-                        <img src="/media/{{ item.product.image }}" alt="{{ item.product.name }}">
+                        <img src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ item.product.name }}">
                     {% else %}
                         <img src="{{ MEDIA_URL }}no_image.png" alt="No Image Available">
                     {% endif %}

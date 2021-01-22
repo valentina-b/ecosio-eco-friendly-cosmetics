@@ -8,7 +8,7 @@
         <a href="{% url 'product_page' random_product_3.id %}" class="product-page-link">
             <div class="div-product-card-img">
                 {% if random_product_3.image %}
-                    <img src="/media/{{ random_product_3.image }}" alt="{{ random_product_3.name }}">
+                    <img src="{{ MEDIA_URL }}{{ random_product_3.image }}" alt="{{ random_product_3.name }}">
                 {% else %}
                     <img src="{{ MEDIA_URL }}no_image.png" alt="No Image Available">
                 {% endif %}
