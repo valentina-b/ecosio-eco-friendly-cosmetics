@@ -257,6 +257,10 @@ input[type="file"] {
 .text-link:hover {
     color: var(--color-green);
 }
+
+.form-image-preview {
+    object-fit: cover;
+}
 /* homepage */
 /* header */
 #hp-header-h1, #hp-header-tagline {
@@ -371,6 +375,8 @@ input[type="file"] {
 
 .div-product-card-img img, .div-category-card img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-card-brand-price, .product-card-title {
@@ -854,14 +860,17 @@ ul p {
 
 .product-page-img-div {
     overflow: hidden;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
+    width: 70%;
+    height: 65%;
 }
 
 .product-page-img {
-    width: 70%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
     margin: 0 auto 30px auto;
-    transform: scale(1.35);
 }
 
 .product-page-card-brand-price, .product-page-card-title {
@@ -1139,13 +1148,16 @@ input[type=number] {
 }
 
 .div-image {
-    max-width: 120px;
+    width: 120px;
+    height: 180px;
     margin: auto;
     padding: 25px 0 35px 0;
 }
 
 .div-line-item-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .div-line-item-summary {
@@ -1362,9 +1374,11 @@ fieldset .form-control, #card-element {
 }
 
 .div-order-summary-card img {
-    width: 70%;
     display: block;
-    margin: auto;
+    margin: 0 auto 5px auto;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
 }
 
 .order-summary-card-quantity p {
@@ -1584,6 +1598,12 @@ fieldset .form-control, #card-element {
     width: 180px;
     white-space: nowrap;
 }
+
+.toast-product-img {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+}
 /* toasts */
 
 /* loading overlay */
@@ -1758,8 +1778,10 @@ fieldset .form-control, #card-element {
         margin: 0 auto 40px auto;
         max-width: calc(100% - 30px);
         max-height: none;
-        height: fit-content;
         padding-bottom: 20px;
+    }
+    .product-page-img-div {
+        height: 80%;
     }
     .product-details {
         padding-left: 15px;
@@ -1841,7 +1863,8 @@ fieldset .form-control, #card-element {
         border-bottom: var(--border-black);
     }
     .div-image {
-        max-width: 50%;
+        width: 300px;
+        height: 360px;
     }
     .div-line-item-summary {
         width: 100%;
@@ -1870,6 +1893,9 @@ fieldset .form-control, #card-element {
     }
     .profile-line-item-details {
         margin-top: 20px;
+    }
+    .product-page-img-div {
+        height: 70%;
     }
 }
 
@@ -1960,6 +1986,10 @@ fieldset .form-control, #card-element {
     .product-page-card {
         margin-left: 15px;
         margin-right: 15px;
+        max-height: 500px;
+    }
+    .product-page-img-div {
+        height: 65%;
     }
     .shop-top-row {
         height: 50px;
@@ -2018,6 +2048,16 @@ fieldset .form-control, #card-element {
     #prompt-content p {
         font-size: 0.8rem;
     }
+    .product-page-card {
+        height: 400px;
+    }
+    .product-page-img-div {
+        height: 65%;
+    }
+    .div-image {
+        width: 200px;
+        height: 260px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2048,6 +2088,12 @@ fieldset .form-control, #card-element {
     }
     .div-donation-button {
         margin-right: 5px;
+    }
+}
+
+@media (max-width: 280px) {
+    .message-container {
+        width: 260px;
     }
 }
 /* responsiveness */
