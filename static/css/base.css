@@ -454,9 +454,10 @@ button, button:hover, button:active, button:focus {
 }
 
 .hp-section-4 {
-    min-height: 440px;
+    min-height: 500px;
     background: url('../images/img-background-2.png') no-repeat center;
     background-size: cover;
+    margin-bottom: 150px;
 }
 
 .hp-section-5 {
@@ -500,7 +501,7 @@ button, button:hover, button:active, button:focus {
 }
 
 .category-card-row {
-    margin: 35px 0;
+    margin: 55px 0;
 }
 
 .div-category-card-cta {
@@ -1778,8 +1779,11 @@ fieldset .form-control, #card-element {
     .hp-section-cta-row {
         height: 3.75rem;
     }
+    .hp-section-4 {
+        margin-bottom: 130px;
+    }
     .hp-section-4-cta {
-        margin: -20px auto;
+        margin: -30px auto
     }
     #about-header {
         background: url('../images/about/img-about-tab-header.png') no-repeat center;
@@ -1997,6 +2001,9 @@ fieldset .form-control, #card-element {
     }
     .hp-section-3, .about-section-3 {
         margin: 6rem 0 6rem 0;
+    }
+    .hp-section-4 {
+        margin-bottom: 100px;
     }
     .div-section-1 {
         margin-bottom: 3rem;

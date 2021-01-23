@@ -1,3 +1,4 @@
+<!-- content section 1 -->
 <section>
     <div class="container-fluid div-section div-section-1">
         {% if request.user.is_authenticated %}
@@ -21,53 +22,16 @@
         </div>
         <div class="row hp-section-1">
             <div class="container">
-                <div class="row product-card-row">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="div-product-card float-lg-left">
-                            <div class="div-product-card-img">
-                                <img src="static/images/homepage/products/img-hp-prd-1.png" alt="">
-                            </div>
-                            <p class="product-card-title">Double-Edge Razor</p>
-                            <p class="product-card-brand-price">
-                                <span class="product-card-brand">Aesop</span>
-                                |
-                                <span class="product-card-price">73.00</span>€
-                            </p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Add to cart</a>
-                            </div>
+                <div class="row product-recommendations-row">
+                    <div class="gallery">
+                        <div class="product-recommendations-div">
+                            {% include 'homepage/includes/featured_product_card_1.html' %}
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="div-product-card">
-                            <div class="div-product-card-img">
-                                <img src="static/images/homepage/products/img-hp-prd-2.png" alt="">
-                            </div>
-                            <p class="product-card-title">Healing Post Shave</p>
-                            <p class="product-card-brand-price">
-                                <span class="product-card-brand">Supply</span>
-                                |
-                                <span class="product-card-price">33.00</span>€
-                            </p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Add to cart</a>
-                            </div>
+                        <div class="product-recommendations-div">
+                            {% include 'homepage/includes/featured_product_card_2.html' %}
                         </div>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block col-12">
-                        <div class="div-product-card float-lg-right">
-                            <div class="div-product-card-img">
-                                <img src="static/images/homepage/products/img-hp-prd-3.png" alt="">
-                            </div>
-                            <p class="product-card-title">Multi-Purpose Moisturizer</p>
-                            <p class="product-card-brand-price">
-                                <span class="product-card-brand">Supply</span>
-                                |
-                                <span class="product-card-price">23.40</span>€
-                            </p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="cta cta-white">Add to cart</a>
-                            </div>
+                        <div class="product-recommendations-div">
+                            {% include 'homepage/includes/featured_product_card_3.html' %}
                         </div>
                     </div>
                 </div>

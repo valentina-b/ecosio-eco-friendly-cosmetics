@@ -1,0 +1,32 @@
+<!-- product card code -->
+
+<div class="div-product-card div-product-card-shop">
+    <div class="product-card-category-name">
+        <p>{{ featured_product_2.category.friendly_name }}</p>
+    </div>
+    <div class="product-card-content">
+        <a href="{% url 'product_page' featured_product_2.id %}" class="product-page-link">
+            <div class="div-product-card-img">
+                {% if featured_product_2.image %}
+                    <img src="{{ MEDIA_URL }}{{ featured_product_2.image }}" alt="{{ featured_product_2.name }}">
+                {% else %}
+                    <img src="{{ MEDIA_URL }}no_image.png" alt="No Image Available">
+                {% endif %}
+            </div>
+            <p class="product-card-title">{{ featured_product_2.name }}</p>
+        </a>
+        <p class="product-card-brand-price">
+            <span class="product-card-brand">{{ featured_product_2.brand.friendly_name }}</span>
+            |
+            <span class="product-card-price">{{ featured_product_2.price }}</span>€
+        </p>
+        <div class="d-flex justify-content-center">
+            <form class="form" action="{% url 'add_to_cart' featured_product_2.id %}" method="POST">
+                {% csrf_token %}
+                    <input name="quantity" type="hidden" value="1">
+                    <input type="submit" class="cta cta-white" value="Add to cart">
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+            </form>
+        </div>
+    </div>
+</div>

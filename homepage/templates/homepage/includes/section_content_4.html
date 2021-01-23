@@ -1,3 +1,4 @@
+<!-- content section 4 -->
 <section>
     <div class="container hp-section-4-heading">
         <h1 class="h2-style">Curated shopping for you:</h1>
@@ -12,7 +13,7 @@
                                 <img src="static/images/homepage/categories/img-hp-cat-1.png" alt="">
                             </div>
                             <div class="d-flex justify-content-center div-category-card-cta">
-                                <a href="#" class="cta cta-white">Skincare</a>
+                                <a href="{% url 'products' %}?category=skincare" class="cta cta-white">Skincare</a>
                             </div>
                         </div>
                     </div>
@@ -22,7 +23,7 @@
                                 <img src="static/images/homepage/categories/img-hp-cat-2.png" alt="">
                             </div>
                             <div class="d-flex justify-content-center div-category-card-cta">
-                                <a href="#" class="cta cta-white">Toiletries</a>
+                                <a href="{% url 'products' %}?category=toiletries" class="cta cta-white">Toiletries</a>
                             </div>
                         </div>
                     </div>
@@ -32,14 +33,14 @@
                                 <img src="static/images/homepage/categories/img-hp-cat-3.png" alt="">
                             </div>
                             <div class="d-flex justify-content-center div-category-card-cta">
-                                <a href="#" class="cta cta-white">Shaving</a>
+                                <a href="{% url 'products' %}?category=shaving" class="cta cta-white">Shaving</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row hp-section-cta-row">
                     <div class="hp-section-4-cta">
-                        <a href="#" class="cta cta-white">Shop all</a>
+                        <a href="{% url 'products' %}" class="cta cta-black">Shop all</a>
                     </div>
                 </div>
             </div>
