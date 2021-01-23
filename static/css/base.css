@@ -475,6 +475,10 @@ button, button:hover, button:active, button:focus {
     margin-left: 11%;
 }
 
+.column-background {
+    background-color: var(--color-gray-light);
+}
+
 .section-title, .section-p, .section-cta {
     margin: 50px 0;
 }
@@ -1702,6 +1706,9 @@ fieldset .form-control, #card-element {
         padding: 2rem;
         width: 80%;
         margin: auto;
+    }
+    .column-background {
+        background-color: transparent;
     }
     .product-page-card {
         max-height: 500px;
