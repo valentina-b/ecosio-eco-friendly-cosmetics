@@ -1108,7 +1108,7 @@ input[type=number] {
 .scroll-to-top {
     position: fixed;
     z-index: 1000;
-    bottom: 5%;
+    bottom: 2.5%;
     right: 5%;
     width: 48px;
     height: 48px;
