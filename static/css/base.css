@@ -192,6 +192,10 @@ input[type="file"] {
     width: 1200px;
 }
 
+button, button:hover, button:active, button:focus {
+    outline: transparent;
+}
+
 .cta {
     font-size: 12px;
     text-transform: uppercase;
@@ -1119,7 +1123,10 @@ input[type=number] {
     display: flex;
     position: absolute;
     top: 10px;
-    z-index: 2;
+}
+
+.product-page-superuser-options button, .product-page-superuser-options a {
+    z-index: 20;
 }
 
 .div-product-card-edit {

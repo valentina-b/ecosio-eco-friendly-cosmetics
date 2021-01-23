@@ -26,9 +26,36 @@
                     <a href="{% url 'edit_product' product.id %}">
                         <div class="div-product-card-edit"></div>
                     </a>
-                    <a href="{% url 'delete_product' product.id %}">
+                    <!-- deletePresentModal Button -->
+                    <button type="button" class="modal-button" data-toggle="modal" data-target="#deletePresentModal{{ product.id }}">
                         <div class="div-product-card-delete"></div>
-                    </a>
+                    </button>
+                    <!-- deletePresentModal Modal -->
+                    <div class="modal fade" id="deletePresentModal{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deletePresentModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <img src="/static/images/icons/icon-close-toast.svg" alt="Icon Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="modal-title-h3 text-center" id="deletePresentModalLabel">Deleting a product</h3>
+                                    <p class="text-center modal-text">
+                                        Are you sure you want to delete 
+                                        <span class="green-text">{{ product.name }}</span> by
+                                        {{ product.brand.friendly_name }}
+                                        ?
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="{% url 'delete_product' product.id %}" class="cta cta-black">Delete product</a>
+                                    <button type="button" class="cta cta-white" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- deletePresentModal Modal -->
                 </div>
                 {% endif %}
                 <div class="product-page-img-div">
