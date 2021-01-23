@@ -659,7 +659,7 @@ footer p {
     width: 100%;
 }
 
-.blog-card-img img{
+.blog-card-img > a > img {
     width: 100%;
     min-height: 250px;
     object-fit: cover;
@@ -693,7 +693,8 @@ footer p {
     margin-left: 2px;
 }
 
-.blog-superuser-options div, .blog-superuser-options div:hover {
+.blog-superuser-options .div-product-card-edit, .blog-superuser-options .div-product-card-edit:hover,
+.blog-superuser-options .div-product-card-delete, .blog-superuser-options .div-product-card-delete:hover {
     background-color: var(--color-white);
 }
 /* blog page */

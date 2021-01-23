@@ -5,9 +5,34 @@
                 <a href="{% url 'edit_blog' blog.slug %}">
                     <div class="div-product-card-edit"></div>
                 </a>
-                <a href="{% url 'delete_blog' blog.slug %}">
+                <!-- deleteBlogModal Button -->
+                <button type="button" class="modal-button" data-toggle="modal" data-target="#deleteBlogModal{{ blog.slug }}">
                     <div class="div-product-card-delete"></div>
-                </a>
+                </button>
+                <!-- deleteBlogModal Modal -->
+                <div class="modal fade" id="deleteBlogModal{{ blog.slug }}" tabindex="-1" role="dialog" aria-labelledby="deleteBlogModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <img src="../static/images/icons/icon-close-toast.svg" alt="Icon Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-title-h3 text-center" id="deleteBlogModalLabel">Deleting a blog post</h3>
+                                <p class="text-center modal-text">
+                                    Are you sure you want to delete 
+                                    <span class="green-text">{{ blog.title }}</span>?
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="{% url 'delete_blog' blog.slug %}" class="cta cta-black">Delete blog post</a>
+                                <button type="button" class="cta cta-white" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- deleteBlogModal Modal -->
             </div>
         {% endif %}
         <a href="{% url 'blog_post' blog.slug %}">
