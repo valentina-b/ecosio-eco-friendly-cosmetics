@@ -73,6 +73,14 @@ class Order(models.Model):
             if self.user_profile.total_loyalty_points == 0:
                 self.order_total = round(self.order_total - (self.order_total * Decimal(0.10)), 2)
                 self.grand_total = self.order_total + self.delivery_cost
+        """
+        Override the original save method to set the delivery cost
+        to 0 if user has level 2 or 3 loyalty status
+        """
+        if self.user_profile:
+            if self.user_profile.total_loyalty_points > 60:
+                self.delivery_cost = 0
+                self.grand_total = self.order_total + self.delivery_cost
         super().save(*args, **kwargs)
 
     def __str__(self):

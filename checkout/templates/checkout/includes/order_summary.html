@@ -31,14 +31,26 @@
                 <p id="discount-costs-message" class="green-text">*we have applied 10% discount to your first order </p>
             {% endif %}
         </div>
-        <div class="div-shipping-costs">
-            {% if free_delivery_delta > 0 %}
-                <p>shipping costs: {{ delivery|floatformat:2 }}</p>
-                <p id="shipping-costs-message" class="green-text">*free shipping available by spending {{ free_delivery_delta|floatformat:2 }}€ more</p>
-            {% else %}
-                <p>shipping costs: <span class="green-text text-uppercase">FREE</span></p>
-            {% endif %}
-        </div>
+
+
+                <div class="div-shipping-costs">
+                    {% if delivery == 0 %}
+                        <p>shipping costs: <span class="green-text text-uppercase">FREE</span></p>
+                        {% if user_is_loyal %}
+                            <p class="shipping-costs-message green-text">*free shipping available for our 
+                                <span class="text-uppercase">eco-fighters</span> and <span class="text-uppercase">eco-experts</span>
+                            </p>
+                        {% endif %}
+                    {% else %}
+                        <p>shipping costs: {{ delivery|floatformat:2 }}</p>
+                        <p class="shipping-costs-message green-text">*free shipping available by spending {{ free_delivery_delta|floatformat:2 }}€ more</p>
+                    {% endif %}
+                </div>
+
+
+
+
+
         <div class="div-total-costs">
             <p class="green-text text-uppercase">total: {{ grand_total|floatformat:2 }}€</p>
         </div>

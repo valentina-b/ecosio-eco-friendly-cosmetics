@@ -11,6 +11,7 @@ def cart_contents(request):
     total = 0
     product_count = 0
     cart = request.session.get('cart', {})
+    user_is_loyal = False
 
     for item_id, quantity in cart.items():
         product = get_object_or_404(Product, pk=item_id)
@@ -31,11 +32,20 @@ def cart_contents(request):
 
     original_total = total
 
-    # 10% discount for first purchase per account
+    # loyalty programme benefits
     if request.user.is_authenticated:
         user = get_object_or_404(UserProfile, user=request.user)
+        # 10% discount for first purchase per account
         if user.total_loyalty_points == 0:
             total = round(total - (total * Decimal(0.10)), 2)
+
+    if request.user.is_authenticated:
+        user = get_object_or_404(UserProfile, user=request.user)
+        # free delivery for loyalty level 2 and 3 customers
+        if user.total_loyalty_points > 60:
+            delivery = 0
+            free_delivery_delta = 0
+            user_is_loyal = True
 
     grand_total = delivery + total
 
@@ -48,6 +58,7 @@ def cart_contents(request):
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
         'original_total': original_total,
+        'user_is_loyal': user_is_loyal,
     }
 
     return context

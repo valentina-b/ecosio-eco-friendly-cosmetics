@@ -1333,8 +1333,8 @@ input[type=number] {
     margin-bottom: 0;
 }
 
-#shipping-costs-message, .shipping-costs-message,
-#discount-costs-message {
+#shipping-costs-message, #discount-costs-message,
+.div-shipping-costs > .shipping-costs-message {
     font-size: 10px;
 }
 
