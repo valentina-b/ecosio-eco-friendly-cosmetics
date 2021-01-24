@@ -93,7 +93,14 @@
                                 </li>
                             </ul>
                             <div class="div-profile-benefits-cta mb-3">
-                                <div class="cta cta-disabled">Yes, I'm coming</div>
+                                {% if profile.going_to_event %}
+                                    <p class="green-text event-attendance-info">
+                                        You have already registered as a guest at our next event!
+                                        We can't wait to meet you!
+                                    </p>
+                                {% else %}
+                                    <div class="cta cta-disabled">Yes, I'm coming</div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
