@@ -24,7 +24,12 @@
 <div class="row m-0 mb-5">
     <div class="div-order-costs-summary">
         <div class="div-order-total-costs">
-            <p class="">order total: {{ total|floatformat:2 }}€</p>
+            {% if original_total == total %}
+                <p>order total: {{ total|floatformat:2 }}€</p>
+            {% else %}
+                <p>order total: <span class="text-line-through">{{ original_total|floatformat:2 }}€</span> <span class="green-text">{{ total }}€</span></p>
+                <p id="discount-costs-message" class="green-text">*we have applied 10% discount to your first order </p>
+            {% endif %}
         </div>
         <div class="div-shipping-costs">
             {% if free_delivery_delta > 0 %}

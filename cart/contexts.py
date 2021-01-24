@@ -2,6 +2,8 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
+from profiles.models import UserProfile
+
 
 def cart_contents(request):
 
@@ -27,6 +29,14 @@ def cart_contents(request):
         delivery = 0
         free_delivery_delta = 0
 
+    original_total = total
+
+    # 10% discount for first purchase per account
+    if request.user.is_authenticated:
+        user = get_object_or_404(UserProfile, user=request.user)
+        if user.total_loyalty_points == 0:
+            total = round(total - (total * Decimal(0.10)), 2)
+
     grand_total = delivery + total
 
     context = {
@@ -37,6 +47,7 @@ def cart_contents(request):
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
+        'original_total': original_total,
     }
 
     return context

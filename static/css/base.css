@@ -224,6 +224,11 @@ button, button:hover, button:active, button:focus {
     border: var(--border-black);
 }
 
+.text-line-through {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
 .no-padding {
     padding: 0;
 }
@@ -1328,7 +1333,8 @@ input[type=number] {
     margin-bottom: 0;
 }
 
-#shipping-costs-message, .shipping-costs-message {
+#shipping-costs-message, .shipping-costs-message,
+#discount-costs-message {
     font-size: 10px;
 }
 

@@ -1,4 +1,5 @@
 import uuid
+from decimal import Decimal
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
@@ -64,6 +65,14 @@ class Order(models.Model):
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
+        """
+        Override the original save method to set the order total
+        with 10% discount if first purchase per account
+        """
+        if self.user_profile:
+            if self.user_profile.total_loyalty_points == 0:
+                self.order_total = round(self.order_total - (self.order_total * Decimal(0.10)), 2)
+                self.grand_total = self.order_total + self.delivery_cost
         super().save(*args, **kwargs)
 
     def __str__(self):
