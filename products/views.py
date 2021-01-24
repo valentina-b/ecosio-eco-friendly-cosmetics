@@ -21,6 +21,14 @@ def all_products(request):
     sort = None
     direction = None
 
+    product_tag = None
+    product_tag_friendly_names = {
+        'is_crueltyfree': 'cruelty-free',
+        'is_vegan': 'vegan',
+        'is_organic': 'organic',
+        'is_natural': 'natural',
+    }
+
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -39,17 +47,16 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        if 'organic_products' in request.GET:
-            products = products.filter(is_organic=True)
-
-        if 'vegan_products' in request.GET:
-            products = products.filter(is_vegan=True)
-
-        if 'crueltyfree_products' in request.GET:
-            products = products.filter(is_crueltyfree=True)
-
-        if 'natural_products' in request.GET:
-            products = products.filter(is_natural=True)
+        if 'product_tag' in request.GET:
+            # get the django querydict from the url, where product_tag is key
+            product_tag = request.GET['product_tag']
+            # create a python dictionary with matching boolean to use as a filter
+            product_tag_dictionary = {product_tag: True}
+            # use dictionary as a filter through the products
+            products = products.filter(**product_tag_dictionary)
+            # store friendly name under product_tag to display it on the page
+            if product_tag in product_tag_friendly_names:
+                product_tag = product_tag_friendly_names[product_tag]
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -67,6 +74,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'product_tag': product_tag,
     }
 
     return render(request, 'products/products.html', context)
