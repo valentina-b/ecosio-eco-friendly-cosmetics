@@ -83,7 +83,7 @@ h2, .h2-style {
 }
 
 .navbar-toggler:focus, .navbar-toggler:active:focus {
-    outline: none;
+    outline: transparent;
 }
 
 #logo, .logo {
@@ -119,6 +119,14 @@ input[type="text"], .stripe-style-input,
     font-family: var(--font-roboto);
     color: var(--color-black);
     font-size: 12px;
+}
+
+input[type="submit"] {
+    outline: transparent;
+}
+
+.btn, .btn:active, .btn:focus {
+    box-shadow: none;
 }
 
 .div-password-reset-form input[type="submit"] {
@@ -895,7 +903,7 @@ ul p {
     font-size: 12px;
     text-transform: uppercase;
     padding-left: 5%;
-    outline: none;
+    outline: transparent;
     /* remove firefox arrow */
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1275,7 +1283,7 @@ input[type=number] {
     font-size: 14px;
     border: none;
     background: none;
-    outline: none;
+    outline: transparent;
     width: fit-content;
     position: relative;
     top: 13px;
