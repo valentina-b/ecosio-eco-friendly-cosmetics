@@ -14,13 +14,13 @@
 <div class="tag-filters">
     <a href="{% url 'products' %}?product_tag=is_crueltyfree" class="icon-filter-link">
         <div class="div-tag-icon">
-            <img src="/static/images/icons/product-tags/icon-tag-cruelty-free.svg" alt="Icon Cruelty-Free Tag">
+            <img src="{{ STATIC_URL }}images/icons/product-tags/icon-tag-cruelty-free.svg" alt="Icon Cruelty-Free Tag">
         </div>
         <p class="tag-meaning">Cruelty-free</p>
     </a>
     <a href="{% url 'products' %}?product_tag=is_vegan" class="icon-filter-link">
         <div class="div-tag-icon">
-            <img src="/static/images/icons/product-tags/icon-tag-vegan.svg" alt="Icon Vegan Tag">
+            <img src="{{ STATIC_URL }}images/icons/product-tags/icon-tag-vegan.svg" alt="Icon Vegan Tag">
         </div>
         <p class="tag-meaning">100% vegan</p>
     </a>
@@ -28,13 +28,13 @@
 <div class="tag-filters">
     <a href="{% url 'products' %}?product_tag=is_organic" class="icon-filter-link">
         <div class="div-tag-icon">
-            <img src="/static/images/icons/product-tags/icon-tag-organic.svg" alt="Icon Organic Tag">
+            <img src="{{ STATIC_URL }}images/icons/product-tags/icon-tag-organic.svg" alt="Icon Organic Tag">
         </div>
         <p class="tag-meaning">100% organic</p>
     </a>
     <a href="{% url 'products' %}?product_tag=is_natural" class="icon-filter-link">
         <div class="div-tag-icon">
-            <img src="/static/images/icons/product-tags/icon-tag-natural.svg" alt="Icon Natural Tag">
+            <img src="{{ STATIC_URL }}images/icons/product-tags/icon-tag-natural.svg" alt="Icon Natural Tag">
         </div>
         <p class="tag-meaning">100% natural</p>
     </a>
