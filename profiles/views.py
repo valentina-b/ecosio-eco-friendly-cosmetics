@@ -86,6 +86,10 @@ def register_for_event(request):
 
     profile = get_object_or_404(UserProfile, user=request.user)
 
+    if profile.total_loyalty_points < 101:
+        messages.error(request, 'You don\'t have enough points to do this.')
+        return redirect(reverse('profile'))
+
     profile.going_to_event = True
     profile.save()
 
