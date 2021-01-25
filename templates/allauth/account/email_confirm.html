@@ -34,7 +34,10 @@
                     {% url 'account_email' as email_url %}
                     <p>
                         {% blocktrans %}This e-mail confirmation link expired or is invalid. 
-                        Please <a href="{{ email_url }}" class="green-text mail-to-link">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
+                        Please contact us at 
+                        <a href="mailto:ecosio.cosmetics@gmail.com" class="green-text mail-to-link">ecosio.cosmetics@gmail.com</a> 
+                        if you do not receive it within a few minutes.{% endblocktrans %}
+                    </p>
                 {% endif %}
             </div>
         </div>

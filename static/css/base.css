@@ -112,7 +112,7 @@ h2, .h2-style {
     padding-top: 2px;
 }
 
-input[type="text"], .stripe-style-input,
+input[type="text"], input[type="email"], .stripe-style-input,
 .profile-form-input, .div-signup-form input,
 .add-product-form-field, .div-login-form input,
 .div-password-reset-form input, .add-blog-form-field {
@@ -1364,7 +1364,7 @@ input[type=number] {
     margin: 25px auto 35px auto;
 }
 
-.stripe-style-input, #card-element,
+.stripe-style-input, #card-element, input[type="email"],
 .profile-form-input, .div-signup-form input,
 .add-product-form-field, .div-login-form input,
 .div-password-reset-form input, .add-blog-form-field {
