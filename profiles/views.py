@@ -4,12 +4,10 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
 
-from checkout.models import Order
 
 @login_required
 def profile(request):
     """ Display the user's profile. """
-    profile = get_object_or_404(UserProfile, user=request.user)
 
     template = 'profiles/profile.html'
     context = {
@@ -22,6 +20,7 @@ def profile(request):
 @login_required
 def order_history(request):
     """ Display the user's order history. """
+
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all()
 
@@ -37,6 +36,7 @@ def order_history(request):
 @login_required
 def edit_profile(request):
     """ Display the user's edit profile details form. """
+
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -61,6 +61,7 @@ def edit_profile(request):
 @login_required
 def loyalty_status(request):
     """ Display the user's edit profile details form. """
+
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all()
 
@@ -82,6 +83,7 @@ def loyalty_status(request):
 @login_required
 def register_for_event(request):
     """ User registers for the loyalty level 3 event """
+
     profile = get_object_or_404(UserProfile, user=request.user)
 
     profile.going_to_event = True
@@ -95,7 +97,12 @@ def register_for_event(request):
 @login_required
 def donate_plant_tree(request):
     """ User donates points to plant a tree at loyalty level 2 """
+
     profile = get_object_or_404(UserProfile, user=request.user)
+
+    if profile.total_loyalty_points < 61:
+        messages.error(request, 'You don\'t have enough points to do this.')
+        return redirect(reverse('profile'))
 
     profile.donated_loyalty_points += 2
     profile.donated_loyalty_points_plant_tree += 2
@@ -110,7 +117,12 @@ def donate_plant_tree(request):
 @login_required
 def donate_recycle_plastic(request):
     """ User donates points to recycle plastic at loyalty level 2 """
+
     profile = get_object_or_404(UserProfile, user=request.user)
+
+    if profile.total_loyalty_points < 61:
+        messages.error(request, 'You don\'t have enough points to do this.')
+        return redirect(reverse('profile'))
 
     profile.donated_loyalty_points += 3
     profile.donated_loyalty_points_recycle_plastic += 3
@@ -125,7 +137,12 @@ def donate_recycle_plastic(request):
 @login_required
 def donate_clean_forest(request):
     """ User donates points to clean a forest at loyalty level 2 """
+
     profile = get_object_or_404(UserProfile, user=request.user)
+
+    if profile.total_loyalty_points < 61:
+        messages.error(request, 'You don\'t have enough points to do this.')
+        return redirect(reverse('profile'))
 
     profile.donated_loyalty_points += 5
     profile.donated_loyalty_points_clean_forest += 5

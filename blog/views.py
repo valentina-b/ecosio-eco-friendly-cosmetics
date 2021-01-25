@@ -35,6 +35,11 @@ def blog_post(request, slug):
 @login_required
 def add_blog(request):
     """ Add a blog post to the blog """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Only our ECOSiO team has access to this.')
+        return redirect(reverse('homepage'))
+
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES)
         if form.is_valid():
@@ -57,6 +62,11 @@ def add_blog(request):
 @login_required
 def edit_blog(request, slug):
     """ Edit a blog post """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Only our ECOSiO team has access to this.')
+        return redirect(reverse('homepage'))
+
     blog = get_object_or_404(Blog, slug=slug)
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES, instance=blog)
@@ -82,6 +92,11 @@ def edit_blog(request, slug):
 @login_required
 def delete_blog(request, slug):
     """ Delete a blog post from the blog """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Only our ECOSiO team has access to this.')
+        return redirect(reverse('homepage'))
+
     blog = get_object_or_404(Blog, slug=slug)
     blog.delete()
     messages.success(request, 'Blog post deleted!')
