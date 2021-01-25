@@ -1,0 +1,164 @@
+[
+    {
+        "pk": 1,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2020-09-20T10:43:01.347Z",
+            "title": "Should post shave include alcohol?",
+            "author": "supply.co",
+            "slug": "should-post-shave-include-alcohol",
+            "header_image": "img-blog-8.jpg",
+            "intro_paragraph": "Alcohol or aloe vera? Just going out on a limb here - but, a soothing, cooling agent like aloe vera seems much more appealing than stinging alcohol on freshly shaven skin. So - why do so many post-shave products out there have alcohol as the base for their formulas?",
+            "subheading_1": "Why Alcohol?",
+            "blog_content_1": "The reason alcohol is included in post-shave products is due to it's astringent and antiseptic properties. The purpose of using alcohol is to tighten skin pores and prevent infection after shaving. The problem with this is that alcohol also can exacerbate razor burn and make it challenging for your skin to retain crucial moisture. Even worse, alcohol can, in some cases, tighten skin to a point where the dryness creates a barrier-like surface. This barrier makes it difficult for hair to pierce through the skin layer, leading to the development of ingrown hairs. Long story short, the use of alcohol may have a few benefits but will cause unnecessary irritation to those prone to sensitive skin or razor burn.",
+            "subheading_2": "Bring on the Aloe & Witch Hazel",
+            "blog_content_2": "So, the question becomes if there is a way to add more natural ingredients into a post-shave formula with the astringent and antiseptic properties that alcohol totes. And the short answer is yes.  Witch hazel is a plant that has natural astringent properties. It helps calm irritation that occurs after shaving, stop any bleeding present, and disinfect any nicks that may have occurred. Plus, it won't cause a stinging sensation after application. Aloe vera is more than just a product you grab after spending one too many hours at the beach. It is a powerful, plant-based ingredient that moisturizes, soothes skin, prevents irritation, and calms any redness. With the combined power of witch hazel and aloe vera, skin not only feels better. It looks better too.",
+            "subheading_3": "",
+            "blog_content_3": ""
+        }
+    },
+    {
+        "pk": 2,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2020-10-02T15:02:48.347Z",
+            "title": "Why You Should Use a Moisturizer Daily",
+            "author": "supply.co",
+            "slug": "why-use-moisturizer-daily",
+            "header_image": "img-blog-4.png",
+            "intro_paragraph": "You wake up. You stumble to get your coffee. You moisturize. No? Not your morning routine? It should be. Besides making your skin look amazing, a good moisturizer does so much more. So, what should you look for in one? Natural ingredients that are antioxidants!",
+            "subheading_1": "Aloe Vera",
+            "blog_content_1": "Nature's super plant. It's also our favorite skincare ingredient if you haven't noticed. The extract from this plant alone moisturizes and restores the skin in a number of ways. While other brands are filling their moisturizers with water to dilute the formula, we're jamming our's full of aloe vera. Just check out the first ingredient. And the best part? It doesn't only work as a moisturizer for people with dry skin. Since aloe vera absorbs easily, it's also a great choice for those prone to oily skin, making it the ultimate skin rejuvenator.",
+            "subheading_2": "Ginseng",
+            "blog_content_2": "You might recognize this key ingredient from your favorite tea. Ginseng is great for ridding wrinkles, boosting blood circulation, and firming up the skin. Quite the trifecta. It also has antioxidant properties that protect skin from environmental aggressors that lead to the formation of fine lines. And as an added bonus, it's perfect for those who struggle with acne or psoriasis.",
+            "subheading_3": "Squalane",
+            "blog_content_3": "Say that five times fast. Don't underestimate the power of this superfood plant. It instantly hydrates skin, making the surface soft, smooth, and supple. And if that wasn't enough, squalane fights off skin-damaging free radicals, which are major contributors to early-onset skin aging."
+        }
+    },
+    {
+        "pk": 3,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2020-10-25T18:02:34.347Z",
+            "title": "Facial Hair and Masks: What You Need to Know",
+            "author": "supply.co",
+            "slug": "mask-skin-care-tips-men",
+            "header_image": "img-blog-2.png",
+            "intro_paragraph": "In the wake of this pandemic, we have all had to adapt to a new normal. Wearing a mask has become not only a suggestion but mandated in many places since it is the only protection we have from contracting the virus. A mask is only as effective as it's fit, so using it correctly is paramount.",
+            "subheading_1": "Mask Tips",
+            "blog_content_1": "It seems a given, but it has to be stated. If you're wanting to protect yourself, leaving that mask in your pocket is going to do you no favors. Wear it in public places or crowds as you go out. Plus, one of the biggest mistakes of wearing a mask is only having it cover your mouth and chin. Proper fitting masks should mold at the top on the bridge of your nose while closely hugging below your chin. Most importantly, a snug but breathable fit seals off the bottom half of your face, offering the most protection during these strange times.",
+            "subheading_2": "Facial Hair & Masks",
+            "blog_content_2": "One thing to point out is the length of your facial hair while wearing a mask will affect its fit. To maintain a proper seal, the edges need to be firmly fitted around your face and pressed up against your skin. If the mask is sitting on your facial hair, which is an uneven surface, your seal may be compromised. Some medical professionals even claim that hair breaks the seal and makes it useless in protecting you. For some background, essential workers who wear the N95 mask are required to have a yearly fit test under US regulations. The thing is that a proper fit is tested only on cleanly shaven faces, while even sideburns can get in the way. So, a BBS shave all over your face is the way to go here. Luckily, we know a thing or two about shave prep. #humblebrag",
+            "subheading_3": "Prep Your Skin Properly",
+            "blog_content_3": "If your WFH lifestyle has kept you from being clean-shaven for a bit, it's important you take your time with your pre-shave routine. Warm water is your best friend for prepping your shave. If time permits, start with a nice, warm shower. The combo of heat and steam will soften your hair while simultaneously opening up skin pores, making it an easier shave on your face. If you don't have time for a shower, grab a damp, warm towel to prep your skin pores. Add in a light massage to your face with the towel to gently lift and prep hair. If you have one, using a shaving brush with warm water while you apply your shaving cream is also a great way to exfoliate and prep for that close shave. Then, follow up with a single blade to minimize the irritation and friction with your skin and reap the benefits of a close, comfortable shave."
+        }
+    },
+    {
+        "pk": 4,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2020-11-09T10:36:57.347Z",
+            "title": "Why You Need a Shave Brush",
+            "author": "supply.co",
+            "slug": "why-need-shave-brush",
+            "header_image": "img-blog-7.jpg",
+            "intro_paragraph": "Wouldn't it be easier to just spray foam and go? It may be easier, but it's no comparison. The truth is men are waking up to the benefits of using a shave brush to prep for a shave. Clearer skin, less irritation, and closer shaves are just a few of the perks that come with it.",
+            "subheading_1": "Lather",
+            "blog_content_1": "It's no secret that canned shaving creams may create a fluffy foam, but are filled with harmful chemicals and alcohol to achieve it. Plus - they can damage the skin by drying out already sensitive complexions. So, what's the alternative? A rich, luxurious lather whipped up by using a quality shave brush. This lather is built to protect skin for the duration of your shave, so you get a close, comfortable shave without any irritation. Using a shave brush helps you build a great lather with little to no effort.",
+            "subheading_2": "It's no secret that canned shaving creams may create a fluffy foam, but are filled with harmful chemicals and alcohol to achieve it. Plus - they can damage the skin by drying out already sensitive complexions. So, what's the alternative? A rich, luxurious lather whipped up by using a quality shave brush. This lather is built to protect skin for the duration of your shave, so you get a close, comfortable shave without any irritation. Using a shave brush helps you build a great lather with little to no effort.",
+            "blog_content_2": "Aside from creating an amazing lather, a shave brush will also prepare your hair and skin for a better shave. When applying lather with a brush, the warm, soapy water combines with your circular motions to actually lift your facial hair away from the skin. This places them in the perfect position to be swept away by a sharp, single blade with minimal irritation. Why this is important: When hairs lay flat against your skin, it's much harder for the blade to cut it, leaving behind stubble and patches of hair. This requires multiple passes to get the close shave you want but at the risk of razor burn or irritation.",
+            "subheading_3": "Exfoliate",
+            "blog_content_3": "An added bonus to using a shave brush is the much-needed exfoliation it provides to worn skin. While applying lather to your face with a brush, the soft bristles are simultaneously removing dead skin cells, leaving behind clearer skin and a better complexion. Plus if you're using warm water with it, the brush will actually open up your skin pores, lowering your chances of ingrown hairs and irritation. Win. Win."
+        }
+    },
+    {
+        "pk": 5,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2020-11-23T17:42:23.347Z",
+            "title": "How often should you change toothbrush?",
+            "author": "organicallyepic.uk",
+            "slug": "how-often-change-toothbrush",
+            "header_image": "img-blog-6.png",
+            "intro_paragraph": "It’s a question we are asked very very often. Dentists recommend changing your toothbrush no more than every 3 months but it also really depends on how you brush your teeth and what your preference is.  Obviously we, and Dentists, because they’re the experts, would not recommend going over 3 months.",
+            "subheading_1": "Don't go over 3 months",
+            "blog_content_1": "Sometimes I like to change mine after 2 months depending on how heavy I’ve been using it.  Other times it’s 3 months.  There’s no rhyme or reason sometimes we brush harder, other times we are lighter. If the bristles splay, then change the toothbrush.  Some of us are lighter brushers and some are heavy.  For the heavy brushers I recommend our firm bristle, it’s pretty tough and will last you 3 months.",
+            "subheading_2": "... but change it more frequently when you're ill",
+            "blog_content_2": "Did you know we should also be changing our toothbrushes every time we are ill.  Be that with a cold, the flu or sickness. Given that a lot of us have been poorly recently and with COVID effecting many, you should be changing your toothbrush pretty quickly just in case there is any lingering bacteria on your toothbrush. You will not make yourself ill again but it is however a bit icky right?  to be using the same toothbrush when you’ve been ill.",
+            "subheading_3": "",
+            "blog_content_3": ""
+        }
+    },
+    {
+        "pk": 6,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2020-12-02T11:58:31.347Z",
+            "title": "Taking Care of Our Planet: One Shave at a Time",
+            "author": "supply.co",
+            "slug": "planet-care-one-shave-at-time",
+            "header_image": "img-blog-1.png",
+            "intro_paragraph": "The stats are alarming. Billions of plastic razors loading our landfills - and all for a mediocre shave. Your shave can be better. Better for the environment. Better for your skin.",
+            "subheading_1": "Let's go through some basic stats",
+            "blog_content_1": "How bad can disposable razors be for the environment? Seems harmless, but the facts could not be any more opposite or alarming. The average disposable razor lasts around 6-9 shaves, after which the blade has dulled and is destined for the trash bin. An average person who shaves daily could go through around 40-50 disposable razors in just one year. And that's just one year.",
+            "subheading_2": "What should we aim for",
+            "blog_content_2": "Since most disposable razors are made of a mixture of plastic and metal, it's hard to separate the two, making it incredibly difficult to recycle and at a high cost. Imagine for a second if everyone took up plastic free shaving. More than 3 billion disposable razors would be eliminated from our landfills. 3 billion with a B. And that's not all. The magnitude of CO2 emissions eliminated in our air would have a lasting impact. Got your attention? Here's how we can do better.",
+            "subheading_3": "You can do more than you think",
+            "blog_content_3": "Choosing a razor made out of sustainable materials will keep it out of the trash and can even be more enjoyable. We recommend looking for razors made with all metal construction for their ease in recycling. Pay attention to your blade refills. Plastic disposable razors are not the only culprit in clogging our landfills. The plastic blade refills are just as much to blame. Many razor companies purposely design their blades to dull after just a few shaves, causing you to come back and purchase more refills that often come with a hefty price tag. It's time to stop settling for mediocre shaves and adding to plastic waste. There's no need for extra blades and cheap, plastic construction. Invest once and reap a lifetime of epic shaves. Your face will thank you."
+        }
+    },
+    {
+        "pk": 7,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2020-12-27T17:21:08.347Z",
+            "title": "3 Quick Tips For Starting Your Zero-Waste Life",
+            "author": "bambaw.com",
+            "slug": "tips-for-starting-yero-waste-life",
+            "header_image": "img-blog-5.png",
+            "intro_paragraph": "Every minute, one garbage truck of plastic is dumped into our oceans which turns them slowly but surely into a plastic soup. Plastic pollution is one of the many environmental problems we face today. What can you do to reduce your contribution to plastic pollution? Join the zero-waste movement!",
+            "subheading_1": "1. Inspect your rubbish bin!",
+            "blog_content_1": "It is good to get an idea what kind of waste you produce. Have a look at your dustbin and try to categorise the waste. Is it mainly packaging? Yoghurt pots or water bottles? Once you know where most of the plastic comes from, start thinking about sustainable and available alternatives for at least one of the products. If your bin is mainly full of paper towels, try reusable towels. If you use a new plastic water bottle every day, invest in a reusable stainless-steel bottle, … you get the idea. Everyone has different habits and routines. Even though there might be a general solution for specific problems, each zero-waste journey is unique. So just do what you can and remember that it is not about changing everything at once but rather step by step.",
+            "subheading_2": "2. Refuse single-use!",
+            "blog_content_2": "This is probably the easiest thing to do. Refuse what you don’t need and simply say no thanks to straws, single-use cutlery or flyers. Thereby you might also inspire other people who are around you and hear you. Lead by example!",
+            "subheading_3": "3. Be prepared!",
+            "blog_content_3": "If you plan a little bit in advance, it is easy to avoid unnecessary packaging. Always have a reusable shopping bag in your car or with you. Bring your own containers and jars to the butcher and a tote bag to the bakery. This will help you to refuse single-use packaging. Small cloth bags are also great to avoid plastic produce bags in the grocery store."
+        }
+    },
+    {
+        "pk": 8,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2021-08-17T09:13:45.347Z",
+            "title": "Why Organic - by JMO",
+            "author": "johnmasters.com",
+            "slug": "why-organic",
+            "header_image": "img-blog-3.png",
+            "intro_paragraph": "We believe nature is the best source for making high-performance products. Using ingredients you recognize—lavender, rosemary, pomegranate, for example—pays homage to John’s early kitchen chemistry, when he shopped at his local farmers’ market and spice shop to create his first products.",
+            "subheading_1": "Why Organic Matters?",
+            "blog_content_1": "Most of these ingredients are nature’s cure-alls: Rose water, honey, and avocado, to name just a few of the 200+ organic ingredients we use in our products. But the question remains…why does organic matter? Many of these ingredients have been used as tried and true remedies by cultures around the world, generation after generation.",
+            "subheading_2": "Organic is the Purest Form of Any Ingredient",
+            "blog_content_2": "Because organic is the purest form of any ingredient that you can find. Its performance is at its highest in its natural state. It contains all the vitamins, minerals, and antioxidants that it possibly can. Consider a rose, one of our hero ingredients. As it grows, traditional farming splashes it with chemicals to make it grow faster or bigger. The organic rose—our rose—is left pure and uncompromised, allowed to reach its full potential, to soak up every bit of nutrients from the raw, untouched soil. And we deliver that potent concentration to you in our products.",
+            "subheading_3": "",
+            "blog_content_3": ""
+        }
+    },
+    {
+        "pk": 9,
+        "model": "blog.blog",
+        "fields": {
+            "published_date": "2021-01-17T16:51:30.347Z",
+            "title": "Shave Gel, Butter or Cream? There is a Right Answer",
+            "author": "supply.co",
+            "slug": "shave-gel-butter-or-cream-question",
+            "header_image": "img-blog-9-1.png",
+            "intro_paragraph": "All shave accessories are not created equal. Pull up a chair and let's have ourselves a grooming education.",
+            "subheading_1": "Canned Shaving Gel",
+            "blog_content_1": "Over the last 40 years, most men grab a can of foaming shave gel, because it's what they know. It puffs up shaving cream in an instant and can't be too bad, can it? On a closer look, the canned shaving gel is jam packed with alcohol, preservatives, and other not-so-great ingredients in order to get that puffed up texture. Plus, alcohol dries out skin and aggravates any existing skin irritation or razor burn that may be present. It may be quick, but is it worth the resulting pain?",
+            "subheading_2": "Shave Butter",
+            "blog_content_2": "Shave butters usually ship in a squeezable tube for easy dispensing and use. While a butter may sound like a product that nourishes or protects your skin, the opposite is actually true. They create almost no lather, giving a very thin layer of protection throughout your shave. Rubbing in a butter doesn't properly prep hair follicles like using a shave brush does. Coupled with no lather, the risk for ingrown hairs, irritation, or nicks is highly likely.",
+            "subheading_3": "Ultra Lather Shaving Cream",
+            "blog_content_3": "Our shaving cream builds a lather with just water and a shave brush, resulting in an extremely thick layer of protection throughout your shave. After you apply the lather with a shave brush, your beard is prepped, standing upright and ready for a close, irritation free shave. No pressure needed - just a sharp blade in your Single Edge to sweep away the hair. Plus, our shaving cream is full of powerful, plant-based ingredients like glycerin, shea butter and jojoba oil to name a few. All are there to nourish your skin while protecting it. No alcohol or harsh chemicals needed."
+        }
+    }
+]

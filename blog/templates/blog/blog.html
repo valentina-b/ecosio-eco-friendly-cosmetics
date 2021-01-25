@@ -33,11 +33,21 @@
     <section>
         <div class="container">
             <div class="row blogs-row">
-                {% for blog in blogs %}
-                    <div class="col-12 col-md-6 mb-5">
-                        {% include 'blog/includes/blog_card.html' %}
-                    </div>
-                {% endfor %}
+                {% if blogs %}
+                    {% for blog in blogs %}
+                        <div class="col-12 col-md-6 mb-5">
+                            {% include 'blog/includes/blog_card.html' %}
+                        </div>
+                    {% endfor %}
+                {% else %}
+                        <div class="col-12">
+                            <p class="text-center font-italic green-text mb-5">
+                                We are currently working on new, exciting content.
+                                Check out what we've prepared for you in a few days!
+                                (pssst... you will love it!!)
+                            </p>
+                        </div>
+                {% endif %}
             </div>
         </div>
     </section>
