@@ -11,7 +11,7 @@
             {% endfor %}
         <!-- search query breadcrumb -->
         {% elif search_term %}
-            <span class="active-breadcrumb">Results for the search term: {{ search_term }} ({{ products|length}})</span>
+            <span class="active-breadcrumb">Results for the search term: {{ search_term|truncatechars:25 }} ({{ products|length}})</span>
         <!-- product tag breadcrumb -->
         {% elif product_tag %}
             <span class="active-breadcrumb">{{ product_tag }} products ({{ products|length}})</span>

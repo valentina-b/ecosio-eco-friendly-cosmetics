@@ -852,6 +852,7 @@ ul p {
     padding: 30px;
     max-width: 600px;
     text-align: center;
+    overflow-wrap: break-word;
 }
 
 .visual-filters, dsk-visual-filters {
