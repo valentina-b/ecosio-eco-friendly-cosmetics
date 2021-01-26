@@ -919,7 +919,7 @@ ul p {
 }
 
 .product-page-card {
-    max-width: 450px;
+    max-width: 420px;
     height: 550px;
     border: var(--border-black);
     margin: 0 15px;
@@ -929,7 +929,7 @@ ul p {
     overflow: hidden;
     margin: 20px auto 0 auto;
     width: 70%;
-    height: 65%;
+    height: 60%;
 }
 
 .product-page-img {
@@ -1038,7 +1038,7 @@ input[type=number] {
     font-size: 12px;
     float: left;
     padding-top: 30px;
-    padding-left: 10px;
+    padding-left: 5px;
     margin: 0;
 }
 
@@ -2189,6 +2189,15 @@ fieldset .form-control, #card-element {
     }
     .div-donation-button {
         margin-right: 5px;
+    }
+    .product-page-img-div {
+        height: 55%;
+    }
+}
+
+@media (max-width: 320px) {
+    .loyalty-programme-product-info {
+        padding-left: 0;
     }
 }
 

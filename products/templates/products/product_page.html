@@ -146,13 +146,23 @@
                                 </div>
                             </div>
                             <!-- add/subtract input -->
-                        <input type="submit" class="cta cta-black product-page-cta" value="Add to cart">
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        {% if request.user.is_authenticated %}
-                            <p class="loyalty-programme-product-info">this item brings <span class="green-text">{{product_loyalty_points}}</span> loyalty points!</p>
-                        {% else %}
-                            <p class="loyalty-programme-product-info">this item brings <span class="green-text">{{product_loyalty_points}}</span> loyalty points – <a href="{% url 'account_signup' %}" class="text-link">register here.</a></p>
-                        {% endif %}
+                            <input type="submit" class="cta cta-black product-page-cta" value="Add to cart">
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            <div class="div-loyalty-programme-product-info">
+                                {% if request.user.is_authenticated %}
+                                    {% if product_loyalty_points == 1 %}
+                                        <p class="loyalty-programme-product-info">this item brings <span class="green-text">{{ product_loyalty_points }}</span> loyalty point!</p>
+                                    {% else %}
+                                        <p class="loyalty-programme-product-info">this item brings <span class="green-text">{{ product_loyalty_points }}</span> loyalty points!</p>
+                                    {% endif %}
+                                {% else %}
+                                    {% if product_loyalty_points == 1 %}
+                                        <p class="loyalty-programme-product-info">this item brings <span class="green-text">{{ product_loyalty_points }}</span> loyalty point – <a href="{% url 'account_signup' %}" class="text-link">register here</a></p>
+                                    {% else %}
+                                        <p class="loyalty-programme-product-info">this item brings <span class="green-text">{{ product_loyalty_points }}</span> loyalty points – <a href="{% url 'account_signup' %}" class="text-link">register here</a></p>
+                                    {% endif %}
+                                {% endif %}
+                            </div>
                         </form>
                     </div>
                 </div>
