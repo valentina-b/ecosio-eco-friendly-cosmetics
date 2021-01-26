@@ -129,7 +129,7 @@
         "pk": 8,
         "model": "blog.blog",
         "fields": {
-            "published_date": "2021-08-17T09:13:45.347Z",
+            "published_date": "2021-01-26T09:13:45.347Z",
             "title": "Why Organic - by JMO",
             "author": "johnmasters.com",
             "slug": "why-organic",

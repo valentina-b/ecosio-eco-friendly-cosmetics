@@ -197,7 +197,7 @@ input[type="file"] {
 }
 
 .container {
-    width: 1200px;
+    width: 900px;
 }
 
 button, button:hover, button:active, button:focus {
@@ -248,6 +248,10 @@ button, button:hover, button:active, button:focus {
 
 .mb-7 {
     margin-bottom: 7px;
+}
+
+.margin-r-5 {
+    margin-right: 5px;
 }
 
 .display-none {
@@ -885,7 +889,7 @@ ul p {
     margin-bottom: 20px;
 }
 
-.categories-ctas > .cta {
+.mob-categories-ctas > .cta {
     margin-right: 10px;
 }
 
