@@ -121,7 +121,8 @@ input[type="text"], input[type="email"], .stripe-style-input,
     font-size: 12px;
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="file"],
+input[type="file"]:active, input[type="file"]:focus {
     outline: transparent;
 }
 

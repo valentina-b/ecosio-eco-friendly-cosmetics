@@ -18,6 +18,11 @@ class ProductForm(forms.ModelForm):
         brands = Brand.objects.all()
         friendly_brand_names = [(b.id, b.get_friendly_name()) for b in brands]
 
+        self.fields['sku'].widget.attrs['autofocus'] = True
+        self.fields['name'].widget.attrs['placeholder'] = 'max 55 characters'
+        self.fields['description'].widget.attrs['placeholder'] = 'max 375 characters'
+        self.fields['ingredients'].widget.attrs['placeholder'] = 'max 4000 characters'
+
         self.fields['category'].choices = friendly_category_names
         self.fields['brand'].choices = friendly_brand_names
         for field_name, field in self.fields.items():
