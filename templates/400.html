@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Error 400{% endblock %}
+
+{% block content %}
+    <div class="correct-header">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="h2-style text-center">Error 400</h1>
+                <div class="div-hr"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container general-container">
+        <div class="row">
+            <div class="col">
+                <p>
+                    Oh, no! We can't let you access this page... 
+                    No worries, we have a lot of amazing products and other content on our website that you can check out. 
+                    What would you like to do next?
+                </p>
+                <div class="error-page-ctas mt-4">
+                    <a class="cta cta-black mr-2 mb-2 d-inline-block" href="{% url 'products' %}">Shop more</a>
+                    <a class="cta cta-white d-inline-block" href="{% url 'homepage' %}">Back to homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
