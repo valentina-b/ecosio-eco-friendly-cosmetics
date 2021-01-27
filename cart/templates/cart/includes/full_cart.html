@@ -92,7 +92,6 @@
                     {% endif %}
                 </div>
 
-
                 <div class="div-shipping-costs">
                     {% if delivery == 0 %}
                         <p>shipping costs: <span class="green-text text-uppercase">FREE</span></p>
@@ -106,7 +105,6 @@
                         <p class="shipping-costs-message green-text">*free shipping available by spending {{ free_delivery_delta|floatformat:2 }}€ more</p>
                     {% endif %}
                 </div>
-
 
                 <div class="div-total-costs">
                     <p class="green-text text-uppercase">total: {{ grand_total|floatformat:2 }}€</p>

@@ -1434,10 +1434,6 @@ label {
     border-color: var(--color-green);
 }
 
-.submit-button .cta-white {
-    width: 35%;
-}
-
 fieldset .form-control, #card-element {
     width: 91%;
 }

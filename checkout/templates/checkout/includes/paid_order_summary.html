@@ -27,8 +27,8 @@
             <p>order total: {{ order.order_total|floatformat:2 }}€</p>
         </div>
         <div class="div-shipping-costs">
-            {% if order.delivery_cost == 4 %}
-                <p>shipping costs: {{ order.delivery_cost }}</p>
+            {% if order.delivery_cost > 0 %}
+                <p>shipping costs: {{ order.delivery_cost|floatformat:2 }}€</p>
             {% else %}
                 <p>shipping costs: <span class="green-text text-uppercase">FREE</span></p>
             {% endif %}

@@ -32,16 +32,23 @@ def cart_contents(request):
 
     original_total = total
 
-    # loyalty programme benefits
+    # loyalty programme benefits - 10% off first order
     if request.user.is_authenticated:
         user = get_object_or_404(UserProfile, user=request.user)
-        # 10% discount for first purchase per account
         if user.total_loyalty_points == 0:
+            # 10% discount for first purchase per account
             total = round(total - (total * Decimal(0.10)), 2)
+            # correct delivery delta on the page
+            if total < settings.FREE_DELIVERY_THRESHOLD:
+                delivery = settings.STANDARD_DELIVERY_COSTS
+                free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
+            else:
+                delivery = 0
+                free_delivery_delta = 0
 
+    # loyalty programme benefits - loyalty level 2 and 3 get free delivery
     if request.user.is_authenticated:
         user = get_object_or_404(UserProfile, user=request.user)
-        # free delivery for loyalty level 2 and 3 customers
         if user.total_loyalty_points > 60:
             delivery = 0
             free_delivery_delta = 0

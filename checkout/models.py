@@ -72,12 +72,17 @@ class Order(models.Model):
         if self.user_profile:
             if self.user_profile.total_loyalty_points == 0:
                 self.order_total = round(self.order_total - (self.order_total * Decimal(0.10)), 2)
-
+                # recalculate loyalty points based on discounted costs
                 if self.order_total < 10:
                     self.loyalty_points = 0
                 else:
                     self.loyalty_points = int(self.order_total / 10)
-
+                # revise standard order delivery costs based on discounted costs
+                if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
+                    self.delivery_cost = settings.STANDARD_DELIVERY_COSTS
+                else:
+                    self.delivery_cost = 0
+                # save the new costs
                 self.grand_total = self.order_total + self.delivery_cost
         """
         Override the original save method to set the delivery cost
