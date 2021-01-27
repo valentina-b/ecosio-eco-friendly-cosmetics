@@ -32,24 +32,24 @@ h1, h2, h3, h4 {
 
 h2, .h2-style {
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 .h1-style {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 65px auto 20px auto;
 }
 
 .h3-style {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 20px;
 }
 
 .h4-style {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .paragraph-subtitle {
@@ -87,7 +87,7 @@ h2, .h2-style {
 }
 
 #logo, .logo {
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 #logo:hover, .navbar .logo {
@@ -118,7 +118,7 @@ input[type="text"], input[type="email"], .stripe-style-input,
 .div-password-reset-form input, .add-blog-form-field {
     font-family: var(--font-roboto);
     color: var(--color-black);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 input[type="submit"], input[type="file"],
@@ -206,7 +206,7 @@ button, button:hover, button:active, button:focus {
 }
 
 .cta {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     padding: 12px 30px;
     border: var(--border-black);
@@ -235,7 +235,7 @@ button, button:hover, button:active, button:focus {
 
 .text-line-through {
     text-decoration: line-through;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .no-padding {
@@ -302,7 +302,7 @@ button, button:hover, button:active, button:focus {
 
 .modal-title-h3 {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 20px;
     color: var(--color-green);
 }
@@ -326,13 +326,13 @@ button, button:hover, button:active, button:focus {
 #hp-header-h1, #hp-header-tagline {
     color: var(--color-white);
     font-weight: 600;
-    font-size: 100px;
+    font-size: 6.25rem;
     text-align: right;
 }
 
 #hp-header-tagline {
     font-weight: 400;
-    font-size: 23.5px;
+    font-size: 1.469rem;
     font-family: var(--font-poppins);
 }
 
@@ -440,7 +440,7 @@ button, button:hover, button:active, button:focus {
 }
 
 .product-card-brand-price, .product-card-title {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     text-align: center;
     /* cut long product names followed by three dots */
@@ -625,7 +625,7 @@ footer p {
 
 .usp-text {
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.688rem;
     text-align: center;
     display: block;
     margin: 20px auto;
@@ -662,7 +662,7 @@ footer p {
 }
 
 .blog-post-publishing-details {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-style: italic;
 }
 
@@ -689,7 +689,7 @@ footer p {
 }
 
 .blog-card-title {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
     padding: 0 5px;
     margin: 20px 0;
@@ -753,7 +753,7 @@ footer p {
 }
 
 .div-benefit-card span {
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .benefits-row {
@@ -791,7 +791,7 @@ ul p {
     top: 20px;
     text-align: right;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 0.625rem;
     color: var(--color-gray);
     display: flex;
     justify-content: flex-end;
@@ -834,7 +834,7 @@ ul p {
 
 .breadcrumbs-text {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--color-gray);
     margin-bottom: 0;
     width: fit-content;
@@ -866,7 +866,7 @@ ul p {
 
 .tag-meaning {
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: 0.563rem;
     color: var(--color-black);
     margin-top: 10px;
 }
@@ -906,7 +906,7 @@ ul p {
     min-width: 140px;
     border: var(--border-black);
     color: var(--color-black);
-    font-size: 12px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     padding-left: 5%;
     outline: transparent;
@@ -941,7 +941,7 @@ ul p {
 }
 
 .product-page-card-brand-price, .product-page-card-title {
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
     max-width: 400px;
@@ -963,7 +963,7 @@ ul p {
 
 .product-details-brand {
     font-family: var(--font-poppins);
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
 }
 
@@ -984,7 +984,7 @@ ul p {
 }
 
 .product-details-price {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .input-group-prepend button, .input-group-append button {
@@ -1028,14 +1028,14 @@ input[type=number] {
     padding: 0;
     padding-left: 15px;
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 0.75rem;
     /* fix jumping input background bug */
     background-color: transparent!important;
 }
 
 .loyalty-programme-product-info {
     color: var(--color-black);
-    font-size: 12px;
+    font-size: 0.75rem;
     float: left;
     padding-top: 30px;
     padding-left: 5px;
@@ -1066,7 +1066,7 @@ input[type=number] {
 }
 
 .product-details-additional {
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     padding-top: 18px;
     width: fit-content;
@@ -1081,7 +1081,7 @@ input[type=number] {
 }
 
 .accordion-card-paragraph {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 170%;
 }
 
@@ -1118,7 +1118,7 @@ input[type=number] {
 
 #filename {
     color: var(--color-green);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .custom-checkbox .custom-control-label::before,
@@ -1215,7 +1215,7 @@ input[type=number] {
     position: absolute;
     bottom: 16px;
     right: 24.5px;
-    font-size: 10px;
+    font-size: 0.625rem;
     text-align: center;
     color: var(--color-white);
 }
@@ -1257,7 +1257,7 @@ input[type=number] {
 }
 
 .cart-product-title, .cart-product-title:hover {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-transform: uppercase;
     max-width: 280px;
     color: var(--color-black);
@@ -1268,14 +1268,14 @@ input[type=number] {
 }
 
 .cart-product-brand-price {
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     font-family: var(--font-poppins);
     margin-bottom: 10px;
 }
 
 .cart-product-sku {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--color-gray);
 }
 
@@ -1286,7 +1286,7 @@ input[type=number] {
 }
 
 .text-link-input {
-    font-size: 14px;
+    font-size: 0.875rem;
     border: none;
     background: none;
     outline: transparent;
@@ -1322,7 +1322,7 @@ input[type=number] {
 }
 
 .div-quantity-subtotal p {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 5px;
     display: block;
 }
@@ -1340,7 +1340,7 @@ input[type=number] {
 }
 
 .div-cart-costs-summary p, .div-order-costs-summary p {
-    font-size: 14px;
+    font-size: 0.875rem;
     display: inline-block;
     width: 100%;
     text-align: right;
@@ -1349,7 +1349,7 @@ input[type=number] {
 
 #shipping-costs-message, #discount-costs-message,
 .div-shipping-costs > .shipping-costs-message {
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .div-checkout-cta {
@@ -1398,14 +1398,14 @@ input[type=number] {
 }
 
 #card-errors {
-    font-size: 12px;
+    font-size: 0.75rem;
     padding-top: 8px;
     color: var(--color-error);
 }
 
 label {
     font-family: var(--font-poppins);
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 5px;
 }
 
@@ -1419,7 +1419,7 @@ label {
 
 .form-check label, .form-check-p,
 .login-p, .signup-p {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: var(--font-poppins);
 }
 
@@ -1473,7 +1473,7 @@ fieldset .form-control, #card-element {
     width: fit-content;
     display: block;
     margin: 20% auto 0 auto;
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .order-summary-card-quantity {
@@ -1487,7 +1487,7 @@ fieldset .form-control, #card-element {
 }
 
 .order-summary-card-brand-price, .order-summary-card-title {
-    font-size: 10px;
+    font-size: 0.625rem;
     text-transform: uppercase;
     margin: auto;
     width: fit-content;
@@ -1512,11 +1512,11 @@ fieldset .form-control, #card-element {
 
 /* order confirmation */
 .h2-order-confirmation {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .div-order-details {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .pl-57 {
@@ -1587,11 +1587,11 @@ fieldset .form-control, #card-element {
 }
 
 .donation-points-value {
-    font-size: 7.5px;
+    font-size: 0.469rem;
 }
 
 .donation-description {
-    font-size: 8.5px;
+    font-size: 0.531rem;
 }
 
 .donation-points-value, .donation-description {
@@ -1602,7 +1602,7 @@ fieldset .form-control, #card-element {
 }
 
 .event-attendance-info {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .div-profile-action-ctas {
@@ -1631,7 +1631,7 @@ fieldset .form-control, #card-element {
 }
 
 .div-profile-order p, .div-profile-order li {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .div-logout-form p, .div-logout-form form {
@@ -1665,7 +1665,7 @@ fieldset .form-control, #card-element {
 }
 
 .toast-cta-text {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .toast-title {
@@ -1841,7 +1841,7 @@ fieldset .form-control, #card-element {
     }
     .mob-tag-filter {
         padding: 10px;
-        font-size: 9px;
+        font-size: 0.563rem;
         color: var(--color-black);
     }
     .mob-tag-filter:hover {
@@ -2004,7 +2004,7 @@ fieldset .form-control, #card-element {
         width: 30px;
     }
     .logo {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding-top: 14px;
         padding-left: 8px;
         padding-bottom: inherit;
