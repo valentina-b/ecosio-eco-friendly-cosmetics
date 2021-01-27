@@ -232,5 +232,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
-    {% include 'products/includes/quantity_input_script.html' %}
+    <script src="{% static 'products/js/quantity_input.js' %}"></script>
 {% endblock %}

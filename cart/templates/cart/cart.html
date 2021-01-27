@@ -23,12 +23,10 @@
         {% include 'cart/includes/empty_cart.html' %}
     {% endif %}
 
-
-
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
-    {% include 'products/includes/quantity_input_script.html' %}
-    {% include 'cart/includes/modify_quantity_script.html' %}
+    <script src="{% static 'products/js/quantity_input.js' %}"></script>
+    <script src="{% static 'cart/js/modify_quantity.js' %}"></script>
 {% endblock %}
