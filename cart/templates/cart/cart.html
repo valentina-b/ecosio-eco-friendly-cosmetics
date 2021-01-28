@@ -29,4 +29,19 @@
     {{ block.super }}
     <script src="{% static 'products/js/quantity_input.js' %}"></script>
     <script src="{% static 'cart/js/modify_quantity.js' %}"></script>
+
+    <!-- putting this in js folder changes the context and doesnt pass CSRF -->
+    <script>
+        $('.remove-item').click(function(e) {
+            let csrfToken = "{{ csrf_token }}";
+            let itemId = $(this).attr('id').split('remove_')[1];
+            let url = `/cart/remove/${itemId}/`;
+            let data = {'csrfmiddlewaretoken': csrfToken};
+
+            $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+        });
+    </script>
 {% endblock %}
