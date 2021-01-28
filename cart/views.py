@@ -20,8 +20,13 @@ def add_to_cart(request, item_id):
     cart = request.session.get('cart', {})
 
     if item_id in list(cart.keys()):
-        cart[item_id] += quantity
-        messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
+        # can't have more than 99 same products in the cart
+        if cart[item_id] >= 99:
+            messages.info(request, f'You can order up to 99 same products per order')
+            cart[item_id] = 99
+        else:
+            cart[item_id] += quantity
+            messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
     else:
         cart[item_id] = quantity
         messages.success(request, f'Added {product.name.title()} to your cart')
