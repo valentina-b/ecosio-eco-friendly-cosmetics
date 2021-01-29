@@ -17,45 +17,51 @@ def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping cart """
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
 
-    if item_id in list(cart.keys()):
-        current_cart = cart_contents(request)
-        current_cart_items = current_cart['cart_items']
-        current_cart_item_quantity = 0
+    # don't run code if QueryDict has no value ('') for submitted product quantity
+    try:
+        quantity = int(request.POST.get('quantity'))
 
-        # can't add more if there already are 99 products in the cart
-        if cart[item_id] >= 99:
-            messages.info(request, f'You can order up to 99 same products per order')
+        if item_id in list(cart.keys()):
+            current_cart = cart_contents(request)
+            current_cart_items = current_cart['cart_items']
+            current_cart_item_quantity = 0
 
-        # PDPs need a different solution
-        # their input is not updating quantity like cart- it's adding on top
-        # don't add on top if sum of what's in the cart and what you're adding is higher than 99
-        elif '/shop/' in redirect_url:
-            request_dict = request.POST
-            item_id_str = str(item_id)
-            request_dict_quantity = int(request_dict['quantity'])
-            for current_cart_item in current_cart_items:
-                if item_id_str == current_cart_item['item_id']:
-                    current_cart_item_quantity = current_cart_item['quantity']
-                    quantity_sum = current_cart_item_quantity + request_dict_quantity
-                    if quantity_sum > 99:
-                        cart[item_id] = 99
-                        messages.info(request, f'You can order up to 99 items of the same product per order. We have updated {product.name.title()} quantity to {cart[item_id]}.')
-                    else:
-                        cart[item_id] += quantity
-                        messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
+            # can't add more if there already are 99 products in the cart
+            if cart[item_id] >= 99:
+                messages.info(request, f'You can order up to 99 same products per order')
+
+            # PDPs need a different solution
+            # their input is not updating quantity like cart- it's adding on top
+            # don't add on top if sum of what's in the cart and what you're adding is higher than 99
+            elif '/shop/' in redirect_url:
+                request_dict = request.POST
+                item_id_str = str(item_id)
+                request_dict_quantity = int(request_dict['quantity'])
+                for current_cart_item in current_cart_items:
+                    if item_id_str == current_cart_item['item_id']:
+                        current_cart_item_quantity = current_cart_item['quantity']
+                        quantity_sum = current_cart_item_quantity + request_dict_quantity
+                        if quantity_sum > 99:
+                            cart[item_id] = 99
+                            messages.info(request, f'You can order up to 99 items of the same product per order. We have updated {product.name.title()} quantity to {cart[item_id]}.')
+                        else:
+                            cart[item_id] += quantity
+                            messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
+            else:
+                cart[item_id] += quantity
+                messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
         else:
-            cart[item_id] += quantity
-            messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
-    else:
-        cart[item_id] = quantity
-        messages.success(request, f'Added {product.name.title()} to your cart')
+            cart[item_id] = quantity
+            messages.success(request, f'Added {product.name.title()} to your cart')
+
+    except ValueError:
+        messages.error(request, f'You left the product amount blank. Try again!')
+        return redirect(redirect_url)
 
     request.session['cart'] = cart
-
     return redirect(redirect_url)
 
 
@@ -63,15 +69,22 @@ def adjust_cart(request, item_id):
     """ Adjust the quantity of the specified product to the specified amount """
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
-    if quantity > 0:
-        cart[item_id] = quantity
-        messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
-    else:
-        cart.pop(item_id)
-        messages.success(request, f'Removed {product.name.title()} from your cart')
+    # don't run code if QueryDict has no value ('') for submitted product quantity
+    try:
+        quantity = int(request.POST.get('quantity'))
+
+        if quantity > 0:
+            cart[item_id] = quantity
+            messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
+        else:
+            cart.pop(item_id)
+            messages.success(request, f'Removed {product.name.title()} from your cart')
+
+    except ValueError:
+        messages.error(request, f'You left the product amount blank. Try again!')
+        return redirect(reverse('view_cart'))
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
