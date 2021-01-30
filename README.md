@@ -1,49 +1,24 @@
-<img src="readme-files/mockup-1.png">
+# ECOSiO - E-Commerce Web App With Eco-Friendly Cosmetics For Men
 
-Working on a new project focusing on Django, Python and SQL.
+Code Institute - Final Milestone Project (4) - Full Stack Frameworks With Django
 
-<!-- 
+ECOSiO is a multi-page e-commerce web application with a mission to make eco-friendly cosmetics easily available. 
+The application focuses on men as target audience and offers a variety of products and content connected to sustainable
+lifestyle. The primary purpose of this web app is to provide a trusted marketplace for men interested in sustainability,
+environmental issues and personal well-being. ECOSiO's core belief is that both environment and health always come first, 
+and we should never be forced to choose one or another. 
 
-Welcome valentina-b,
+As ECOSiO's vision is to revolutionise cosmetic industry from head to toe, the web app is strengthened by having 
+features such as blog and loyalty programme. Sustainability can be an overwhelming and, quite often, an expensive choice,
+therefore these features support the secondary purpose of the app which is helping customers to stay on the right track and enjoy 
+the shopping experience. The idea behind this web app is not to provide a one-time shopping solution but to create a community 
+of loyal customers.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Apart from the customer-facing UI, users with admin rights can interact with the web app as well. Although the majority of the
+interaction is done through [the Django admin site](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/), the web app 
+provides more pleasant environment for common tasks such as adding, editing and deleting products or blog posts.
 
-## Gitpod Reminders
+**IMPORTANT: This project contains real products from existing brands. Please visit their websites for more information if you
+wish to purchase them. Read more about how and why I've used them for this project in the 'Credits' section.**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding! -->
+![App Showcase](readme-files/img-intro.png)
