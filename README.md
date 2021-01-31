@@ -72,7 +72,7 @@ As an e-commerce site owner...
 * I want to be able to make changes on the inventory myself so that I don't have to rely on external support when it comes to that.
 * I want to have a marketplace offering more than just products so that the customers will have more reasons to come back to the site.
 * I want to be able to distinguish loyal customers from one-time buyers so that I can give them better benefits and ensure they will come back to shop more.
-* I want to create a community around my brand so that I satisfy customers' need to belong and they know they're not alone.
+* I want to create a community around my brand so that I satisfy customers' need to belong, and they know they're not alone.
 
 ### Customer Goals
 
@@ -92,5 +92,12 @@ As a loyal customer...
 
 ## Features and App Sections
 
+Based on the user stories and UX research, I've created an overview of the most important features and information the web app 
+should consist of. Since ECOSiO is a multi-page web app, it was very helpful to sketch out the MVP draft and follow it throughout
+the project.
 
+In the next few paragraphs I will focus more on the most important sections and features, as well as additional features left to be 
+implemented. The next step, described after this chapter, was choosing a database suitable to the project's needs and defining models.
+
+![Features and App Sections Overview](readme-files/img-mvp.png)
 
