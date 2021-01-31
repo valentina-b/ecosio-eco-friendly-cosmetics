@@ -101,3 +101,16 @@ implemented. The next step, described after this chapter, was choosing a databas
 
 ![Features and App Sections Overview](readme-files/img-mvp.png)
 
+### App Sections
+
+1. **Navigation at the top** - fixed on the top so that the users are able to navigate themselves anytime. It consists of two HTML code snippets for better responsiveness handling. The top navigation is a combination of a brand logo, search box, account related activities and the cart functionality. The navigation below is present for navigating throughout the main app sections.
+1. **Homepage** - introduction to the app and brand identity. The idea is to give a short overview of what ECOSiO is, does and stands for through visual and textual content. Ideally, a user should be able to decide in a few seconds whether they feel connected to the brand identity and be a click away from the shopping feed.
+1. **Webshop** - standard e-commerce feed of products with the option to sort products and filter them by category name and product tag. Every product can be added to the cart immediately and links to a product page where the user can read more about it.
+1. **Product page** - a page dedicated to individual product. Consists of product description, ingredients and product tags that help with buying decision. At the bottom of the page, there are 3 more products shown to the customer. These 3 products are randomly selected from the same category the main product on the product page belongs to, for example Skincare.
+1. **About page** - continues the information shortly provided on the homepage connected to the brand's vision, mission, team and principles regarding product selection for the webshop.
+1. **Blog** - a section containing all the blog posts with the focus on sustainability, sustainable lifestyle and synthetic-free cosmetics.
+1. **Blog post page** - a page dedicated to individual blog post. It consists of introductory paragraph and at least 2 but up to 3 textual sections. Since the idea is to use this section for showcasing brands ECOSiO is collaborating with as well, majority of the post are written in collaboration with one of the brands the products come from.
+1. **Loyalty programme page** - continues the information shortly provided on the homepage connected to the loyalty programme. It describes the process, benefits and reasoning behind creating the programme.
+1. **User account** - available to registered/logged in users with the purpose of tracking their loyalty programme status, order history and safely storing shipping details for a smooth checkout.
+1. **Admin account** - available to admins and/or users with admin-like rights with the purpose of having access to the orders, user profiles, as well as product and blog inventory. Majority of the information is stored in [the Django admin site](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/) but the users can also do common tasks such as adding, editing and deleting products or blog posts through ECOSiO's UI.
+1. **Footer** - gives users the option to stay up to date with the app via links to social media profiles.
