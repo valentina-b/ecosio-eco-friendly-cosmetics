@@ -101,9 +101,9 @@ implemented. The next step, described after this chapter, was choosing a databas
 
 ![Features and App Sections Overview](readme-files/img-mvp.png)
 
-### App Sections
+### Web App Sections
 
-1. **Navigation at the top** - fixed on the top so that the users are able to navigate themselves anytime. It consists of two HTML code snippets for better responsiveness handling. The top navigation is a combination of a brand logo, search box, account related activities and the cart functionality. The navigation below is present for navigating throughout the main app sections.
+1. **Navigation at the top** - fixed on the top so that the users are able to navigate themselves anytime. It consists of two HTML code snippets for better responsiveness handling.
 1. **Homepage** - introduction to the app and brand identity. The idea is to give a short overview of what ECOSiO is, does and stands for through visual and textual content. Ideally, a user should be able to decide in a few seconds whether they feel connected to the brand identity and be a click away from the shopping feed.
 1. **Webshop** - standard e-commerce feed of products with the option to sort products and filter them by category name and product tag. Every product can be added to the cart immediately and links to a product page where the user can read more about it.
 1. **Product page** - a page dedicated to individual product. Consists of product description, ingredients and product tags that help with buying decision. At the bottom of the page, there are 3 more products shown to the customer. These 3 products are randomly selected from the same category the main product on the product page belongs to, for example Skincare.
@@ -114,3 +114,103 @@ implemented. The next step, described after this chapter, was choosing a databas
 1. **User account** - available to registered/logged in users with the purpose of tracking their loyalty programme status, order history and safely storing shipping details for a smooth checkout.
 1. **Admin account** - available to admins and/or users with admin-like rights with the purpose of having access to the orders, user profiles, as well as product and blog inventory. Majority of the information is stored in [the Django admin site](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/) but the users can also do common tasks such as adding, editing and deleting products or blog posts through ECOSiO's UI.
 1. **Footer** - gives users the option to stay up to date with the app via links to social media profiles.
+
+### Features and Django Apps
+
+ECOSiO, [a Django project](https://docs.djangoproject.com/en/3.1/ref/applications/), consists of 8 Django applications listed below. 
+As explained in Django's documentation - a Django application describes a Python package that provides some set of features. Applications may be 
+reused in various projects.
+
+* `homepage`
+* `about`
+* `blog`
+* `loyalty_programme`
+* `products`
+* `cart`
+* `checkout`
+* `profiles`
+
+Some features I've worked on are available across the Django project, while others are tied to a specific Django application. The following list 
+of features is structured in a way that should help with understanding how the features are spread throughout the project.
+
+**Navigation**
+* always present on the top so that the users are able to navigate themselves anytime. It consists of **the top navigation** (a combination of a brand logo, search box, account related activities and the cart functionality) and **the main navigation** below it (for navigating throughout the main app sections).
+* navigation links are compressed into a hamburger menu on mobile and tablet devices so that the main focus of the user is the shopping cart in the top right corner at all times, and not the navigation links.
+
+![Navigation Feature](readme-files/img-features/img-features-navigation.png)
+
+**Search functionality**
+* as mentioned in the previous paragraph, a search box is part of the top navigation and is, therefore, accessible on all pages.
+* it is collapsed under the hamburger menu on tablet and mobile devices as shown in the image above.
+* it allows customers to enter keywords associated with the products they wish to purchase.
+* the search results are displayed as a feed of products by using the page templates prepared for the `products` Django app (i.e. webshop).
+* the search results show the number of products found for the search query, as well as inform the user if no products were found along with a CTA linked to the webshop's feed.
+
+![Search Feature](readme-files/img-features/img-features-search.png)
+
+**Breadcrumbs**
+* breadcrumbs are present throughout the `products` (i.e. webshop), `cart` and `checkout` Django apps and, additionally, throughout the `profiles`.
+* the purpose of this feature is to ease the navigation across ECOSiO where navigation links might not be as helpful. Therefore, breadcrumbs don't appear on every webpage.
+
+![Breadcrumbs Checkout Feature](readme-files/img-features/img-features-breadcrumbs-checkout.png)
+
+**Toasts**
+* small snippets of messages divided into 4 main categories: `toast_success`, `toast_info`, `toast_warning` and `toast_error`.
+* they appear on every page whenever a certain action has been done by the user.
+* their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, updating the cart, editing a blog post, finishing the checkout process, adding too many products in the card, donating loyalty points etc.
+* it generally consists of the title based on the toast category with a matching text about the action. The `toast_success` toast additionally has cart information, that is hidden on `profiles` pages and for some other activities if nothing is added to the cart.
+
+![Toasts Feature](readme-files/img-features/img-features-toasts.png)
+
+**Homepage app**
+* `homepage` Django app mainly serving as an introduction to the brand and the marketplace
+* the most prominent feature is the **registration prompt** displayed to the visitors that aren't logged in. It's fixed at the bottom of the page and encourages the visitor to create an account by mentioning the 10% discount.
+* another two features found on the homepage are the **popular products' gallery**, a feature for the admin team to set 3 products they want to showcase on the page, and the **curated shopping shortcuts** - links to prefiltered product by category. Both of these features mainly aim to be a sneak peek into the webshop.
+
+![Homepage Features](readme-files/img-features/img-features-homepage.png)
+
+**About app**
+* `about` Django app is one of the apps that are mostly relying on textual content.
+* besides textual content, this app has a set of custom-made icons that summarise what ECOSiO is about and what it offers.
+
+![About Page Features](readme-files/img-features/img-features-about.png)
+
+**Blog app**
+* `blog` Django app mostly relies on textual content and can be split into 3 parts - **blog**, **blog posts** and **admin blog management activities**.
+* this is a very simple blog feature whose purpose it to give customers more than just a shopping experience while navigating through ECOSiO.
+* **blog** displays short introductions to all available **blog posts** and links to them.
+* **blog posts** are individual blog entries, each tackling a topic related to sustainability and/or eco-friendly cosmetics. The topics are ideally chosen based on the questions coming from the users and aim to showcase one of the external brands ECOSiO has been working with. Through this brand partnership, ECOSiO gives a chance to the external brands for an additional marketing exposure.
+* **admin blog management activities** include adding, editing and deleting blog entries. Users with admin rights can do that directly in the UI through forms. In case of deleting a blog post, a **modal** will open to double check if the user really wants to do this irreversible action.
+
+![Blog Page Features](readme-files/img-features/img-features-blog.png)
+
+**Loyalty programme app**
+* `loyalty_programme` Django app is also one of the apps that are mostly relying on textual content.
+* this page explains how the programme actually works from user's perspective and what are the benefits of joining the programme, i.e. creating an account.
+* the purpose of this feature is to offer an incentive for an account creation and maintain an on-going relationship with the loyal customers through rewards and other benefits.
+* the logic of the programme is implemented under `profile` app since it's closely related to the `UserProfile` model. You can read more about it below, under `profile` app.
+
+![Loyalty programme Features](readme-files/img-features/img-features-loyalty-programme.png)
+
+**Products app, i.e. Webshop**
+* `products` Django app is where all the logic and templates connected to the product feed and individual products are.
+* it can be divided into three main sections: **shop**, **product pages** and **admin product management activities**.
+* **shop** is the main feed of products and this is where the majority of shopping journeys are expected to start. The shopping experience is enhanced by having a **dropdown for sorting products**, **category and product tag filters** that follow the user across the desktop version of the page and a quick **add-to-cart** functionality for users that already know exactly what they want to buy.
+* **product pages** are pages dedicated to each individual product. On these pages, the users can **read the product description, find ingredient list of the product** as well as **get additional product recommendations**. The product recommendations are random. The system selects 3 products from the same category the main product on the page belongs to and displays them at the bottom of the page. The recommended products turn into a scrollable gallery similar to the one on the homepage.
+* additional feature on the product pages are **product tags** which help with deciding whether a product fits certain lifestyle or not. There are 5 tags in total - **eco-friendly** which is a tag all ECOSiO's products should have, and then **cruelty-free**, **100% vegan**, **100% organic** and **100% natural**. Users can also filter the products based on these tags in the **shop**.
+* **admin product management activities** include adding, editing and deleting products. Users with admin rights can do that directly in the UI through forms. In case of deleting a product, a **modal** will open to double check if the user really wants to do this irreversible action.
+
+![Shop Features](readme-files/img-features/img-features-shop.png)
+
+**Cart app**
+* `cart` Django app is a standard e-commerce functionality which aids the checkout process.
+* a cart is always present in the top right corner of the web app. **It turns black if it's full and shows the number of items added to the cart**.
+* currently, a customer can put **up to 99 items of the same product** into the cart. If the user tries to add more items than that, the system alerts the user via toasts that 99 items is the maximum number of products that can be added.
+* however, **adding products to the cart works differently on the product pages**. The users can define the exact amount of products they want to put into the cart as long as it's within the range (1 to 99). Since products can also be added from the homepage and the shopping feed, it might happen that the user has already added, for example, 10 items of the same product into the cart and now is trying to add 95 more products from the product page on top of that. The system will in that case check if the the sum of the current amount in the cart and the desired additional amount is higher than the allowed limit and **limit the amount of this same product in the cart to 99** if needed.
+* after clicking on the cart in the top right corner, the users gets an overview of all the products put into the cart. The user can also modify the quantity of the added products as well as remove the products from the cart. Since removing products from the cart is not an irreversible action, I have decided not to have a modal here so that the focus remains on the checkout process.
+* all the products in the cart are also linked to their product pages so that the users have an easy acces to them in case they wish to check them out again before entering the checkout process.
+* the information provided on this page includes **usual product information, quantity per product, costs per product, order costs** (with 10% discount for first-time registered buyers), **shipping costs** (free for orders worth 120.00€ and above, as well as level 2 and level 3 loyal customers - otherwise 4.00€) and **total order costs**.
+* if users try to access their empty carts, there will be a message displayed that nothing has been added yet and encourage them to go to the shop.
+
+![Cart Features](readme-files/img-features/img-features-cart.png)
+
