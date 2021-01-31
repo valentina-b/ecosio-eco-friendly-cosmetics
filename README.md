@@ -23,7 +23,7 @@ wish to purchase them. Read more about how and why I've used them for this proje
 
 ![App Showcase](readme-files/img-intro.png)
 
-## UX
+## UX - research and goals
 
 Who are 'green' consumers and why are they so interesting for this project? In [Green Consumerism: An A-to-Z Guide](https://sk.sagepub.com/reference/greenconsumerism/n71.xml)
 green consumer has been defined as "_someone who is aware of his or her obligation to protect the environment by selectively purchasing
@@ -65,24 +65,32 @@ audience interested in sustainability to enter the shopping behaviour.
 
 As an e-commerce site owner...
 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* I want the users to be comfortable with the brand identity so that they will want to buy products through my platform.
+* I want to offer a shopping journey that is informative and transparent so that the customers develop trust towards the marketplace.
+* I want to offer a shopping journey with a higher purpose so that the users prefer my marketplace over other ones.
+* I want the customers to be able to actively participate in restoring our eco-system so that they don't feel like their contribution is only passive.
+* I want to be able to make changes on the inventory myself so that I don't have to rely on external support when it comes to that.
+* I want to have a marketplace offering more than just products so that the customers will have more reasons to come back to the site.
+* I want to be able to distinguish loyal customers from one-time buyers so that I can give them better benefits and ensure they will come back to shop more.
+* I want to create a community around my brand so that I satisfy customers' need to belong and they know they're not alone.
 
 ### Customer Goals
 
 As a customer...
 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* I want to buy from a brand I can relate to so that I don't feel uncomfortable or embarrassed throughout the shopping process.
+* I want to read more about the company so that I see if the company's values match with mine.
+* I want to have information about the products I'm buying easily available so that I’m sure I’m buying exactly what I want and fits my lifestyle.
+* I want to be able to filter the products based on my lifestyle so that I can be faster with the buying decision.
+* I want to be able to store my shipping details so that it’s easier for me to check out.
+* I want to be able to see my orders so that I can track what I buy and spend money on.
+
+As a loyal customer...
+
+* I want to get freebies and rewards for spending money so that I feel like I get a lot more for the money I spend.
+* I want an opportunity to get to know the team behind this brand I buy so much from and other like-minded people so that I can see if my loyalty to the brand is a good investment.
+
+## Features and App Sections
+
 
 
