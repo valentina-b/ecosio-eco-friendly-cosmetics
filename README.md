@@ -188,14 +188,14 @@ of features is structured in a way that should help with understanding how the f
 * `loyalty_programme` Django app is also one of the apps that are mostly relying on textual content.
 * this page explains how the programme actually works from user's perspective and what are the benefits of joining the programme, i.e. creating an account.
 * the purpose of this feature is to offer an incentive for an account creation and maintain an on-going relationship with the loyal customers through rewards and other benefits.
-* the logic of the programme is implemented under `profile` app since it's closely related to the `UserProfile` model. You can read more about it below, under `profile` app.
+* the logic of the programme is implemented under `profile` app since it's closely related to the `UserProfile` model. You can read more about it below, under `profiles` app.
 
 ![Loyalty programme Features](readme-files/img-features/img-features-loyalty-programme.png)
 
 **Products app, i.e. Webshop**
 * `products` Django app is where all the logic and templates connected to the product feed and individual products are.
 * it can be divided into three main sections: **shop**, **product pages** and **admin product management activities**.
-* **shop** is the main feed of products and this is where the majority of shopping journeys are expected to start. The shopping experience is enhanced by having a **dropdown for sorting products**, **category and product tag filters** that follow the user across the desktop version of the page and a quick **add-to-cart** functionality for users that already know exactly what they want to buy.
+* **shop** is the main feed of products and this is where the majority of shopping journeys are expected to start. The shopping experience is enhanced by having a **dropdown for sorting products** (A-Z, Z-A, price low-high, price high-low), **category filters** (skincare, shaving, toiletries, sets & bags) and **product tag filters** that follow the user across the desktop version of the page and a quick **add-to-cart** functionality for users that already know exactly what they want to buy.
 * **product pages** are pages dedicated to each individual product. On these pages, the users can **read the product description, find ingredient list of the product** as well as **get additional product recommendations**. The product recommendations are random. The system selects 3 products from the same category the main product on the page belongs to and displays them at the bottom of the page. The recommended products turn into a scrollable gallery similar to the one on the homepage.
 * additional feature on the product pages are **product tags** which help with deciding whether a product fits certain lifestyle or not. There are 5 tags in total - **eco-friendly** which is a tag all ECOSiO's products should have, and then **cruelty-free**, **100% vegan**, **100% organic** and **100% natural**. Users can also filter the products based on these tags in the **shop**.
 * **admin product management activities** include adding, editing and deleting products. Users with admin rights can do that directly in the UI through forms. In case of deleting a product, a **modal** will open to double check if the user really wants to do this irreversible action.
@@ -213,4 +213,42 @@ of features is structured in a way that should help with understanding how the f
 * if users try to access their empty carts, there will be a message displayed that nothing has been added yet and encourage them to go to the shop.
 
 ![Cart Features](readme-files/img-features/img-features-cart.png)
+
+**Checkout app**
+* `checkout` Django app is another standard e-commerce functionality which enables users to buy the products online from the webshop.
+* in order to check out, the user is presented with a **form asking for the shipping and payment details** and the **overview of the order**.
+* users can easily go back to the cart and adjust it by clicking on the cart in the top right corner or breadcrumbs in the top left corner.
+* all the discounts or benefits will also be visible and highlighted in the summary of the costs.
+* both registered and anonymous users can shop at ECOSiO. Logged in users will have an option to **save their information** to the profile which should populate the form with relevant details for the next purchase.
+* a webhook is implemented to the `checkout` so that the order is successfully processed in case the checkout process gets interrupted. Some reasons might be closing the browser too soon or losing internet connection.
+* "payments" are handled through `stripe`. A test purchase can be made with the following details:
+    * **credit card:** 4242 4242 4242 4242
+    * **expiration date:** 04 / 24
+    * **CVC:** 424
+    * **ZIP:** 42424
+* after the payment has been processed, the user is presented with the order summary on the **order confirmation page**.
+* logged in buyers can also see their **order history** on the `profiles` pages.
+
+![Checkout Features](readme-files/img-features/img-features-checkout.png)
+
+**Profiles app - and Loyalty Programme feature**
+* `profiles` Django app is available to registered, authenticated users.
+* it offers 3 features: **order history**, **saving shipping information** and **loyalty programme**.
+* **order history** displays all previous orders per user account.
+* **saving shipping information** is done through a form which can be edited any time. This information is what populates the checkout form for the next orders.
+* **loyalty programme** is a feature that is partially implemented in the `profiles` app and partially in the `checkout` app. There are three levels users can achieve and unlocking each level brings new benefits. This is how the logic is distributed between the `checkout` and `profiles` app
+    * `profiles` app: **stores loyalty points** under `UserProfile` model. It distinguishes between:
+        - `earned_loyalty_points` - received after a purchase has been made. All the donated points get excluded from `earned_loyalty_points`.
+        - `donated_loyalty_points` - sum of points donated by the user to one of the three causes.
+            - `donated_loyalty_points_plant_tree` - points donated for planting a tree.
+            - `donated_loyalty_points_recycle_plastic` - points donated to aid plastic recycling.
+            - `donated_loyalty_points_clean_forest` - points donated to aid cleaning forests.
+        - `total_loyalty_points` - all earned points ever received (earned and donated points together).
+    * `checkout` app: **10% off the first purchase** for newly registered users. It is applied to users with no loyalty points. The free delivery threshold has been adjusted to follow the discounted order total.
+    * `checkout` app: **1 loyalty point each time 10.00€ is spent**. Shipping costs are not included in the calculation.
+    * `checkout` app: **free delivery for level 2 and level 3 users** is handled by overriding delivery costs if user has reached a certain number of points.
+    * `profiles` app: **keeps track of users' loyalty statuses** by informing how many points are needed to unlock the next level, how many points have been donated to good causes, what are the benefits currently available to the users and which ones will be unlocked in the future.
+    * `profiles` app: **registration for attending ECOSiO's live event**. Level 3 customers can register for an event that ECOSiO holds once a year. This feature is suppose to help with strengthening the community built around the brand and it's a chance for customers to meet the team and like-minded people.
+
+![Profiles Features](readme-files/img-features/img-features-profiles.png)
 
