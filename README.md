@@ -162,6 +162,20 @@ of features is structured in a way that should help with understanding how the f
 
 ![Toasts Feature](readme-files/img-features/img-features-toasts.png)
 
+**Django-allauth feature**
+* `django-allauth` is a Python package. As writtenin the [django-allauth docs](https://django-allauth.readthedocs.io/en/latest/), it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
+* it provides a set of features such as **signup**, **login**, **logout** and **password change**.
+* after signing up, a verification email is sent to the registered email to confirm it. Once confirmed, the user can log in with their credentials and access the `profiles` app explained later below.
+* the links to these features can be found in the navigation, under the **My Account** dropdown menu, as well as on the pages and throughout the web app (for example, registration prompt window on the `homepage`).
+
+![Django-allauth Feature](readme-files/img-features/img-features-allauth.png)
+
+**Automatic e-mails**
+* a gmail account **ecosio.cosmetics@gmail.com** has been created specifically for this project and used as a sender for all verification, reset and confirmation emails.
+* for example, users receive an **order confirmation e-mail** after a purchase, **account verification e-mail** after the registration, **password reset email** after requesting a password reset, etc.
+
+![Automatic E-mails Feature](readme-files/img-features/img-features-automatic-emails.png)
+
 **Homepage app**
 * `homepage` Django app mainly serving as an introduction to the brand and the marketplace
 * the most prominent feature is the **registration prompt** displayed to the visitors that aren't logged in. It's fixed at the bottom of the page and encourages the visitor to create an account by mentioning the 10% discount.
