@@ -160,7 +160,7 @@ of features is structured in a way that should help with understanding how the f
 * their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, updating the cart, editing a blog post, finishing the checkout process, adding too many products in the card, donating loyalty points etc.
 * it generally consists of the title based on the toast category with a matching text about the action. The `toast_success` toast additionally has cart information, that is hidden on `profiles` pages and for some other activities if nothing is added to the cart.
 
-![Toasts Feature](readme-files/img-features/img-features-toasts.png)
+![Toasts Features](readme-files/img-features/img-features-toasts.png)
 
 **Django-allauth feature**
 * `django-allauth` is a Python package. As writtenin the [django-allauth docs](https://django-allauth.readthedocs.io/en/latest/), it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
@@ -168,13 +168,13 @@ of features is structured in a way that should help with understanding how the f
 * after signing up, a verification email is sent to the registered email to confirm it. Once confirmed, the user can log in with their credentials and access the `profiles` app explained later below.
 * the links to these features can be found in the navigation, under the **My Account** dropdown menu, as well as on the pages and throughout the web app (for example, registration prompt window on the `homepage`).
 
-![Django-allauth Feature](readme-files/img-features/img-features-allauth.png)
+![Django-allauth Features](readme-files/img-features/img-features-allauth.png)
 
 **Automatic e-mails**
 * a gmail account **ecosio.cosmetics@gmail.com** has been created specifically for this project and used as a sender for all verification, reset and confirmation emails.
 * for example, users receive an **order confirmation e-mail** after a purchase, **account verification e-mail** after the registration, **password reset email** after requesting a password reset, etc.
 
-![Automatic E-mails Feature](readme-files/img-features/img-features-automatic-emails.png)
+![Automatic E-mails Features](readme-files/img-features/img-features-automatic-emails.png)
 
 **Homepage app**
 * `homepage` Django app mainly serving as an introduction to the brand and the marketplace
@@ -187,7 +187,7 @@ of features is structured in a way that should help with understanding how the f
 * `about` Django app is one of the apps that are mostly relying on textual content.
 * besides textual content, this app has a set of custom-made icons that summarise what ECOSiO is about and what it offers.
 
-![About Page Features](readme-files/img-features/img-features-about.png)
+![About Page Feature](readme-files/img-features/img-features-about.png)
 
 **Blog app**
 * `blog` Django app mostly relies on textual content and can be split into 3 parts - **blog**, **blog posts** and **admin blog management activities**.
@@ -266,3 +266,35 @@ of features is structured in a way that should help with understanding how the f
 
 ![Profiles Features](readme-files/img-features/img-features-profiles.png)
 
+### Features Left to Implement
+
+Working on this project has been an amazing experience and I truly wish I had more time to implement several other features. Here are some
+I had in mind while working on the project:
+
+**Save for later**
+* a feature that allows authenticated users to save items for later.
+* every product in the feed and on product pages would have a heart-shaped icon which would add the product on a list. The list can be accessed on one of the `profiles` pages, where users can remove the items from the list as well.
+
+![Save for Later Feature](readme-files/img-features-left-to-implement/img-features-save-for-later.png)
+
+**Cart keeps items after logging out**
+* a simple feature which would store what the user had in the cart before logging out.
+* in combination with `toasts`, it could act as a reminder of what the user's last shopping-related action was.
+* the main goal of this feature is to increase the conversion rate.
+
+**Comments, voting on blog posts and products in blog posts**
+* comments are a standard feature that blogs normally have so it would be great to implement it here as well. It would allow authenticated users exchange ideas on certain topics and connect.
+* additional feature would be a simple voting structure to indicate how many people have liked a certain piece of content.
+* lastly, it would be great to be able to feature some of the products in the blog posts to increase the conversion rate.
+
+![Comments, Voting and Featured Products Features](readme-files/img-features-left-to-implement/img-features-blog-post-comments-voting-featuring.png)
+
+**Product reviews**
+* another standard e-commerce features that helps users with buying decision.
+* the idea would be to implement ratings and product reviews on product pages.
+
+**Better feedback on loyalty points donations**
+* this feature is imagined to give a better feedback on the donated points. At the moment a toast alerts the users that the points have been donated to a chosen cause.
+* ideally, a modal would pop up and, for example, tell the user exactly where the tree is planning to be planted or which forest will be cleaned by the help of the donated points.
+
+![Donation Feedback Feature](readme-files/img-features-left-to-implement/img-features-donation-feedback.png)
