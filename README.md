@@ -271,6 +271,16 @@ of features is structured in a way that should help with understanding how the f
 Working on this project has been an amazing experience and I truly wish I had more time to implement several other features. Here are some
 I had in mind while working on the project:
 
+**Animations**
+* the project's UI could be further enhanced by animations.
+* one example could be animated leaves coming from the add-to-cart CTA after clicking it.
+
+![Animations Feature](readme-files/img-features-left-to-implement/img-features-animations.png)
+
+**Contact page**
+* at the moment, ECOSiO's e-mail is displayed whenever users do an action that they might need an additional assistance with.
+* it would be helpful to have a contact form sent directly to the admins by e-mail in case there are additional inquiries.
+
 **Save for later**
 * a feature that allows authenticated users to save items for later.
 * every product in the feed and on product pages would have a heart-shaped icon which would add the product on a list. The list can be accessed on one of the `profiles` pages, where users can remove the items from the list as well.
@@ -298,3 +308,9 @@ I had in mind while working on the project:
 * ideally, a modal would pop up and, for example, tell the user exactly where the tree is planning to be planted or which forest will be cleaned by the help of the donated points.
 
 ![Donation Feedback Feature](readme-files/img-features-left-to-implement/img-features-donation-feedback.png)
+
+**Recommendation system**
+* with some of these features implemented, it would be great to have a proper recommendation system in place. The system could be based on which products have been most clicked on, most bought, which brands are they from, which category are they from, which products have been saved the most, etc.
+* this recommendation system could help content writers with choosing topics to write about, which products to showcase in blog posts, and additionally which products should be recommended on the product pages (at the momment they are randomly selected).
+* thinking further, once a proper CRM system has been built, a weekly newsletter could be sent to the users with personalised products recommendations.
+
