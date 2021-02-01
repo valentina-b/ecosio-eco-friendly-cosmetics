@@ -314,3 +314,42 @@ I had in mind while working on the project:
 * this recommendation system could help content writers with choosing topics to write about, which products to showcase in blog posts, and additionally which products should be recommended on the product pages (at the momment they are randomly selected).
 * thinking further, once a proper CRM system has been built, a weekly newsletter could be sent to the users with personalised products recommendations.
 
+### Wireframes
+
+Desktop wireframes:
+* [homepage]()
+* [about page]()
+* [loyalty programme page]()
+* [blog]()
+* [webshop]()
+* [product page]()
+* [cart]()
+* [checkout]()
+* [user's loyalty points status]()
+* [all desktop wireframes]()
+
+Tablet wireframes:
+* [homepage]()
+* [about page]()
+* [loyalty programme page]()
+* [blog]()
+* [webshop]()
+* [product page]()
+* [cart]()
+* [checkout]()
+* [user's loyalty points status]()
+* [all tablet wireframes]()
+
+Mobile wireframes:
+* [homepage]()
+* [about page]()
+* [loyalty programme page]()
+* [blog]()
+* [webshop]()
+* [product page]()
+* [cart]()
+* [checkout]()
+* [user's loyalty points status]()
+* [all mobile wireframes]()
+
+
