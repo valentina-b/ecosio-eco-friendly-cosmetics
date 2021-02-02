@@ -352,4 +352,77 @@ Mobile wireframes:
 * [user's loyalty points status](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/mob/wireframe-mob-loyalty-status.png)
 * [link to all mobile wireframes folder](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/mob)
 
+## Graphic Design and Brand Elements
+
+Based on the audience research, it has become clear early on that the project will require more efforts when it comes to the brand identity
+and visual design. Since the target audience identifies both sustainability and cosmetics with women, it was crucial to create a brand the
+users are comfortable with.
+
+My approach to design started with research as well. I had to be aware of what kind of product packaging and web design guidelines are 
+competitors and cosmetic companies following. Since my marketplace is going to have those products, my design had to match well with them - 
+and that too, not match well with only one of those brands but all of them.
+
+Two brands that were a huge inspiration for my design are [Supply](https://supply.co/) and [Aesop](https://www.aesop.com/us/). Most of the
+product selection is coming from these two brands and, even though Aesop isn't just for men, I think they are both such a great example of
+elegant minimalist design style. The fact that majority of the brands have product images without background or with white background was a
+big help as it allowed me to focus more on creating ECOSiO's visual design rather than adjust it to the products.
+
+![Design Inspirations](readme-files/img-design-inspirations.png)
+
+### Fonts
+
+I have come across [Poppins](https://fonts.google.com/specimen/Poppins) by browsing through Google fonts. I was looking for a font that would
+be similar to Supply's and Aesop's primary fonts, which both seem to be characterised by having wide letters. Poppins stood out not only 
+because it fulfilled this requirement but also because it belongs to the sans serif font type, which is a common web developer's choice 
+for titles due to its high readability level and simplicity. I've paired Poppins with [Roboto](https://fonts.google.com/specimen/Poppins) 
+which was one of the suggestions from Google fonts.
+
+### Colours
+
+My colour selection for this project was very simple. I've chosen a dark shade of gray (#333333) for the textual content and used it as the
+primary accent colour for the CTAs and borders. As a contrast to it, a simple white colour (#FFFFFF) has been used. Using a very light gray
+colour (i.e. slightly tinted white) would create problems when it comes to product imagery. Their background is either transparent or
+white so choosing any other shade besides pure white might make those image backgrounds stand out and create inconsistencies 
+throughout the product feed, product pages, etc.
+
+Two more shades of gray have been chosen for different purposes. The darker shade of gray (#C4C4C4) is mostly used for the form placeholder
+copy, muted copy and text that shouldn't be accentuated (for example, category labels on product cards). The lighter shade of gray (#F5F5F5)
+is used as a background colour, mostly for the paragraphs to separate them as sections but in such combination so that the contrast
+between the text (#333333) and the background (#F5F5F5) is still high enough.
+
+The last colour that I've added is a shade of green (#45AD9A). I was looking for a shade that would be closer to the blue than to the yellow 
+colour to stay away from warm colours, which are often associated with femininity. I also thought this shade is a great mixture of green,
+the colour of nature, and blue, the colour normally associated with calmness. This is the only colour outside of the black and white spectrum
+and is, therefore, used as accent colour at times - such as for the links, important notes, form fields' outline, etc. - and icons.
+
+![Colour Palette](readme-files/img-colour-palette.png)
+
+### Icons
+
+As briefly mentioned in the previous paragraph, the icons often combine the dark shade of gray (#333333) and green colour (#45AD9A).
+Their design is minimalistic and relies on geometric shapes. All icons, apart from the social media logos, have been custom-designed 
+for this project by me.
+
+### Images
+
+[Supply](https://supply.co/) has been the biggest source of inspiration for the visual aspect of this project. I have come across this brand by
+searching for images suitable for the project on [Unsplash](https://unsplash.com/). Supply have their own [Unsplash account](https://unsplash.com/@supply)
+and contribute to open source imagery with images from their own photoshoots. I have additionally taken other images with similar style
+from Unsplash and Supply's website.
+
+Finding images that would fit the colour palette and focus more on gray shades rather than being colourful and vibrant was quite a difficult task
+in general.
+
+### Visual Style
+
+Once the font, colour palette and images were selected, I've focused on the design of the elements. I wanted the web app to look professional, 
+minimalistic and modern.
+
+Since my goal was to create a product that would resonate with male audience, I've decided that it would be the best to keep the page elements
+such as buttons, input fields, product cards, etc. with sharp edges. On the other hand, to achieve a modern look which would ease this 
+sharpness and act as a border between two elements that don't have a visual border between them (such as the white navigation and white background),
+a light and often barely noticeable shadow has been included.
+
+Visual identity is in general heavily relying on reduced colour palette, sharp-edged elements and borders. There are no additional decorations
+apart from occasional simple lines that help out with breaking down the sections for easier information grasping.
 
