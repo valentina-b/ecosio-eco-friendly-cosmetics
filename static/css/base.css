@@ -17,6 +17,7 @@
     --color-white: #FFFFFF;
     --color-error: #DA4EAA;
     --border-black: 1px solid var(--color-black);
+    --border-gray: 1px solid var(--color-gray);
     --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -880,7 +881,7 @@ ul p {
     width: fit-content;
     padding: 5px 5px 5px 8px;
     margin: 0;
-    border: 1px solid var(--color-gray);
+    border: var(--border-gray);
     border-right-color: transparent;
 }
 
@@ -1261,7 +1262,7 @@ input[type=number] {
     width: 25px;
     height: 25px;
     margin-right: 2px;
-    border: 1px solid var(--color-gray);
+    border: var(--border-gray);
 }
 
 .div-product-card-edit:hover {
@@ -1273,7 +1274,7 @@ input[type=number] {
     background:  url('../images/icons/icon-delete-black.svg') no-repeat center;
     width: 25px;
     height: 25px;
-    border: 1px solid var(--color-gray);
+    border: var(--border-gray);
 }
 
 .div-product-card-delete:hover {
@@ -1446,7 +1447,7 @@ input[type=number] {
 
 .div-shipping-costs, .div-total-costs, .div-order-total-costs {
     width: 100%;
-    border-bottom: 1px solid var(--color-gray);
+    border-bottom: var(--border-gray);
     min-height: 30px;
     margin-top: 25px;
 }
@@ -1480,7 +1481,7 @@ input[type=number] {
 .div-hr {
     width: 40%;
     min-width: 260px;
-    border-bottom: 1px solid var(--color-gray);
+    border-bottom: var(--border-gray);
     margin: 25px auto 35px auto;
 }
 
@@ -1598,7 +1599,7 @@ fieldset .form-control, #card-element {
 .order-summary-card-quantity {
     width: 25px;
     height: 25px;
-    border: 1px solid var(--color-gray);
+    border: var(--border-gray);
     position: relative;
     bottom: 15px;
     left: 105px;
