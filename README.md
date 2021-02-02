@@ -18,8 +18,8 @@ Apart from the customer-facing UI, users with admin rights can interact with the
 interaction is done through [the Django admin site](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/), the web app 
 provides more pleasant environment for common tasks such as adding, editing and deleting products or blog posts.
 
-**IMPORTANT: This project contains real products from existing brands. Please visit their websites for more information if you
-wish to purchase them. Read more about how and why I've used them for this project in the 'Credits' section.**
+**IMPORTANT (disclaimer): This project contains real products from existing brands. Please visit their websites for more information
+if you wish to purchase them. Read more about how and why I've used them for this project in the 'Credits' section.**
 
 ![App Showcase](readme-files/img-intro.png)
 
@@ -558,7 +558,7 @@ This project mostly focuses on the following technologies:
 1. [Heroku](https://www.heroku.com/) - cloud platform where the web app is deployed
 1. [SQLite](https://www.sqlite.org/index.html) - default Django's database used in development
 1. [PostgreSQL](https://www.postgresql.org/) - production database through Heroku
-1. [AWS](https://aws.amazon.com/) - for hosting media and static files
+1. [AWS S3](https://aws.amazon.com/) - for hosting media and static files on cloud
 1. [Git](https://git-scm.com/) - for version control
 1. [Stripe](https://stripe.com/en-gb-de) - for managing (test) transactions
 
@@ -577,4 +577,42 @@ Additionally, I have also used the following platforms to help me shape the webs
 1. [Figma](https://www.figma.com/) - for creating wireframes, web designs and icons
 1. [Favicon](https://favicon.io/) - for creating browser tab icons
 
+## Testing
 
+
+
+## Deployment
+
+
+
+## Credits
+
+### Content
+
+* product specifications were taken from their brands' websites (title, description, ingredient list, brand name). Only in a few cases I had to modify the text (no space after comma, title not capitalised, title too long etc.) but I did my best to stay as close as possible to the original specifications.
+* blog posts copy was taken from their brands' websites. Brand name is put under the `author` field. In some cases I had to adjust titles and trim the copy to fit the layout better.
+* the rest of the textual content for this web app is original, written by me.
+
+### Media
+
+* the photos for paragraphs and headers were downloaded from [Unsplash](https://unsplash.com/). [Supply's Unsplash account](https://unsplash.com/@supply) has been particularly helpful - it's so amazing that the company has decided to contribute to Unsplash with their beautiful, high-quality images!
+* the product images are taken from their brands' websites. Only in a few cases I've found products on other marketplaces, however, I have registered them in the inventory under their matching brand name.
+* social media icons in the footer were downloaded from [Flaticon](https://www.flaticon.com/).
+* all other icons were created by me in [Figma](https://www.figma.com/).
+* the README hero image was taken with the help of [Ami.ResponsiveDesign](http://ami.responsivedesign.is/).
+
+### Inspiration Sources
+
+* the biggest two inspiration sources were [Supply](https://supply.co/) and [Aesop](https://www.aesop.com/us/).
+* an important part of my design and research were also [Amazon](https://www.amazon.com/) and [Mankind](https://www.mankind.co.uk/).
+
+### Coding Sources
+
+* helped me understand [webhooks](https://zapier.com/blog/what-are-webhooks/).
+* helped me understand [how to style `select` tags with CSS](https://stackoverflow.com/questions/14218307/select-arrow-style-change).
+* helped me understand [how to remove glossy effect for `select` tags in Safari](https://stackoverflow.com/questions/7638677/how-can-i-remove-the-gloss-on-a-select-element-in-safari-on-mac).
+
+### Acknowledgments
+
+* Thank you [CodeInstitute's](https://codeinstitute.net/) Tutors and Slack community for being there for annoying bug-related questions!
+* Last but not least, a huge and warm thank you to my mentor [Dick Vlaanderen](https://github.com/dickvla) - not just for being such an incredible source of encouragement and great ideas for this project but for being there throughout all of my projects and coding journey at CodeInstitute. Thank you for all your support and kind words - working on this project wouldn't have been fun and such a wonderful experience without you!
