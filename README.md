@@ -426,3 +426,37 @@ a light and often barely noticeable shadow has been included.
 Visual identity is in general heavily relying on reduced colour palette, sharp-edged elements and borders. There are no additional decorations
 apart from occasional simple lines that help out with breaking down the sections for easier information grasping.
 
+## Technologies Used
+
+This project mostly focuses on the following technologies:
+
+1. [HTML](https://en.wikipedia.org/wiki/HTML) - for creating the layout and the structure of the website
+1. [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - for styling the website’s HTML code
+1. [Bootstrap](https://getbootstrap.com/) - for additional styling and adding responsiveness to the website
+1. [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [jQuery](https://jquery.com/) - for frontend interactivity
+1. [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - for backed logic and structure
+1. [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - for displaying backend information in frontend
+1. [Django](https://www.djangoproject.com/) - high-level Python web framework
+1. [Heroku](https://www.heroku.com/) - cloud platform where the web app is deployed
+1. [SQLite](https://www.sqlite.org/index.html) - default Django's database used in development
+1. [Postgres](https://www.postgresql.org/) - production database through Heroku
+1. [AWS](https://aws.amazon.com/) - for hosting media and static files
+1. [Git](https://git-scm.com/) - for version control
+1. [Stripe](https://stripe.com/en-gb-de) - for managing (test) transactions
+
+Technology used that is connected to [Bootstrap](https://getbootstrap.com/) for some components to function properly:
+
+1. [jQuery](https://jquery.com/)
+1. [Popper.js](https://popper.js.org/)
+1. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+Additionally, I have also used the following platforms to help me shape the website and the brand:
+
+1. [Gitpod](https://gitpod.io/) - for writing, editing and live previewing the code during the creation process
+1. [GitHub](https://github.com/) - for hosting the project's repository
+1. [TinyPNG](https://tinypng.com/) - for compressing the images so that the website can load faster
+1. [Google Fonts](https://fonts.google.com/) - for selecting the fonts
+1. [Figma](https://www.figma.com/) - for creating wireframes, web designs and icons
+1. [Favicon](https://favicon.io/) - for creating browser tab icons
+
+
