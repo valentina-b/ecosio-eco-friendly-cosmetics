@@ -352,6 +352,124 @@ Mobile wireframes:
 * [user's loyalty points status](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/mob/wireframe-mob-loyalty-status.png)
 * [link to all mobile wireframes folder](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/mob)
 
+## Information Architecture
+
+As Django works with SQL databases by default, I was using SQLite in development. Heroku, however, provides a PostgreSQL database 
+for deployment.
+
+### Data Models
+
+**User Model**
+
+Django `User` model is a part of Django’s authentication system `django.contrib.auth.models`. You can read more about its fields, attributes,
+methods, etc. [here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/).
+
+**Profiles App**
+
+`UserProfile` model
+
+| **Name**   | **Database Key**   | **Field Type**   | **Type Validation**   |
+| ---------- | ------------------ | ---------------- | --------------------- |
+| User | user | OneToOneField 'User' | on_delete=models.CASCADE |
+| Default Phone Number | default_phone_number | CharField | max_length=20, null=True, blank=True |
+| Default Country | default_country | CountryField | blank_label='country', null=True, blank=True |
+| Default Postcode | default_postcode | CharField | max_length=20, null=True, blank=True |
+| Default Town or City | default_town_or_city | CharField | max_length=40, null=True, blank=True |
+| Default Street Address | default_street_address | CharField | max_length=80, null=True, blank=True |
+| Earned Loyalty Points | earned_loyalty_points | DecimalField | max_digits=10, decimal_places=0, null=False, default=0 |
+| Donated Loyalty Points | donated_loyalty_points | DecimalField | max_digits=10, decimal_places=0, null=False, default=0 |
+| Donated Loyalty Points Plant Tree | donated_loyalty_points_plant_tree | DecimalField | max_digits=10, decimal_places=0, null=False, default=0 |
+| Donated Loyalty Points Recycle Plastic | donated_loyalty_points_recycle_plastic | DecimalField | max_digits=10, decimal_places=0, null=False, default=0 |
+| Donated Loyalty Points Clean Forest | donated_loyalty_points_clean_forest | DecimalField | max_digits=10, decimal_places=0, null=False, default=0 |
+| Total Loyalty Points | total_loyalty_points | DecimalField | max_digits=10, decimal_places=0, null=False, default=0 |
+| Going to Event | going_to_event | BooleanField | default=False |
+
+**Products App**
+
+`Category` model
+
+| **Name**   | **Database Key**   | **Field Type**   | **Type Validation**   |
+| ---------- | ------------------ | ---------------- | --------------------- |
+| Name | name | CharField | max_length=254 |
+| Friendly Name | friendly_name | CharField | max_length=254, null=True, blank=True |
+
+`Brand` model
+
+| **Name**   | **Database Key**   | **Field Type**   | **Type Validation**   |
+| ---------- | ------------------ | ---------------- | --------------------- |
+| Name | name | CharField | max_length=254 |
+| Friendly Name | friendly_name | CharField | max_length=254, null=True, blank=True |
+| Short Name | short_name | CharField | max_length=25, null=True, blank=True |
+
+`Product` model
+
+| **Name**   | **Database Key**   | **Field Type**   | **Type Validation**   |
+| ---------- | ------------------ | ---------------- | --------------------- |
+| SKU | sku | CharField | max_length=254, null=True, blank=True |
+| Category | category | ForeignKey 'Category' | null=True, blank=True, on_delete=models.SET_NULL |
+| Brand | brand | ForeignKey 'Brand' | null=True, blank=True, on_delete=models.SET_NULL |
+| Name | name | CharField | max_length=55 |
+| Description | description | TextField | max_length=375 |
+| Ingredients | ingredients | TextField | max_length=4000 |
+| Price | price | DecimalField | max_digits=6, decimal_places=2 |
+| Is Eco | is_eco | BooleanFieldBooleanField | default=True, null=True, blank=True |
+| Is Cruelty-Free | is_crueltyfree | BooleanField | default=True, null=True, blank=True |
+| Is Vegan | is_vegan | BooleanField | default=True, null=True, blank=True |
+| Is Organic | is_organic | BooleanField | default=True, null=True, blank=True |
+| Is Natural | is_natural | BooleanField | default=True, null=True, blank=True |
+| Image | image | ImageField | null=True, blank=True |
+
+**Checkout App**
+
+`Order` model
+
+| **Name**   | **Database Key**   | **Field Type**   | **Type Validation**   |
+| ---------- | ------------------ | ---------------- | --------------------- |
+| Order Number | order_number | CharField | max_length=32, null=False, editable=False |
+| User Profile | user_profile | ForeignKey 'UserProfile' | on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' |
+| Full Name | full_name | CharField | max_length=50, null=False, blank=False |
+| E-mail | email | EmailField | max_length=254, null=False, blank=False |
+| Phone Number | phone_number | CharField | max_length=20, null=False, blank=False |
+| Country | country | CountryField | blank_label='(select your country)', null=False, blank=False |
+| Town or City | town_or_city | CharField | (max_length=40, null=False, blank=False |
+| Postcode | postcode | CharField | max_length=20, null=False, blank=False |
+| Street Address | street_address | CharField | max_length=80, null=False, blank=False |
+| Date | date | DateTimeField | auto_now_add=True |
+| Delivery Cost | delivery_cost | DecimalField | max_digits=6, decimal_places=2, null=False, default=0 |
+| Order Total | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0 |
+| Order Total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0 |
+| Original Cart | original_cart | TextField | null=False, blank=False, default='' |
+| Stripe PID | stripe_pid | CharField | max_length=254, null=False, blank=False |
+| Loyalty Points | loyalty_points | DecimalField | max_digits=10, decimal_places=0, null=False, default=0 |
+
+`OrderLineItem` model
+
+| **Name**   | **Database Key**   | **Field Type**   | **Type Validation**   |
+| ---------- | ------------------ | ---------------- | --------------------- |
+| Order | order | ForeignKey 'Order' | null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems' |
+| Product | product | ForeignKey 'Product' | null=False, blank=False, on_delete=models.CASCADE |
+| Quantity | quantity | IntegerField | null=False, blank=False, default=0 |
+| Line Item Total | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False |
+
+**Blog App**
+
+`Order` model
+
+| **Name**   | **Database Key**   | **Field Type**   | **Type Validation**   |
+| ---------- | ------------------ | ---------------- | --------------------- |
+| Published Date | published_date | DateTimeField | auto_now_add=True |
+| Title | title | CharField | max_length=55 |
+| Author | author | CharField | max_length=55, null=True, blank=True |
+| Slug | slug | SlugField | max_length=200, unique=True |
+| Header Image | header_image | ImageField |  |
+| Intro Paragraph | intro_paragraph | TextField | validators=[MinLengthValidator(100)], max_length=400 |
+| Subheading 1 | subheading_1 | CharField | max_length=55 |
+| Blog Content 1 | blog_content_1 | TextField | validators=[MinLengthValidator(250)] |
+| Subheading 2 | subheading_2 | CharField | max_length=55 |
+| Blog Content 2 | blog_content_2 | TextField | validators=[MinLengthValidator(250)] |
+| Subheading 3 | subheading_3 | CharField | max_length=55, null=True, blank=True |
+| Blog Content 3 | blog_content_3 | TextField | validators=[MinLengthValidator(250)], null=True, blank=True |
+
 ## Graphic Design and Brand Elements
 
 Based on the audience research, it has become clear early on that the project will require more efforts when it comes to the brand identity
@@ -439,7 +557,7 @@ This project mostly focuses on the following technologies:
 1. [Django](https://www.djangoproject.com/) - high-level Python web framework
 1. [Heroku](https://www.heroku.com/) - cloud platform where the web app is deployed
 1. [SQLite](https://www.sqlite.org/index.html) - default Django's database used in development
-1. [Postgres](https://www.postgresql.org/) - production database through Heroku
+1. [PostgreSQL](https://www.postgresql.org/) - production database through Heroku
 1. [AWS](https://aws.amazon.com/) - for hosting media and static files
 1. [Git](https://git-scm.com/) - for version control
 1. [Stripe](https://stripe.com/en-gb-de) - for managing (test) transactions
