@@ -793,7 +793,7 @@ footer p {
     background-color: var(--color-white);
 }
 
-#div-id-header-image {
+#div_id_header_image {
     font-size: 0.875rem;
 }
 /* blog page */
@@ -1326,10 +1326,11 @@ input[type=number] {
 .cart-product-count {
     position: absolute;
     bottom: 16px;
-    right: 24.5px;
+    right: 22.5px;
     font-size: 0.625rem;
     text-align: center;
     color: var(--color-white);
+    width: 17px;
 }
 
 .cart-link-mob {
@@ -2052,6 +2053,7 @@ fieldset .form-control, #card-element {
     }
     .cart-product-count {
         position: static;
+        width: unset;
     }
     .div-cart-img {
         margin-bottom: -26px;
