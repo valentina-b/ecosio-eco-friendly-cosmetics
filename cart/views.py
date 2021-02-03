@@ -23,7 +23,6 @@ def add_to_cart(request, item_id):
     cart_products_quantity_limit = 150
 
     if cart_products_quantity >= cart_products_quantity_limit:
-        print('theres a limit already')
         messages.error(request, f'Oh no, that would be over our {cart_products_quantity_limit} products per order limit. Please adjust your order.')
         return redirect(redirect_url)
     else:
@@ -54,7 +53,6 @@ def add_to_cart(request, item_id):
 
                             # first check if with this new amount cart would have more than the alowed limit
                             cart_products_quantity_sum = cart_products_quantity + request_dict_quantity
-                            print(cart_products_quantity_sum)
                             if cart_products_quantity_sum > cart_products_quantity_limit:
                                 messages.error(request, f'Oh no, that would be over our {cart_products_quantity_limit} products per order limit. Please adjust your order.')
                                 return redirect(redirect_url)

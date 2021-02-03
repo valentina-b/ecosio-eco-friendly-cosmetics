@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-    // homepage
     // close registration prompt
     $("#close-prompt").on("click", function() {
         $("#registration-prompt").addClass('d-none');
