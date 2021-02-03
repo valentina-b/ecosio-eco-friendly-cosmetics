@@ -79,7 +79,7 @@ def add_to_cart(request, item_id):
                     messages.success(request, f'Added {product.name.title()} to your cart')
 
         except ValueError:
-            messages.error(request, f'You left the product amount blank. Try again!')
+            messages.error(request, f'You left the product quantity blank. Try again!')
             return redirect(redirect_url)
 
     request.session['cart'] = cart
@@ -104,14 +104,18 @@ def adjust_cart(request, item_id):
                 messages.error(request, f'Oh no, that would be over our {cart_products_quantity_limit} products per order limit. Please adjust your order.')
                 return redirect(reverse('view_cart'))
             else:
-                cart[item_id] = quantity
-                messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
+                # inform the user that product quantity was left to be the same if quantity hasn't changed
+                if cart[item_id] == quantity:
+                    messages.info(request, f'You left the product quantity for {product.name.title()} the same. Did you forget to adjust it?')
+                else:
+                    cart[item_id] = quantity
+                    messages.success(request, f'Updated {product.name.title()} quantity to {cart[item_id]}')
         else:
             cart.pop(item_id)
             messages.success(request, f'Removed {product.name.title()} from your cart')
 
     except ValueError:
-        messages.error(request, f'You left the product amount blank. Try again!')
+        messages.error(request, f'You left the product quantity blank. Try again!')
         return redirect(reverse('view_cart'))
 
     request.session['cart'] = cart
