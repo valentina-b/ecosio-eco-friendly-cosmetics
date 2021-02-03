@@ -12,4 +12,5 @@ class BlogAdmin(admin.ModelAdmin):
         'slug'
     )
 
+
 admin.site.register(Blog, BlogAdmin)
