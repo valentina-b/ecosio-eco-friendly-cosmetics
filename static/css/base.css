@@ -23,6 +23,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -1008,6 +1009,11 @@ ul p {
     appearance: none;
     background: url(../images/icons/icon-dropdown-arrow.svg) no-repeat right;
     background-position-x: 95%;
+}
+
+/* remove safari rounded corners */
+select {
+    border-radius: 0;
 }
 
 .product-page-card {
