@@ -792,6 +792,10 @@ footer p {
 .blog-superuser-options .div-product-card-delete, .blog-superuser-options .div-product-card-delete:hover {
     background-color: var(--color-white);
 }
+
+#div-id-header-image {
+    font-size: 0.875rem;
+}
 /* blog page */
 
 /* loyalty programme page */
@@ -994,6 +998,10 @@ ul p {
     text-transform: uppercase;
     padding-left: 5%;
     outline: transparent;
+}
+
+/* remove dropdown arrow */
+#sort-selector, select {
     /* remove firefox arrow */
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1982,13 +1990,14 @@ fieldset .form-control, #card-element {
         height: 100px;
         max-width: 100%;
         padding: 0 15px;
-        margin: auto;
+        margin: 0 auto 15px auto;
     }
     .visual-filters, .dsk-visual-filters {
         position: initial;
         overflow-x: auto;
+        overflow-y: hidden;
         white-space: nowrap;
-        height: 60px;
+        height: 70px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2018,9 +2027,13 @@ fieldset .form-control, #card-element {
     .gallery {
         overflow-x: auto;
         padding-bottom: 20px;
+        margin-bottom: 30px;
     }
     .product-recommendations-div {
         padding-right: 40px;
+    }
+    .product-recommendations-div > .div-product-card-shop {
+        margin-bottom: 15px;
     }
     .product-page-card {
         margin: 0 auto 40px auto;
