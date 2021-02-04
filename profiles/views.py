@@ -113,7 +113,7 @@ def donate_plant_tree(request):
     profile.total_loyalty_points -= 2
     profile.save()
 
-    messages.success(request, 'Thank you for planting a tree with us!')
+    messages.success(request, 'Thank you for donating your 2 points for planting a tree with us!')
 
     return redirect(reverse('loyalty_status'))
 
@@ -133,7 +133,7 @@ def donate_recycle_plastic(request):
     profile.total_loyalty_points -= 3
     profile.save()
 
-    messages.success(request, 'Thank you for recycling plastic with us!')
+    messages.success(request, 'Thank you for donating your 3 points for recycling plastic with us!')
 
     return redirect(reverse('loyalty_status'))
 
@@ -153,6 +153,6 @@ def donate_clean_forest(request):
     profile.total_loyalty_points -= 5
     profile.save()
 
-    messages.success(request, 'Thank you for cleaning a forest with us!')
+    messages.success(request, 'Thank you for donating your 5 points for cleaning a forest with us!')
 
     return redirect(reverse('loyalty_status'))

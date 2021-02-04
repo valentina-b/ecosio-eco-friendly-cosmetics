@@ -228,6 +228,7 @@ input[type="file"] {
 
 #user-options {
     padding-left: 55px;
+    outline: transparent;
 }
 
 .container {
