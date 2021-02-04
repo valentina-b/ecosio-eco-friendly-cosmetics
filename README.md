@@ -165,14 +165,14 @@ of features is structured in a way that should help with understanding how the f
 **Django-allauth feature**
 * `django-allauth` is a Python package. As writtenin the [django-allauth docs](https://django-allauth.readthedocs.io/en/latest/), it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
 * it provides a set of features such as **signup**, **login**, **logout** and **password change**.
-* after signing up, a verification email is sent to the registered email to confirm it. Once confirmed, the user can log in with their credentials and access the `profiles` app explained later below.
+* after signing up, a verification e-mail is sent to the registered e-mail to confirm it. Once confirmed, the user can log in with their credentials and access the `profiles` app explained later below.
 * the links to these features can be found in the navigation, under the **My Account** dropdown menu, as well as on the pages and throughout the web app (for example, registration prompt window on the `homepage`).
 
 ![Django-allauth Features](readme-files/img-features/img-features-allauth.png)
 
 **Automatic e-mails**
-* a gmail account **ecosio.cosmetics@gmail.com** has been created specifically for this project and used as a sender for all verification, reset and confirmation emails.
-* for example, users receive an **order confirmation e-mail** after a purchase, **account verification e-mail** after the registration, **password reset email** after requesting a password reset, etc.
+* a gmail account **ecosio.cosmetics@gmail.com** has been created specifically for this project and used as a sender for all verification, reset and confirmation e-mails.
+* for example, users receive an **order confirmation e-mail** after a purchase, **account verification e-mail** after the registration, **password reset e-mail** after requesting a password reset, etc.
 
 ![Automatic E-mails Features](readme-files/img-features/img-features-automatic-emails.png)
 
@@ -647,23 +647,136 @@ os.environ["STRIPE_WH_SECRET"] = "<Your Key>"
 6. Create a superuser (user with admin rights)
 * paste the following command into the terminal:
     * `python3 manage.py createsuperuser`
-* enter an email, username and password for the superuser
+* enter an e-mail, username and password for the superuser
 
 7. Run the web app
 * paste the following command into the terminal:
     * `python3 manage.py runserver`
 
 8. Log into Django admin
-* after running the web app, add `/admin` at the end of the url and log in with the superuser credentials from the previous step
+* after running the web app, add `/admin` at the end of the URL and log in with the superuser credentials from the previous step
 
 ### Heroku Deployment
 
+1. Create a `requirements.txt` file
+* paste the following command into the terminal:
+    * `pip freeze > requirements.txt`
 
+2. Create a `Procfile`
+* create a `Procfile` in the root directory
+* add the following code into it:
+    * `web: gunicorn ecosio.wsgi:application`
 
+3. Push the code to GitHub
+* paste the following commands into the terminal:
+    * `git add .`
+    * `git commit -m "<your commit note>"`
+    * `git push`
 
+4. Create a new app on Heroku
+* create a new app (click on 'New' > 'Create new app')
+* give it a unique name
+* set region closest to you
 
+5. Set Heroku Postgres
+* go to 'Resources' tab
+* search for 'Heroku Postgres'
+* select the 'Hobby Dev' free plan
 
+6. Set config variables in Heroku
 
+| **Key**   | **Value**   |
+| --------- | ----------- |
+| AWS_ACCESS_KEY_ID | < your AWS access key ID > |
+| AWS_SECRET_ACCESS_KEY | < your AWS secret access key > |
+| DATABASE_URL | < your postgres database URL > |
+| EMAIL_HOST_PASS | < 16-character password from Gmail > |
+| EMAIL_HOST_USER | < your Gmail > |
+| SECRET_KEY | < your secret key > |
+| STRIPE_PUBLIC_KEY | < your stripe public key > |
+| STRIPE_SECRET_KEY | < your stripe secret key > |
+| STRIPE_WH_SECRET | < your stripe webhook key > |
+| USE_AWS | True |
+
+7. Set up new database
+* in `settings.py`:
+    * import dj_database_url
+    * comment out `DATABASES` (temporarily, **do not commit/push this code to GitHub until said so**)
+    * add the following code:
+```bash
+DATABASES = {
+        'default': dj_database_url.parse("<your Postrgres database URL>")
+    }
+```
+
+8. Migrate the models to Postgres database
+* paste the following commands into the terminal:
+    * `python3 manage.py makemigrations`
+    * `python3 manage.py migrate`
+
+9. Load the data fixtures in this exact order
+* paste the following commands into the terminal:
+    * `python3 manage.py loaddata categories`
+    * `python3 manage.py loaddata brands`
+    * `python3 manage.py loaddata products`
+    * `python3 manage.py loaddata blogs`
+
+10. Create a superuser (user with admin rights)
+* paste the following command into the terminal:
+    * `python3 manage.py createsuperuser`
+* enter an e-mail, username and password for the superuser
+
+11. Correct the `settings.py` database from step 7.
+* uncomment the `DATABASES`
+* remove the code added in step 7.
+
+12. Add the hostname of Heroku app to allowed EMAIL_HOST_USER
+* in `settings.py`:
+    * add the following code:
+```bash
+ALLOWED_HOSTS = ['<your Heroku app URL>', 'localhost]
+```
+
+13. Push the code to GitHub
+* paste the following commands into the terminal:
+    * `git add .`
+    * `git commit -m "<your commit note>"`
+    * `git push`
+
+14. Set up automatic deployment to Heroku (**optional**)
+* in Heroku go to 'Deploy' > 'Deployment method' > 'Connect to GitHub'
+* search for your repository and click on it
+* go to 'Automatic Deployment' > click 'Enable Automatic Deploys'
+
+15. Test automatic deployment
+* your code should be automatically deployed to Heroku after pushing your code
+
+### Hosting Files with AWS
+
+In order to host static files and images with AWS, you will need to create an [AWS account](https://aws.amazon.com/).
+Additionally, you have to create:
+* an AWS S3 Bucket
+* a Bucket Policy
+* a Group
+* an Access Policy
+* a User
+
+It is a lengthy process but you can learn more about Amazon Simple Storage Service [here](https://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html).
+After that, you will need to [connect Django to S3](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html).
+
+### Sending E-mails through Gmail
+
+In order to send automatic e-mails with Django, you need a Gmail account.
+* go to the account settings
+* go to the 'Other Google Account Settings'
+* go to the 'Security' tab
+* turn on 2-step verification
+* go back to 'Security' tab and click on 'App passwords'
+* select 'Mail' in the app dropdown
+* select 'Other' in the device dropdown
+* copy the 16-character password
+* go to Heroku and put it under `EMAIL_HOST_PASS` config variable
+* put the Gmail e-mail under the `EMAIL_HOST_USER` config var
 
 ## Credits
 
