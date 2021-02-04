@@ -360,6 +360,10 @@ button, button:hover, button:active, button:focus {
 .modal-button:focus, .modal-button:active, .modal-button:hover {
     outline: transparent;
 }
+
+.paragraph-img {
+    width: 645px;
+}
 /* homepage */
 /* header */
 #hp-header-h1, #hp-header-tagline {
@@ -1876,6 +1880,15 @@ fieldset .form-control, #card-element {
     height: 100%;
 }
 /* loading overlay */
+
+/* error pages */
+.error-page-ctas {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+}
+/* error pages */
 
 /* responsiveness */
 @media (max-width: 1199px) {
