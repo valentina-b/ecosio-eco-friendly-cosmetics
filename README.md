@@ -583,6 +583,86 @@ Additionally, I have also used the following platforms to help me shape the webs
 
 ## Deployment
 
+ECOSiO was developed with [Gitpod](https://gitpod.io/) IDE. [Git](https://git-scm.com/) was used for verion control and [GitHub](https://github.com/)
+for hosting the project's repository. The project is hosted on [Heroku](https://www.heroku.com/) while [AWS S3](https://aws.amazon.com/)
+is hosting static files and images.
+
+### Local Deployment
+
+To run this project locally (on your own IDE), make sure you:
+* have an IDE of your choice ready (such as [Gitpod](https://gitpod.io/))
+* have the following installed:
+    * [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+    * [Python3](https://www.python.org/downloads/)
+    * [pip](https://pip.pypa.io/en/stable/installing/)
+
+Additionally you will need (free) accounts of the following services:
+* [Gmail](https://www.google.com/gmail/)
+* [Stripe](https://stripe.com/en-gb-de)
+* [AWS S3](https://aws.amazon.com/)
+
+**Instructions**
+
+1. Clone this repository
+* after installing requirements mentioned earlier, clone the project by pasting the following command into the terminal:
+    * `git clone https://github.com/valentina-b/ecosio-eco-friendly-cosmetics`
+* alternatively, you can go to [ECOSiO's repository](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics), click the green 'Code' button and 'Download ZIP option in the dropdown menu to save the files on your machine
+* for more information please visit [GitHub's help pages](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+2. Set up environment variables
+* create `.env` file in the root directory
+* add `.env` to `.gitignore` file in the root directory
+* add the following environment variables to `.env`:
+```bash 
+import os
+os.environ["DEVELOPMENT"] = "True"
+os.environ["SECRET_KEY"] = "<Your Key>"
+os.environ["STRIPE_PUBLIC_KEY"] = "<Your Key>"
+os.environ["STRIPE_SECRET_KEY"] = "<Your Key>"
+os.environ["STRIPE_WH_SECRET"] = "<Your Key>"
+```
+* if you're working with GitPod, you can set these variables in the 'Settings'
+    * click your profile icon in the top right corner in Gitpod
+    * click 'Open Workspaces'
+    * again click your profile icon in the top right corner
+    * click 'Settings' option in the dropdown menu
+    * click 'Add Variable' button to add a variable
+
+3. Install requirements from `requirements.txt` file
+* paste the following command into the terminal: 
+    * `pip3 install -r requirements.txt`
+
+4. Migrate the models to create a database
+* paste the following commands into the terminal:
+    * `python3 manage.py makemigrations`
+    * `python3 manage.py migrate`
+
+5. Load the data fixtures in this exact order
+* paste the following commands into the terminal:
+    * `python3 manage.py loaddata categories`
+    * `python3 manage.py loaddata brands`
+    * `python3 manage.py loaddata products`
+    * `python3 manage.py loaddata blogs`
+
+6. Create a superuser (user with admin rights)
+* paste the following command into the terminal:
+    * `python3 manage.py createsuperuser`
+* enter an email, username and password for the superuser
+
+7. Run the web app
+* paste the following command into the terminal:
+    * `python3 manage.py runserver`
+
+8. Log into Django admin
+* after running the web app, add `/admin` at the end of the url and log in with the superuser credentials from the previous step
+
+### Heroku Deployment
+
+
+
+
+
+
 
 
 ## Credits
