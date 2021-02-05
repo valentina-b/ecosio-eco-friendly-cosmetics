@@ -28,7 +28,7 @@
                                 </a>
                                 <!-- deleteBlogModal Button -->
                                 <button type="button" class="modal-button" data-toggle="modal" data-target="#deleteBlogModal{{ blog.slug }}">
-                                    <div class="div-product-card-delete"></div>
+                                    <span class="span-product-card-delete"></span>
                                 </button>
                                 <!-- deleteBlogModal Modal -->
                                 <div class="modal fade" id="deleteBlogModal{{ blog.slug }}" tabindex="-1" role="dialog" aria-labelledby="deleteBlogModalLabel" aria-hidden="true">
@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <section>
+    <div>
         <div class="container-fluid">
             <div class="row mb-3">
                 <div class="container">
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 {% endblock %}
 
 {% block postloadjs %}

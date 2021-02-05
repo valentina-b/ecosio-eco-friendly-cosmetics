@@ -28,7 +28,7 @@
                     </a>
                     <!-- deletePresentModal Button -->
                     <button type="button" class="modal-button" data-toggle="modal" data-target="#deletePresentModal{{ product.id }}">
-                        <div class="div-product-card-delete"></div>
+                        <span class="span-product-card-delete"></span>
                     </button>
                     <!-- deletePresentModal Modal -->
                     <div class="modal fade" id="deletePresentModal{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deletePresentModalLabel" aria-hidden="true">
@@ -179,7 +179,7 @@
         <div class="row row-ingredients-shipping">
             <div class="col-12">
                 <div id="accordion">
-                    <div class="card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="card" data-toggle="collapse" data-target="#collapseOne">
                         <div class="card-header" id="headingOne" >
                             <h3 class="mb-0 product-details-additional">
                                 {% if product.category.pk == 4 %}
@@ -198,7 +198,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="card" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="card" data-toggle="collapse" data-target="#collapseTwo">
                         <div class="card-header" id="headingTwo">
                             <h3 class="mb-0 product-details-additional">
                                 Shipping details

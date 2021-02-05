@@ -1292,14 +1292,15 @@ input[type=number] {
     border: 1px solid var(--color-green);
 }
 
-.div-product-card-delete {
+.div-product-card-delete, .span-product-card-delete {
     background:  url('../images/icons/icon-delete-black.svg') no-repeat center;
     width: 25px;
     height: 25px;
     border: var(--border-gray);
+    display: block;
 }
 
-.div-product-card-delete:hover {
+.div-product-card-delete:hover, .span-product-card-delete:hover {
     background:  url('../images/icons/icon-delete-green.svg') no-repeat center;
     border: 1px solid var(--color-green);
 }
@@ -1339,7 +1340,7 @@ input[type=number] {
 
 .cart-product-count {
     position: absolute;
-    bottom: 16px;
+    bottom: 0;
     right: 22.5px;
     font-size: 0.625rem;
     text-align: center;
