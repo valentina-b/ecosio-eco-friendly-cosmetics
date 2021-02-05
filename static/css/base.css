@@ -846,10 +846,13 @@ footer p {
     margin-top: 45px;
 }
 
-ul p {
-    margin-bottom: 0;
-    position: relative;
-    right: 19px;
+.ul-loyalty-page {
+    list-style-image: url('../images/icons/icon-checkmark.svg');
+}
+
+.li-no-dot {
+    list-style-type: none; 
+    list-style-image: none;
 }
 /* loyalty programme page */
 
