@@ -579,7 +579,7 @@ Additionally, I have also used the following platforms to help me shape the webs
 
 ## Testing and Defensive Design
 
-More about **Testing and Defensive Design** can be found in the [TESTING.md]() file.
+More about **Testing and Defensive Design** can be found in the [TESTING.md](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/blob/master/TESTING.md) file.
 
 ## Deployment
 
