@@ -2318,8 +2318,11 @@ fieldset .form-control, #card-element {
     }
     .div-delete-img {
         position: relative;
-        right: 20px;
-        top: 20px;
+        right: 5px;
+        top: 5px;
+        width: 44px;
+        height: 60px;
+        background-size: 30%;
     }
     .cart-product-title {
         max-width: unset;
