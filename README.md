@@ -577,9 +577,9 @@ Additionally, I have also used the following platforms to help me shape the webs
 1. [Figma](https://www.figma.com/) - for creating wireframes, web designs and icons
 1. [Favicon](https://favicon.io/) - for creating browser tab icons
 
-## Testing
+## Testing and Defensive Design
 
-
+More about **Testing and Defensive Design** can be found in the [TESTING.md]() file.
 
 ## Deployment
 
