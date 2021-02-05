@@ -105,11 +105,19 @@ $('.blog-header-image').on("error", function() {
 The project's code was frequently validated through:
 
 * [W3 HTML validator](https://validator.w3.org/)
-    * errors that were found explained in the next sections
+    * the validator found some mistakes that were easy to fix, such as:
+        * empty `<h1>` tag
+        * unnecessary type attribute `<script type="text/javascript">`
+        * having `<div>` tag as child of the `<button>` tag
+        * having `<div>` tag as child of the `<ul>` tag
+    * and there were a few errors that I haven't fixed yet due to the shortage of time
+        * admin views for the `blog` page and the product feed (webshop) have duplicated `id` attributes because of the bootstrap modal
+        * the form in admin `add_product` view has two `id` attributes for the image input, it happened because of additional implementation of custom widget template code
+        * `cart` page has duplicated `id` attributes as well for the 'delete from cart' functionality, it happened because some parts of the code were hidden on smaller devices so the code appears twice on the page
 * [W3 CSS validator](https://jigsaw.w3.org/css-validator/)
-    * all errors and warning shown are related to either Bootstrap's css file, CSS browser prefixes or CSS variables that I've used (too advanced for this validator)
+    * all errors and warning shown are related to either Bootstrap's css file, CSS browser prefixes or CSS variables that I've used (which is too advanced for this validator)
 * [JSHint](https://jshint.com/)
-    * apart from minor changes, like missing semicolons, everything was all right
+    * apart from minor changes, like missing semicolons, everything was all right (although '$' was not defined by JSHint)
 
 The web app was tested on the devices and browsers listed below. I loaded the page on each of the device and browser combination and looked for any visual and functional errors. I've also tried to resize the web pages on desktop in Chrome, Firefox, Opera and Safari developer tools to look for hidden irregularities and finding out the solutions. More about the errors I've encountered can be found under the 'Bugs and Problems'.
 
