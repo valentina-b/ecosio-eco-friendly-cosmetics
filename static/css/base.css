@@ -927,7 +927,7 @@ footer p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    /* correct breadcrumbs margins  below to container content alignment */
+    /* correct breadcrumbs margins below to align with container content */
     margin-left: -3px;
 }
 
@@ -1542,7 +1542,7 @@ input[type=number] {
     color: var(--color-error);
 }
 
-label {
+label, .label-style {
     font-family: var(--font-poppins);
     font-size: 0.875rem;
     margin-bottom: 5px;
