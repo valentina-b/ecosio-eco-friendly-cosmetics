@@ -38,10 +38,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'loyalty_programme' %}">Loyalty programme</a>
             </li>
-            <div class="line d-lg-none">
-            </div>
+            <li>
+                <div class="line d-lg-none">
+                </div>
+            </li>
             <!-- top nav account links -->
-            <div class="top-nav-links d-lg-none">
+            <li class="top-nav-links d-lg-none">
+                <ul class="navbar-nav mr-auto pl-0">
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <li>
@@ -65,7 +68,8 @@
                             <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                         </li>
                 {% endif %}
-            </div>
+                </ul>
+            </li>
             <li class="search-box-mob">
                 <form method="GET" action="{% url 'products' %}" class="search-input-mob">
                     <div class="input-group border-black">
