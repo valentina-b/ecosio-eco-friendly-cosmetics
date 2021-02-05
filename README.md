@@ -23,6 +23,39 @@ if you wish to purchase them. Read more about how and why I've used them for thi
 
 ![App Showcase](readme-files/img-intro.png)
 
+## Table of Contents
+
+  * [UX - research and goals](#ux---research-and-goals)
+    + [Conclusion of the Research](#conclusion-of-the-research)
+    + [Business Goals](#business-goals)
+    + [Customer Goals](#customer-goals)
+  * [Features and App Sections](#features-and-app-sections)
+    + [Web App Sections](#web-app-sections)
+    + [Features and Django Apps](#features-and-django-apps)
+    + [Features Left to Implement](#features-left-to-implement)
+    + [Wireframes](#wireframes)
+  * [Information Architecture](#information-architecture)
+    + [Data Models](#data-models)
+  * [Graphic Design and Brand Elements](#graphic-design-and-brand-elements)
+    + [Fonts](#fonts)
+    + [Colours](#colours)
+    + [Icons](#icons)
+    + [Images](#images)
+    + [Visual Style](#visual-style)
+  * [Technologies Used](#technologies-used)
+  * [Testing and Defensive Design](#testing-and-defensive-design)
+  * [Deployment](#deployment)
+    + [Local Deployment](#local-deployment)
+    + [Heroku Deployment](#heroku-deployment)
+    + [Hosting Files with AWS](#hosting-files-with-aws)
+    + [Sending E-mails through Gmail](#sending-e-mails-through-gmail)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Media](#media)
+    + [Inspiration Sources](#inspiration-sources)
+    + [Coding Sources](#coding-sources)
+    + [Acknowledgments](#acknowledgments)
+
 ## UX - research and goals
 
 Who are 'green' consumers and why are they so interesting for this project? In [Green Consumerism: An A-to-Z Guide](https://sk.sagepub.com/reference/greenconsumerism/n71.xml)
