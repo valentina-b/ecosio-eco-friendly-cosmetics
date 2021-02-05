@@ -25,31 +25,31 @@ if you wish to purchase them. Read more about how and why I've used them for thi
 
 ## Table of Contents
 
-  * [UX - research and goals](#ux---research-and-goals)
+  * [**UX - research and goals**](#ux---research-and-goals)
     + [Conclusion of the Research](#conclusion-of-the-research)
     + [Business Goals](#business-goals)
     + [Customer Goals](#customer-goals)
-  * [Features and App Sections](#features-and-app-sections)
+  * [**Features and App Sections**](#features-and-app-sections)
     + [Web App Sections](#web-app-sections)
     + [Features and Django Apps](#features-and-django-apps)
     + [Features Left to Implement](#features-left-to-implement)
     + [Wireframes](#wireframes)
-  * [Information Architecture](#information-architecture)
+  * [**Information Architecture**](#information-architecture)
     + [Data Models](#data-models)
-  * [Graphic Design and Brand Elements](#graphic-design-and-brand-elements)
+  * [**Graphic Design and Brand Elements**](#graphic-design-and-brand-elements)
     + [Fonts](#fonts)
     + [Colours](#colours)
     + [Icons](#icons)
     + [Images](#images)
     + [Visual Style](#visual-style)
-  * [Technologies Used](#technologies-used)
-  * [Testing and Defensive Design](#testing-and-defensive-design)
-  * [Deployment](#deployment)
+  * [**Technologies Used**](#technologies-used)
+  * [**Testing and Defensive Design**](#testing-and-defensive-design)
+  * [**Deployment**](#deployment)
     + [Local Deployment](#local-deployment)
     + [Heroku Deployment](#heroku-deployment)
     + [Hosting Files with AWS](#hosting-files-with-aws)
     + [Sending E-mails through Gmail](#sending-e-mails-through-gmail)
-  * [Credits](#credits)
+  * [**Credits**](#credits)
     + [Content](#content)
     + [Media](#media)
     + [Inspiration Sources](#inspiration-sources)
@@ -122,6 +122,10 @@ As a loyal customer...
 
 * I want to get freebies and rewards for spending money so that I feel like I get a lot more for the money I spend.
 * I want an opportunity to get to know the team behind this brand I buy so much from and other like-minded people so that I can see if my loyalty to the brand is a good investment.
+
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
 
 ## Features and App Sections
 
@@ -385,6 +389,10 @@ Mobile wireframes:
 * [user's loyalty points status](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/mob/wireframe-mob-loyalty-status.png)
 * [link to all mobile wireframes folder](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/mob)
 
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
+
 ## Information Architecture
 
 As Django works with SQL databases by default, I was using SQLite in development. Heroku, however, provides a PostgreSQL database 
@@ -503,6 +511,10 @@ methods, etc. [here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/).
 | Subheading 3 | subheading_3 | CharField | max_length=55, null=True, blank=True |
 | Blog Content 3 | blog_content_3 | TextField | validators=[MinLengthValidator(250)], null=True, blank=True |
 
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
+
 ## Graphic Design and Brand Elements
 
 Based on the audience research, it has become clear early on that the project will require more efforts when it comes to the brand identity
@@ -577,6 +589,10 @@ a light and often barely noticeable shadow has been included.
 Visual identity is in general heavily relying on reduced colour palette, sharp-edged elements and borders. There are no additional decorations
 apart from occasional simple lines that help out with breaking down the sections for easier information grasping.
 
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
+
 ## Technologies Used
 
 This project mostly focuses on the following technologies:
@@ -610,9 +626,17 @@ Additionally, I have also used the following platforms to help me shape the webs
 1. [Figma](https://www.figma.com/) - for creating wireframes, web designs and icons
 1. [Favicon](https://favicon.io/) - for creating browser tab icons
 
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
+
 ## Testing and Defensive Design
 
 More about **Testing and Defensive Design** can be found in the [TESTING.md](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/blob/master/TESTING.md) file.
+
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
 
 ## Deployment
 
@@ -811,6 +835,10 @@ In order to send automatic e-mails with Django, you need a Gmail account.
 * go to Heroku and put it under `EMAIL_HOST_PASS` config variable
 * put the Gmail e-mail under the `EMAIL_HOST_USER` config var
 
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
+
 ## Credits
 
 ### Content
@@ -842,3 +870,7 @@ In order to send automatic e-mails with Django, you need a Gmail account.
 
 * Thank you [CodeInstitute's](https://codeinstitute.net/) Tutors and Slack community for being there for annoying bug-related questions!
 * Last but not least, a huge and warm thank you to my mentor [Dick Vlaanderen](https://github.com/dickvla) - not just for being such an incredible source of encouragement and great ideas for this project but for being there throughout all of my projects and coding journey at CodeInstitute. Thank you for all your support and kind words - working on this project wouldn't have been fun and such a wonderful experience without you!
+
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
