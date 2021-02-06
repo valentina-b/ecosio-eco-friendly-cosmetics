@@ -148,7 +148,7 @@ Mobile:
 * resize the browser to see if the navbar collapses into the hamburger menu
 * scroll up and down to see if the navbar is fixed on the top
 * log in and see if the 'My Account' links change from 'Register' and 'Login' to 'My Account' and 'Logout'
-* log in as an admin and see if there are additional linkes to 'Add New Product' and 'Add New Blog' forms
+* log in as an admin and see if there are additional links to 'Add New Product' and 'Add New Blog' forms
 
 **Search functionality**
 * search for a relevant keyword (such as soap, shampoo, conditioner, etc.) of your choice to see if the search results are rendered properly on the page and the site structure is intact
@@ -306,16 +306,35 @@ Mobile:
     * the webshop ('Shop Now' CTA)
 * click on each CTA to see if the pages render properly
 * resize each page and see if everything looks all right
-* the order history page shold display your orders - if you haven't made any orders yet, you should see a CTA to the webshop and a CTA to your loyalty status page
-* the loyalty status page should display your points, your donated points, unlock the level you're currently belonging to and show a sneak peek of the levels you will unlock in the future
+* the order history page should display your orders - if you haven't made any orders yet, you should see a CTA to the webshop and a CTA to your loyalty status page
+* the loyalty status page should display your points, your donated points and unlock the level you currently belong to as well as show a sneak peek of the levels you will unlock in the future
 * if you are a level-2 customer, you should have access to the donation system - test the donations by clicking on each of the three causes and see if a toast message appears as a confirmation of the action and your points get deducted
 * if you are a level-3 customer, you should have access to the event registration - test it by clicking on the 'Yes, I'm Coming' CTA and see if a toast message appears as a confirmation of the action and your CTA turned into a confirmation note
 * the edit profile page should display your saved information that is pulled into the checkout form for a smooth check out - change the information and save it to see if everything gets saved properly
 * test if the form is able to save empty fields as well - some customers might not want to have all of their details saved to the profile
 * additionally, do a test transaction to see if the new details are correctly displayed in the checkout form
 
+### User Testing Results
 
+Apart from my own efforts, the web app has been tested by my friends and family members. The feedback was in general highly positive.
+There was one issue that I fixed immediately and that is increasing the size of the delete icon on the `cart` page on mobile devices.
+This feature removes a product from the cart but since it was so small, it was difficult to click directly on it. As the icon is on
+the product image which is linked to the product page of that product, it would often happen the user would end up there and had to go
+back to the cart. I've fixed this by:
+* increasing the icon's size
+* increasing the clickable area around the icon
 
+There were also minor styling suggestions like adding more padding and margins to some elements.
 
-
+Other suggestions I've got would require more time, bigger code refactoring or simply careful and detailed planning to achieve them.
+Since none of these were actually bugs or errors and user have quickly realised how the web app works, I've decided to leave them
+for later improvements of the MVP. The suggestions were:
+* removing the CTAs like 'Register Here' from the `homepage` for logged in users
+* two users suggested removing the 'update' link from `cart` and that the item updating should happen whenever a `+/-` input field is clicked on
+* keeping the 'Sort Products By' filter in the webshop even after clicking on a category or a product tag filter
+* toast doesn't disapear if hovered so that the user has more time reading it
+* user can combine filters in the webshop, such as 'Skincare' and '100% Organic'
+* adding tooltips when hovering over keywords, such as 'ECO-EXPERT'
+* having more payment options
+* highlighting the filter that's been applied - it seems that the breadcrumbs (where this information is currently displayed) are often overlooked or the users simply don't look there to find this information
 
