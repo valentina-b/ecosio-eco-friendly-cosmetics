@@ -118,6 +118,10 @@ $('.blog-header-image').on("error", function() {
 * this way a user can still make donations by typing a link but at least it's not possible to do this endlessly, the feature is available to only level-2 and level-3 users as imagined and, in the end, the user is only losing their own points and benefits - so hopefully no one would want to do this to themselves anyways in the first place
 * if users with less than 61 loyalty points try to access the donations via link, the system redirect them to the same page and shows a toast message informing them they don't have enough points to do the action
 
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
+
 ## Testing
 
 The project's code was frequently validated through:
@@ -395,3 +399,7 @@ process, so I was very happy when I was pointed to [Autoprefixer](https://autopr
 
 Autoprefixer saved me a lot of time and efforts right from the beginning and there was only one outline that I had to fix
 for Safari browser.
+
+<div align="right">
+    <a href="#table-of-contents"> ⇧ Back To Top </a>
+</div>
