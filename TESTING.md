@@ -1,5 +1,23 @@
 # Testing and Defensive Design
 
+## Table of Contents
+
+  * [**Defensive Design and Predicted Error Points**](#defensive-design-and-predicted-error-points)
+    + [Custom Error Webpages](#custom-error-webpages)
+    + [Secured Admin Views](#secured-admin-views)
+    + [Modals When Permanently Deleting Data](#modals-when-permanently-deleting-data)
+    + [Search Queries Safe for Site Structure](#search-queries-safe-for-site-structure)
+    + [Maximum Items per Order - 150](#maximum-items-per-order---150)
+    + [Maximum Same Products per Order - 99](#maximum-same-products-per-order---99)
+    + [User-Frienly Product Page Input](#user-frienly-product-page-input)
+    + [Cart Adjustments](#cart-adjustments)
+    + [Product and Blog Images](#product-and-blog-images)
+    + [Manipulating Loyalty Points Donation](#manipulating-loyalty-points-donation)
+  * [**Testing**](#testing)
+    + [Testing the Features](#testing-the-features)
+    + [User Testing Results](#user-testing-results)
+    + [Bugs, Problems and Vulnerabilities](#bugs--problems-and-vulnerabilities)
+
 ## Defensive Design and Predicted Error Points
 
 In this chapter I will focus more on which steps I've taken to prevent predicted errors and complications. In the beginning I focused
