@@ -117,7 +117,10 @@ The project's code was frequently validated through:
 * [W3 CSS validator](https://jigsaw.w3.org/css-validator/)
     * all errors and warning shown are related to either Bootstrap's css file, CSS browser prefixes or CSS variables that I've used (which is too advanced for this validator)
 * [JSHint](https://jshint.com/)
-    * apart from minor changes, like missing semicolons, everything was all right (although '$' was not defined by JSHint)
+    * apart from minor changes, like missing semicolons, everything was all right ('$' was not defined by JSHint however)
+* [PEP8 validator](http://pep8online.com/)
+    * all Python code was run through the PEP8 validator
+    * the only errors I've found were slightly off indentation, which is corrected now, and `line too long` errors, which I plan to correct at later point
 
 The web app was tested on the devices and browsers listed below. I loaded the page on each of the device and browser combination and looked for any visual and functional errors. I've also tried to resize the web pages on desktop in Chrome, Firefox, Opera and Safari developer tools to look for hidden irregularities and finding out the solutions. More about the errors I've encountered can be found under the 'Bugs and Problems'.
 
@@ -137,3 +140,182 @@ Mobile:
     * Google Chrome
 
 ### Testing the Features
+
+**Navigation**
+* click on all links to see if they work properly
+* click on the cart icon to see if it's linked properly
+* add a product into cart to see if the cart turns black, has a green circle and counts the quantity of the products properly
+* resize the browser to see if the navbar collapses into the hamburger menu
+* scroll up and down to see if the navbar is fixed on the top
+* log in and see if the 'My Account' links change from 'Register' and 'Login' to 'My Account' and 'Logout'
+* log in as an admin and see if there are additional linkes to 'Add New Product' and 'Add New Blog' forms
+
+**Search functionality**
+* search for a relevant keyword (such as soap, shampoo, conditioner, etc.) of your choice to see if the search results are rendered properly on the page and the site structure is intact
+* search for an irrelevant keyword (such as couch, bedsheets, hamburger, etc. ) of your choice to see if the page is rendered properly and the site structure is intact
+* try to type an input longer than 50 characters to see if the search bar limits your input
+* search for the longest input you can type and see if the page is rendered properly and the site structure is intact
+* search by submitting an empty input to see if you get redirected to the webshop with a toast message that nothing was submitted
+* try to manipulate the link in the browser by adding more than 50 characters at the end of and pressing enter key to see if the search results are rendered properly on the page and the site structure is intact 
+
+**Breadcrumbs**
+* click on the 'Shop' link in the navbar and check if you see the breadcrumbs in the top left corner of the page you've landed on
+* click on the filters to see if the breadcrumbs and product count changes accordingly
+* click on a product card to see if the breadcrumbs on the product page contain that products category and name
+* try adding more products to the cart and visit the cart page to see if the breadcrumbs change to 'Shopping Cart'
+* click on the 'Checkout' button to see if you reach the 'Checkout' page and breadcrumbs render properly
+* do a test order to see if you reach 'Order Confirmation' page and breadcrumbs render properly
+* go to your profile by clicking on 'My Account' link in the navbar and check if you see the breadcrumbs in the top left corner of the page you've landed on
+* click on 'Order History' button to see if the breadcrumbs change accordingly
+* go back or click on the 'My Profile' breadcrumb to go back to your account page
+* click on 'Check Loyalty Status' button to see if the breadcrumbs change accordingly
+* go back or click on the 'My Profile' breadcrumb to go back to your account page
+* click on 'Edit Profile Details' button to see if the breadcrumbs change accordingly
+
+**Toasts**
+* do a few actions of your choice mentioned below to see if the toast message appears in the top right corner
+    * add a product to the cart
+    * add more than 99 same items to the cart
+    * add more than 150 products to the cart
+    * update the products in the cart
+    * remove an item from the cart
+    * finishing the checkout process
+    * log in
+    * donate loyalty Points
+    * log out
+    * etc.
+* do some of these actions on mobile devices as well
+
+**Django-allauth feature**
+* try to register for an account
+* see if you've received a verification e-mail and verify your e-mail
+* try to log in with your credentials and see if you're redirected to your account
+* try to log out of the web app
+* try to reset your password and see if you're received an e-mail with instructions
+* choose a new password and try to change it
+* try to log in with your new credentials
+
+**Automatic e-mails**
+* to test automatic emails, you can do some of the following actions
+    * make a test order
+    * register for an account
+    * reset your password
+* see if you've received an email from 'ecosio.cosmetics@gmail.com'
+
+**Homepage app**
+* click on the logo in the navigation
+* try adding a product into the cart by clicking on 'add to cart' buttons of the products displayed in the 'Our Most Popular Products' section
+* click on one of the CTAs in the 'Curated Shopping for You' section to see if you're led to the prefiltered shopping feed matching the category you've clicked on
+* test other CTAs and see if the links work properly
+* resize the page to see if the 'Our Most Popular Products' turn into a scrollable gallery
+* click on the dark gray registration prompt to see if the CTA leads you to the registration page
+* test if closing registration prompt works without any issues
+* log in and check if the registration prompt is hidden for logged in users on the homepage
+
+**About app**
+* click on 'About' link in the navigation and see if the page renders properly
+* test the CTAs and see if the links work properly
+* resize the page and see if everything looks all right
+
+**Blog app**
+* click on 'Blog' link in the navigation and see if the page renders properly
+* check if you can see blog post cards
+* if you're an admin, check if you see an 'edit' and 'delete' icon in the top left corner of each blog post card
+    * try to edit a blog post by clicking on the 'edit' icon
+    * see if there is 'Add New Blog' link in the navigation
+    * try to add a new blog post by clicking on 'Add New Blog' link in the navigation and submitting a blog post
+    * click on 'Blog' link in the navigation and see if you can find that blog post
+    * try to delete that blog post by clicking on the 'delete' icon
+    * click on a blog post and test 'edit' and 'delete' functionalities from the blog post page
+* resize the page and see if everything looks all right
+* click on a blog post of your choice and see if the page renders properly
+* if you're an admin, check if you see an 'edit' and 'delete' icon in the top left corner below the header image
+* resize the page and see if everything looks all right
+* click on the 'Shop Here' button and see if you're redirected to the webshop
+
+**Loyalty Programme app**
+* click on 'Loyalty Programme' link in the navigation and see if the page renders properly
+* test the CTAs and see if the links work properly
+* resize the page and see if everything looks all right
+
+**Products app, i.e. Webshop**
+* click on 'Shop' link in the navigation and see if the page renders properly
+* test the filters and see if the breadcrumbs and product selection changes accordingly
+* try adding a product into the cart by clicking on 'add to cart' buttons of the products displayed in the webshop
+* if you're an admin, check if you see an 'edit' and 'delete' icon in the top left corner of each product card
+    * try to edit a product by clicking on the 'edit' icon
+    * see if there is 'Add New Product' link in the navigation
+    * try to add a new product by clicking on 'Add New Product' link in the navigation and submitting a new product description
+    * click on 'Shop' link in the navigation and see if you can find that product
+    * try to delete that product by clicking on the 'delete' icon
+    * click on a product in the shop and test 'edit' and 'delete' functionalities from product page
+* resize the page and see if everything looks all right
+* click on a product of your choice and see if the page renders properly
+* if you're an admin, check if you see an 'edit' and 'delete' icon in the top left corner of the product image
+* resize the product page and see if everything looks all right
+* click on 'Ingredients' and 'Shipping Details' accordion cards to see if the cards slide down
+* try to click on `+/-` input buttons and see if you can add that quantity of the product to the cart with a success toast displayed
+* try typing in a number within the range 1-99 and see if you can add that quantity of the product to the cart with a success toast displayed
+* try typing a number higher than 99 and see if you get an error toast message
+* try submitting an empty input and see if you get an error toast message
+* try adding products from the 'Recommended for You' section into the cart
+* try adding more than 150 various products to the cart and see if you get an error toast message
+
+**Cart app**
+* click on the cart icon in the navigation and see if the page renders properly
+* test adding and removing products from the cart to see if the empty cart turns black and counts products in the cart
+* click on the products to see if you're redirected to their product pages
+* check if the data per line item is correctly displayed and calculated
+* try to click on `+/-` input buttons and see if you can adjust the quantity of the product with a success toast displayed
+* try typing in a number within the range 1-99 and see if you can adjust the quantity of the product with a success toast displayed
+* try typing a number higher than 99 and see if you get an error toast message
+* try submitting an empty input and see if you get an error toast message
+* try updating a product without adjusting the quantity and see if you get a toast message as a reminder
+* try updating products in the cart in a way that there are more than 150 various products to see if you get an error toast message
+* resize the cart page and see if everything looks all right
+* scroll to the bottom and see if the costs are displayed properly
+    * there should be order total, chipping costs and total costs correctly calculated
+    * if the order is worth 120.00€ or more, the shipping costs are free
+    * if the order is worth less than 120.00€, the shipping costs are 4.00€
+    * if the user is registered and this is the first order per account, a 10% discount should be applied to order total
+    * if the user is registered and has a level-2 or level-3 loyalty status, the shipping costs for order of any value should be free
+
+**Checkout app**
+* click on the 'Checkout' button at the bottom of the cart page
+* see if all the order data is correctly displayed and calculated
+* resize the checkout page and see if everything looks all right
+* if applicable, check if the discounts from the cart page are correctly displayed and calculated here as well
+* try submitting a form with some of the input fields empty to see if you get error messages
+* fill in the form as an anonymous user and do a test transaction
+    * **credit card:** 4242 4242 4242 4242
+    * **expiration date:** 04 / 24
+    * **CVC:** 424
+    * **ZIP:** 42424
+* fill in the form as a logged in user and check the 'Save this delivery information to my profile' box
+* do a test transaction and see if you're redirected to the 'Order Confirmation' page
+* for logged in users:
+    * check in your account if the information was properly saved
+    * check in your account if the order appears in the 'Order History'
+
+**Profiles app - and Loyalty Programme feature**
+* register for an account and log in by clicking on the 'Login' link in the 'My Account' dropdown in the top right of the navigation (in the burger menu on mobile devices)
+* see if the page renders properly - you should be seeing 4 buttons linked to:
+    * the order history page ('Order History' CTA)
+    * the loyalty status page ('Check Loyalty Status' CTA)
+    * the edit profile page ('Edit Profile Details' CTA)
+    * the webshop ('Shop Now' CTA)
+* click on each CTA to see if the pages render properly
+* resize each page and see if everything looks all right
+* the order history page shold display your orders - if you haven't made any orders yet, you should see a CTA to the webshop and a CTA to your loyalty status page
+* the loyalty status page should display your points, your donated points, unlock the level you're currently belonging to and show a sneak peek of the levels you will unlock in the future
+* if you are a level-2 customer, you should have access to the donation system - test the donations by clicking on each of the three causes and see if a toast message appears as a confirmation of the action and your points get deducted
+* if you are a level-3 customer, you should have access to the event registration - test it by clicking on the 'Yes, I'm Coming' CTA and see if a toast message appears as a confirmation of the action and your CTA turned into a confirmation note
+* the edit profile page should display your saved information that is pulled into the checkout form for a smooth check out - change the information and save it to see if everything gets saved properly
+* test if the form is able to save empty fields as well - some customers might not want to have all of their details saved to the profile
+* additionally, do a test transaction to see if the new details are correctly displayed in the checkout form
+
+
+
+
+
+

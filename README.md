@@ -200,7 +200,7 @@ of features is structured in a way that should help with understanding how the f
 ![Toasts Features](readme-files/img-features/img-features-toasts.png)
 
 **Django-allauth feature**
-* `django-allauth` is a Python package. As writtenin the [django-allauth docs](https://django-allauth.readthedocs.io/en/latest/), it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
+* `django-allauth` is a Python package. As written in the [django-allauth docs](https://django-allauth.readthedocs.io/en/latest/), it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
 * it provides a set of features such as **signup**, **login**, **logout** and **password change**.
 * after signing up, a verification e-mail is sent to the registered e-mail to confirm it. Once confirmed, the user can log in with their credentials and access the `profiles` app explained later below.
 * the links to these features can be found in the navigation, under the **My Account** dropdown menu, as well as on the pages and throughout the web app (for example, registration prompt window on the `homepage`).
