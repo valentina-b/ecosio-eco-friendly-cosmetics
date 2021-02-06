@@ -338,3 +338,42 @@ for later improvements of the MVP. The suggestions were:
 * having more payment options
 * highlighting the filter that's been applied - it seems that the breadcrumbs (where this information is currently displayed) are often overlooked or the users simply don't look there to find this information
 
+### Bugs, Problems and Vulnerabilities
+
+**Loyalty Programme**
+
+The most challenging task for this project was to think of and create the logic for the loyalty programme. After discussing
+with my mentor about the possibilities it was clear that this should be connected to user profiles. For that reason I've decided
+to simply implement the point tracking as part of the user profile and extended the `UserProfile`.
+
+The biggest challenge was writing the code that would track the points automatically whenever an order has been made. Several tutors
+from CodeInstitute and I tried to think of solutions, but we kept running into errors or problems until we've come up with an idea that
+the loyalty points should be added to the `UserProfile` whenever an order has been placed. This serves the purpose of this MVP well
+and it was very easy and quick to implement it.
+
+This solution, however, causes one issue, which is that if the order confirmation page is refreshed or accessed again after the 
+checkout, the points will be added to the profile again. This shouldn't be happening as users could manipulate the system to get more
+points. In the long run, loyalty programme would definitely need a makeover.
+
+This also means that if an order is placed by accident and the user gets in touch with the customer service to delete the order, the
+order will be deleted but the points would have to be manually removed from the profile.
+
+Loyalty programme currently doesn't have a time limit. I've imagined it to reset each year but haven't had the time to implement this
+into the system. At the moment, users can keep ordering and collecting points without an end to it.
+
+**Webhooks**
+
+Another challenge I've come across were webhooks. I deployed the project to Heroku with automatic e-mails in place so every time
+I ordered something in the development mode, the order would be made in the database of the deployed project. This caused confirmation
+e-mails being sent out with a different order ID and wrongly calculated costs - as the costs depend on your loyalty points (such as,
+10% discount and free shipping for level-2 and level-3 users).
+
+Luckily, a CodeInstitute's tutor was familiar with the issue, so I was assured everything was all right.
+
+**Cross-Browser Issues**
+
+For my previous project, I manually added all the browser prefixes whenever I came across a problem. It was a long, exhausting
+process, so I was very happy when I was pointed to [Autoprefixer](https://autoprefixer.github.io/).
+
+Autoprefixer saved me a lot of time and efforts right from the beginning and there was only one outline that I had to fix
+for Safari browser.
