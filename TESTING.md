@@ -48,7 +48,7 @@ sense for this project in general.
 
 ### Search Queries Safe for Site Structure
 * firstly, if the query is an empty string, users are redirected to the webshop with a toast message
-* I've also taken care of long search queries without white spaces or search queries that are simply too long and could break the site's responsiveness and structure
+* long search queries without white spaces, or search queries that are simply too long, could break the site's responsiveness and structure
 * for that reason, the following actions have been taken:
     * search box `<input>` is restricted to `maxlength="50"`
     * search term in breadcrumbs is restricted to `{{ search_term|truncatechars:25 }}`
@@ -60,8 +60,8 @@ sense for this project in general.
 ### Maximum Items per Order - 150
 * a user can order up to 150 items per order
 * the code can be found in `views.py` in the `cart` app
-* in short, the system sums the quantity of items that are already in the cart with the quantity that is being submitted to the limit of 150 items in total per cart
-* if the calculated potential sum is higher than the limit, the users get a toast message after being redirected to the same page they were on previously
+* in short, the system sums the quantity of items that are already in the cart with the quantity that is being submitted to the cart
+* if the calculated sum is higher than the limit (150 products), the user gets a toast message that this is not possible and gets redirected to the same page they were on
 * an example of this error would be when there are 140 products in the cart and the user tries to add 20 more items (new total would be 160 which is higher than the limit of 150)
 
 ![Max 150 Items per Order](readme-files/img-testing/img-testing-cart-max-150.png)
@@ -71,18 +71,18 @@ sense for this project in general.
 * products can be added to the cart at 4 places within the web app:
     * by clicking 'add to cart` button on the homepage ('our most popular products' section)
     * by clicking 'add to cart` button in the webshop's product feed (product cards)
-    * by adding products through the input field on the product page (+/- input field that)
+    * by defining product's quantity through the input field on the product page (+/- input field) and confirming by clicking on the 'add to cart` button
     * by clicking 'add to cart` button on the product page ('recommended for you' section)
 * the code can be found in `views.py` in the `cart` app
-* in short, the system checks if the product's ID is already in the cart, takes it's quantity, sums it with the quantity that is being submitted and compares it to the limit of 99 same items per order
+* in short, the system checks if the product's ID is already in the cart, takes its quantity, sums it with the quantity that is being submitted and compares it to the limit of 99 same items per order
 * if the amount is higher than 99, and the general limit of maximum 150 products per order hasn't been reached, the system changes the current quantity to maximum 99 items in the cart and alerts the user of the changes
-* an example of this error would be when there are 89 products in the cart already and the user tries to add 20 more on top of that through the product page input box (new total would be 109 which is higher than the limit of 99)
+* an example of this error would be when there are 89 products in the cart already and the user tries to add 20 more on top of that through the product page input box (new total would be 109 which is higher than the limit of 99) - the system rounds the quantity to 99 instead of 109
 
 ![Max 99 Same Items per Order](readme-files/img-testing/img-testing-cart-max-99.png)
 
 ### User-Frienly Product Page Input
 * product pages work a bit differently when it comes to adding products to the cart than the 'add to cart' buttons
-* 'add to cart' buttons will increase the quantity of the product by 1, while on product pages, users can submit a bulk number which might be prone to Manipulation
+* 'add to cart' buttons will increase the quantity of the product by 1, while on product pages, users can submit a bulk number which might be prone to manipulation
 * for that reason, the following actions have been taken:
     * the `<input>` tag takes in only numbers as value (`type="number"`) between `min="1"` and `max="99"`
     * if users try to submit empty value, they are redirected to the product page with a toast message
@@ -142,9 +142,12 @@ The project's code was frequently validated through:
     * apart from minor changes, like missing semicolons, everything was all right ('$' was not defined by JSHint however)
 * [PEP8 validator](http://pep8online.com/)
     * all Python code was run through the PEP8 validator
-    * the only errors I've found were slightly off indentation, which is corrected now, and `line too long` errors, which I plan to correct at later point
+    * the only errors I've found were slightly off indentation, which is corrected now, and `line too long` errors, which I plan to correct at later point since this isn't technically an error and this task would be very time-consuming at this point
 
-The web app was tested on the devices and browsers listed below. I loaded the page on each of the device and browser combination and looked for any visual and functional errors. I've also tried to resize the web pages on desktop in Chrome, Firefox, Opera and Safari developer tools to look for hidden irregularities and finding out the solutions. More about the errors I've encountered can be found under the 'Bugs and Problems'.
+The web app was tested on the devices and browsers listed below. I loaded the page on each of the device and browser combination
+and looked for any visual and functional errors. I've also tried to resize the web pages on desktop in Chrome, Firefox, Opera and
+Safari developer tools to look for hidden irregularities and finding out the solutions. More about the errors I've encountered can
+be found under the 'Bugs, Problems and Vulnerabilities' section.
 
 Desktop:
 
@@ -166,7 +169,7 @@ Mobile:
 **Navigation**
 * click on all links to see if they work properly
 * click on the cart icon to see if it's linked properly
-* add a product into cart to see if the cart turns black, has a green circle and counts the quantity of the products properly
+* add a product into cart to see if the cart turns black, has a green circle and counts the quantity of the products correctly
 * resize the browser to see if the navbar collapses into the hamburger menu
 * scroll up and down to see if the navbar is fixed on the top
 * log in and see if the 'My Account' links change from 'Register' and 'Login' to 'My Account' and 'Logout'
@@ -174,20 +177,20 @@ Mobile:
 
 **Search functionality**
 * search for a relevant keyword (such as soap, shampoo, conditioner, etc.) of your choice to see if the search results are rendered properly on the page and the site structure is intact
-* search for an irrelevant keyword (such as couch, bedsheets, hamburger, etc. ) of your choice to see if the page is rendered properly and the site structure is intact
+* search for an irrelevant keyword (such as couch, bedsheets, hamburger, etc. ) of your choice to see if the page without results is rendered properly and the site structure is intact
 * try to type an input longer than 50 characters to see if the search bar limits your input
 * search for the longest input you can type and see if the page is rendered properly and the site structure is intact
 * search by submitting an empty input to see if you get redirected to the webshop with a toast message that nothing was submitted
 * try to manipulate the link in the browser by adding more than 50 characters at the end of and pressing enter key to see if the search results are rendered properly on the page and the site structure is intact 
 
 **Breadcrumbs**
-* click on the 'Shop' link in the navbar and check if you see the breadcrumbs in the top left corner of the page you've landed on
-* click on the filters to see if the breadcrumbs and product count changes accordingly
+* click on the 'Shop' link in the navbar and check if you see the breadcrumbs in the top left corner of the webshop
+* click on the filters to see if the breadcrumbs and product count change accordingly
 * click on a product card to see if the breadcrumbs on the product page contain that products category and name
 * try adding more products to the cart and visit the cart page to see if the breadcrumbs change to 'Shopping Cart'
 * click on the 'Checkout' button to see if you reach the 'Checkout' page and breadcrumbs render properly
 * do a test order to see if you reach 'Order Confirmation' page and breadcrumbs render properly
-* go to your profile by clicking on 'My Account' link in the navbar and check if you see the breadcrumbs in the top left corner of the page you've landed on
+* go to your profile by clicking on 'My Account' link in the navbar and check if you see the breadcrumbs in the top left corner of the page
 * click on 'Order History' button to see if the breadcrumbs change accordingly
 * go back or click on the 'My Profile' breadcrumb to go back to your account page
 * click on 'Check Loyalty Status' button to see if the breadcrumbs change accordingly
@@ -201,11 +204,10 @@ Mobile:
     * add more than 150 products to the cart
     * update the products in the cart
     * remove an item from the cart
-    * finishing the checkout process
+    * complete a checkout
     * log in
-    * donate loyalty Points
-    * log out
-    * etc.
+    * donate loyalty points
+    * log out, etc.
 * do some of these actions on mobile devices as well
 
 **Django-allauth feature**
@@ -213,7 +215,7 @@ Mobile:
 * see if you've received a verification e-mail and verify your e-mail
 * try to log in with your credentials and see if you're redirected to your account
 * try to log out of the web app
-* try to reset your password and see if you're received an e-mail with instructions
+* try to reset your password and see if you receive an e-mail with instructions
 * choose a new password and try to change it
 * try to log in with your new credentials
 
@@ -225,7 +227,7 @@ Mobile:
 * see if you've received an email from 'ecosio.cosmetics@gmail.com'
 
 **Homepage app**
-* click on the logo in the navigation
+* click on the logo in the navigation and see if the page renders properly
 * try adding a product into the cart by clicking on 'add to cart' buttons of the products displayed in the 'Our Most Popular Products' section
 * click on one of the CTAs in the 'Curated Shopping for You' section to see if you're led to the prefiltered shopping feed matching the category you've clicked on
 * test other CTAs and see if the links work properly
@@ -252,7 +254,7 @@ Mobile:
 * resize the page and see if everything looks all right
 * click on a blog post of your choice and see if the page renders properly
 * if you're an admin, check if you see an 'edit' and 'delete' icon in the top left corner below the header image
-* resize the page and see if everything looks all right
+* resize the blog post page and see if everything looks all right
 * click on the 'Shop Here' button and see if you're redirected to the webshop
 
 **Loyalty Programme app**
@@ -262,7 +264,7 @@ Mobile:
 
 **Products app, i.e. Webshop**
 * click on 'Shop' link in the navigation and see if the page renders properly
-* test the filters and see if the breadcrumbs and product selection changes accordingly
+* test the filters and see if the breadcrumbs and product selection change accordingly
 * try adding a product into the cart by clicking on 'add to cart' buttons of the products displayed in the webshop
 * if you're an admin, check if you see an 'edit' and 'delete' icon in the top left corner of each product card
     * try to edit a product by clicking on the 'edit' icon
@@ -316,7 +318,7 @@ Mobile:
 * fill in the form as a logged in user and check the 'Save this delivery information to my profile' box
 * do a test transaction and see if you're redirected to the 'Order Confirmation' page
 * for logged in users:
-    * check in your account if the information was properly saved
+    * check in your account if the shipping information was properly saved on 'Edit Profile' page
     * check in your account if the order appears in the 'Order History'
 
 **Profiles app - and Loyalty Programme feature**
@@ -333,15 +335,15 @@ Mobile:
 * if you are a level-2 customer, you should have access to the donation system - test the donations by clicking on each of the three causes and see if a toast message appears as a confirmation of the action and your points get deducted
 * if you are a level-3 customer, you should have access to the event registration - test it by clicking on the 'Yes, I'm Coming' CTA and see if a toast message appears as a confirmation of the action and your CTA turned into a confirmation note
 * the edit profile page should display your saved information that is pulled into the checkout form for a smooth check out - change the information and save it to see if everything gets saved properly
-* test if the form is able to save empty fields as well - some customers might not want to have all of their details saved to the profile
+* test if the form is able to save empty fields as well - some customers might not want to have all of their details saved to the profile so this should be working fine
 * additionally, do a test transaction to see if the new details are correctly displayed in the checkout form
 
 ### User Testing Results
 
-Apart from my own efforts, the web app has been tested by my friends and family members. The feedback was in general highly positive.
-There was one issue that I fixed immediately and that is increasing the size of the delete icon on the `cart` page on mobile devices.
-This feature removes a product from the cart but since it was so small, it was difficult to click directly on it. As the icon is on
-the product image which is linked to the product page of that product, it would often happen the user would end up there and had to go
+Apart from my own efforts, the web app was tested by my friends and family members. The feedback was in general highly positive.
+There was one issue that I fixed immediately, which was increasing the size of the delete icon on the `cart` page on mobile devices.
+This feature removes a product from the cart but since it was so small, it was difficult to click directly on it. As the icon is on top of
+the product image which is linked to the product page of that product, it would often happen that the user ended up there and had to go
 back to the cart. I've fixed this by:
 * increasing the icon's size
 * increasing the clickable area around the icon
@@ -349,16 +351,16 @@ back to the cart. I've fixed this by:
 There were also minor styling suggestions like adding more padding and margins to some elements.
 
 Other suggestions I've got would require more time, bigger code refactoring or simply careful and detailed planning to achieve them.
-Since none of these were actually bugs or errors and user have quickly realised how the web app works, I've decided to leave them
+Since none of these were actually bugs or errors and users have quickly realised how the web app works, I've decided to leave them
 for later improvements of the MVP. The suggestions were:
-* removing the CTAs like 'Register Here' from the `homepage` for logged in users
+* removing the paragraph CTAs like 'Register Here' from the `homepage` for logged in users
 * two users suggested removing the 'update' link from `cart` and that the item updating should happen whenever a `+/-` input field is clicked on
 * keeping the 'Sort Products By' filter in the webshop even after clicking on a category or a product tag filter
 * toast doesn't disapear if hovered so that the user has more time reading it
 * user can combine filters in the webshop, such as 'Skincare' and '100% Organic'
 * adding tooltips when hovering over keywords, such as 'ECO-EXPERT'
 * having more payment options
-* highlighting the filter that's been applied - it seems that the breadcrumbs (where this information is currently displayed) are often overlooked or the users simply don't look there to find this information
+* highlighting the filter that's been applied in the webshop - it seems that the breadcrumbs (where this information is currently displayed) are often overlooked or users simply don't look there to find this information
 
 ### Bugs, Problems and Vulnerabilities
 
@@ -366,33 +368,33 @@ for later improvements of the MVP. The suggestions were:
 
 The most challenging task for this project was to think of and create the logic for the loyalty programme. After discussing
 with my mentor about the possibilities it was clear that this should be connected to user profiles. For that reason I've decided
-to simply implement the point tracking as part of the user profile and extended the `UserProfile`.
+to simply implement the points tracking as part of the user profile and extended the `UserProfile` model.
 
 The biggest challenge was writing the code that would track the points automatically whenever an order has been made. Several tutors
 from CodeInstitute and I tried to think of solutions, but we kept running into errors or problems until we've come up with an idea that
-the loyalty points should be added to the `UserProfile` whenever an order has been placed. This serves the purpose of this MVP well
-and it was very easy and quick to implement it.
+the loyalty points should be added to the `UserProfile` whenever an order has been placed instead of attaching them to the orders and pulling
+the data from orders. This serves the purpose of this MVP well and it was very easy and quick to implement it.
 
 This solution, however, causes one issue, which is that if the order confirmation page is refreshed or accessed again after the 
 checkout, the points will be added to the profile again. This shouldn't be happening as users could manipulate the system to get more
 points. In the long run, loyalty programme would definitely need a makeover.
 
 This also means that if an order is placed by accident and the user gets in touch with the customer service to delete the order, the
-order will be deleted but the points would have to be manually removed from the profile.
+order will be deleted but the points would have to be manually removed from the profile by admins.
 
-Loyalty programme currently doesn't have a time limit. I've imagined it to reset each year but haven't had the time to implement this
+Loyalty programme currently doesn't have a time limit. I've imagined it to be reset every year but haven't had the time to implement this
 into the system. At the moment, users can keep ordering and collecting points without an end to it.
 
 **Webhooks**
 
-Another challenge I've come across were webhooks. I deployed the project to Heroku with automatic e-mails in place so every time
+Another challenge I've come across were webhooks. I deployed the project to Heroku with automatic e-mails in place so everytime
 I ordered something in the development mode, the order would be made in the database of the deployed project. This caused confirmation
-e-mails being sent out with a different order ID and wrongly calculated costs - as the costs depend on your loyalty points (such as,
+e-mails being sent out with a different order ID and wrongly calculated costs - as the costs depend on user's loyalty points (such as,
 10% discount and free shipping for level-2 and level-3 users).
 
-Luckily, a CodeInstitute's tutor was familiar with the issue, so I was assured everything was all right.
+Luckily, a CodeInstitute's tutor was familiar with the issue, so I was assured everything would be all right for the deployed project.
 
-**Cross-Browser Issues**
+**Cross-Browser CSS Issues**
 
 For my previous project, I manually added all the browser prefixes whenever I came across a problem. It was a long, exhausting
 process, so I was very happy when I was pointed to [Autoprefixer](https://autoprefixer.github.io/).

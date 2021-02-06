@@ -4,7 +4,7 @@ Code Institute - Final Milestone Project (4) - Full Stack Frameworks With Django
 
 ECOSiO is a multi-page e-commerce web application with a mission to make eco-friendly cosmetics easily available. 
 The application focuses on men as target audience and offers a variety of products and content connected to sustainable
-lifestyle. The primary purpose of this web app is to provide a trusted marketplace for men interested in sustainability,
+lifestyle. The primary purpose of this web app is to provide a trusted cosmetics marketplace for men interested in sustainability,
 environmental issues and personal well-being. ECOSiO's core belief is that both environment and health always come first, 
 and we should never be forced to choose one or another. 
 
@@ -14,9 +14,9 @@ therefore these features support the secondary purpose of the app which is helpi
 the shopping experience. The idea behind this web app is not to provide a one-time shopping solution but to create a community 
 of loyal customers.
 
-Apart from the customer-facing UI, users with admin rights can interact with the web app as well. Although the majority of the
-interaction is done through [the Django admin site](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/), the web app 
-provides more pleasant environment for common tasks such as adding, editing and deleting products or blog posts.
+Although the majority of the admin activities is done through [the Django admin site](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/),
+the web app also provides more pleasant environment for common tasks such as adding, editing and deleting products or blog posts through
+the web app's UI.
 
 **IMPORTANT (disclaimer): This project contains real products from existing brands. Please visit their websites for more information
 if you wish to purchase them. Read more about how and why I've used them for this project in the 'Credits' section.**
@@ -66,12 +66,12 @@ impacted by the eco-conscious trend has been steadily rising over the past years
 in 2019. The percentage is particularly high for younger customers, such as Millennials, according to [Global Web Index](https://blog.globalwebindex.com/chart-of-the-week/green-consumerism/).
 
 However, [White, Hardisty and Habib](https://hbr.org/2019/07/the-elusive-green-consumer) write about a fascinating problem when it comes to
-green consumers' buying behaviour. It seems that 65% of people say they want to buy purpose-driven brands that advocate sustainability, 
-yet only about 26% actually do so. They have been studying how to encourage sustainable consumption for several years, performing their 
+green consumers' buying behaviour. It seems that 65% of people say they want to buy from purpose-driven brands that advocate sustainability, 
+yet only about 26% actually do so. The authors have been studying how to encourage sustainable consumption for several years, performing their 
 own experiments and reviewing research in marketing, economics, and psychology. When it comes to men and sustainability in particular, 
 the authors have found out that "some men associate sustainability with femininity, leading them to avoid sustainable options."
 
-What about men and cosmetics? According to [National Retail Federation](https://nrf.com/blog/rise-mens-cosmetics-and-brands-making-their-mark),
+But what about men and cosmetics? According to [National Retail Federation](https://nrf.com/blog/rise-mens-cosmetics-and-brands-making-their-mark),
 men's cosmetics is on the rise as a separate segment of the beauty industry. In the US alone, the revenue forecast for men's skincare products 
 is expected [to grow to USD 18.92 billion by 2027.](https://www.grandviewresearch.com/industry-analysis/mens-skincare-products-market) However,
 one of the major obstacles when it comes to encouraging men to buy cosmetics is in fact similar to the one mentioned earlier - [Blanchin, Chareyron and Levert](http://www.diva-portal.org/smash/get/diva2:238020/FULLTEXT01.pdf)
@@ -88,13 +88,16 @@ stronger prompts and incentives to start the customer buying journey than other 
 
 The growing interest in both of these topics indicates a promising potential for business development. On the one hand, sustainability is 
 already widely spread as an interest but the users lack encouragement towards paying for such services. On the other hand, men's cosmetics 
-as an industry is blooming but it still encounters obstacles, such as associating cosmetics with women.
+as an industry is blooming but it still encounters obstacles, such as being associated with industries that are 'only for women.'
 
 Since brand identity and incentives seem to be crucial for the user experience (along with the standard features related to e-commerce sites) 
 these were my two major focuses throughout the project - how to present well a marketplace for cosmetics to male audience, and how to encourage 
 audience interested in sustainability to enter the shopping behaviour.
 
 ### Business Goals
+
+When it comes to goals, e-commerce site owners and their customers sometimes have different things in mind. I've explored both of these 
+sides separately so that my feature log would be more complete.
 
 As an e-commerce site owner...
 
@@ -120,7 +123,7 @@ As a customer...
 
 As a loyal customer...
 
-* I want to get freebies and rewards for spending money so that I feel like I get a lot more for the money I spend.
+* I want to get freebies and rewards for spending my money so that I feel like I get a lot more for the money I spend.
 * I want an opportunity to get to know the team behind this brand I buy so much from and other like-minded people so that I can see if my loyalty to the brand is a good investment.
 
 <div align="right">
@@ -133,23 +136,23 @@ Based on the user stories and UX research, I've created an overview of the most 
 should consist of. Since ECOSiO is a multi-page web app, it was very helpful to sketch out the MVP draft and follow it throughout
 the project.
 
-In the next few paragraphs I will focus more on the most important sections and features, as well as additional features left to be 
-implemented. The next step, described after this chapter, was choosing a database suitable to the project's needs and defining models.
-
 ![Features and App Sections Overview](readme-files/img-mvp.png)
+
+In the next few sections I will focus more on the most important sections and features, as well as additional features left to be 
+implemented. The next step, described after this chapter, was choosing a database suitable to the project's needs and defining models.
 
 ### Web App Sections
 
 1. **Navigation at the top** - fixed on the top so that the users are able to navigate themselves anytime. It consists of two HTML code snippets for better responsiveness handling.
 1. **Homepage** - introduction to the app and brand identity. The idea is to give a short overview of what ECOSiO is, does and stands for through visual and textual content. Ideally, a user should be able to decide in a few seconds whether they feel connected to the brand identity and be a click away from the shopping feed.
 1. **Webshop** - standard e-commerce feed of products with the option to sort products and filter them by category name and product tag. Every product can be added to the cart immediately and links to a product page where the user can read more about it.
-1. **Product page** - a page dedicated to individual product. Consists of product description, ingredients and product tags that help with buying decision. At the bottom of the page, there are 3 more products shown to the customer. These 3 products are randomly selected from the same category the main product on the product page belongs to, for example Skincare.
+1. **Product page** - a page dedicated to individual product. Consists of product description, ingredients and product tags that help with buying decision. At the bottom of the page, there are 3 more products shown to the customer. These 3 products are randomly selected from the same category the main product on the product page belongs to, for example 'Skincare' products.
 1. **About page** - continues the information shortly provided on the homepage connected to the brand's vision, mission, team and principles regarding product selection for the webshop.
 1. **Blog** - a section containing all the blog posts with the focus on sustainability, sustainable lifestyle and synthetic-free cosmetics.
-1. **Blog post page** - a page dedicated to individual blog post. It consists of introductory paragraph and at least 2 but up to 3 textual sections. Since the idea is to use this section for showcasing brands ECOSiO is collaborating with as well, majority of the post are written in collaboration with one of the brands the products come from.
+1. **Blog post page** - a page dedicated to individual blog post. It consists of introductory paragraph and at least 2 but up to 3 textual sections. Since the idea is to use this section for showcasing brands ECOSiO is collaborating with as well, majority of the posts are written in collaboration with one of the brands the products in the webshop come from.
 1. **Loyalty programme page** - continues the information shortly provided on the homepage connected to the loyalty programme. It describes the process, benefits and reasoning behind creating the programme.
 1. **User account** - available to registered/logged in users with the purpose of tracking their loyalty programme status, order history and safely storing shipping details for a smooth checkout.
-1. **Admin account** - available to admins and/or users with admin-like rights with the purpose of having access to the orders, user profiles, as well as product and blog inventory. Majority of the information is stored in [the Django admin site](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/) but the users can also do common tasks such as adding, editing and deleting products or blog posts through ECOSiO's UI.
+1. **Admin account** - available users with admin rights with the purpose of having access to the orders, user profiles, as well as product and blog inventory. Majority of the information is stored in [the Django admin site](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/) but the users can also do common tasks such as adding, editing and deleting products or blog posts through ECOSiO's UI.
 1. **Footer** - gives users the option to stay up to date with the app via links to social media profiles.
 
 ### Features and Django Apps
@@ -186,15 +189,15 @@ of features is structured in a way that should help with understanding how the f
 ![Search Feature](readme-files/img-features/img-features-search.png)
 
 **Breadcrumbs**
-* breadcrumbs are present throughout the `products` (i.e. webshop), `cart` and `checkout` Django apps and, additionally, throughout the `profiles`.
-* the purpose of this feature is to ease the navigation across ECOSiO where navigation links might not be as helpful. Therefore, breadcrumbs don't appear on every webpage.
+* breadcrumbs are present throughout the `products` (i.e. webshop), `cart` and `checkout` Django apps and, additionally, throughout the `profiles` app.
+* the purpose of this feature is to ease the navigation across ECOSiO only where navigation links might not be as helpful. Therefore, breadcrumbs don't appear on every webpage.
 
 ![Breadcrumbs Checkout Feature](readme-files/img-features/img-features-breadcrumbs-checkout.png)
 
 **Toasts**
 * small snippets of messages divided into 4 main categories: `toast_success`, `toast_info`, `toast_warning` and `toast_error`.
 * they appear on every page whenever a certain action has been done by the user.
-* their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, updating the cart, editing a blog post, finishing the checkout process, adding too many products in the card, donating loyalty points etc.
+* their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, updating the cart, editing a blog post, finishing the checkout process, adding too many products in the card, donating loyalty points, etc.
 * it generally consists of the title based on the toast category with a matching text about the action. The `toast_success` toast additionally has cart information, that is hidden on `profiles` pages and for some other activities if nothing is added to the cart.
 
 ![Toasts Features](readme-files/img-features/img-features-toasts.png)
@@ -215,8 +218,8 @@ of features is structured in a way that should help with understanding how the f
 
 **Homepage app**
 * `homepage` Django app mainly serving as an introduction to the brand and the marketplace
-* the most prominent feature is the **registration prompt** displayed to the visitors that aren't logged in. It's fixed at the bottom of the page and encourages the visitor to create an account by mentioning the 10% discount.
-* another two features found on the homepage are the **popular products' gallery**, a feature for the admin team to set 3 products they want to showcase on the page, and the **curated shopping shortcuts** - links to prefiltered product by category. Both of these features mainly aim to be a sneak peek into the webshop.
+* the most prominent feature is the **registration prompt** displayed to the visitors that aren't logged in. It's fixed in the bottom right corner of the page and encourages the visitor to create an account by mentioning the 10% discount.
+* another two features found on the homepage are the **popular products' gallery**, a feature for the admin team to set 3 products they want to showcase on the page, and the **curated shopping shortcuts** - links to prefiltered product by category. Both of these features mainly aim to be a sneak peek into the webshop so that it's easier for the users to decide if this might be something of their interest.
 
 ![Homepage Features](readme-files/img-features/img-features-homepage.png)
 
@@ -246,8 +249,8 @@ of features is structured in a way that should help with understanding how the f
 **Products app, i.e. Webshop**
 * `products` Django app is where all the logic and templates connected to the product feed and individual products are.
 * it can be divided into three main sections: **shop**, **product pages** and **admin product management activities**.
-* **shop** is the main feed of products and this is where the majority of shopping journeys are expected to start. The shopping experience is enhanced by having a **dropdown for sorting products** (A-Z, Z-A, price low-high, price high-low), **category filters** (skincare, shaving, toiletries, sets & bags) and **product tag filters** that follow the user across the desktop version of the page and a quick **add-to-cart** functionality for users that already know exactly what they want to buy.
-* **product pages** are pages dedicated to each individual product. On these pages, the users can **read the product description, find ingredient list of the product** as well as **get additional product recommendations**. The product recommendations are random. The system selects 3 products from the same category the main product on the page belongs to and displays them at the bottom of the page. The recommended products turn into a scrollable gallery similar to the one on the homepage.
+* **shop** is the main feed of products and this is where the majority of shopping journeys are expected to start. The shopping experience is enhanced by having a **dropdown for sorting products** (A-Z, Z-A, price low-high, price high-low), **category filters** (skincare, shaving, toiletries, sets & bags) and **product tag filters** that follow the user across the desktop version of the page, and a quick **add-to-cart** functionality for users that already know exactly what they want to buy.
+* **product pages** are pages dedicated to each individual product. On these pages, the users can **read the product description, find ingredient list of the product** as well as **get additional product recommendations**. The product recommendations are random. The system selects 3 products from the same category the main product on the page belongs to and displays them at the bottom of the page. The recommended products turn into a scrollable gallery similar to the one on the homepage on mobile devices.
 * additional feature on the product pages are **product tags** which help with deciding whether a product fits certain lifestyle or not. There are 5 tags in total - **eco-friendly** which is a tag all ECOSiO's products should have, and then **cruelty-free**, **100% vegan**, **100% organic** and **100% natural**. Users can also filter the products based on these tags in the **shop**.
 * **admin product management activities** include adding, editing and deleting products. Users with admin rights can do that directly in the UI through forms. In case of deleting a product, a **modal** will open to double check if the user really wants to do this irreversible action.
 
@@ -258,7 +261,8 @@ of features is structured in a way that should help with understanding how the f
 * a cart is always present in the top right corner of the web app. **It turns black if it's full and shows the number of items added to the cart**.
 * currently, a customer can put **up to 99 items of the same product** into the cart. If the user tries to add more items than that, the system alerts the user via toasts that 99 items is the maximum number of products that can be added.
 * however, **adding products to the cart works differently on the product pages**. The users can define the exact amount of products they want to put into the cart as long as it's within the range (1 to 99). Since products can also be added from the homepage and the shopping feed, it might happen that the user has already added, for example, 10 items of the same product into the cart and now is trying to add 95 more products from the product page on top of that. The system will in that case check if the the sum of the current amount in the cart and the desired additional amount is higher than the allowed limit and **limit the amount of this same product in the cart to 99** if needed.
-* after clicking on the cart in the top right corner, the users gets an overview of all the products put into the cart. The user can also modify the quantity of the added products as well as remove the products from the cart. Since removing products from the cart is not an irreversible action, I have decided not to have a modal here so that the focus remains on the checkout process.
+* similar to the limit of 99 same products per order, a customer can put **up to 150 items in total** into the cart. If the user tries to add more items than that, the system alerts the user via toasts that 150 items is the maximum number of products that can be added.
+* after clicking on the cart in the top right corner, the user gets an overview of all the products put into the cart. The user can also modify the quantity of the added products as well as remove the products from the cart. Since removing products from the cart is not an irreversible action, I have decided not to have a modal here so that the focus remains on the checkout process.
 * all the products in the cart are also linked to their product pages so that the users have an easy acces to them in case they wish to check them out again before entering the checkout process.
 * the information provided on this page includes **usual product information, quantity per product, costs per product, order costs** (with 10% discount for first-time registered buyers), **shipping costs** (free for orders worth 120.00€ and above, as well as level 2 and level 3 loyal customers - otherwise 4.00€) and **total order costs**.
 * if users try to access their empty carts, there will be a message displayed that nothing has been added yet and encourage them to go to the shop.
@@ -267,7 +271,7 @@ of features is structured in a way that should help with understanding how the f
 
 **Checkout app**
 * `checkout` Django app is another standard e-commerce functionality which enables users to buy the products online from the webshop.
-* in order to check out, the user is presented with a **form asking for the shipping and payment details** and the **overview of the order**.
+* in order to check out, the user is presented with a **form asking for the shipping and payment details** and with the **overview of the order**.
 * users can easily go back to the cart and adjust it by clicking on the cart in the top right corner or breadcrumbs in the top left corner.
 * all the discounts or benefits will also be visible and highlighted in the summary of the costs.
 * both registered and anonymous users can shop at ECOSiO. Logged in users will have an option to **save their information** to the profile which should populate the form with relevant details for the next purchase.
@@ -286,7 +290,7 @@ of features is structured in a way that should help with understanding how the f
 * `profiles` Django app is available to registered, authenticated users.
 * it offers 3 features: **order history**, **saving shipping information** and **loyalty programme**.
 * **order history** displays all previous orders per user account.
-* **saving shipping information** is done through a form which can be edited any time. This information is what populates the checkout form for the next orders.
+* **saving shipping information** is done through a form which can be edited anytime. This information is what populates the checkout form for the next orders and where shipping information saved during the checkout process is stored.
 * **loyalty programme** is a feature that is partially implemented in the `profiles` app and partially in the `checkout` app. There are three levels users can achieve and unlocking each level brings new benefits. This is how the logic is distributed between the `checkout` and `profiles` app
     * `profiles` app: **stores loyalty points** under `UserProfile` model. It distinguishes between:
         - `earned_loyalty_points` - received after a purchase has been made. All the donated points get excluded from `earned_loyalty_points`.
@@ -320,7 +324,7 @@ I had in mind while working on the project:
 
 **Save for later**
 * a feature that allows authenticated users to save items for later.
-* every product in the feed and on product pages would have a heart-shaped icon which would add the product on a list. The list can be accessed on one of the `profiles` pages, where users can remove the items from the list as well.
+* every product in the feed and on product pages would have a heart-shaped icon which would add the product on a list. The list could be accessed on one of the `profiles` pages, where users can remove the items from the list as well.
 
 ![Save for Later Feature](readme-files/img-features-left-to-implement/img-features-save-for-later.png)
 
@@ -347,11 +351,13 @@ I had in mind while working on the project:
 ![Donation Feedback Feature](readme-files/img-features-left-to-implement/img-features-donation-feedback.png)
 
 **Recommendation system**
-* with some of these features implemented, it would be great to have a proper recommendation system in place. The system could be based on which products have been most clicked on, most bought, which brands are they from, which category are they from, which products have been saved the most, etc.
-* this recommendation system could help content writers with choosing topics to write about, which products to showcase in blog posts, and additionally which products should be recommended on the product pages (at the momment they are randomly selected).
+* with some of these features implemented, it would be great to have a proper recommendation system in place. The system could be based on which products have been clicked on the most, bought the most, which brands are they from, which category are they from, which products have been saved the most, etc.
+* this recommendation system could help content writers with choosing topics to write about, which products to showcase in blog posts, and additionally which products should be recommended on the product pages (at the moment they are randomly selected).
 * thinking further, once a proper CRM system has been built, a weekly newsletter could be sent to the users with personalised products recommendations.
 
 ### Wireframes
+
+The wireframes linked below are only some that I've made for this project. They were created with [Figma](https://www.figma.com/).
 
 Desktop wireframes:
 * [homepage](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/dsk/wireframe-dsk-homepage.png)
@@ -363,7 +369,7 @@ Desktop wireframes:
 * [cart](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/dsk/wireframe-dsk-cart.png)
 * [checkout](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/dsk/wireframe-dsk-checkout.png)
 * [user's loyalty points status](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/dsk/wireframe-dsk-loyalty-status.png)
-* [link to all desktop wireframes folder](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/dsk)
+* [folder with all desktop wireframes](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/dsk)
 
 Tablet wireframes:
 * [homepage](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/tab/wireframe-tab-homepage.png)
@@ -375,7 +381,7 @@ Tablet wireframes:
 * [cart](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/tab/wireframe-tab-cart.png)
 * [checkout](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/tab/wireframe-tab-checkout.png)
 * [user's loyalty points status](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/tab/wireframe-tab-loyalty-status.png)
-* [link to all tablet wireframes folder](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/tab)
+* [folder with all tablet wireframes](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/tab)
 
 Mobile wireframes:
 * [homepage](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/mob/wireframe-mob-homepage.png)
@@ -387,7 +393,7 @@ Mobile wireframes:
 * [cart](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/mob/wireframe-mob-cart.png)
 * [checkout](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/mob/wireframe-mob-checkout.png)
 * [user's loyalty points status](https://raw.githubusercontent.com/valentina-b/ecosio-eco-friendly-cosmetics/master/readme-files/wireframes/mob/wireframe-mob-loyalty-status.png)
-* [link to all mobile wireframes folder](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/mob)
+* [folder with all mobile wireframes](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics/tree/master/readme-files/wireframes/mob)
 
 <div align="right">
     <a href="#table-of-contents"> ⇧ Back To Top </a>
@@ -521,11 +527,11 @@ Based on the audience research, it has become clear early on that the project wi
 and visual design. Since the target audience identifies both sustainability and cosmetics with women, it was crucial to create a brand the
 users are comfortable with.
 
-My approach to design started with research as well. I had to be aware of what kind of product packaging and web design guidelines are 
-competitors and cosmetic companies following. Since my marketplace is going to have those products, my design had to match well with them - 
-and that too, not match well with only one of those brands but all of them.
+My approach to design started with research as well. I had to be aware of what kind of product packaging and web design guidelines
+competitors and cosmetic companies are following. Since my marketplace is going to have those products, my design had to match them
+well - and that too, not match well with only one of those brands but all of them.
 
-Two brands that were a huge inspiration for my design are [Supply](https://supply.co/) and [Aesop](https://www.aesop.com/us/). Most of the
+Two brands were a huge inspiration for my design - [Supply](https://supply.co/) and [Aesop](https://www.aesop.com/us/). Most of the
 product selection is coming from these two brands and, even though Aesop isn't just for men, I think they are both such a great example of
 elegant minimalist design style. The fact that majority of the brands have product images without background or with white background was a
 big help as it allowed me to focus more on creating ECOSiO's visual design rather than adjust it to the products.
@@ -543,8 +549,8 @@ which was one of the suggestions from Google fonts.
 ### Colours
 
 My colour selection for this project was very simple. I've chosen a dark shade of gray (#333333) for the textual content and used it as the
-primary accent colour for the CTAs and borders. As a contrast to it, a simple white colour (#FFFFFF) has been used. Using a very light gray
-colour (i.e. slightly tinted white) would create problems when it comes to product imagery. Their background is either transparent or
+primary accent colour for the CTAs and borders. As a contrast to it, plain white colour (#FFFFFF) has been chosen. Using a very light gray
+colour (i.e. slightly tinted white) would create problems when it comes to product imagery. Their backgrounds are either transparent or
 white so choosing any other shade besides pure white might make those image backgrounds stand out and create inconsistencies 
 throughout the product feed, product pages, etc.
 
@@ -578,7 +584,7 @@ in general.
 
 ### Visual Style
 
-Once the font, colour palette and images were selected, I've focused on the design of the elements. I wanted the web app to look professional, 
+Once the font, colour palette and images were selected, I focused on the design of the elements. I wanted the web app to look professional, 
 minimalistic and modern.
 
 Since my goal was to create a product that would resonate with male audience, I've decided that it would be the best to keep the page elements
@@ -625,6 +631,7 @@ Additionally, I have also used the following platforms to help me shape the webs
 1. [Google Fonts](https://fonts.google.com/) - for selecting the fonts
 1. [Figma](https://www.figma.com/) - for creating wireframes, web designs and icons
 1. [Favicon](https://favicon.io/) - for creating browser tab icons
+1. [Autoprefixer](https://autoprefixer.github.io/) - for solving cross-browser CSS issues
 
 <div align="right">
     <a href="#table-of-contents"> ⇧ Back To Top </a>
@@ -758,7 +765,7 @@ os.environ["STRIPE_WH_SECRET"] = "<Your Key>"
 7. Set up new database
 * in `settings.py`:
     * import dj_database_url
-    * comment out `DATABASES` (temporarily, **do not commit/push this code to GitHub until said so**)
+    * comment out `DATABASES` (temporarily, **do not commit/push this code to GitHub until instructed so**)
     * add the following code:
 ```bash
 DATABASES = {
