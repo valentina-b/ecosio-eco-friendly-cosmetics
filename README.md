@@ -21,6 +21,14 @@ the web app's UI.
 **IMPORTANT (disclaimer): This project contains real products from existing brands. Please visit their websites for more information
 if you wish to purchase them. Read more about how and why I've used them for this project in the 'Credits' section.**
 
+Live at [https://ecosio.herokuapp.com/](https://ecosio.herokuapp.com/)
+
+Test transaction details:
+* **credit card:** 4242 4242 4242 4242
+* **expiration date:** 04 / 24
+* **CVC:** 424
+* **ZIP:** 42424
+
 ![App Showcase](readme-files/img-intro.png)
 
 ## Table of Contents
