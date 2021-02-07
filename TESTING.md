@@ -402,6 +402,18 @@ process, so I was very happy when I was pointed to [Autoprefixer](https://autopr
 Autoprefixer saved me a lot of time and efforts right from the beginning and there was only one outline that I had to fix
 for Safari browser.
 
+**Custom Errror Page 500**
+
+I haven't managed to find out why but custom error page 500 kept having broken image links in the navbar and footer. It seems that this page
+is ignoring AWS links and uses the links from the development phase. My first thought was that the page hadn't been deployed properly but the
+issue remained after other deployments as well. After all, the images are in the footer and navigation so if the links were broken, images
+shouldn't be visible on other pages as well. Error page 404 also works without any issues.
+
+As a temporary solution, I have hardcoded the page but it would be great to figure out what exactly is causing this and prepare a smarter
+solution.
+
+![Custom Error Page 500](readme-files/img-testing/img-testing-error-500.png)
+
 <div align="right">
     <a href="#table-of-contents"> ⇧ Back To Top </a>
 </div>
