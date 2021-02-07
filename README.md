@@ -29,6 +29,8 @@ Test transaction details:
 * **CVC:** 424
 * **ZIP:** 42424
 
+A demo and/or admin credentials available upon request.
+
 ![App Showcase](readme-files/img-intro.png)
 
 ## Table of Contents
